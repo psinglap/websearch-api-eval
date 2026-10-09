@@ -77,7 +77,26 @@ details.faq[open] summary:after{transform:rotate(45deg)}
 details.faq[open] summary{border-bottom:1px solid var(--line)}
 .faqb{padding:6px 22px 18px}
 .part{scroll-margin-top:80px}
-</style></head>
+</style><style media="print">
+@page{size:A4;margin:14mm 12mm}
+body{font-size:12.5px;line-height:1.55}
+.top,aside,.pills,figcaption{display:none!important}
+.wrap{display:block;padding:0}.hero{display:block;padding:0 0 16px}.hero .card{margin-top:18px}
+article{max-width:none}
+h1{font-size:30px}h2{font-size:22px;margin-top:28px}h3{font-size:17px}
+.part{margin-top:30px}.agent{margin:20px 0 10px}
+figure,.agent,tr,details.faq summary{break-inside:avoid}
+h2,h3,.agent,.part{break-after:avoid}
+.clip{-webkit-line-clamp:unset!important;display:block}
+.clipcell{max-width:none}
+.tw{overflow:visible}table{font-size:10.5px}th,td{padding:6px 8px;min-width:0}
+details.faq{border:0}details.faq summary{padding:8px 0;font-size:17px}details.faq summary:after{display:none}
+a{color:#3b4bd0}
+footer{padding:12px 0}
+</style>
+<script>if(location.search.includes('print')||window.matchMedia('print').matches){document.addEventListener('DOMContentLoaded',()=>document.querySelectorAll('details').forEach(d=>d.open=true))}
+window.addEventListener('beforeprint',()=>document.querySelectorAll('details').forEach(d=>d.open=true));</script>
+</head>
 <body>
 <div class="top"><div class="in"><span class="brand">Web Search API Eval</span><a class="n" href="#summary">Summary</a><a class="n" href="#analysis">Analysis</a><a class="n" href="#key">Key metrics</a><a class="n" href="#perq">Per query</a><a class="n" href="#setup">Setup &amp; friction</a><a class="n" href="#deep">Deep dives</a><a class="n" href="memo/"><b>GTM memo</b></a></div></div>
 <header class="hero">
