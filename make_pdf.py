@@ -21,6 +21,21 @@ table.q code{font-size:9px;padding:0 3px;white-space:normal;word-break:break-wor
 .dd+.dd{break-before:auto;margin-top:22px}.dd:first-of-type{break-before:page}
 .backlink{display:inline-block;margin-top:8px;font-size:11.5px}
 </style>'''
+MEMO_CSS='''<style media="print">
+body{font-size:12px}
+.hero{padding:0 0 4px!important}
+.eyebrow{font-size:10.5px}
+h1{font-size:24px!important;margin:6px 0 4px!important}
+.dek{font-size:13px!important;margin:0 0 6px!important}
+.author{font-size:12.5px}.author i{width:22px;height:22px}
+.memo-meta{margin-top:8px!important;padding:8px 12px!important;font-size:12.5px!important}
+.hero .card{margin-top:8px!important;padding:10px 16px!important}
+.card .big{display:none}.card>.eyebrow{margin-bottom:6px}
+.card .stats{padding-top:6px!important;border-top:0!important}.card .stats b{font-size:18px!important}
+article h2{margin-top:12px!important}
+ol{margin:4px 0}ol li{margin:2px 0!important}
+figure img{max-height:110mm}figure img[src*="query_grid"]{max-height:none;width:100%!important}
+</style>'''
 COLS='<colgroup><col style="width:4%"><col style="width:14%"><col style="width:14%"><col style="width:12%"><col style="width:13%"><col style="width:7%"><col style="width:23%"><col style="width:13%"></colgroup>'
 def absl(s,depth):
     pre=BASE if depth==0 else BASE+"memo/"
@@ -31,7 +46,7 @@ def prep(src,dst,depth):
     imgdir=os.path.abspath("img")
     s=s.replace('src="img/','src="file://%s/'%imgdir).replace('src="../img/','src="file://%s/'%imgdir)
     s=absl(s,depth)
-    s=s.replace("</head>",CSS+"</head>",1)
+    s=s.replace("</head>",CSS+(MEMO_CSS if depth==1 else "")+"</head>",1)
     # query tables: 8 columns with Answer key
     s=re.sub(r'<table>(\s*<thead>\s*<tr>\s*<th>QID</th>(?:(?!</thead>).)*Answer key)',lambda m:'<table class="q">'+COLS+m.group(1),s,flags=re.S)
     # deep dives -> fold links + appendix sections
