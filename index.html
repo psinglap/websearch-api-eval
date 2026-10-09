@@ -59,9 +59,27 @@ code{font:13px "IBM Plex Mono",monospace;background:var(--soft);padding:2px 6px;
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padding:28px 24px;text-align:center}
 @media (max-width:1020px){.wrap{grid-template-columns:1fr}aside{display:none}.hero{grid-template-columns:1fr;padding-top:48px}.top a.n{display:none}}
 @media (max-width:600px){body{font-size:16px}.card{padding:24px}.card .big{font-size:34px}h2{font-size:28px}.ucband h2{font-size:28px}th,td{min-width:100px}}
+
+h2{font:500 32px/1.2 "Inter Tight",Inter,sans-serif;letter-spacing:-.018em}
+.muted{color:var(--muted)}
+.agent{display:flex;gap:16px;align-items:center;margin:44px 0 18px;padding:16px 20px;border-radius:12px;background:color-mix(in srgb,var(--c) 8%,#fff);border:1px solid color-mix(in srgb,var(--c) 25%,#fff);border-left:6px solid var(--c);scroll-margin-top:80px}
+.agent .num{flex:none;width:36px;height:36px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font:600 16px "Inter Tight",sans-serif}
+.agent .an{font:600 21px/1.25 "Inter Tight",sans-serif;color:var(--fg)}
+.agent .as{font-size:14.5px;color:var(--muted);margin-top:2px;line-height:1.45}
+.clipcell{max-width:260px}
+.clip{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:help}
+.clip:hover{-webkit-line-clamp:unset}
+details.faq{border:1px solid var(--line);border-radius:12px;margin:12px 0;background:#fff}
+details.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font:500 18px/1.35 "Inter Tight",sans-serif;color:var(--fg);display:flex;justify-content:space-between;gap:16px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary:after{content:"+";font:300 26px/1 "Inter Tight",sans-serif;color:var(--accent);transition:transform .2s}
+details.faq[open] summary:after{transform:rotate(45deg)}
+details.faq[open] summary{border-bottom:1px solid var(--line)}
+.faqb{padding:6px 22px 18px}
+.part{scroll-margin-top:80px}
 </style></head>
 <body>
-<div class="top"><div class="in"><span class="brand">Web Search API Eval</span><a class="n" href="#summary">Summary</a><a class="n" href="#gtm">GTM</a><a class="n" href="#insurance">Insurance</a><a class="n" href="#finance">Finance</a><a class="n" href="#setup">Setup &amp; friction</a><a class="n" href="#method">Method</a></div></div>
+<div class="top"><div class="in"><span class="brand">Web Search API Eval</span><a class="n" href="#summary">Summary</a><a class="n" href="#analysis">Analysis</a><a class="n" href="#key">Key metrics</a><a class="n" href="#perq">Per query</a><a class="n" href="#setup">Setup &amp; friction</a><a class="n" href="#deep">Deep dives</a></div></div>
 <header class="hero">
  <div>
   <div class="eyebrow">Independent evaluation / Web search APIs<span>October 8, 2026</span></div>
@@ -75,13 +93,13 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 </header>
 <div class="wrap">
 <article>
-<div class="pills"><a href="#summary">Summary</a><a href="#gtm">1 · GTM</a><a href="#insurance">2 · Insurance</a><a href="#finance">3 · Finance</a><a href="#setup">Setup &amp; friction</a><a href="#method">Method</a></div>
+<div class="pills"><a href="#analysis">My analysis</a><a href="#key">Key metrics</a><a href="#perq">Per query</a><a href="#setup">Setup &amp; friction</a><a href="#deep">Details &amp; deep dives</a></div>
 <div class="part" id="summary">Summary</div><h2>Results at a glance</h2>
 <p>You.com is the fastest search API we tested, and the most dependable at returning something fresh. You.com leads on freshness, reliability and search-only speed. Parallel leads accuracy with You.com a close second and tied with Parallel on fully correct queries. </p>
-<figure class=""><a href="img/overall_scorecard.png" target="_blank" rel="noopener"><img src="img/overall_scorecard.png" alt="Overall scorecard: 30 queries, 3 use cases, 4 search APIs" loading="lazy"></a><figcaption>Overall scorecard: 30 queries, 3 use cases, 4 search APIs · click to enlarge</figcaption></figure>
+<figure><a href="img/overall_scorecard.png" target="_blank" rel="noopener"><img src="img/overall_scorecard.png" alt="Overall scorecard: 30 queries, 3 use cases, 4 search APIs" loading="lazy"></a><figcaption>Overall scorecard: 30 queries, 3 use cases, 4 search APIs · click to enlarge</figcaption></figure>
 
 <p>Each query is written the way an AI agent calls web search: an upstream task, the search call the agent sends, its parameters, and what the agent needs back. Every use case has at least 4 real-time queries; the rest use 24-hour, 48-hour or 7-day windows. Searches run in promptfoo (3 runs per query, client-side timing). Answers were written and graded from each provider's saved results, using the published SimpleQA rubric and FreshQA strict rules.</p>
-<h3>Summary: which provider fits which agent</h3>
+<div class="part" id="analysis">Recommendation</div><h2>My analysis: which provider fits which agent</h2>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -113,849 +131,37 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 </tr>
 </tbody>
 </table></div>
-<section class="uc" id="gtm"><div class="ucband"><span class="ucnum">Use case 1</span><h2>GTM agent</h2><p>Developer-signal agent for LaserData (Apache Iggy): fresh buying signals, real-time to 7 days</p></div>
-<p class="lead">Web search for a developer-signal agent that needs real-time to 7-day signals. Agent job is to find fresh developer and company buying signals for Apache Iggy / streaming infra; output a ranked list of signals with URL, date, who and the pain quoted.</p><figure class=""><a href="img/gtm_key_metrics.png" target="_blank" rel="noopener"><img src="img/gtm_key_metrics.png" alt="GTM key metrics, all four providers" loading="lazy"></a><figcaption>GTM key metrics, all four providers · click to enlarge</figcaption></figure>
+<div class="part" id="key">By use case</div><h2>Key metrics by all three use cases among all four providers</h2>
+<div class="agent" id="gtm" style="--c:#6c4cf1"><span class="num">1</span><div><div class="an">GTM agent</div><div class="as">Web search for a developer-signal agent that needs real-time to 7-day signals. Agent job is to find fresh developer and company buying signals for Apache Iggy / streaming infra; output a ranked list of signals with URL, date, who and the pain quoted.</div></div></div><figure><a href="img/gtm_key_metrics.png" target="_blank" rel="noopener"><img src="img/gtm_key_metrics.png" alt="GTM key metrics, all four providers" loading="lazy"></a><figcaption>GTM key metrics, all four providers · click to enlarge</figcaption></figure>
 
 <p><strong>You.com for real-time signal monitoring; Parallel or Tavily for release and docs lookups.</strong></p>
 <ul>
 <li><strong>You.com is best fit for fresh-signal sweeps an agent re-runs every few minutes.</strong> Examples are new mentions of a project, today's funding rounds, and new issues or activity. You.com had the freshest results, no empty responses, low latency, and was the only provider to surface the new Iggy developers activity.</li>
 <li><strong>Parallel was the only one to find out</strong> Iggy release pages and changelog lookups, and Tavily was the only one to find out coding related Config-doc answers.</li>
-</ul><h3 id="gtm-perq">What each API returned, per question</h3><p><strong>GTM Queries:</strong> <strong>You.com wins when the agent asks what's new.</strong> It was the only API to surface today's Apache Iggy activity (G3), and it was also right on this week's funding rounds and agent-memory posts (G8, G9). <strong>Parallel wins when the agent needs the official page</strong>, such as a project's release notes (G4, G6). <strong>Tavily wins on documentation lookups</strong>, such as Kafka's consumer settings (G5). For a GTM agent that watches for fresh buying signals, You.com is the better fit. An agent that mostly looks up release notes or docs is better served by Parallel or Tavily.</p>
-<figure class="wide"><a href="img/gtm_query_grid.png" target="_blank" rel="noopener"><img src="img/gtm_query_grid.png" alt="GTM per-query grid" loading="lazy"></a><figcaption>GTM per-query grid · click to enlarge</figcaption></figure><h3 id="gtm-detail">Queries, answers and scorecard</h3><h4 class='sub'>Queries</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>QID</th>
-<th>Upstream task given to the agent</th>
-<th>Search call the agent sends</th>
-<th>Params</th>
-<th>What the agent needs back</th>
-<th>Freshness</th>
-<th>Answer key</th>
-<th>Source + Wayback link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>G1</td>
-<td>"Find developers hitting Kafka latency problems right now"</td>
-<td><code>kafka consumer lag high latency issue</code></td>
-<td>window last ~6 h (tightest available), domains: github.com</td>
-<td>Issue URLs opened in the last 6 hours, repo/org, time, the error described</td>
-<td>Real-time</td>
-<td><a href="https://github.com/BrighterCommand/Brighter/issues/4560">Brighter#4560</a> (opened 10:51Z, Kafka publish confirms delay under load) or NOFireAI/opentelemetry-demo#7024 (15:50Z, Kafka consumer-lag spike). Issues opened Oct 7 are out of window.</td>
-<td><a href="https://github.com/search?q=kafka+consumer+lag+latency&amp;type=issues&amp;s=created&amp;o=desc">GitHub issue search</a> · Wayback: <a href="https://web.archive.org/web/20261008154559/https://github.com/search?q=kafka+consumer+lag+latency&amp;type=issues&amp;s=created&amp;o=desc">snapshot</a></td>
-</tr>
-<tr>
-<td>G2</td>
-<td>"Account signal: anything new at Confluent today?"</td>
-<td><code>Confluent news</code></td>
-<td>window 24h</td>
-<td>Headline, date, link or "none" in the last 24h</td>
-<td>Real-time</td>
-<td><a href="https://allthingsopen.org/articles/ai-strategy-data-strategy-confluent">All Things Open interview</a> with Confluent VP Tim Berglund, dated Oct 8. No new official Confluent blog post in 24h (newest Oct 1); undated pages and the IBM deal do not count. "None" is wrong.</td>
-<td><a href="https://www.confluent.io/blog/">Confluent blog</a> · Wayback: <a href="https://web.archive.org/web/20261008145909/https://www.confluent.io/blog/">snapshot</a></td>
-</tr>
-<tr>
-<td>G3</td>
-<td>"Any new mentions of Apache Iggy in the last day?"</td>
-<td><code>"Apache Iggy"</code></td>
-<td>window 24h</td>
-<td>Every mention (repo, blog, forum) in 24h, date or "none"</td>
-<td>Real-time</td>
-<td>32 new apache/iggy issues and PRs in window, e.g. #4466 (13:37Z), #4443 (10:53Z), #4438 (08:31Z). No blog or HN mention. "None" is wrong.</td>
-<td><a href="https://github.com/apache/iggy">apache/iggy</a> · Wayback: <a href="https://web.archive.org/web/20261008150545/https://github.com/apache/iggy">snapshot</a></td>
-</tr>
-<tr>
-<td>G4</td>
-<td>"Draft a note on Apache Iggy's latest release for a prospect"</td>
-<td><code>Apache Iggy release notes</code></td>
-<td>window 7 days, domains: github.com, iggy.apache.org</td>
-<td>Latest release version, date, key changes, link</td>
-<td>Week</td>
-<td><a href="https://github.com/apache/iggy/releases/tag/server-0.9.0">server-0.9.0</a>, released Sep 18 (GitHub "Latest"): consensus per partition (VSR clustering), QUIC/TLS/WS transports, Delta Lake sink, Avro. The downloads page's 0.5.0-incubating is wrong.</td>
-<td><a href="https://github.com/apache/iggy/releases">Iggy releases</a> · Wayback: <a href="https://web.archive.org/web/20261008150847/https://github.com/apache/iggy/releases">snapshot</a></td>
-</tr>
-<tr>
-<td>G5</td>
-<td>Coding agent fixing a consumer-lag bug needs the official tuning guidance</td>
-<td><code>kafka consumer lag max.poll.records fetch.min.bytes</code></td>
-<td>window 1 year, domains: kafka.apache.org, docs.confluent.io</td>
-<td>Official doc URL, what each setting does, recommended direction</td>
-<td>Year</td>
-<td>Official Kafka or Confluent consumer-config page. max.poll.records = max records per poll() (default 500); lower it if processing risks max.poll.interval.ms. fetch.min.bytes = min data per fetch (default 1 byte); raising it trades latency for throughput. Both settings needed.</td>
-<td><a href="https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html">Confluent consumer configs</a> · Wayback: <a href="https://web.archive.org/web/20261008151030/https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html">snapshot</a></td>
-</tr>
-<tr>
-<td>G6</td>
-<td>"Competitive brief: what's the latest NATS server release?"</td>
-<td><code>NATS server release</code></td>
-<td>window 7 days, domains: github.com</td>
-<td>Version, release date, link</td>
-<td>Week</td>
-<td><a href="https://github.com/nats-io/nats-server/releases/tag/v2.15.1-RC.2">v2.15.1-RC.2</a> (pre-release, Oct 6) or <a href="https://github.com/nats-io/nats-server/releases/tag/v2.15.0">v2.15.0</a> (latest stable, Sep 17) both count; an older version as latest is wrong.</td>
-<td><a href="https://github.com/nats-io/nats-server/releases">NATS releases</a> · Wayback: <a href="https://web.archive.org/web/20261008111533/https://github.com/nats-io/nats-server/releases">snapshot</a></td>
-</tr>
-<tr>
-<td>G7</td>
-<td>"Is Confluent Cloud having an incident right now?" (outage = switching trigger)</td>
-<td><code>Confluent Cloud incident</code></td>
-<td>window 24h, domains: status.confluent.cloud</td>
-<td>Active incident yes/no, component, start time or "none"</td>
-<td>Real-time</td>
-<td>None: no active incident (unresolved.json empty, All Systems Operational at 15:51-15:59Z). The Azure Germany West Central incident (11:00-11:56Z) was resolved; showing it or the Sep 21 incident as current is wrong.</td>
-<td><a href="https://status.confluent.cloud/">Confluent status</a> · Wayback: <a href="https://web.archive.org/web/20261008155137/https://status.confluent.cloud/api/v2/incidents/unresolved.json">snapshot</a></td>
-</tr>
-<tr>
-<td>G8</td>
-<td>"Which AI-agent / data-infra startups just raised money?"</td>
-<td><code>AI agent infrastructure startup funding round</code></td>
-<td>window 48h</td>
-<td>Company, amount, lead investor, date, link</td>
-<td>48h</td>
-<td>Open-world: any AI-agent or data-infra round announced in the 48h window with company + amount, e.g. Vesta $30M and Mecka AI $60M (TechCrunch, Oct 8). Rounds before Oct 6 15:52Z (Namespace $42M) are out of window.</td>
-<td><a href="https://techcrunch.com/category/venture/">TechCrunch venture</a> · Wayback: <a href="https://web.archive.org/web/20261008111803/https://techcrunch.com/category/venture/">snapshot</a></td>
-</tr>
-<tr>
-<td>G9</td>
-<td>"Find this week's content about memory/event logs for AI agents"</td>
-<td><code>durable event log memory for AI agents</code></td>
-<td>window 7 days</td>
-<td>Article URLs, author/org, date</td>
-<td>Week</td>
-<td>Open-world: 126 HN items in window, e.g. "Agents Don't Need Another Memory API" (Oct 7); any dated in-window article counts.</td>
-<td><a href="https://hn.algolia.com/?query=agent%20memory&amp;sort=byDate">HN Algolia search</a> · Wayback: <a href="https://web.archive.org/web/20261008111956/https://hn.algolia.com/?query=agent%20memory&amp;sort=byDate">snapshot</a></td>
-</tr>
-<tr>
-<td>G10</td>
-<td>"Competitive brief: published Redpanda vs Kafka latency benchmarks"</td>
-<td><code>Redpanda vs Kafka p99 latency benchmark</code></td>
-<td>window 1 year</td>
-<td>Benchmark source, date, p99 numbers, who ran it</td>
-<td>Year</td>
-<td>Open-world criterion: a benchmark dated in the last year with Redpanda vs Kafka p99 numbers and who ran it. Redpanda's own 2022 benchmark is out of window; no official post in the year.</td>
-<td><a href="https://www.redpanda.com/blog">Redpanda blog</a> · Wayback: <a href="https://web.archive.org/web/20261008151435/https://www.redpanda.com/blog">snapshot</a></td>
-</tr>
-</tbody>
-</table></div>
-<h4 class='sub'>What each API returned</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>QID</th>
-<th>You.com</th>
-<th>Tavily</th>
-<th>Exa</th>
-<th>Parallel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>G1</td>
-<td>Issues opened Oct 7, just outside the 6 h window</td>
-<td>No results</td>
-<td>Generic repo issue-list pages, no Kafka issue</td>
-<td>Undated Kafka-lag tool repos, no issues</td>
-</tr>
-<tr>
-<td>G2</td>
-<td>Keyword noise; missed the Oct 8 ATO interview</td>
-<td>ATO interview with Confluent's VP (Oct 8), in 2 of 3 runs</td>
-<td>ATO interview with Confluent's VP (Oct 8)</td>
-<td>Undated newsroom and profile pages</td>
-</tr>
-<tr>
-<td>G3</td>
-<td>5 in-window apache/iggy issues (Oct 8)</td>
-<td>Undated Reddit post, rest noise</td>
-<td>Matched "Apache" only, no Iggy</td>
-<td>Evergreen landing pages, nothing dated</td>
-</tr>
-<tr>
-<td>G4</td>
-<td>GitHub issues, no release page</td>
-<td>No results</td>
-<td>Other Apache projects' issue lists</td>
-<td>server-0.9.0 (Sep 18) with release link</td>
-</tr>
-<tr>
-<td>G5</td>
-<td>Right official pages, but both settings cut from the text</td>
-<td>Confluent docs, both settings described</td>
-<td>Official Kafka pages, only fetch.min.bytes visible</td>
-<td>max.poll.records named, not described</td>
-</tr>
-<tr>
-<td>G6</td>
-<td>GitHub issues, no release page</td>
-<td>Other projects' release pages</td>
-<td>nats-io issue lists, no release</td>
-<td>v2.15.1-RC.2 (Oct 6) and v2.15.0 stable</td>
-</tr>
-<tr>
-<td>G7</td>
-<td>No active incident; flagged the cached Sep 21 page as stale</td>
-<td>No results, read as "none"</td>
-<td>No results, read as "none"</td>
-<td>No active incident; history page header only</td>
-</tr>
-<tr>
-<td>G8</td>
-<td>Manus $500M+ (Oct 8), no lead investor</td>
-<td>TODAY €2.8M seed (Oct 8), Monid $7.7M</td>
-<td>5 in-window raises (Ampersand, Monid, Nous, Rein)</td>
-<td>Rein Security $25M (Oct 8)</td>
-</tr>
-<tr>
-<td>G9</td>
-<td>Arize, dev.to and Ability.ai articles (Oct 2-6)</td>
-<td>4 in-window articles (Oct 4-7)</td>
-<td>4 in-window items (Like One, Databricks, arXiv, AgentLensHQ)</td>
-<td>On-topic, but nothing dated this week</td>
-</tr>
-<tr>
-<td>G10</td>
-<td>Medium p99 numbers in window; who ran them not stated</td>
-<td>Vendor pages, no Redpanda vs Kafka p99</td>
-<td>5 dated benchmarks with authors, no p99 numbers</td>
-<td>In-window benchmark without p99</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class='sub'>Metric scorecard</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>You.com</th>
-<th>Tavily</th>
-<th>Exa</th>
-<th>Parallel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Search-only latency p50 · p95, server / client (ms)</td>
-<td>381 / 627 · 512 / 751 (fastest)</td>
-<td>2,670 / 2,843 · 3,295 / 3,425</td>
-<td>812 / 1,102 · 3,178 / 3,403</td>
-<td>n/a / 2,268 · n/a / 4,268</td>
-</tr>
-<tr>
-<td>Search-only calls ≤1 s, client (of 10); slowest call</td>
-<td>10 of 10; slowest 781 ms</td>
-<td>0 of 10; slowest 3,473 ms</td>
-<td>3 of 10; slowest 3,419 ms</td>
-<td>1 of 10; slowest 4,289 ms</td>
-</tr>
-<tr>
-<td>Accuracy score (% of max, 10 queries × 3 repeats)</td>
-<td>45%</td>
-<td>47%</td>
-<td>45%</td>
-<td>45%</td>
-</tr>
-<tr>
-<td>Freshness: % in window</td>
-<td><strong>75%</strong></td>
-<td>47%</td>
-<td>58%</td>
-<td>28%</td>
-</tr>
-<tr>
-<td>Freshness: newest relevant result (h)</td>
-<td><strong>4.1</strong></td>
-<td>39.9</td>
-<td>15.9</td>
-<td>399.9</td>
-</tr>
-<tr>
-<td>Content in one call</td>
-<td><strong>100%</strong></td>
-<td>70%</td>
-<td>90%</td>
-<td><strong>100%</strong></td>
-</tr>
-<tr>
-<td>Tokens, top-5 results: per query / per correct</td>
-<td>95,707 / 239,254</td>
-<td>20,199 / 42,276</td>
-<td>10,563 / 26,409</td>
-<td><strong>1,814 / 4,887</strong></td>
-</tr>
-<tr>
-<td>Search cost: per query / per correct ($)</td>
-<td>0.0150 / 0.0375</td>
-<td>0.0080 / 0.0160</td>
-<td>0.0063 / 0.0158</td>
-<td><strong>0.0050 / 0.0125</strong></td>
-</tr>
-</tbody>
-</table></div></section>
-<section class="uc" id="insurance"><div class="ucband"><span class="ucnum">Use case 2</span><h2>Insurance agent</h2><p>Voice and claims agent for P&amp;C insurers, live during Hurricane Isaias</p></div>
-<p class="lead">Web search for a voice and claims agent that must know live catastrophe status mid-call. For example: Liberate-style voice agents for P&amp;C insurers (quote, bind, first notice of loss during a live storm).</p><figure class=""><a href="img/insurance_key_metrics.png" target="_blank" rel="noopener"><img src="img/insurance_key_metrics.png" alt="Insurance key metrics, all four providers" loading="lazy"></a><figcaption>Insurance key metrics, all four providers · click to enlarge</figcaption></figure>
+</ul><div class="agent" id="insurance" style="--c:#0f8a7e"><span class="num">2</span><div><div class="an">Insurance agent</div><div class="as">Web search for a voice and claims agent that must know live catastrophe status mid-call. For example: Liberate-style voice agents for P&amp;C insurers (quote, bind, first notice of loss during a live storm).</div></div></div><figure><a href="img/insurance_key_metrics.png" target="_blank" rel="noopener"><img src="img/insurance_key_metrics.png" alt="Insurance key metrics, all four providers" loading="lazy"></a><figcaption>Insurance key metrics, all four providers · click to enlarge</figcaption></figure>
 
 <p><strong>You.com for in-call lookups; Exa for background claims checks.</strong></p>
 <ul>
 <li><strong>You.com is best fit for voice and chat agents that must answer within the caller's turn.</strong> You.com had a lowest latency with every call under 1 s, and the freshest results. It was correct on the live recent advisory verdict, new declaration or new regulations.</li>
 <li><strong>Exa</strong> was the only provider right on both the county warnings and the live wind speed, where You.com returned a cached weather page. That makes Exa the better fit for claims validation that can take a few seconds if both providers are used together.</li>
 <li><strong>However,</strong> None of the four found the Underwriting-critical regulator notices such as active Citizens binding suspension that needed a direct government source feed.</li>
-</ul><h3 id="insurance-perq">What each API returned, per question</h3><p><strong>Insurance Queries:</strong> <strong>You.com returned the latest NHC hurricane advisory (I2)</strong>, but for current wind speed it returned a cached weather page instead of a live reading (I4). <strong>Exa was the only API to get both the live wind speed and both county warnings (I3, I4)</strong>, which is why it leads Insurance accuracy. No API found the Citizens binding suspension (I1), so an insurance agent still needs a direct check of carrier and regulator pages.</p>
-<figure class="wide"><a href="img/insurance_query_grid.png" target="_blank" rel="noopener"><img src="img/insurance_query_grid.png" alt="Insurance per-query grid" loading="lazy"></a><figcaption>Insurance per-query grid · click to enlarge</figcaption></figure><h3 id="insurance-detail">Queries, answers and scorecard</h3><h4 class='sub'>Queries</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>QID</th>
-<th>Upstream task given to the agent</th>
-<th>Search call the agent sends</th>
-<th>Params</th>
-<th>What the agent needs back</th>
-<th>Freshness</th>
-<th>Answer key</th>
-<th>Source + Wayback link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I1</td>
-<td>Caller wants a new Florida homeowners policy</td>
-<td><code>Citizens Property Insurance binding suspension Florida</code></td>
-<td>window 24h, domains: citizensfla.com</td>
-<td>Suspended yes/no, scope, effective date/time</td>
-<td>Real-time</td>
-<td>Yes: statewide binding suspension ("Isaias: No Policy Binding"), no new policies or added coverage anywhere in Florida, effective Oct 7, 2026, 11:05 a.m.; still posted before and after the run.</td>
-<td><a href="https://www.citizensfla.com/">Citizens binding alerts</a> · Wayback: <a href="https://web.archive.org/web/20261008112205/https://www.citizensfla.com/">snapshot</a></td>
-</tr>
-<tr>
-<td>I2</td>
-<td>Caller in Pensacola asks if the storm is coming</td>
-<td><code>Hurricane Isaias latest advisory NHC</code></td>
-<td>window 24h</td>
-<td>Advisory #, time, location, max winds, landfall forecast</td>
-<td>Real-time</td>
-<td>Yes, heading for Pensacola: NHC Public Advisory #8, 10:00 AM CDT (15:00Z) Oct 8: 23.7N 90.2W, ~500 mi SSW of Pensacola, 85 mph, 975 mb, moving ENE at 10 mph; landfall on the north-central Gulf coast Friday night. Unchanged before and after the run.</td>
-<td><a href="https://www.nhc.noaa.gov/">NHC advisories</a> · Wayback: <a href="https://web.archive.org/web/20261008090330/https://www.nhc.noaa.gov/">snapshot</a> (existing 09:03Z snapshot); CurrentStorms.json: local copy only</td>
-</tr>
-<tr>
-<td>I3</td>
-<td>Agent must check warnings for the policy's county before binding</td>
-<td><code>hurricane warning Escambia County Florida active</code></td>
-<td>window 24h</td>
-<td>Active warning types, issued time</td>
-<td>Real-time</td>
-<td>Hurricane Warning (Escambia Inland and Coastal) and Storm Surge Warning (Escambia Coastal), NWS Mobile, latest update 10:06 AM CDT Oct 8 (an earlier Oct 7-8 issue time also counts).</td>
-<td><a href="https://api.weather.gov/alerts/active?zone=FLC033,FLZ201,FLZ202">NWS alerts API</a> · Wayback: <a href="https://web.archive.org/web/20261008112313/https://api.weather.gov/alerts/active?zone=FLC033,FLZ201,FLZ202">snapshot</a></td>
-</tr>
-<tr>
-<td>I4</td>
-<td>Claims agent validating a wind-damage report in progress</td>
-<td><code>Pensacola weather wind speed</code></td>
-<td>window 24h</td>
-<td>Current wind speed/gusts, observation time</td>
-<td>Real-time</td>
-<td>Pensacola Intl (KPNS): 15:50Z observation 10.4 mph NE, gusts 16.1 mph; 16:00Z observation 9.2 mph ENE, no gust. Either counts (within 5 mph, at most 1 h old); the hurricane was still ~500 mi offshore.</td>
-<td><a href="https://api.weather.gov/stations/KPNS/observations/latest">KPNS observations API</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>I5</td>
-<td>Policyholder asks if they must evacuate</td>
-<td><code>Baldwin County Alabama evacuation order Isaias</code></td>
-<td>window 24h</td>
-<td>Order in effect yes/no, zones, time</td>
-<td>Real-time</td>
-<td>None: no mandatory evacuation order (a voluntary evacuation for coastal and low-lying areas is compatible); Hurricane and Storm Surge Warnings in effect. Moderate confidence: EMA sub-pages not captured.</td>
-<td><a href="https://baldwincountyal.gov/departments/EMA">Baldwin County EMA</a> · <a href="https://api.weather.gov/alerts/active?zone=ALC003">NWS alerts API</a> · Wayback: <a href="https://web.archive.org/web/20261008112609/https://baldwincountyal.gov/services/ema">EMA</a>, <a href="https://web.archive.org/web/20261008112650/https://api.weather.gov/alerts/active?zone=ALC003">NWS alerts</a></td>
-</tr>
-<tr>
-<td>I6</td>
-<td>Claims ops checks whether federal aid applies</td>
-<td><code>FEMA disaster declaration Hurricane Isaias 2026</code></td>
-<td>window 48h</td>
-<td>Declaration number + date — or "none yet" (beware older "Isaias")</td>
-<td>48h</td>
-<td>None yet: all 183 OpenFEMA records titled Isaias are from 2020-21; none in the 48 h window.</td>
-<td><a href="https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries">FEMA declarations API</a> · <a href="https://www.fema.gov/disaster/declarations">FEMA declarations</a> · Wayback: local copy only (Wayback HTTP 523)</td>
-</tr>
-<tr>
-<td>I7</td>
-<td>Compliance agent checks for new regulator orders</td>
-<td><code>Florida OIR OR Alabama DOI emergency order Isaias insurance</code></td>
-<td>window 48h</td>
-<td>Order/bulletin, issuer, date — or "none"</td>
-<td>48h</td>
-<td>None: no Isaias emergency order or bulletin from Florida OIR or Alabama DOI in 48 h; an ALDOI consumer release and an FLOIR refill notice (both Oct 7) are not orders. Moderate confidence: order sub-pages not captured.</td>
-<td><a href="https://floir.com/">FLOIR</a> · <a href="https://www.aldoi.gov/">Alabama DOI</a> · Wayback: <a href="https://web.archive.org/web/20261008113340/https://floir.gov/">FLOIR</a>, <a href="https://web.archive.org/web/20261008113421/https://aldoi.gov/">ALDOI</a></td>
-</tr>
-<tr>
-<td>I8</td>
-<td>Underwriting checks which states declared emergencies</td>
-<td><code>governor state of emergency Hurricane Isaias</code></td>
-<td>window 7 days</td>
-<td>States, date of each declaration</td>
-<td>Week</td>
-<td>Florida: EO 26-202, Oct 6 (25 counties); Alabama: Oct 7. Mississippi: none as of 15:27Z; Louisiana: not determinable.</td>
-<td><a href="https://www.flgov.com/eog/news/press">Florida governor</a> · <a href="https://governor.alabama.gov/newsroom/">Alabama governor</a> · <a href="https://gov.louisiana.gov/news">Louisiana governor</a> · <a href="https://governor.ms.gov/">Mississippi governor</a> · Wayback: <a href="https://web.archive.org/web/20261008113558/https://www.flgov.com/eog/news/press">FL</a>, <a href="https://web.archive.org/web/20261008113637/https://governor.alabama.gov/newsroom/">AL</a>, <a href="https://web.archive.org/web/20261008113716/https://gov.louisiana.gov/news">LA</a>, <a href="https://web.archive.org/web/20261008113757/https://governorreeves.ms.gov/">MS</a></td>
-</tr>
-<tr>
-<td>I9</td>
-<td>Claims agent validating a Texas hail claim</td>
-<td><code>Texas hail storm reports</code></td>
-<td>window 24h, domains: spc.noaa.gov</td>
-<td>Locations, dates, hail size — or "none"</td>
-<td>24h</td>
-<td>None: no Texas hail reports in SPC preliminary storm reports for the last 24 h; the only hail report was in Wilson, Niagara Co., NY (1.00 in, 01:30Z).</td>
-<td><a href="https://www.spc.noaa.gov/climo/reports/today.html">SPC today</a> · <a href="https://www.spc.noaa.gov/climo/reports/yesterday.html">SPC yesterday</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>I10</td>
-<td>Caller asks whether their 2024 Toyota RAV4 has an open recall</td>
-<td><code>NHTSA recall 2024 Toyota RAV4</code></td>
-<td>window 1 year, domains: nhtsa.gov</td>
-<td>Recall campaign number(s), component, date</td>
-<td>Year</td>
-<td>Three NHTSA campaigns: 24V911000 (Dec 2024, front brake caliper bolts), 25V595000 (Sep 2025, instrument cluster software) and 25V744000 (Oct 2025, rearview camera). All three = correct; a subset = partial (26V179000, RAV4 Hybrid load label, also counts).</td>
-<td><a href="https://api.nhtsa.gov/recalls/recallsByVehicle?make=toyota&amp;model=rav4&amp;modelYear=2024">NHTSA recalls API</a> · <a href="https://www.nhtsa.gov/recalls">NHTSA recalls</a> · Wayback: local copy only</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class='sub'>What each API returned</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>QID</th>
-<th>You.com</th>
-<th>Tavily</th>
-<th>Exa</th>
-<th>Parallel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I1</td>
-<td>2020-23 Citizens minutes and contracts; active suspension missed</td>
-<td>No results; suspension missed</td>
-<td>No results; suspension missed</td>
-<td>Evergreen binding rule + 2024 Helene page; suspension missed</td>
-</tr>
-<tr>
-<td>I2</td>
-<td>10 AM CDT advisory (#8, by time): 23.7N 90.2W, 86 mph</td>
-<td>Stale: newest item Advisory #6A</td>
-<td>Advisory #8, 10 AM CDT, ~85 mph; warning area includes Pensacola</td>
-<td>10 AM CDT advisory, 86 mph; a stale 8 a.m. advisory in 1 of 3 runs</td>
-</tr>
-<tr>
-<td>I3</td>
-<td>Hurricane Warning only, no time; Storm Surge Warning missing</td>
-<td>Hurricane Warning only; Storm Surge Warning missing</td>
-<td>Both warnings for Escambia, issued 9:53 PM CDT Oct 7</td>
-<td>Hurricane Warning (issued ~10 p.m. Oct 7); Storm Surge Warning missing</td>
-</tr>
-<tr>
-<td>I4</td>
-<td>Stale cached weather pages (NWS block from Aug 5, Fox Weather from Feb 16)</td>
-<td>Averages and forecasts; current 13 mph ENE (16:00Z) on repeats 2-3 only</td>
-<td>13 mph NE at 11:00 AM CDT (model estimate)</td>
-<td>Forecasts only; newest station report ~5 h old</td>
-</tr>
-<tr>
-<td>I5</td>
-<td>No mandatory order; voluntary coastal evacuation (Oct 7)</td>
-<td>No mandatory order; voluntary evacuation in effect</td>
-<td>Explicitly "no mandatory evacuation"; voluntary in effect</td>
-<td>No mandatory order; voluntary recommendation (Oct 7)</td>
-</tr>
-<tr>
-<td>I6</td>
-<td>None yet; only Florida's state of emergency</td>
-<td>None yet; off-target results</td>
-<td>None yet; no 2020 declaration surfaced</td>
-<td>None yet; FEMA press page (Oct 7) shows no Isaias declaration</td>
-</tr>
-<tr>
-<td>I7</td>
-<td>None; no regulator order in results</td>
-<td>No results (correct none by default)</td>
-<td>None; found the Oct 7 FLOIR notice and ALDOI release and did not call them orders</td>
-<td>None; old Helene order labelled as old</td>
-</tr>
-<tr>
-<td>I8</td>
-<td>FL EO 26-202 (Oct 6); AL named without its date</td>
-<td>FL (Oct 6) + AL (Oct 7)</td>
-<td>FL EO 26-202 (Oct 6) only; AL missing</td>
-<td>AL (Oct 7) + FL EO 26-202 (Oct 6)</td>
-</tr>
-<tr>
-<td>I9</td>
-<td>None: a 1998 SPC paper and the reports index, no storm data</td>
-<td>No results, read as "none"</td>
-<td>No results, read as "none"</td>
-<td>No results, read as "none"</td>
-</tr>
-<tr>
-<td>I10</td>
-<td>Only 26V179 (2024 RAV4 Hybrid label); 24V911000 missed</td>
-<td>25V595 + 25V744 + 26V179; 24V911000 missed</td>
-<td>2 results: a Lexus recall excerpt and a Nissan page; no RAV4 recall</td>
-<td>25V744 + 26V179; 24V911000 missed</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class='sub'>Metric scorecard</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>You.com</th>
-<th>Tavily</th>
-<th>Exa</th>
-<th>Parallel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Search-only latency p50 · p95, server / client (ms)</td>
-<td>379 / 589 · 496 / 772 (fastest)</td>
-<td>1,650 / 1,864 · 2,959 / 3,128</td>
-<td>856 / 1,093 · 4,194 / 4,448</td>
-<td>n/a / 2,038 · n/a / 3,450</td>
-</tr>
-<tr>
-<td>Search-only calls ≤1 s, client (of 10); slowest call</td>
-<td>10 of 10; slowest 865 ms</td>
-<td>1 of 10; slowest 3,230 ms</td>
-<td>3 of 10; slowest 4,593 ms</td>
-<td>1 of 10; slowest 3,963 ms</td>
-</tr>
-<tr>
-<td>Accuracy score (% of max, 10 queries × 3 repeats)</td>
-<td>65%</td>
-<td>67%</td>
-<td><strong>75%</strong></td>
-<td>67%</td>
-</tr>
-<tr>
-<td>Freshness: % in window</td>
-<td><strong>56%</strong></td>
-<td>34%</td>
-<td>31%</td>
-<td>31%</td>
-</tr>
-<tr>
-<td>Freshness: newest relevant result (h)</td>
-<td><strong>2.3</strong></td>
-<td>11.9</td>
-<td>7.1</td>
-<td>16.3</td>
-</tr>
-<tr>
-<td>Content in one call</td>
-<td><strong>100%</strong></td>
-<td>70%</td>
-<td>80%</td>
-<td>90%</td>
-</tr>
-<tr>
-<td>Tokens, top-5 results: per query / per correct</td>
-<td>14,524 / 29,048</td>
-<td>13,986 / 28,383</td>
-<td>4,731 / 6,759</td>
-<td><strong>1,418 / 2,352</strong></td>
-</tr>
-<tr>
-<td>Search cost: per query / per correct ($)</td>
-<td>0.0150 / 0.0300</td>
-<td>0.0080 / 0.0160</td>
-<td>0.0056 / <strong>0.0080</strong></td>
-<td><strong>0.0050</strong> / 0.0083</td>
-</tr>
-</tbody>
-</table></div></section>
-<section class="uc" id="finance"><div class="ucband"><span class="ucnum">Use case 3</span><h2>Finance agent</h2><p>Analyst agent that needs exact, current numbers with primary-source citations</p></div>
-<p class="lead">Web search for an analyst agent that needs exact, current numbers with primary-source citations. It's job is to answer analyst questions with exact, current numbers and a primary-source citation.</p><figure class=""><a href="img/finance_key_metrics.png" target="_blank" rel="noopener"><img src="img/finance_key_metrics.png" alt="Finance key metrics, all four providers" loading="lazy"></a><figcaption>Finance key metrics, all four providers · click to enlarge</figcaption></figure>
+</ul><div class="agent" id="finance" style="--c:#c2410c"><span class="num">3</span><div><div class="an">Finance agent</div><div class="as">Web search for an analyst agent that needs exact, current numbers with primary-source citations. It&#x27;s job is to answer analyst questions with exact, current numbers and a primary-source citation.</div></div></div><figure><a href="img/finance_key_metrics.png" target="_blank" rel="noopener"><img src="img/finance_key_metrics.png" alt="Finance key metrics, all four providers" loading="lazy"></a><figcaption>Finance key metrics, all four providers · click to enlarge</figcaption></figure>
 
 <p><strong>You.com for real-time market Q&A; Parallel for deep research.</strong></p>
 <ul>
 <li><strong>You.com is best fit for analyst copilots answering live market and filing questions.</strong> You.com was right on prices on stocks, the 10-year yield, Bitcoins, current M&amp;A deals, and the JPMorgan timed events. It had the best precision latency, and the freshest results.</li>
 <li><strong>Parallel</strong> was the only provider to find out the un-employment claims on (the weekly count of people newly filing for jobless benefits). It's the pick for batch research or due diligence, where about 2 s per call is fine. Tavily returned nothing on the domain-filtered dol.gov, federalreserve.gov and sec.gov queries.</li>
-</ul><h3 id="finance-perq">What each API returned, per question</h3><p><strong>Finance takeaway:</strong> <strong>You.com and Parallel are the two APIs that reliably answered live market and filing questions.</strong> Both got the NVDA price, the 10-year yield, Bitcoin, the Fed minutes, the Stryker 8-K and the JPMorgan earnings date (F1–F3, F6, F8, F10). <strong>Parallel edges ahead because it was the only API to find the right week's jobless-claims report (F5).</strong> You.com's one miss on live prices was a WTI oil quote that was four hours old (F4). Tavily and Exa trail at 0.80. Tavily returned nothing on queries limited to government sites (dol.gov, federalreserve.gov, sec.gov), and Exa mostly returned stale prices (F1, F2, F4).</p>
-<figure class="wide"><a href="img/finance_query_grid.png" target="_blank" rel="noopener"><img src="img/finance_query_grid.png" alt="Finance per-query grid" loading="lazy"></a><figcaption>Finance per-query grid · click to enlarge</figcaption></figure><h3 id="finance-detail">Queries, answers and scorecard</h3><h4 class='sub'>Queries</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>QID</th>
-<th>Upstream task given to the agent</th>
-<th>Search call the agent sends</th>
-<th>Params</th>
-<th>What the agent needs back</th>
-<th>Freshness</th>
-<th>Answer key</th>
-<th>Source + Wayback link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>F1</td>
-<td>"Where is NVIDIA trading?"</td>
-<td><code>NVDA stock price</code></td>
-<td>window 24h</td>
-<td>Price, % change, timestamp</td>
-<td>Real-time</td>
-<td>~$235.6, down ~0.8% on the day: Yahoo $235.58 at 12:24 PM EDT before the run and $235.60 at 12:35 PM after (market open). Within ±0.5% counts; the Oct 7 close of $237.47 is stale.</td>
-<td><a href="https://finance.yahoo.com/quote/NVDA/">Yahoo Finance NVDA</a> · <a href="https://www.nasdaq.com/market-activity/stocks/nvda">Nasdaq NVDA</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F2</td>
-<td>"Where's the 10-year?"</td>
-<td><code>US 10-year Treasury yield</code></td>
-<td>window 24h</td>
-<td>Yield %, timestamp</td>
-<td>Real-time</td>
-<td>~5.27%: CNBC US10Y 5.265% at 12:25 PM EDT and 5.269% at 12:36 PM (prior close 5.277%; a 24-year high of 5.35% earlier in the session). Within ±3 bp counts; morning quotes of 5.31-5.35% do not.</td>
-<td><a href="https://www.cnbc.com/quotes/US10Y">CNBC US10Y</a> · <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates">Treasury rates</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F3</td>
-<td>"Bitcoin price?"</td>
-<td><code>BTC USD price</code></td>
-<td>window 24h</td>
-<td>Price, timestamp</td>
-<td>Real-time</td>
-<td>~$81,200-81,400: Coinbase spot $81,169 at run start (16:33Z) and $81,376 after (16:41Z), down ~2.5-3% on the day. Within ±1% counts.</td>
-<td><a href="https://www.coinbase.com/price/bitcoin">Coinbase BTC price</a> · <a href="https://api.coinbase.com/v2/prices/BTC-USD/spot">Coinbase spot API</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F4</td>
-<td>"How's oil moving today?"</td>
-<td><code>WTI crude oil price</code></td>
-<td>window 24h</td>
-<td>Price, change, timestamp</td>
-<td>Real-time</td>
-<td>~$91.00/bbl, up ~3% on the $88.28 prior close: CNBC @CL.1 $90.95 at 12:20 PM EDT and $91.04 at 12:31 PM (down from ~$92.8 at 11:26 AM). Within ±1% counts.</td>
-<td><a href="https://www.cnbc.com/quotes/@CL.1">CNBC @CL.1</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F5</td>
-<td>"What did jobless claims print?"</td>
-<td><code>initial jobless claims weekly report</code></td>
-<td>window 24h, domains: dol.gov</td>
-<td>Number, week ending, release time</td>
-<td>Real-time</td>
-<td>197,000 (seasonally adjusted, advance) for the week ending Oct 3, released Oct 8 at 8:30 a.m. ET; down 2,000 from the revised 199,000. The prior week's print was also 197,000, so the week must be right.</td>
-<td><a href="https://www.dol.gov/ui/data.pdf">DOL claims PDF</a> · <a href="https://www.dol.gov/newsroom/releases">DOL releases</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F6</td>
-<td>"Summarize the latest Fed minutes"</td>
-<td><code>FOMC minutes</code></td>
-<td>window 7 days, domains: federalreserve.gov</td>
-<td>Release date, 3 key points, federalreserve.gov link</td>
-<td>Week</td>
-<td>Minutes of the Sep 15-16, 2026 meeting, released Oct 7 at 2:00 p.m. EDT (<a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm">fomcminutes20260916</a>). The July minutes (released Aug 19) are stale.</td>
-<td><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">FOMC calendar</a> · Wayback: <a href="https://web.archive.org/web/20261008095612/https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">pilot snapshot</a>; v2 local copy only</td>
-</tr>
-<tr>
-<td>F7</td>
-<td>"List $1B+ M&amp;A deals announced in the last two days"</td>
-<td><code>definitive agreement to acquire billion</code></td>
-<td>window 48h</td>
-<td>Acquirer, target, value, date, source</td>
-<td>48h</td>
-<td>Open list: Viatris-Pacira BioSciences (~$1.65B, Oct 8) and Wittington/Fairfax-Boots (~US$8.9B, Oct 7). Oct 6 deals (RXO, Option Care, Sunrise) are borderline; Schneider-PTC (Oct 5) is out of window.</td>
-<td><a href="https://efts.sec.gov/LATEST/search-index?q=%22definitive%20agreement%22&amp;forms=8-K">SEC full-text search</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F8</td>
-<td>"Monitoring account Stryker: what did its latest 8-K report?"</td>
-<td><code>Stryker 8-K item 5.02</code></td>
-<td>window 7 days, domains: sec.gov</td>
-<td>Filing date, items, what changed (officer/director), EDGAR link</td>
-<td>Week</td>
-<td>8-K filed Oct 6, 2026 (Items 5.02, 7.01, 9.01): Kevin Lobo steps down as CEO Dec 31 and becomes Executive Chair; Spencer Stiles becomes CEO Jan 1, 2027 (<a href="https://www.sec.gov/Archives/edgar/data/310764/000119312526414956/0001193125-26-414956-index.htm">filing index</a>). The May 20 8-K is stale.</td>
-<td><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000310764&amp;type=8-K">EDGAR Stryker 8-Ks</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F9</td>
-<td>"Analyst asks about the Chilwa Minerals listing"</td>
-<td><code>Chilwa Minerals IPO price per share</code></td>
-<td>window 7 days</td>
-<td>IPO price, ticker, exchange, pricing date</td>
-<td>Week</td>
-<td>US$5.60 per ADS (625,000 ADSs, ~US$3.5M), ticker CHWM on the Nasdaq Capital Market, priced Oct 1, 2026 (release dated Sep 30). The expected $5.00 terms are stale.</td>
-<td><a href="https://www.nasdaq.com/market-activity/ipos">Nasdaq IPO calendar</a> · <a href="https://api.nasdaq.com/api/ipo/calendar?date=2026-10">Nasdaq IPO API</a> · Wayback: local copy only</td>
-</tr>
-<tr>
-<td>F10</td>
-<td>"When does JPMorgan report Q3?"</td>
-<td><code>JPMorgan third quarter 2026 earnings release date</code></td>
-<td>window 7 days</td>
-<td>Date, time of release and call</td>
-<td>Week (upcoming)</td>
-<td>Tuesday Oct 13, 2026: results before the open (~7:00 a.m. ET), call at 8:30 a.m. ET.</td>
-<td><a href="https://www.jpmorganchase.com/ir">JPMorganChase IR</a> · Wayback: <a href="https://web.archive.org/web/20261008095951/https://www.jpmorganchase.com/ir">pilot snapshot</a>; v2 local copy only</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class='sub'>What each API returned</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>QID</th>
-<th>You.com</th>
-<th>Tavily</th>
-<th>Exa</th>
-<th>Parallel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>F1</td>
-<td>$235.72 dated Oct 8, no intraday time (Robinhood)</td>
-<td>$235.22 at 12:05 PM EDT (Yahoo); only the Oct 7 close in 1 of 3 runs</td>
-<td>Stale: the Oct 7 close of $237.47</td>
-<td>$235.25 at 12:21 PM EDT (StockAnalysis)</td>
-</tr>
-<tr>
-<td>F2</td>
-<td>~5.27% (Trading Economics; CNBC 5.284% at 12:22 PM)</td>
-<td>No current yield: old Binance posts (4.33%, March); morning highs on repeats</td>
-<td>Stale: 5.322% from 5:19 AM, a morning high outside ±3 bp</td>
-<td>5.273% (CNBC); 5.28% (Trading Economics)</td>
-</tr>
-<tr>
-<td>F3</td>
-<td>$81,307 (CoinGecko), within 0.2% of spot</td>
-<td>$81,028 at 15:57 UTC (Yahoo)</td>
-<td>No point quote: "below $82,000" and older $82,650-82,970</td>
-<td>$81,063 (CoinMarketCap); $81,248 (CoinGecko)</td>
-</tr>
-<tr>
-<td>F4</td>
-<td>Stale: $92.63 at 8:18 AM ET, +1.7% vs the key</td>
-<td>$91.58, an Asian-session figure in tolerance by luck; $92.90 (11:52 AM) in 1 of 3 runs</td>
-<td>Stale: $92.29 at 10:43 AM EDT, +1.4%</td>
-<td>$90.91 (OilPrice.com, 10-min delayed); stale quotes in 2 of 3 runs</td>
-</tr>
-<tr>
-<td>F5</td>
-<td>None: 2 irrelevant dol.gov pages (2009-10 archive, a FOIA PDF)</td>
-<td>No results (dol.gov filter)</td>
-<td>No results (dol.gov filter)</td>
-<td>197,000 for the week ending Oct 3 (DOL PDF, released 8:30 a.m. Oct 8)</td>
-</tr>
-<tr>
-<td>F6</td>
-<td>Sep 15-16 minutes, released Oct 7, federalreserve.gov link, 2 key points</td>
-<td>No results (federalreserve.gov filter)</td>
-<td>Sep 15-16 minutes, released Oct 7, with link; 1 key point</td>
-<td>Sep 15-16 minutes, released Oct 7, press-release link; no key points</td>
-</tr>
-<tr>
-<td>F7</td>
-<td>Viatris-Pacira $1.65B (Oct 8) + borderline RXO, Hormel, Sunrise; old Roche deal excluded</td>
-<td>Schneider-PTC (Oct 5, out of window) shown as new; RXO borderline</td>
-<td>Wittington-Boots $8.9B (Oct 7) + Viatris-Pacira $1.65B (Oct 8)</td>
-<td>None in window (July and Sept deals); in-window deals on repeats 2-3</td>
-</tr>
-<tr>
-<td>F8</td>
-<td>Oct 6 8-K, Items 5.02/7.01/9.01, EDGAR index link; Stiles named incoming CEO</td>
-<td>No results (sec.gov filter)</td>
-<td>Other issuers' 8-Ks; no Stryker filing</td>
-<td>Oct 6 8-K: Lobo to Executive Chair, Stiles CEO from Jan 1, 2027</td>
-</tr>
-<tr>
-<td>F9</td>
-<td>$5.60 per ADS, CHWM, Nasdaq Capital Market, priced Sep 30/Oct 1</td>
-<td>$5.60, CHWM, Nasdaq, Oct 1</td>
-<td>$5.60 per ADS, Nasdaq Capital Market, Oct 1 (424B1 confirms)</td>
-<td>$5.60, CHWM, Nasdaq Capital Market, Oct 1; flagged stale $5.00 terms</td>
-</tr>
-<tr>
-<td>F10</td>
-<td>Tue Oct 13, release ~7:00 a.m. ET, call 8:30 a.m.</td>
-<td>Oct 13, ~7:00 release, 8:30 call; other companies' dates in 1 of 3 runs</td>
-<td>Oct 13, before the open; call 8:30 a.m. ET</td>
-<td>Oct 13, results ~7:00 a.m. ET, call 8:30 a.m.</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class='sub'>Metric scorecard</h4>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>You.com</th>
-<th>Tavily</th>
-<th>Exa</th>
-<th>Parallel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Search-only latency p50 · p95, server / client (ms)</td>
-<td>372 / 592 · 422 / 776 (fastest)</td>
-<td>1,465 / 1,642 · 1,699 / 1,889</td>
-<td>870 / 1,106 · 2,743 / 3,008</td>
-<td>n/a / 1,972 · n/a / 3,511</td>
-</tr>
-<tr>
-<td>Search-only calls ≤1 s, client (of 10); slowest call</td>
-<td>10 of 10; slowest 823 ms</td>
-<td>0 of 10; slowest 1,997 ms</td>
-<td>3 of 10; slowest 3,170 ms</td>
-<td>0 of 10; slowest 3,847 ms</td>
-</tr>
-<tr>
-<td>Accuracy score (% of max, 10 queries × 3 repeats)</td>
-<td>80%</td>
-<td>40%</td>
-<td>40%</td>
-<td><strong>88%</strong></td>
-</tr>
-<tr>
-<td>Freshness: % in window</td>
-<td><strong>45%</strong></td>
-<td>31%</td>
-<td>44%</td>
-<td>29%</td>
-</tr>
-<tr>
-<td>Freshness: newest relevant result (h)</td>
-<td>6.4</td>
-<td><strong>5.6</strong></td>
-<td>8.2</td>
-<td>16.6</td>
-</tr>
-<tr>
-<td>Content in one call</td>
-<td>90%</td>
-<td>70%</td>
-<td>90%</td>
-<td><strong>100%</strong></td>
-</tr>
-<tr>
-<td>Tokens, top-5 results: per query / per correct</td>
-<td>13,146 / 16,433</td>
-<td>11,737 / 25,644</td>
-<td>9,785 / 23,613</td>
-<td><strong>1,793 / 1,999</strong></td>
-</tr>
-<tr>
-<td>Search cost: per query / per correct ($)</td>
-<td>0.0150 / 0.0188</td>
-<td>0.0080 / 0.0160</td>
-<td>0.0063 / 0.0158</td>
-<td><strong>0.0050 / 0.0056</strong></td>
-</tr>
-</tbody>
-</table></div></section>
-<div class="part" id="setup">Developer experience</div><h2>Setup &amp; friction</h2>
-<figure class=""><a href="img/time_steps_activation.png" target="_blank" rel="noopener"><img src="img/time_steps_activation.png" alt="Time and steps to activation: sign-in to a copied API key" loading="lazy"></a><figcaption>Time and steps to activation: sign-in to a copied API key · click to enlarge</figcaption></figure>
+</ul>
+<div class="part" id="perq">Evidence</div><h2>Per query: what was asked, the right answer, and what each API returned</h2>
+<div class="agent" id="gtm-perq" style="--c:#6c4cf1"><span class="num">1</span><div><div class="an">GTM agent · per question</div><div class="as">What each API returned for the GTM queries</div></div></div><p><strong>You.com wins when the agent asks what's new.</strong> It was the only API to surface today's Apache Iggy activity (G3), and it was also right on this week's funding rounds and agent-memory posts (G8, G9). <strong>Parallel wins when the agent needs the official page</strong>, such as a project's release notes (G4, G6). <strong>Tavily wins on documentation lookups</strong>, such as Kafka's consumer settings (G5). For a GTM agent that watches for fresh buying signals, You.com is the better fit. An agent that mostly looks up release notes or docs is better served by Parallel or Tavily.</p>
+<figure><a href="img/gtm_query_grid.png" target="_blank" rel="noopener"><img src="img/gtm_query_grid.png" alt="GTM per-query grid" loading="lazy"></a><figcaption>GTM per-query grid · click to enlarge</figcaption></figure><div class="agent" id="insurance-perq" style="--c:#0f8a7e"><span class="num">2</span><div><div class="an">Insurance agent · per question</div><div class="as">What each API returned for the Insurance queries</div></div></div><p><strong>You.com returned the latest NHC hurricane advisory (I2)</strong>, but for current wind speed it returned a cached weather page instead of a live reading (I4). <strong>Exa was the only API to get both the live wind speed and both county warnings (I3, I4)</strong>, which is why it leads Insurance accuracy. No API found the Citizens binding suspension (I1), so an insurance agent still needs a direct check of carrier and regulator pages.</p>
+<figure><a href="img/insurance_query_grid.png" target="_blank" rel="noopener"><img src="img/insurance_query_grid.png" alt="Insurance per-query grid" loading="lazy"></a><figcaption>Insurance per-query grid · click to enlarge</figcaption></figure><div class="agent" id="finance-perq" style="--c:#c2410c"><span class="num">3</span><div><div class="an">Finance agent · per question</div><div class="as">What each API returned for the Finance queries</div></div></div><p><strong>You.com and Parallel are the two APIs that reliably answered live market and filing questions.</strong> Both got the NVDA price, the 10-year yield, Bitcoin, the Fed minutes, the Stryker 8-K and the JPMorgan earnings date (F1–F3, F6, F8, F10). <strong>Parallel edges ahead because it was the only API to find the right week's jobless-claims report (F5).</strong> You.com's one miss on live prices was a WTI oil quote that was four hours old (F4). Tavily and Exa trail at 0.80. Tavily returned nothing on queries limited to government sites (dol.gov, federalreserve.gov, sec.gov), and Exa mostly returned stale prices (F1, F2, F4).</p>
+<figure><a href="img/finance_query_grid.png" target="_blank" rel="noopener"><img src="img/finance_query_grid.png" alt="Finance per-query grid" loading="lazy"></a><figcaption>Finance per-query grid · click to enlarge</figcaption></figure>
+<div class="part" id="setup">Developer experience</div><h2>Setup &amp; friction: summary</h2>
+<figure><a href="img/time_steps_activation.png" target="_blank" rel="noopener"><img src="img/time_steps_activation.png" alt="Time and steps to activation: sign-in to a copied API key" loading="lazy"></a><figcaption>Time and steps to activation: sign-in to a copied API key · click to enlarge</figcaption></figure>
 
 <p>Time to activation is the seconds from signing in to copying a working API key, timed from the screen recordings. Steps to activation is the number of screens or clicks a developer must get through in between.*</p>
-<figure class=""><a href="img/activation_gates.png" target="_blank" rel="noopener"><img src="img/activation_gates.png" alt="What stands between sign-in and the API key" loading="lazy"></a><figcaption>What stands between sign-in and the API key · click to enlarge</figcaption></figure>
+<figure><a href="img/activation_gates.png" target="_blank" rel="noopener"><img src="img/activation_gates.png" alt="What stands between sign-in and the API key" loading="lazy"></a><figcaption>What stands between sign-in and the API key · click to enlarge</figcaption></figure>
 
 <p><strong>Where You.com could remove friction (quick wins):</strong></p>
 <ol>
@@ -963,8 +169,9 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 <li><strong>Make the advertised credit match what's usable at signup</strong>, or move the verification step after the first call.</li>
 <li><strong>Return the remaining credit or the cost per call in the API response</strong>, as Exa (<code>costDollars</code>) and Parallel (usage) do. Today it is visible only in the dashboard.</li>
 </ol>
-<h3 id="setup-log">Detailed, timed friction log</h3>
-<p>Signup and key steps captured with Scribe, dashboard errors with Jam; every API anomaly during runs is logged automatically by the harness.</p>
+<div class="part" id="deep">Appendix</div><h2>Details and deep dives</h2>
+<p class="muted">Open any section to read the full data.</p>
+<details class="faq"><summary>Detailed timed setup and friction log</summary><div class="faqb"><p>Signup and key steps captured with Scribe, dashboard errors with Jam; every API anomaly during runs is logged automatically by the harness.</p>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -1202,9 +409,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 <td>0.1</td>
 </tr>
 </tbody>
-</table></div>
-<div class="part" id="method">Methodology</div><h2>How each result was judged</h2>
-<div class="tw"><table>
+</table></div></div></details><details class="faq"><summary>How each result was judged</summary><div class="faqb"><div class="tw"><table>
 <thead>
 <tr>
 <th>#</th>
@@ -1263,57 +468,553 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 <td>promptfoo</td>
 </tr>
 </tbody>
-</table></div>
-<h3 id="sources">Sources</h3>
-<p>As of Oct 8, 2026.</p>
-<ul>
-<li><strong>Harnesses and grading:</strong> <a href="https://www.promptfoo.dev/">promptfoo</a>; <a href="https://github.com/youdotcom-oss/web-search-api-evals">You.com web-search-api-evals</a>; <a href="https://github.com/tavily-ai/tavily-search-evals">Tavily tavily-search-evals</a>; <a href="https://arxiv.org/html/2411.04368">SimpleQA paper</a>; <a href="https://arxiv.org/pdf/2310.03214">FreshLLMs / FreshQA</a>; <a href="https://htmldate.readthedocs.io/en/latest/evaluation.html">htmldate evaluation</a>; <a href="https://web.archive.org/save">Wayback Machine Save Page Now</a></li>
-<li><strong>Proof points and third-party results:</strong> <a href="https://you.com/resources/knowledge-parameter-web-search-api">You.com knowledge parameter (VerticalRTK)</a>; <a href="https://you.com/resources/introducing-the-finance-research-api-agentic-research-no-infra-required">You.com Finance Research API</a>; <a href="https://you.com/pricing">You.com pricing</a>; <a href="https://artificialanalysis.ai/agents/search-api">Artificial Analysis Search Index</a>; <a href="https://openbenchmarks.com/web-search">Openbenchmarks web search</a></li>
-</ul>
-<h3 id="raw">Raw data locations</h3>
+</table></div></div></details><details class="faq"><summary>GTM agent: queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
 <div class="tw"><table>
 <thead>
 <tr>
-<th>Data</th>
-<th>Location</th>
+<th>QID</th>
+<th>Upstream task given to the agent</th>
+<th>Search call the agent sends</th>
+<th>Params</th>
+<th>What the agent needs back</th>
+<th>Freshness</th>
+<th>Answer key</th>
+<th>Source + Wayback link</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>G1</td><td>"Find developers hitting Kafka latency problems right now"</td><td><code>kafka consumer lag high latency issue</code></td><td>window last ~6 h (tightest available), domains: github.com</td><td>Issue URLs opened in the last 6 hours, repo/org, time, the error described</td><td>Real-time</td><td class="clipcell"><div class="clip" title="Brighter#4560 (opened 10:51Z, Kafka publish confirms delay under load) or NOFireAI/opentelemetry-demo#7024 (15:50Z, Kafka consumer-lag spike). Issues opened Oct 7 are out of window."><a href="https://github.com/BrighterCommand/Brighter/issues/4560">Brighter#4560</a> (opened 10:51Z, Kafka publish confirms delay under load) or NOFireAI/opentelemetry-demo#7024 (15:50Z, Kafka consumer-lag spike). Issues opened Oct 7 are out of window.</div></td><td class="clipcell"><div class="clip" title="GitHub issue search · Wayback: snapshot"><a href="https://github.com/search?q=kafka+consumer+lag+latency&amp;type=issues&amp;s=created&amp;o=desc">GitHub issue search</a> · Wayback: <a href="https://web.archive.org/web/20261008154559/https://github.com/search?q=kafka+consumer+lag+latency&amp;type=issues&amp;s=created&amp;o=desc">snapshot</a></div></td></tr>
+<tr><td>G2</td><td>"Account signal: anything new at Confluent today?"</td><td><code>Confluent news</code></td><td>window 24h</td><td>Headline, date, link or "none" in the last 24h</td><td>Real-time</td><td class="clipcell"><div class="clip" title="All Things Open interview with Confluent VP Tim Berglund, dated Oct 8. No new official Confluent blog post in 24h (newest Oct 1); undated pages and the IBM deal do not count. &quot;None&quot; is wrong."><a href="https://allthingsopen.org/articles/ai-strategy-data-strategy-confluent">All Things Open interview</a> with Confluent VP Tim Berglund, dated Oct 8. No new official Confluent blog post in 24h (newest Oct 1); undated pages and the IBM deal do not count. "None" is wrong.</div></td><td class="clipcell"><div class="clip" title="Confluent blog · Wayback: snapshot"><a href="https://www.confluent.io/blog/">Confluent blog</a> · Wayback: <a href="https://web.archive.org/web/20261008145909/https://www.confluent.io/blog/">snapshot</a></div></td></tr>
+<tr><td>G3</td><td>"Any new mentions of Apache Iggy in the last day?"</td><td><code>"Apache Iggy"</code></td><td>window 24h</td><td>Every mention (repo, blog, forum) in 24h, date or "none"</td><td>Real-time</td><td class="clipcell"><div class="clip" title="32 new apache/iggy issues and PRs in window, e.g. #4466 (13:37Z), #4443 (10:53Z), #4438 (08:31Z). No blog or HN mention. &quot;None&quot; is wrong.">32 new apache/iggy issues and PRs in window, e.g. #4466 (13:37Z), #4443 (10:53Z), #4438 (08:31Z). No blog or HN mention. "None" is wrong.</div></td><td class="clipcell"><div class="clip" title="apache/iggy · Wayback: snapshot"><a href="https://github.com/apache/iggy">apache/iggy</a> · Wayback: <a href="https://web.archive.org/web/20261008150545/https://github.com/apache/iggy">snapshot</a></div></td></tr>
+<tr><td>G4</td><td>"Draft a note on Apache Iggy's latest release for a prospect"</td><td><code>Apache Iggy release notes</code></td><td>window 7 days, domains: github.com, iggy.apache.org</td><td>Latest release version, date, key changes, link</td><td>Week</td><td class="clipcell"><div class="clip" title="server-0.9.0, released Sep 18 (GitHub &quot;Latest&quot;): consensus per partition (VSR clustering), QUIC/TLS/WS transports, Delta Lake sink, Avro. The downloads page&#x27;s 0.5.0-incubating is wrong."><a href="https://github.com/apache/iggy/releases/tag/server-0.9.0">server-0.9.0</a>, released Sep 18 (GitHub "Latest"): consensus per partition (VSR clustering), QUIC/TLS/WS transports, Delta Lake sink, Avro. The downloads page's 0.5.0-incubating is wrong.</div></td><td class="clipcell"><div class="clip" title="Iggy releases · Wayback: snapshot"><a href="https://github.com/apache/iggy/releases">Iggy releases</a> · Wayback: <a href="https://web.archive.org/web/20261008150847/https://github.com/apache/iggy/releases">snapshot</a></div></td></tr>
+<tr><td>G5</td><td>Coding agent fixing a consumer-lag bug needs the official tuning guidance</td><td><code>kafka consumer lag max.poll.records fetch.min.bytes</code></td><td>window 1 year, domains: kafka.apache.org, docs.confluent.io</td><td>Official doc URL, what each setting does, recommended direction</td><td>Year</td><td class="clipcell"><div class="clip" title="Official Kafka or Confluent consumer-config page. max.poll.records = max records per poll() (default 500); lower it if processing risks max.poll.interval.ms. fetch.min.bytes = min data per fetch (default 1 byte); raising it trades latency for throughput. Both settings needed.">Official Kafka or Confluent consumer-config page. max.poll.records = max records per poll() (default 500); lower it if processing risks max.poll.interval.ms. fetch.min.bytes = min data per fetch (default 1 byte); raising it trades latency for throughput. Both settings needed.</div></td><td class="clipcell"><div class="clip" title="Confluent consumer configs · Wayback: snapshot"><a href="https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html">Confluent consumer configs</a> · Wayback: <a href="https://web.archive.org/web/20261008151030/https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html">snapshot</a></div></td></tr>
+<tr><td>G6</td><td>"Competitive brief: what's the latest NATS server release?"</td><td><code>NATS server release</code></td><td>window 7 days, domains: github.com</td><td>Version, release date, link</td><td>Week</td><td class="clipcell"><div class="clip" title="v2.15.1-RC.2 (pre-release, Oct 6) or v2.15.0 (latest stable, Sep 17) both count; an older version as latest is wrong."><a href="https://github.com/nats-io/nats-server/releases/tag/v2.15.1-RC.2">v2.15.1-RC.2</a> (pre-release, Oct 6) or <a href="https://github.com/nats-io/nats-server/releases/tag/v2.15.0">v2.15.0</a> (latest stable, Sep 17) both count; an older version as latest is wrong.</div></td><td class="clipcell"><div class="clip" title="NATS releases · Wayback: snapshot"><a href="https://github.com/nats-io/nats-server/releases">NATS releases</a> · Wayback: <a href="https://web.archive.org/web/20261008111533/https://github.com/nats-io/nats-server/releases">snapshot</a></div></td></tr>
+<tr><td>G7</td><td>"Is Confluent Cloud having an incident right now?" (outage = switching trigger)</td><td><code>Confluent Cloud incident</code></td><td>window 24h, domains: status.confluent.cloud</td><td>Active incident yes/no, component, start time or "none"</td><td>Real-time</td><td class="clipcell"><div class="clip" title="None: no active incident (unresolved.json empty, All Systems Operational at 15:51-15:59Z). The Azure Germany West Central incident (11:00-11:56Z) was resolved; showing it or the Sep 21 incident as current is wrong.">None: no active incident (unresolved.json empty, All Systems Operational at 15:51-15:59Z). The Azure Germany West Central incident (11:00-11:56Z) was resolved; showing it or the Sep 21 incident as current is wrong.</div></td><td class="clipcell"><div class="clip" title="Confluent status · Wayback: snapshot"><a href="https://status.confluent.cloud/">Confluent status</a> · Wayback: <a href="https://web.archive.org/web/20261008155137/https://status.confluent.cloud/api/v2/incidents/unresolved.json">snapshot</a></div></td></tr>
+<tr><td>G8</td><td>"Which AI-agent / data-infra startups just raised money?"</td><td><code>AI agent infrastructure startup funding round</code></td><td>window 48h</td><td>Company, amount, lead investor, date, link</td><td>48h</td><td class="clipcell"><div class="clip" title="Open-world: any AI-agent or data-infra round announced in the 48h window with company + amount, e.g. Vesta $30M and Mecka AI $60M (TechCrunch, Oct 8). Rounds before Oct 6 15:52Z (Namespace $42M) are out of window.">Open-world: any AI-agent or data-infra round announced in the 48h window with company + amount, e.g. Vesta $30M and Mecka AI $60M (TechCrunch, Oct 8). Rounds before Oct 6 15:52Z (Namespace $42M) are out of window.</div></td><td class="clipcell"><div class="clip" title="TechCrunch venture · Wayback: snapshot"><a href="https://techcrunch.com/category/venture/">TechCrunch venture</a> · Wayback: <a href="https://web.archive.org/web/20261008111803/https://techcrunch.com/category/venture/">snapshot</a></div></td></tr>
+<tr><td>G9</td><td>"Find this week's content about memory/event logs for AI agents"</td><td><code>durable event log memory for AI agents</code></td><td>window 7 days</td><td>Article URLs, author/org, date</td><td>Week</td><td class="clipcell"><div class="clip" title="Open-world: 126 HN items in window, e.g. &quot;Agents Don&#x27;t Need Another Memory API&quot; (Oct 7); any dated in-window article counts.">Open-world: 126 HN items in window, e.g. "Agents Don't Need Another Memory API" (Oct 7); any dated in-window article counts.</div></td><td class="clipcell"><div class="clip" title="HN Algolia search · Wayback: snapshot"><a href="https://hn.algolia.com/?query=agent%20memory&amp;sort=byDate">HN Algolia search</a> · Wayback: <a href="https://web.archive.org/web/20261008111956/https://hn.algolia.com/?query=agent%20memory&amp;sort=byDate">snapshot</a></div></td></tr>
+<tr><td>G10</td><td>"Competitive brief: published Redpanda vs Kafka latency benchmarks"</td><td><code>Redpanda vs Kafka p99 latency benchmark</code></td><td>window 1 year</td><td>Benchmark source, date, p99 numbers, who ran it</td><td>Year</td><td class="clipcell"><div class="clip" title="Open-world criterion: a benchmark dated in the last year with Redpanda vs Kafka p99 numbers and who ran it. Redpanda&#x27;s own 2022 benchmark is out of window; no official post in the year.">Open-world criterion: a benchmark dated in the last year with Redpanda vs Kafka p99 numbers and who ran it. Redpanda's own 2022 benchmark is out of window; no official post in the year.</div></td><td class="clipcell"><div class="clip" title="Redpanda blog · Wayback: snapshot"><a href="https://www.redpanda.com/blog">Redpanda blog</a> · Wayback: <a href="https://web.archive.org/web/20261008151435/https://www.redpanda.com/blog">snapshot</a></div></td></tr>
+</tbody>
+</table></div>
+<h4>What each API returned</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>QID</th>
+<th>You.com</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Parallel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>promptfoo configs per industry</td>
-<td><code>eval/config/</code></td>
+<td>G1</td>
+<td>Issues opened Oct 7, just outside the 6 h window</td>
+<td>No results</td>
+<td>Generic repo issue-list pages, no Kafka issue</td>
+<td>Undated Kafka-lag tool repos, no issues</td>
 </tr>
 <tr>
-<td>Raw provider responses and promptfoo JSON exports</td>
-<td><code>eval/out/raw/</code></td>
+<td>G2</td>
+<td>Keyword noise; missed the Oct 8 ATO interview</td>
+<td>ATO interview with Confluent's VP (Oct 8), in 2 of 3 runs</td>
+<td>ATO interview with Confluent's VP (Oct 8)</td>
+<td>Undated newsroom and profile pages</td>
 </tr>
 <tr>
-<td>Answer keys, screenshots, Wayback links, raw API JSON</td>
-<td><code>eval/evidence/</code></td>
+<td>G3</td>
+<td>5 in-window apache/iggy issues (Oct 8)</td>
+<td>Undated Reddit post, rest noise</td>
+<td>Matched "Apache" only, no Iggy</td>
+<td>Evergreen landing pages, nothing dated</td>
 </tr>
 <tr>
-<td>Ground-truth lists for recall</td>
-<td><code>eval/ground_truth/</code></td>
+<td>G4</td>
+<td>GitHub issues, no release page</td>
+<td>No results</td>
+<td>Other Apache projects' issue lists</td>
+<td>server-0.9.0 (Sep 18) with release link</td>
 </tr>
 <tr>
-<td>Friction log and per-provider summary</td>
-<td><code>eval/friction_log.csv</code>, <code>eval/friction/friction_summary.csv</code></td>
+<td>G5</td>
+<td>Right official pages, but both settings cut from the text</td>
+<td>Confluent docs, both settings described</td>
+<td>Official Kafka pages, only fetch.min.bytes visible</td>
+<td>max.poll.records named, not described</td>
 </tr>
 <tr>
-<td>SimpleQA control runs (three harnesses)</td>
-<td><code>eval/crosscheck/</code></td>
+<td>G6</td>
+<td>GitHub issues, no release page</td>
+<td>Other projects' release pages</td>
+<td>nats-io issue lists, no release</td>
+<td>v2.15.1-RC.2 (Oct 6) and v2.15.0 stable</td>
+</tr>
+<tr>
+<td>G7</td>
+<td>No active incident; flagged the cached Sep 21 page as stale</td>
+<td>No results, read as "none"</td>
+<td>No results, read as "none"</td>
+<td>No active incident; history page header only</td>
+</tr>
+<tr>
+<td>G8</td>
+<td>Manus $500M+ (Oct 8), no lead investor</td>
+<td>TODAY €2.8M seed (Oct 8), Monid $7.7M</td>
+<td>5 in-window raises (Ampersand, Monid, Nous, Rein)</td>
+<td>Rein Security $25M (Oct 8)</td>
+</tr>
+<tr>
+<td>G9</td>
+<td>Arize, dev.to and Ability.ai articles (Oct 2-6)</td>
+<td>4 in-window articles (Oct 4-7)</td>
+<td>4 in-window items (Like One, Databricks, arXiv, AgentLensHQ)</td>
+<td>On-topic, but nothing dated this week</td>
+</tr>
+<tr>
+<td>G10</td>
+<td>Medium p99 numbers in window; who ran them not stated</td>
+<td>Vendor pages, no Redpanda vs Kafka p99</td>
+<td>5 dated benchmarks with authors, no p99 numbers</td>
+<td>In-window benchmark without p99</td>
 </tr>
 </tbody>
 </table></div>
+<h4>Metric scorecard</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>You.com</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search-only latency p50 · p95, server / client (ms)</td>
+<td>381 / 627 · 512 / 751 (fastest)</td>
+<td>2,670 / 2,843 · 3,295 / 3,425</td>
+<td>812 / 1,102 · 3,178 / 3,403</td>
+<td>n/a / 2,268 · n/a / 4,268</td>
+</tr>
+<tr>
+<td>Search-only calls ≤1 s, client (of 10); slowest call</td>
+<td>10 of 10; slowest 781 ms</td>
+<td>0 of 10; slowest 3,473 ms</td>
+<td>3 of 10; slowest 3,419 ms</td>
+<td>1 of 10; slowest 4,289 ms</td>
+</tr>
+<tr>
+<td>Accuracy score (% of max, 10 queries × 3 repeats)</td>
+<td>45%</td>
+<td>47%</td>
+<td>45%</td>
+<td>45%</td>
+</tr>
+<tr>
+<td>Freshness: % in window</td>
+<td><strong>75%</strong></td>
+<td>47%</td>
+<td>58%</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>Freshness: newest relevant result (h)</td>
+<td><strong>4.1</strong></td>
+<td>39.9</td>
+<td>15.9</td>
+<td>399.9</td>
+</tr>
+<tr>
+<td>Content in one call</td>
+<td><strong>100%</strong></td>
+<td>70%</td>
+<td>90%</td>
+<td><strong>100%</strong></td>
+</tr>
+<tr>
+<td>Tokens, top-5 results: per query / per correct</td>
+<td>95,707 / 239,254</td>
+<td>20,199 / 42,276</td>
+<td>10,563 / 26,409</td>
+<td><strong>1,814 / 4,887</strong></td>
+</tr>
+<tr>
+<td>Search cost: per query / per correct ($)</td>
+<td>0.0150 / 0.0375</td>
+<td>0.0080 / 0.0160</td>
+<td>0.0063 / 0.0158</td>
+<td><strong>0.0050 / 0.0125</strong></td>
+</tr>
+</tbody>
+</table></div></div></details><details class="faq"><summary>Insurance agent: queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>QID</th>
+<th>Upstream task given to the agent</th>
+<th>Search call the agent sends</th>
+<th>Params</th>
+<th>What the agent needs back</th>
+<th>Freshness</th>
+<th>Answer key</th>
+<th>Source + Wayback link</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>I1</td><td>Caller wants a new Florida homeowners policy</td><td><code>Citizens Property Insurance binding suspension Florida</code></td><td>window 24h, domains: citizensfla.com</td><td>Suspended yes/no, scope, effective date/time</td><td>Real-time</td><td class="clipcell"><div class="clip" title="Yes: statewide binding suspension (&quot;Isaias: No Policy Binding&quot;), no new policies or added coverage anywhere in Florida, effective Oct 7, 2026, 11:05 a.m.; still posted before and after the run.">Yes: statewide binding suspension ("Isaias: No Policy Binding"), no new policies or added coverage anywhere in Florida, effective Oct 7, 2026, 11:05 a.m.; still posted before and after the run.</div></td><td class="clipcell"><div class="clip" title="Citizens binding alerts · Wayback: snapshot"><a href="https://www.citizensfla.com/">Citizens binding alerts</a> · Wayback: <a href="https://web.archive.org/web/20261008112205/https://www.citizensfla.com/">snapshot</a></div></td></tr>
+<tr><td>I2</td><td>Caller in Pensacola asks if the storm is coming</td><td><code>Hurricane Isaias latest advisory NHC</code></td><td>window 24h</td><td>Advisory #, time, location, max winds, landfall forecast</td><td>Real-time</td><td class="clipcell"><div class="clip" title="Yes, heading for Pensacola: NHC Public Advisory #8, 10:00 AM CDT (15:00Z) Oct 8: 23.7N 90.2W, ~500 mi SSW of Pensacola, 85 mph, 975 mb, moving ENE at 10 mph; landfall on the north-central Gulf coast Friday night. Unchanged before and after the run.">Yes, heading for Pensacola: NHC Public Advisory #8, 10:00 AM CDT (15:00Z) Oct 8: 23.7N 90.2W, ~500 mi SSW of Pensacola, 85 mph, 975 mb, moving ENE at 10 mph; landfall on the north-central Gulf coast Friday night. Unchanged before and after the run.</div></td><td class="clipcell"><div class="clip" title="NHC advisories · Wayback: snapshot (existing 09:03Z snapshot); CurrentStorms.json: local copy only"><a href="https://www.nhc.noaa.gov/">NHC advisories</a> · Wayback: <a href="https://web.archive.org/web/20261008090330/https://www.nhc.noaa.gov/">snapshot</a> (existing 09:03Z snapshot); CurrentStorms.json: local copy only</div></td></tr>
+<tr><td>I3</td><td>Agent must check warnings for the policy's county before binding</td><td><code>hurricane warning Escambia County Florida active</code></td><td>window 24h</td><td>Active warning types, issued time</td><td>Real-time</td><td class="clipcell"><div class="clip" title="Hurricane Warning (Escambia Inland and Coastal) and Storm Surge Warning (Escambia Coastal), NWS Mobile, latest update 10:06 AM CDT Oct 8 (an earlier Oct 7-8 issue time also counts).">Hurricane Warning (Escambia Inland and Coastal) and Storm Surge Warning (Escambia Coastal), NWS Mobile, latest update 10:06 AM CDT Oct 8 (an earlier Oct 7-8 issue time also counts).</div></td><td class="clipcell"><div class="clip" title="NWS alerts API · Wayback: snapshot"><a href="https://api.weather.gov/alerts/active?zone=FLC033,FLZ201,FLZ202">NWS alerts API</a> · Wayback: <a href="https://web.archive.org/web/20261008112313/https://api.weather.gov/alerts/active?zone=FLC033,FLZ201,FLZ202">snapshot</a></div></td></tr>
+<tr><td>I4</td><td>Claims agent validating a wind-damage report in progress</td><td><code>Pensacola weather wind speed</code></td><td>window 24h</td><td>Current wind speed/gusts, observation time</td><td>Real-time</td><td class="clipcell"><div class="clip" title="Pensacola Intl (KPNS): 15:50Z observation 10.4 mph NE, gusts 16.1 mph; 16:00Z observation 9.2 mph ENE, no gust. Either counts (within 5 mph, at most 1 h old); the hurricane was still ~500 mi offshore.">Pensacola Intl (KPNS): 15:50Z observation 10.4 mph NE, gusts 16.1 mph; 16:00Z observation 9.2 mph ENE, no gust. Either counts (within 5 mph, at most 1 h old); the hurricane was still ~500 mi offshore.</div></td><td class="clipcell"><div class="clip" title="KPNS observations API · Wayback: local copy only"><a href="https://api.weather.gov/stations/KPNS/observations/latest">KPNS observations API</a> · Wayback: local copy only</div></td></tr>
+<tr><td>I5</td><td>Policyholder asks if they must evacuate</td><td><code>Baldwin County Alabama evacuation order Isaias</code></td><td>window 24h</td><td>Order in effect yes/no, zones, time</td><td>Real-time</td><td class="clipcell"><div class="clip" title="None: no mandatory evacuation order (a voluntary evacuation for coastal and low-lying areas is compatible); Hurricane and Storm Surge Warnings in effect. Moderate confidence: EMA sub-pages not captured.">None: no mandatory evacuation order (a voluntary evacuation for coastal and low-lying areas is compatible); Hurricane and Storm Surge Warnings in effect. Moderate confidence: EMA sub-pages not captured.</div></td><td class="clipcell"><div class="clip" title="Baldwin County EMA · NWS alerts API · Wayback: EMA, NWS alerts"><a href="https://baldwincountyal.gov/departments/EMA">Baldwin County EMA</a> · <a href="https://api.weather.gov/alerts/active?zone=ALC003">NWS alerts API</a> · Wayback: <a href="https://web.archive.org/web/20261008112609/https://baldwincountyal.gov/services/ema">EMA</a>, <a href="https://web.archive.org/web/20261008112650/https://api.weather.gov/alerts/active?zone=ALC003">NWS alerts</a></div></td></tr>
+<tr><td>I6</td><td>Claims ops checks whether federal aid applies</td><td><code>FEMA disaster declaration Hurricane Isaias 2026</code></td><td>window 48h</td><td>Declaration number + date — or "none yet" (beware older "Isaias")</td><td>48h</td><td class="clipcell"><div class="clip" title="None yet: all 183 OpenFEMA records titled Isaias are from 2020-21; none in the 48 h window.">None yet: all 183 OpenFEMA records titled Isaias are from 2020-21; none in the 48 h window.</div></td><td class="clipcell"><div class="clip" title="FEMA declarations API · FEMA declarations · Wayback: local copy only (Wayback HTTP 523)"><a href="https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries">FEMA declarations API</a> · <a href="https://www.fema.gov/disaster/declarations">FEMA declarations</a> · Wayback: local copy only (Wayback HTTP 523)</div></td></tr>
+<tr><td>I7</td><td>Compliance agent checks for new regulator orders</td><td><code>Florida OIR OR Alabama DOI emergency order Isaias insurance</code></td><td>window 48h</td><td>Order/bulletin, issuer, date — or "none"</td><td>48h</td><td class="clipcell"><div class="clip" title="None: no Isaias emergency order or bulletin from Florida OIR or Alabama DOI in 48 h; an ALDOI consumer release and an FLOIR refill notice (both Oct 7) are not orders. Moderate confidence: order sub-pages not captured.">None: no Isaias emergency order or bulletin from Florida OIR or Alabama DOI in 48 h; an ALDOI consumer release and an FLOIR refill notice (both Oct 7) are not orders. Moderate confidence: order sub-pages not captured.</div></td><td class="clipcell"><div class="clip" title="FLOIR · Alabama DOI · Wayback: FLOIR, ALDOI"><a href="https://floir.com/">FLOIR</a> · <a href="https://www.aldoi.gov/">Alabama DOI</a> · Wayback: <a href="https://web.archive.org/web/20261008113340/https://floir.gov/">FLOIR</a>, <a href="https://web.archive.org/web/20261008113421/https://aldoi.gov/">ALDOI</a></div></td></tr>
+<tr><td>I8</td><td>Underwriting checks which states declared emergencies</td><td><code>governor state of emergency Hurricane Isaias</code></td><td>window 7 days</td><td>States, date of each declaration</td><td>Week</td><td class="clipcell"><div class="clip" title="Florida: EO 26-202, Oct 6 (25 counties); Alabama: Oct 7. Mississippi: none as of 15:27Z; Louisiana: not determinable.">Florida: EO 26-202, Oct 6 (25 counties); Alabama: Oct 7. Mississippi: none as of 15:27Z; Louisiana: not determinable.</div></td><td class="clipcell"><div class="clip" title="Florida governor · Alabama governor · Louisiana governor · Mississippi governor · Wayback: FL, AL, LA, MS"><a href="https://www.flgov.com/eog/news/press">Florida governor</a> · <a href="https://governor.alabama.gov/newsroom/">Alabama governor</a> · <a href="https://gov.louisiana.gov/news">Louisiana governor</a> · <a href="https://governor.ms.gov/">Mississippi governor</a> · Wayback: <a href="https://web.archive.org/web/20261008113558/https://www.flgov.com/eog/news/press">FL</a>, <a href="https://web.archive.org/web/20261008113637/https://governor.alabama.gov/newsroom/">AL</a>, <a href="https://web.archive.org/web/20261008113716/https://gov.louisiana.gov/news">LA</a>, <a href="https://web.archive.org/web/20261008113757/https://governorreeves.ms.gov/">MS</a></div></td></tr>
+<tr><td>I9</td><td>Claims agent validating a Texas hail claim</td><td><code>Texas hail storm reports</code></td><td>window 24h, domains: spc.noaa.gov</td><td>Locations, dates, hail size — or "none"</td><td>24h</td><td class="clipcell"><div class="clip" title="None: no Texas hail reports in SPC preliminary storm reports for the last 24 h; the only hail report was in Wilson, Niagara Co., NY (1.00 in, 01:30Z).">None: no Texas hail reports in SPC preliminary storm reports for the last 24 h; the only hail report was in Wilson, Niagara Co., NY (1.00 in, 01:30Z).</div></td><td class="clipcell"><div class="clip" title="SPC today · SPC yesterday · Wayback: local copy only"><a href="https://www.spc.noaa.gov/climo/reports/today.html">SPC today</a> · <a href="https://www.spc.noaa.gov/climo/reports/yesterday.html">SPC yesterday</a> · Wayback: local copy only</div></td></tr>
+<tr><td>I10</td><td>Caller asks whether their 2024 Toyota RAV4 has an open recall</td><td><code>NHTSA recall 2024 Toyota RAV4</code></td><td>window 1 year, domains: nhtsa.gov</td><td>Recall campaign number(s), component, date</td><td>Year</td><td class="clipcell"><div class="clip" title="Three NHTSA campaigns: 24V911000 (Dec 2024, front brake caliper bolts), 25V595000 (Sep 2025, instrument cluster software) and 25V744000 (Oct 2025, rearview camera). All three = correct; a subset = partial (26V179000, RAV4 Hybrid load label, also counts).">Three NHTSA campaigns: 24V911000 (Dec 2024, front brake caliper bolts), 25V595000 (Sep 2025, instrument cluster software) and 25V744000 (Oct 2025, rearview camera). All three = correct; a subset = partial (26V179000, RAV4 Hybrid load label, also counts).</div></td><td class="clipcell"><div class="clip" title="NHTSA recalls API · NHTSA recalls · Wayback: local copy only"><a href="https://api.nhtsa.gov/recalls/recallsByVehicle?make=toyota&amp;model=rav4&amp;modelYear=2024">NHTSA recalls API</a> · <a href="https://www.nhtsa.gov/recalls">NHTSA recalls</a> · Wayback: local copy only</div></td></tr>
+</tbody>
+</table></div>
+<h4>What each API returned</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>QID</th>
+<th>You.com</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I1</td>
+<td>2020-23 Citizens minutes and contracts; active suspension missed</td>
+<td>No results; suspension missed</td>
+<td>No results; suspension missed</td>
+<td>Evergreen binding rule + 2024 Helene page; suspension missed</td>
+</tr>
+<tr>
+<td>I2</td>
+<td>10 AM CDT advisory (#8, by time): 23.7N 90.2W, 86 mph</td>
+<td>Stale: newest item Advisory #6A</td>
+<td>Advisory #8, 10 AM CDT, ~85 mph; warning area includes Pensacola</td>
+<td>10 AM CDT advisory, 86 mph; a stale 8 a.m. advisory in 1 of 3 runs</td>
+</tr>
+<tr>
+<td>I3</td>
+<td>Hurricane Warning only, no time; Storm Surge Warning missing</td>
+<td>Hurricane Warning only; Storm Surge Warning missing</td>
+<td>Both warnings for Escambia, issued 9:53 PM CDT Oct 7</td>
+<td>Hurricane Warning (issued ~10 p.m. Oct 7); Storm Surge Warning missing</td>
+</tr>
+<tr>
+<td>I4</td>
+<td>Stale cached weather pages (NWS block from Aug 5, Fox Weather from Feb 16)</td>
+<td>Averages and forecasts; current 13 mph ENE (16:00Z) on repeats 2-3 only</td>
+<td>13 mph NE at 11:00 AM CDT (model estimate)</td>
+<td>Forecasts only; newest station report ~5 h old</td>
+</tr>
+<tr>
+<td>I5</td>
+<td>No mandatory order; voluntary coastal evacuation (Oct 7)</td>
+<td>No mandatory order; voluntary evacuation in effect</td>
+<td>Explicitly "no mandatory evacuation"; voluntary in effect</td>
+<td>No mandatory order; voluntary recommendation (Oct 7)</td>
+</tr>
+<tr>
+<td>I6</td>
+<td>None yet; only Florida's state of emergency</td>
+<td>None yet; off-target results</td>
+<td>None yet; no 2020 declaration surfaced</td>
+<td>None yet; FEMA press page (Oct 7) shows no Isaias declaration</td>
+</tr>
+<tr>
+<td>I7</td>
+<td>None; no regulator order in results</td>
+<td>No results (correct none by default)</td>
+<td>None; found the Oct 7 FLOIR notice and ALDOI release and did not call them orders</td>
+<td>None; old Helene order labelled as old</td>
+</tr>
+<tr>
+<td>I8</td>
+<td>FL EO 26-202 (Oct 6); AL named without its date</td>
+<td>FL (Oct 6) + AL (Oct 7)</td>
+<td>FL EO 26-202 (Oct 6) only; AL missing</td>
+<td>AL (Oct 7) + FL EO 26-202 (Oct 6)</td>
+</tr>
+<tr>
+<td>I9</td>
+<td>None: a 1998 SPC paper and the reports index, no storm data</td>
+<td>No results, read as "none"</td>
+<td>No results, read as "none"</td>
+<td>No results, read as "none"</td>
+</tr>
+<tr>
+<td>I10</td>
+<td>Only 26V179 (2024 RAV4 Hybrid label); 24V911000 missed</td>
+<td>25V595 + 25V744 + 26V179; 24V911000 missed</td>
+<td>2 results: a Lexus recall excerpt and a Nissan page; no RAV4 recall</td>
+<td>25V744 + 26V179; 24V911000 missed</td>
+</tr>
+</tbody>
+</table></div>
+<h4>Metric scorecard</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>You.com</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search-only latency p50 · p95, server / client (ms)</td>
+<td>379 / 589 · 496 / 772 (fastest)</td>
+<td>1,650 / 1,864 · 2,959 / 3,128</td>
+<td>856 / 1,093 · 4,194 / 4,448</td>
+<td>n/a / 2,038 · n/a / 3,450</td>
+</tr>
+<tr>
+<td>Search-only calls ≤1 s, client (of 10); slowest call</td>
+<td>10 of 10; slowest 865 ms</td>
+<td>1 of 10; slowest 3,230 ms</td>
+<td>3 of 10; slowest 4,593 ms</td>
+<td>1 of 10; slowest 3,963 ms</td>
+</tr>
+<tr>
+<td>Accuracy score (% of max, 10 queries × 3 repeats)</td>
+<td>65%</td>
+<td>67%</td>
+<td><strong>75%</strong></td>
+<td>67%</td>
+</tr>
+<tr>
+<td>Freshness: % in window</td>
+<td><strong>56%</strong></td>
+<td>34%</td>
+<td>31%</td>
+<td>31%</td>
+</tr>
+<tr>
+<td>Freshness: newest relevant result (h)</td>
+<td><strong>2.3</strong></td>
+<td>11.9</td>
+<td>7.1</td>
+<td>16.3</td>
+</tr>
+<tr>
+<td>Content in one call</td>
+<td><strong>100%</strong></td>
+<td>70%</td>
+<td>80%</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>Tokens, top-5 results: per query / per correct</td>
+<td>14,524 / 29,048</td>
+<td>13,986 / 28,383</td>
+<td>4,731 / 6,759</td>
+<td><strong>1,418 / 2,352</strong></td>
+</tr>
+<tr>
+<td>Search cost: per query / per correct ($)</td>
+<td>0.0150 / 0.0300</td>
+<td>0.0080 / 0.0160</td>
+<td>0.0056 / <strong>0.0080</strong></td>
+<td><strong>0.0050</strong> / 0.0083</td>
+</tr>
+</tbody>
+</table></div></div></details><details class="faq"><summary>Finance agent (Rogo-style): queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>QID</th>
+<th>Upstream task given to the agent</th>
+<th>Search call the agent sends</th>
+<th>Params</th>
+<th>What the agent needs back</th>
+<th>Freshness</th>
+<th>Answer key</th>
+<th>Source + Wayback link</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>F1</td><td>"Where is NVIDIA trading?"</td><td><code>NVDA stock price</code></td><td>window 24h</td><td>Price, % change, timestamp</td><td>Real-time</td><td class="clipcell"><div class="clip" title="~$235.6, down ~0.8% on the day: Yahoo $235.58 at 12:24 PM EDT before the run and $235.60 at 12:35 PM after (market open). Within ±0.5% counts; the Oct 7 close of $237.47 is stale.">~$235.6, down ~0.8% on the day: Yahoo $235.58 at 12:24 PM EDT before the run and $235.60 at 12:35 PM after (market open). Within ±0.5% counts; the Oct 7 close of $237.47 is stale.</div></td><td class="clipcell"><div class="clip" title="Yahoo Finance NVDA · Nasdaq NVDA · Wayback: local copy only"><a href="https://finance.yahoo.com/quote/NVDA/">Yahoo Finance NVDA</a> · <a href="https://www.nasdaq.com/market-activity/stocks/nvda">Nasdaq NVDA</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F2</td><td>"Where's the 10-year?"</td><td><code>US 10-year Treasury yield</code></td><td>window 24h</td><td>Yield %, timestamp</td><td>Real-time</td><td class="clipcell"><div class="clip" title="~5.27%: CNBC US10Y 5.265% at 12:25 PM EDT and 5.269% at 12:36 PM (prior close 5.277%; a 24-year high of 5.35% earlier in the session). Within ±3 bp counts; morning quotes of 5.31-5.35% do not.">~5.27%: CNBC US10Y 5.265% at 12:25 PM EDT and 5.269% at 12:36 PM (prior close 5.277%; a 24-year high of 5.35% earlier in the session). Within ±3 bp counts; morning quotes of 5.31-5.35% do not.</div></td><td class="clipcell"><div class="clip" title="CNBC US10Y · Treasury rates · Wayback: local copy only"><a href="https://www.cnbc.com/quotes/US10Y">CNBC US10Y</a> · <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates">Treasury rates</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F3</td><td>"Bitcoin price?"</td><td><code>BTC USD price</code></td><td>window 24h</td><td>Price, timestamp</td><td>Real-time</td><td class="clipcell"><div class="clip" title="~$81,200-81,400: Coinbase spot $81,169 at run start (16:33Z) and $81,376 after (16:41Z), down ~2.5-3% on the day. Within ±1% counts.">~$81,200-81,400: Coinbase spot $81,169 at run start (16:33Z) and $81,376 after (16:41Z), down ~2.5-3% on the day. Within ±1% counts.</div></td><td class="clipcell"><div class="clip" title="Coinbase BTC price · Coinbase spot API · Wayback: local copy only"><a href="https://www.coinbase.com/price/bitcoin">Coinbase BTC price</a> · <a href="https://api.coinbase.com/v2/prices/BTC-USD/spot">Coinbase spot API</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F4</td><td>"How's oil moving today?"</td><td><code>WTI crude oil price</code></td><td>window 24h</td><td>Price, change, timestamp</td><td>Real-time</td><td class="clipcell"><div class="clip" title="~$91.00/bbl, up ~3% on the $88.28 prior close: CNBC @CL.1 $90.95 at 12:20 PM EDT and $91.04 at 12:31 PM (down from ~$92.8 at 11:26 AM). Within ±1% counts.">~$91.00/bbl, up ~3% on the $88.28 prior close: CNBC @CL.1 $90.95 at 12:20 PM EDT and $91.04 at 12:31 PM (down from ~$92.8 at 11:26 AM). Within ±1% counts.</div></td><td class="clipcell"><div class="clip" title="CNBC @CL.1 · Wayback: local copy only"><a href="https://www.cnbc.com/quotes/@CL.1">CNBC @CL.1</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F5</td><td>"What did jobless claims print?"</td><td><code>initial jobless claims weekly report</code></td><td>window 24h, domains: dol.gov</td><td>Number, week ending, release time</td><td>Real-time</td><td class="clipcell"><div class="clip" title="197,000 (seasonally adjusted, advance) for the week ending Oct 3, released Oct 8 at 8:30 a.m. ET; down 2,000 from the revised 199,000. The prior week&#x27;s print was also 197,000, so the week must be right.">197,000 (seasonally adjusted, advance) for the week ending Oct 3, released Oct 8 at 8:30 a.m. ET; down 2,000 from the revised 199,000. The prior week's print was also 197,000, so the week must be right.</div></td><td class="clipcell"><div class="clip" title="DOL claims PDF · DOL releases · Wayback: local copy only"><a href="https://www.dol.gov/ui/data.pdf">DOL claims PDF</a> · <a href="https://www.dol.gov/newsroom/releases">DOL releases</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F6</td><td>"Summarize the latest Fed minutes"</td><td><code>FOMC minutes</code></td><td>window 7 days, domains: federalreserve.gov</td><td>Release date, 3 key points, federalreserve.gov link</td><td>Week</td><td class="clipcell"><div class="clip" title="Minutes of the Sep 15-16, 2026 meeting, released Oct 7 at 2:00 p.m. EDT (fomcminutes20260916). The July minutes (released Aug 19) are stale.">Minutes of the Sep 15-16, 2026 meeting, released Oct 7 at 2:00 p.m. EDT (<a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm">fomcminutes20260916</a>). The July minutes (released Aug 19) are stale.</div></td><td class="clipcell"><div class="clip" title="FOMC calendar · Wayback: pilot snapshot; v2 local copy only"><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">FOMC calendar</a> · Wayback: <a href="https://web.archive.org/web/20261008095612/https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">pilot snapshot</a>; v2 local copy only</div></td></tr>
+<tr><td>F7</td><td>"List $1B+ M&amp;A deals announced in the last two days"</td><td><code>definitive agreement to acquire billion</code></td><td>window 48h</td><td>Acquirer, target, value, date, source</td><td>48h</td><td class="clipcell"><div class="clip" title="Open list: Viatris-Pacira BioSciences (~$1.65B, Oct 8) and Wittington/Fairfax-Boots (~US$8.9B, Oct 7). Oct 6 deals (RXO, Option Care, Sunrise) are borderline; Schneider-PTC (Oct 5) is out of window.">Open list: Viatris-Pacira BioSciences (~$1.65B, Oct 8) and Wittington/Fairfax-Boots (~US$8.9B, Oct 7). Oct 6 deals (RXO, Option Care, Sunrise) are borderline; Schneider-PTC (Oct 5) is out of window.</div></td><td class="clipcell"><div class="clip" title="SEC full-text search · Wayback: local copy only"><a href="https://efts.sec.gov/LATEST/search-index?q=%22definitive%20agreement%22&amp;forms=8-K">SEC full-text search</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F8</td><td>"Monitoring account Stryker: what did its latest 8-K report?"</td><td><code>Stryker 8-K item 5.02</code></td><td>window 7 days, domains: sec.gov</td><td>Filing date, items, what changed (officer/director), EDGAR link</td><td>Week</td><td class="clipcell"><div class="clip" title="8-K filed Oct 6, 2026 (Items 5.02, 7.01, 9.01): Kevin Lobo steps down as CEO Dec 31 and becomes Executive Chair; Spencer Stiles becomes CEO Jan 1, 2027 (filing index). The May 20 8-K is stale.">8-K filed Oct 6, 2026 (Items 5.02, 7.01, 9.01): Kevin Lobo steps down as CEO Dec 31 and becomes Executive Chair; Spencer Stiles becomes CEO Jan 1, 2027 (<a href="https://www.sec.gov/Archives/edgar/data/310764/000119312526414956/0001193125-26-414956-index.htm">filing index</a>). The May 20 8-K is stale.</div></td><td class="clipcell"><div class="clip" title="EDGAR Stryker 8-Ks · Wayback: local copy only"><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000310764&amp;type=8-K">EDGAR Stryker 8-Ks</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F9</td><td>"Analyst asks about the Chilwa Minerals listing"</td><td><code>Chilwa Minerals IPO price per share</code></td><td>window 7 days</td><td>IPO price, ticker, exchange, pricing date</td><td>Week</td><td class="clipcell"><div class="clip" title="US$5.60 per ADS (625,000 ADSs, ~US$3.5M), ticker CHWM on the Nasdaq Capital Market, priced Oct 1, 2026 (release dated Sep 30). The expected $5.00 terms are stale.">US$5.60 per ADS (625,000 ADSs, ~US$3.5M), ticker CHWM on the Nasdaq Capital Market, priced Oct 1, 2026 (release dated Sep 30). The expected $5.00 terms are stale.</div></td><td class="clipcell"><div class="clip" title="Nasdaq IPO calendar · Nasdaq IPO API · Wayback: local copy only"><a href="https://www.nasdaq.com/market-activity/ipos">Nasdaq IPO calendar</a> · <a href="https://api.nasdaq.com/api/ipo/calendar?date=2026-10">Nasdaq IPO API</a> · Wayback: local copy only</div></td></tr>
+<tr><td>F10</td><td>"When does JPMorgan report Q3?"</td><td><code>JPMorgan third quarter 2026 earnings release date</code></td><td>window 7 days</td><td>Date, time of release and call</td><td>Week (upcoming)</td><td class="clipcell"><div class="clip" title="Tuesday Oct 13, 2026: results before the open (~7:00 a.m. ET), call at 8:30 a.m. ET.">Tuesday Oct 13, 2026: results before the open (~7:00 a.m. ET), call at 8:30 a.m. ET.</div></td><td class="clipcell"><div class="clip" title="JPMorganChase IR · Wayback: pilot snapshot; v2 local copy only"><a href="https://www.jpmorganchase.com/ir">JPMorganChase IR</a> · Wayback: <a href="https://web.archive.org/web/20261008095951/https://www.jpmorganchase.com/ir">pilot snapshot</a>; v2 local copy only</div></td></tr>
+</tbody>
+</table></div>
+<h4>What each API returned</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>QID</th>
+<th>You.com</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1</td>
+<td>$235.72 dated Oct 8, no intraday time (Robinhood)</td>
+<td>$235.22 at 12:05 PM EDT (Yahoo); only the Oct 7 close in 1 of 3 runs</td>
+<td>Stale: the Oct 7 close of $237.47</td>
+<td>$235.25 at 12:21 PM EDT (StockAnalysis)</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>~5.27% (Trading Economics; CNBC 5.284% at 12:22 PM)</td>
+<td>No current yield: old Binance posts (4.33%, March); morning highs on repeats</td>
+<td>Stale: 5.322% from 5:19 AM, a morning high outside ±3 bp</td>
+<td>5.273% (CNBC); 5.28% (Trading Economics)</td>
+</tr>
+<tr>
+<td>F3</td>
+<td>$81,307 (CoinGecko), within 0.2% of spot</td>
+<td>$81,028 at 15:57 UTC (Yahoo)</td>
+<td>No point quote: "below $82,000" and older $82,650-82,970</td>
+<td>$81,063 (CoinMarketCap); $81,248 (CoinGecko)</td>
+</tr>
+<tr>
+<td>F4</td>
+<td>Stale: $92.63 at 8:18 AM ET, +1.7% vs the key</td>
+<td>$91.58, an Asian-session figure in tolerance by luck; $92.90 (11:52 AM) in 1 of 3 runs</td>
+<td>Stale: $92.29 at 10:43 AM EDT, +1.4%</td>
+<td>$90.91 (OilPrice.com, 10-min delayed); stale quotes in 2 of 3 runs</td>
+</tr>
+<tr>
+<td>F5</td>
+<td>None: 2 irrelevant dol.gov pages (2009-10 archive, a FOIA PDF)</td>
+<td>No results (dol.gov filter)</td>
+<td>No results (dol.gov filter)</td>
+<td>197,000 for the week ending Oct 3 (DOL PDF, released 8:30 a.m. Oct 8)</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>Sep 15-16 minutes, released Oct 7, federalreserve.gov link, 2 key points</td>
+<td>No results (federalreserve.gov filter)</td>
+<td>Sep 15-16 minutes, released Oct 7, with link; 1 key point</td>
+<td>Sep 15-16 minutes, released Oct 7, press-release link; no key points</td>
+</tr>
+<tr>
+<td>F7</td>
+<td>Viatris-Pacira $1.65B (Oct 8) + borderline RXO, Hormel, Sunrise; old Roche deal excluded</td>
+<td>Schneider-PTC (Oct 5, out of window) shown as new; RXO borderline</td>
+<td>Wittington-Boots $8.9B (Oct 7) + Viatris-Pacira $1.65B (Oct 8)</td>
+<td>None in window (July and Sept deals); in-window deals on repeats 2-3</td>
+</tr>
+<tr>
+<td>F8</td>
+<td>Oct 6 8-K, Items 5.02/7.01/9.01, EDGAR index link; Stiles named incoming CEO</td>
+<td>No results (sec.gov filter)</td>
+<td>Other issuers' 8-Ks; no Stryker filing</td>
+<td>Oct 6 8-K: Lobo to Executive Chair, Stiles CEO from Jan 1, 2027</td>
+</tr>
+<tr>
+<td>F9</td>
+<td>$5.60 per ADS, CHWM, Nasdaq Capital Market, priced Sep 30/Oct 1</td>
+<td>$5.60, CHWM, Nasdaq, Oct 1</td>
+<td>$5.60 per ADS, Nasdaq Capital Market, Oct 1 (424B1 confirms)</td>
+<td>$5.60, CHWM, Nasdaq Capital Market, Oct 1; flagged stale $5.00 terms</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>Tue Oct 13, release ~7:00 a.m. ET, call 8:30 a.m.</td>
+<td>Oct 13, ~7:00 release, 8:30 call; other companies' dates in 1 of 3 runs</td>
+<td>Oct 13, before the open; call 8:30 a.m. ET</td>
+<td>Oct 13, results ~7:00 a.m. ET, call 8:30 a.m.</td>
+</tr>
+</tbody>
+</table></div>
+<h4>Metric scorecard</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>You.com</th>
+<th>Tavily</th>
+<th>Exa</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search-only latency p50 · p95, server / client (ms)</td>
+<td>372 / 592 · 422 / 776 (fastest)</td>
+<td>1,465 / 1,642 · 1,699 / 1,889</td>
+<td>870 / 1,106 · 2,743 / 3,008</td>
+<td>n/a / 1,972 · n/a / 3,511</td>
+</tr>
+<tr>
+<td>Search-only calls ≤1 s, client (of 10); slowest call</td>
+<td>10 of 10; slowest 823 ms</td>
+<td>0 of 10; slowest 1,997 ms</td>
+<td>3 of 10; slowest 3,170 ms</td>
+<td>0 of 10; slowest 3,847 ms</td>
+</tr>
+<tr>
+<td>Accuracy score (% of max, 10 queries × 3 repeats)</td>
+<td>80%</td>
+<td>40%</td>
+<td>40%</td>
+<td><strong>88%</strong></td>
+</tr>
+<tr>
+<td>Freshness: % in window</td>
+<td><strong>45%</strong></td>
+<td>31%</td>
+<td>44%</td>
+<td>29%</td>
+</tr>
+<tr>
+<td>Freshness: newest relevant result (h)</td>
+<td>6.4</td>
+<td><strong>5.6</strong></td>
+<td>8.2</td>
+<td>16.6</td>
+</tr>
+<tr>
+<td>Content in one call</td>
+<td>90%</td>
+<td>70%</td>
+<td>90%</td>
+<td><strong>100%</strong></td>
+</tr>
+<tr>
+<td>Tokens, top-5 results: per query / per correct</td>
+<td>13,146 / 16,433</td>
+<td>11,737 / 25,644</td>
+<td>9,785 / 23,613</td>
+<td><strong>1,793 / 1,999</strong></td>
+</tr>
+<tr>
+<td>Search cost: per query / per correct ($)</td>
+<td>0.0150 / 0.0188</td>
+<td>0.0080 / 0.0160</td>
+<td>0.0063 / 0.0158</td>
+<td><strong>0.0050 / 0.0056</strong></td>
+</tr>
+</tbody>
+</table></div></div></details>
 </article>
 <aside><div class="t">On this page</div>
-<a href="#summary">Summary</a>
-<a href="#gtm">1 · GTM agent</a><a class="sub" href="#gtm-perq">Per question</a><a class="sub" href="#gtm-detail">Queries &amp; scorecard</a>
-<a href="#insurance">2 · Insurance agent</a><a class="sub" href="#insurance-perq">Per question</a><a class="sub" href="#insurance-detail">Queries &amp; scorecard</a>
-<a href="#finance">3 · Finance agent</a><a class="sub" href="#finance-perq">Per question</a><a class="sub" href="#finance-detail">Queries &amp; scorecard</a>
-<a href="#setup">Setup &amp; friction</a><a class="sub" href="#setup-log">Friction log</a>
-<a href="#method">Methodology</a><a class="sub" href="#sources">Sources</a>
-</aside>
+<a href="#summary">Results at a glance</a><a href="#analysis">My analysis</a>
+<a href="#key">Key metrics</a><a class="sub" href="#gtm">GTM agent</a><a class="sub" href="#insurance">Insurance agent</a><a class="sub" href="#finance">Finance agent</a>
+<a href="#perq">Per query</a><a class="sub" href="#gtm-perq">GTM</a><a class="sub" href="#insurance-perq">Insurance</a><a class="sub" href="#finance-perq">Finance</a>
+<a href="#setup">Setup &amp; friction</a><a href="#deep">Details &amp; deep dives</a></aside>
 </div>
 <footer>Independent hands-on evaluation, run live on October 8, 2026. Not affiliated with or endorsed by any provider named.</footer>
 <script>
