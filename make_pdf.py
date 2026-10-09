@@ -52,8 +52,8 @@ def prep(src,dst,depth):
     # deep dives -> fold links + appendix sections
     dd=re.findall(r'<details class="faq"[^>]*><summary>(.*?)</summary><div class="faqb">(.*?)</div></details>',s,flags=re.S)
     if dd:
-        links="".join('<a class="fold" href="%s#dd-%d">%s<span>Open online &#8599;</span></a>'%(BASE,i,t) for i,(t,b) in enumerate(dd,1))
+        links='<a class="fold" href="%s#deep">View all details and deep dives online<span>Open &#8599;</span></a>'%BASE
         s=re.sub(r'<details class="faq".*</details>',links,s,count=1,flags=re.S)
-        s=s.replace('<p class="muted">Open any section to read the full data.</p>','<p class="muted">The full data for each section is online. Click a section to open it on the web page.</p>')
+        s=s.replace('<p class="muted">Open any section to read the full data.</p>','<p class="muted">The friction log, how each result was judged, and the full queries, answers and scorecards for GTM, Insurance and Finance are on the web page.</p>')
     open(dst,"w").write(s)
 prep("index.html",OUT+"/index.html",0); prep("memo/index.html",OUT+"/memo/index.html",1); print("ok")
