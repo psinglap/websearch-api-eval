@@ -1,0 +1,174 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memo: Web search for a live GTM chat agent</title><meta name="description" content="Positioning memo: which web search API should power a live GTM chat agent.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#14141a;--body:#2b2b33;--muted:#6b6b76;--line:#e7e7ee;--soft:#f6f6fa;--tint:#eef2ff;--accent:#4b5bdc;--gtm:#6c4cf1;--ins:#0f8a7e;--fin:#c2410c}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--body);font:17px/1.7 Inter,system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);z-index:10}
+.top .in{max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;gap:20px;align-items:center;font-size:14px}
+.top .brand{font-weight:600;color:var(--fg);margin-right:auto}
+.top a.n{color:var(--muted);text-decoration:none}.top a.n:hover{color:var(--fg)}
+.hero{max-width:1200px;margin:0 auto;padding:72px 24px 56px;display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+.eyebrow{font:500 12.5px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.eyebrow span{color:var(--muted);margin-left:14px}
+h1{font:400 clamp(34px,4.4vw,52px)/1.12 "Inter Tight",Inter,sans-serif;color:var(--fg);letter-spacing:-.02em;margin:18px 0 18px}
+.dek{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:58ch}
+.author{display:flex;align-items:center;gap:12px;font-size:15px}
+.author i{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#a5b4fc,#6c4cf1);display:block}
+.card{background:var(--tint);border-radius:14px;padding:36px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:14px;background-image:radial-gradient(#b9c1f5 1px,transparent 1px);background-size:9px 9px;opacity:.55;border-radius:8px}
+.card .big{position:relative;font:300 46px/1.05 "Inter Tight",sans-serif;color:var(--fg);margin:40px 0 28px}
+.card .stats{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid #c7cdf3;padding-top:16px}
+.card .stats b{display:block;font:400 30px "Inter Tight",sans-serif;color:var(--fg)}.card .stats small{color:var(--muted);font-size:13px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px 120px;display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:64px}
+article{min-width:0;max-width:820px}
+aside{position:sticky;top:72px;align-self:start;font-size:14px;padding-top:8px}
+aside .t{font:500 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
+aside a{display:block;color:var(--muted);text-decoration:none;padding:7px 12px;border-left:2px solid var(--line);line-height:1.35}
+aside a.sub{padding-left:26px;font-size:13px}
+aside a:hover,aside a.on{color:var(--fg);border-left-color:var(--accent);background:var(--soft)}
+h2{font:400 34px/1.2 "Inter Tight",sans-serif;color:var(--fg);letter-spacing:-.015em;margin:72px 0 18px}
+h3{font:500 23px/1.3 "Inter Tight",sans-serif;color:var(--fg);margin:48px 0 12px}
+h4,h4.sub{font:500 13px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:34px 0 10px}
+p,li{max-width:70ch}strong{color:var(--fg);font-weight:600}
+.lead{font-size:18.5px;color:var(--fg)}
+figure{margin:26px 0 30px;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px}
+figure img{display:block;width:100%;height:auto;border-radius:6px;background:#fff}
+figcaption{font:12px "IBM Plex Mono",monospace;color:var(--muted);margin-top:10px}
+.tw{overflow-x:auto;margin:16px 0 28px;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+th,td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;min-width:120px}
+th{background:var(--soft);font-weight:600;color:var(--fg);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+code{font:13px "IBM Plex Mono",monospace;background:var(--soft);padding:2px 6px;border-radius:5px}
+.uc{margin-top:88px}
+.ucband{border-radius:14px;padding:26px 28px;color:#fff;margin-bottom:28px}
+.ucband h2{color:#fff;margin:6px 0 6px;font-size:36px}.ucband p{margin:0;opacity:.9;font-size:15.5px}
+.ucnum{font:500 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.1em;opacity:.85}
+#gtm .ucband{background:linear-gradient(120deg,#4f35c9,var(--gtm))}#insurance .ucband{background:linear-gradient(120deg,#0b6b62,var(--ins))}#finance .ucband{background:linear-gradient(120deg,#9a3412,var(--fin))}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.pills a{font-size:13.5px;text-decoration:none;color:var(--fg);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+.pills a:hover{background:var(--soft)}
+.part{font:500 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-top:96px}
+.part+h2{margin-top:8px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padding:28px 24px;text-align:center}
+@media (max-width:1020px){.wrap{grid-template-columns:1fr}aside{display:none}.hero{grid-template-columns:1fr;padding-top:48px}.top a.n{display:none}}
+@media (max-width:600px){body{font-size:16px}.card{padding:24px}.card .big{font-size:34px}h2{font-size:28px}.ucband h2{font-size:28px}th,td{min-width:100px}}
+
+h2{font:500 32px/1.2 "Inter Tight",Inter,sans-serif;letter-spacing:-.018em}
+.muted{color:var(--muted)}
+.agent{display:flex;gap:16px;align-items:center;margin:44px 0 18px;padding:16px 20px;border-radius:12px;background:color-mix(in srgb,var(--c) 8%,#fff);border:1px solid color-mix(in srgb,var(--c) 25%,#fff);border-left:6px solid var(--c);scroll-margin-top:80px}
+.agent .num{flex:none;width:36px;height:36px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font:600 16px "Inter Tight",sans-serif}
+.agent .an{font:600 21px/1.25 "Inter Tight",sans-serif;color:var(--fg)}
+.agent .as{font-size:14.5px;color:var(--muted);margin-top:2px;line-height:1.45}
+.clipcell{max-width:260px}
+.clip{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:help}
+.clip:hover{-webkit-line-clamp:unset}
+details.faq{border:1px solid var(--line);border-radius:12px;margin:12px 0;background:#fff}
+details.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font:500 18px/1.35 "Inter Tight",sans-serif;color:var(--fg);display:flex;justify-content:space-between;gap:16px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary:after{content:"+";font:300 26px/1 "Inter Tight",sans-serif;color:var(--accent);transition:transform .2s}
+details.faq[open] summary:after{transform:rotate(45deg)}
+details.faq[open] summary{border-bottom:1px solid var(--line)}
+.faqb{padding:6px 22px 18px}
+.part{scroll-margin-top:80px}
+</style>
+<style>.memo-meta{margin-top:22px;padding:16px 18px;border-left:4px solid var(--accent);background:var(--soft);border-radius:8px;font-size:15.5px}
+article h2{margin-top:64px}article>p:first-child{margin-top:0}
+article ol li{margin:6px 0}.back{font-size:14px}</style></head><body>
+<div class="top"><div class="in"><span class="brand">Web Search API Eval</span><a class="n" href="../">Full evaluation</a><a class="n" href="./">GTM memo</a></div></div>
+<header class="hero">
+ <div><div class="eyebrow">Memo / Web search for GTM agents<span>October 8, 2026</span></div>
+  <h1>Web search for a live GTM chat agent</h1><p class="dek">You.com, Tavily, Exa and Parallel, compared live on 10 queries for GTM agent, the most common use cases for web search APIs.</p>
+  <div class="author"><i></i><span>Pallavi Singla</span></div>
+  <div class="memo-meta"><strong>To:</strong> VP of Engineering, Reo.dev · <strong>Re:</strong> which web search API should power a live GTM chat agent</div></div>
+ <div class="card"><div class="eyebrow" style="position:relative">GTM chat agent · 10 live queries</div>
+  <div class="big">Fast enough<br>for chat</div>
+  <div class="stats"><div><b>10/10</b><small>searches under 1 s</small></div><div><b>75%</b><small>results in window</small></div><div><b>0</b><small>empty responses</small></div></div></div>
+</header>
+<div class="wrap"><article><h2 id="the-use-case-a-real-time-gtm-chat-agent">The use case: a real-time GTM chat agent</h2>
+<p><strong>For GTM agents that answer "what's new?" in a live conversation, You.com is the web search that is both fast enough for chat and fresh enough to trust.</strong> Its accuracy matched the other three.</p>
+<ol>
+<li><strong>Fast enough for chat:</strong> 10 of 10 searches under 1 s; no other API managed more than 3 of 10.</li>
+<li><strong>The freshest signals:</strong> 75% of results inside the requested window, and the only API to surface today's Apache Iggy activity.</li>
+<li><strong>Never comes back empty:</strong> results on all 30 calls, against 9 empty for Tavily and 3 for Exa.</li>
+</ol>
+<p>Parallel and Tavily did better for questions that need an official page, such as release notes or product docs.</p>
+<figure><a href="../img/gtm_key_metrics.png" target="_blank" rel="noopener"><img src="../img/gtm_key_metrics.png" alt="GTM: all four providers, key metrics ranked best to worst" loading="lazy"></a><figcaption>GTM, all four providers ranked best to worst on accuracy, precision@5, freshness and search-only latency, plus accuracy against latency. ★ = best. · click to enlarge</figcaption></figure>
+
+<p><strong>Quick glance on queries Tested:</strong></p>
+<p>A sales rep or founder at company called "LaserData - selling to Apache Iggy developers" asks the agent in chat, for example in Slack or the product, "What's new at Confluent (competitor) today?" or "Who's talking about Apache Iggy?" </p>
+<figure><a href="../img/gtm_query_grid.png" target="_blank" rel="noopener"><img src="../img/gtm_query_grid.png" alt="GTM: what each API returned, per question" loading="lazy"></a><figcaption>GTM: what each API returned, per question · click to enlarge</figcaption></figure>
+
+<p><strong>How to use these Search API Providers across your use-cases:</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>GTM use case</th>
+<th>Best fit</th>
+<th>Why (evidence from this test)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fresh-signal sweeps the agent re-runs every few minutes to find out targeted developers</td>
+<td><strong>You.com</strong></td>
+<td>Freshest results, and the newest relevant result. Only provider to surface today's activity.</td>
+</tr>
+<tr>
+<td>Live chat answers for reps ("What's new at Confluent today?, Funding and startup-news alerts")</td>
+<td><strong>You.com</strong></td>
+<td>Only provider with every search under 1 s</td>
+</tr>
+<tr>
+<td>Release notes and changelogs for competitive briefs</td>
+<td><strong>Parallel</strong></td>
+<td>Only provider to find both release pages</td>
+</tr>
+<tr>
+<td>Product docs and configuration answers for technical replies</td>
+<td><strong>Tavily</strong></td>
+<td>Only provider whose results described both config settings.</td>
+</tr>
+<tr>
+<td>Thought-leadership content</td>
+<td><strong>Exa</strong></td>
+<td>Most on-topic top 5 results</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-we-d-test-next-and-what-would-chang">What we'd test next, and what would change the call</h2>
+<p>We are open to test on your real-time use-cases to help you showcase how it can help your team or needs custom updates:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Testing at scale on your real-time use-cases</th>
+<th>Why</th>
+<th>How it could change the recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Replay 200 real questions from your reps' chat history, scoring the full answer and turn time</td>
+<td>Real questions can be messier to provide different metric across providers</td>
+<td><strong>Expected:</strong> You.com stays within a few points of the best on accuracy while staying the fastest. <strong>Would change</strong> only if its accuracy falls more than 10 points below the leader. Then use You.com as the fast first pass, and send unresolved questions to Exa (News) or Parallel (official pages).</td>
+</tr>
+<tr>
+<td>Run the same set at peak chat volume (many concurrent users)</td>
+<td>To extrapolate and verify latency at scale.</td>
+<td><strong>Expected:</strong> You.com keeps its sub-second p95. Its server time was about 0.4 s, which leaves headroom under load. <strong>Would change</strong> only if another API also stays under 1 s at peak. There might be a trade-off on accuracy and cost.</td>
+</tr>
+<tr>
+<td>Cost at your monthly search volume</td>
+<td>You.com cost more per call in our setup</td>
+<td><strong>Expected:</strong> at chat volume, fewer empty results and follow-up searches offset You.com's higher price per call. <strong>Would change</strong> if cost per useful answer still tips the balance. Then use You.com for live chat turns and a cheaper API (Parallel or Exa) for batch enrichment.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="back">Full data, methodology and all three use cases: <a href="../">4 Web Search APIs, Tested Live on 3 Agent Use Cases</a>.</p></article>
+<aside><div class="t">On this memo</div><a href="#the-use-case-a-real-time-gtm-chat-agent">The use case: a real-time GTM chat agent</a><a href="#what-we-d-test-next-and-what-would-chang">What we'd test next, and what would change the call</a><a href="../">Full evaluation &#8599;</a></aside></div>
+<footer>Independent hands-on evaluation, run live on October 8, 2026. Not affiliated with or endorsed by any provider named.</footer>
+</body></html>
