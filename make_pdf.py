@@ -52,10 +52,8 @@ def prep(src,dst,depth):
     # deep dives -> fold links + appendix sections
     dd=re.findall(r'<details class="faq"[^>]*><summary>(.*?)</summary><div class="faqb">(.*?)</div></details>',s,flags=re.S)
     if dd:
-        links="".join('<a class="fold" href="#dd-%d">%s<span>Open section &#8595;</span></a>'%(i,t) for i,(t,b) in enumerate(dd,1))
-        apx="".join('<section class="dd" id="dd-%d"><h3>%s</h3>%s<a class="backlink" href="#deep">&#8593; Back to Details and deep dives</a></section>'%(i,t,b) for i,(t,b) in enumerate(dd,1))
+        links="".join('<a class="fold" href="%s#dd-%d">%s<span>Open online &#8599;</span></a>'%(BASE,i,t) for i,(t,b) in enumerate(dd,1))
         s=re.sub(r'<details class="faq".*</details>',links,s,count=1,flags=re.S)
-        s=s.replace("</article>",apx+"</article>",1)
-        s=s.replace('<p class="muted">Open any section to read the full data.</p>','<p class="muted">Click a section to jump to its full data; each ends with a link back here.</p>')
+        s=s.replace('<p class="muted">Open any section to read the full data.</p>','<p class="muted">The full data for each section is online. Click a section to open it on the web page.</p>')
     open(dst,"w").write(s)
 prep("index.html",OUT+"/index.html",0); prep("memo/index.html",OUT+"/memo/index.html",1); print("ok")

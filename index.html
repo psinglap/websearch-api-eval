@@ -70,7 +70,7 @@ h2{font:500 32px/1.2 "Inter Tight",Inter,sans-serif;letter-spacing:-.018em}
 .clip{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:help}
 .clip:hover{-webkit-line-clamp:unset}
 details.faq{border:1px solid var(--line);border-radius:12px;margin:12px 0;background:#fff}
-details.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font:500 18px/1.35 "Inter Tight",sans-serif;color:var(--fg);display:flex;justify-content:space-between;gap:16px}
+details.faq{scroll-margin-top:80px}details.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font:500 18px/1.35 "Inter Tight",sans-serif;color:var(--fg);display:flex;justify-content:space-between;gap:16px}
 details.faq summary::-webkit-details-marker{display:none}
 details.faq summary:after{content:"+";font:300 26px/1 "Inter Tight",sans-serif;color:var(--accent);transition:transform .2s}
 details.faq[open] summary:after{transform:rotate(45deg)}
@@ -190,7 +190,7 @@ window.addEventListener('beforeprint',()=>document.querySelectorAll('details').f
 </ol>
 <div class="part" id="deep">Appendix</div><h2>Details and deep dives</h2>
 <p class="muted">Open any section to read the full data.</p>
-<details class="faq"><summary>Detailed timed setup and friction log</summary><div class="faqb"><p>Signup and key steps captured with Scribe, dashboard errors with Jam; every API anomaly during runs is logged automatically by the harness.</p>
+<details class="faq" id="dd-1"><summary>Detailed timed setup and friction log</summary><div class="faqb"><p>Signup and key steps captured with Scribe, dashboard errors with Jam; every API anomaly during runs is logged automatically by the harness.</p>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -428,7 +428,7 @@ window.addEventListener('beforeprint',()=>document.querySelectorAll('details').f
 <td>0.1</td>
 </tr>
 </tbody>
-</table></div></div></details><details class="faq"><summary>How each result was judged</summary><div class="faqb"><div class="tw"><table>
+</table></div></div></details><details class="faq" id="dd-2"><summary>How each result was judged</summary><div class="faqb"><div class="tw"><table>
 <thead>
 <tr>
 <th>#</th>
@@ -487,7 +487,7 @@ window.addEventListener('beforeprint',()=>document.querySelectorAll('details').f
 <td>promptfoo</td>
 </tr>
 </tbody>
-</table></div></div></details><details class="faq"><summary>GTM agent: queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
+</table></div></div></details><details class="faq" id="dd-3"><summary>GTM agent: queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -667,7 +667,7 @@ window.addEventListener('beforeprint',()=>document.querySelectorAll('details').f
 <td><strong>0.0050 / 0.0125</strong></td>
 </tr>
 </tbody>
-</table></div></div></details><details class="faq"><summary>Insurance agent: queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
+</table></div></div></details><details class="faq" id="dd-4"><summary>Insurance agent: queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -847,7 +847,7 @@ window.addEventListener('beforeprint',()=>document.querySelectorAll('details').f
 <td><strong>0.0050</strong> / 0.0083</td>
 </tr>
 </tbody>
-</table></div></div></details><details class="faq"><summary>Finance agent (Rogo-style): queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
+</table></div></div></details><details class="faq" id="dd-5"><summary>Finance agent (Rogo-style): queries, what each API returned and metric scorecard</summary><div class="faqb"><h4>Queries</h4>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -1041,4 +1041,4 @@ const links=[...document.querySelectorAll('aside a')];const ids=links.map(a=>a.g
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-20% 0px -70% 0px'});
 ids.forEach(i=>{const el=document.getElementById(i);if(el)io.observe(el)});
 </script>
-</body></html>
+<script>function openHash(){var h=location.hash.slice(1);if(!h)return;var d=document.getElementById(h);if(d&&d.tagName==='DETAILS'){d.open=true;setTimeout(function(){d.scrollIntoView({block:'start'})},60)}}window.addEventListener('hashchange',openHash);document.addEventListener('DOMContentLoaded',openHash);</script></body></html>
