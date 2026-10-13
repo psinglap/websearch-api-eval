@@ -136,7 +136,9 @@ tr:last-child td{border-bottom:0}
 .t-name{font:500 14px/1.2 Inter,sans-serif;color:var(--fg)}
 .t-n{font:12px "IBM Plex Mono",monospace;color:var(--muted)}
 .tile.all{--c:#14141a}
-.fbar{position:sticky;top:53px;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);margin:18px 0 0;padding:12px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-start}
+.fbar{position:sticky;top:53px;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);margin:18px 0 0;padding:12px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start}
+.fsearch{flex:1 1 180px}.fsearch input{width:100%;min-width:0;height:38px}
+.freset{flex-basis:100%;display:flex;justify-content:flex-end}
 .fgroup{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
 .fgroup.inline{flex-direction:row;align-items:center;gap:10px}
 .flab{display:block;font:500 11px/1.2 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
@@ -222,7 +224,8 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 <div class="fbar" role="group" aria-label="Filters">
  <div class="fgroup"><span class="flab">Industry</span><span class="segs"><button type="button" class="seg" data-i="All" aria-pressed="true">All</button><button type="button" class="seg" data-i="Cross-industry" aria-pressed="false">Cross-industry</button><button type="button" class="seg" data-i="Finance" aria-pressed="false">Finance</button><button type="button" class="seg" data-i="Healthcare" aria-pressed="false">Healthcare</button><button type="button" class="seg" data-i="Insurance" aria-pressed="false">Insurance</button><button type="button" class="seg" data-i="Legal" aria-pressed="false">Legal</button></span></div>
  <div class="fgroup"><label class="flab" for="prov">Providers used</label><select id="prov"><option value="All">All providers</option><option value="None found">None found (35)</option><option value="Parallel">Parallel (8)</option><option value="Tavily">Tavily (6)</option><option value="Exa">Exa (5)</option><option value="Perplexity">Perplexity (2)</option><option value="Keenable">Keenable (1)</option><option value="Several">Several (1)</option><option value="OpenAI / Google">OpenAI / Google (1)</option><option value="Partner">Partner (1)</option></select></div>
- <div class="fgroup inline"><input type="search" id="q" placeholder="Search accounts" aria-label="Search accounts"><button type="button" class="reset" id="reset">Reset</button></div>
+ <div class="fgroup fsearch"><label class="flab" for="q">Search</label><input type="search" id="q" placeholder="Search accounts"></div>
+ <div class="freset"><button type="button" class="reset" id="reset">Reset filters</button></div>
 </div>
 <div id="strip"></div>
 <div class="count" id="count" aria-live="polite"></div>
