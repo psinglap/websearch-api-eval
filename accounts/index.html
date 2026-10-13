@@ -217,7 +217,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;padd
 
 
 <div class="part" id="targets">5 · Who to target</div><h2>Targets by use case</h2>
-<p class="lead-s">Pick a use case to see its playbook and accounts, then narrow by industry or the search API they use today. Hover <span class="tip src">ⓘ</span> for sources; the ⓘ on the Fit column explains the rating.</p>
+<p class="lead-s">Pick a use case to see its playbook and accounts, then narrow by industry or the search API they use today. Hover <span class="tip src">ⓘ</span> for sources.</p>
 <div class="tiles" role="group" aria-label="Use case"><button type="button" class="tile all" data-u="all" aria-pressed="false"><span class="t-dot"></span><span class="t-name">All use cases</span><span class="t-n">60</span></button><button type="button" class="tile" data-u="voice" style="--c:#6c4cf1" aria-pressed="false"><span class="t-dot"></span><span class="t-name">Voice agents</span><span class="t-n">17</span></button><button type="button" class="tile" data-u="chat" style="--c:#2563eb" aria-pressed="false"><span class="t-dot"></span><span class="t-name">Chat and support copilots</span><span class="t-n">8</span></button><button type="button" class="tile" data-u="gtm" style="--c:#db2777" aria-pressed="false"><span class="t-dot"></span><span class="t-name">Sales and GTM agents</span><span class="t-n">11</span></button><button type="button" class="tile" data-u="res" style="--c:#c2410c" aria-pressed="false"><span class="t-dot"></span><span class="t-name">Research and analyst copilots</span><span class="t-n">11</span></button><button type="button" class="tile" data-u="work" style="--c:#0f8a7e" aria-pressed="false"><span class="t-dot"></span><span class="t-name">Workflow and decision agents</span><span class="t-n">9</span></button><button type="button" class="tile" data-u="mon" style="--c:#b45309" aria-pressed="false"><span class="t-dot"></span><span class="t-name">Monitoring and alerting</span><span class="t-n">4</span></button></div>
 <div class="fbar" role="group" aria-label="Filters">
  <div class="fgroup"><span class="flab">Industry</span><span class="segs"><button type="button" class="seg" data-i="All" aria-pressed="true">All</button><button type="button" class="seg" data-i="Cross-industry" aria-pressed="false">Cross-industry</button><button type="button" class="seg" data-i="Finance" aria-pressed="false">Finance</button><button type="button" class="seg" data-i="Healthcare" aria-pressed="false">Healthcare</button><button type="button" class="seg" data-i="Insurance" aria-pressed="false">Insurance</button><button type="button" class="seg" data-i="Legal" aria-pressed="false">Legal</button></span></div>
@@ -241,7 +241,7 @@ const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const strip=$('#strip'),cards=$('#cards'),count=$('#count'),empty=$('#empty');
 const order={high:0,med:1,low:2};
 function fitTag(f){return `<span class="tag ${f==='high'?'good':f==='med'?'warn':'bad'}">${f}</span>`}
-function card(r,g){return `<tr style="--c:${g.c}"><td class="c-co"><b>${r.n}</b><div class="small">${r.st}</div>${st.u==='all'?`<span class="pill uc">${g.name}</span>`:''}${r.i&&r.i!=='Cross-industry'?`<span class="pill">${r.i}</span>`:''}</td><td>${r.use}</td><td>${r.sig}</td><td>${r.help}</td><td>${fitTag(r.fit)}</td></tr>`}
+function card(r,g){return `<tr style="--c:${g.c}"><td class="c-co"><b>${r.n}</b><div class="small">${r.st}</div>${st.u==='all'?`<span class="pill uc">${g.name}</span>`:''}${r.i&&r.i!=='Cross-industry'?`<span class="pill">${r.i}</span>`:''}</td><td>${r.use}</td><td>${r.sig}</td><td>${r.help}</td></tr>`}
 function render(upd){
   $$('.tile').forEach(t=>t.setAttribute('aria-pressed',t.dataset.u===st.u));
   $$('.seg[data-i]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.i===st.i));
@@ -255,7 +255,7 @@ function render(upd){
     if(q&&!(r.n+' '+r.sig+' '+r.help+' '+r.p+' '+r.st).toLowerCase().replace(/<[^>]+>/g,'').includes(q))return;
     out.push([r,g])}));
   out.sort((a,b)=>(order[a[0].fit]??3)-(order[b[0].fit]??3));
-  document.getElementById('thead').innerHTML='<tr><th>Company</th><th>Provider used</th><th>Signal</th><th>How You.com helps</th><th class="th-fit">Fit <span class="tip src" tabindex="0">ⓘ<span class="pop" role="tooltip"><b>Fit</b> = how strong the public evidence is that the account needs a web search API. Not deal size or likelihood to buy.<br><br><b>High:</b> direct proof. Their docs or a case study show they run web search today, or clearly need it.<br><br><b>Medium:</b> indirect proof. The product needs live facts or ships a search feature, but the provider is not named.<br><br><b>—</b>: from the original account list, not rated.<br><br>Low-fit accounts (thin or no public evidence) are not listed.</span></span></th></tr>';
+  document.getElementById('thead').innerHTML='<tr><th>Company</th><th>Provider used</th><th>Signal</th><th>How You.com helps</th></tr>';
   cards.innerHTML=out.map(([r,g])=>card(r,g)).join('');
   document.querySelector('.acc-wrap').hidden=out.length===0;
   const total=gs.reduce((n,g)=>n+g.rows.length,0);
