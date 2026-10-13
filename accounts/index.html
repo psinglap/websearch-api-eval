@@ -136,11 +136,11 @@ tr:last-child td{border-bottom:0}
 .t-name{font:500 14px/1.2 Inter,sans-serif;color:var(--fg)}
 .t-n{font:12px "IBM Plex Mono",monospace;color:var(--muted)}
 .tile.all{--c:#14141a}
-.fbar{position:sticky;top:53px;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);margin:18px 0 0;padding:12px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-end}
+.fbar{position:sticky;top:53px;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);margin:18px 0 0;padding:12px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-start}
 .fgroup{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
 .fgroup.inline{flex-direction:row;align-items:center;gap:10px}
 .flab{display:block;font:500 11px/1.2 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
-.fbar select{height:38px}
+.fbar select{height:38px;-webkit-appearance:none;appearance:none;padding:0 40px 0 16px;min-width:190px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%236b6b76' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center;background-size:12px 8px;cursor:pointer;line-height:36px}
 .segs{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--soft);flex-wrap:wrap}
 .seg{all:unset;cursor:pointer;font-size:13px;padding:5px 11px;border-radius:999px;color:var(--body)}
 .seg[aria-pressed="true"]{background:#fff;color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12);font-weight:500}
