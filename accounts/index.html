@@ -51,12 +51,17 @@ code{font:12.5px "IBM Plex Mono",monospace;background:var(--soft);padding:2px 6p
 .pillar{border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:6px;background:#fff;border-top:4px solid var(--accent)}
 .pillar b{font:500 17px "Inter Tight",sans-serif}.pillar span:last-child{font-size:14px;color:var(--muted)}
 .pillar .tag{justify-self:start}
-.glance{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:14px;align-items:stretch}
-.kstack{display:grid;gap:12px}
-.mcp .ph{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.mcp .ph h3{margin:0 0 12px}
+.glance{display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
+.kstack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.kstack .kpi{padding:14px 18px;gap:4px;align-content:start}
+.kstack .kpi b{font-size:28px}.kstack .kpi span{font-size:13.5px;line-height:1.45}
+.mcp{align-self:start;padding:16px 20px}
+.mcp .ph{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.mcp .ph h3{margin:0 0 10px;font-size:16px}
 .mcp .tip .pop{left:auto;right:0}
-.mcp .bar-row{grid-template-columns:minmax(120px,44%) 1fr 44px}
-@media (max-width:760px){.glance{grid-template-columns:1fr}}
+.mcp .bars{gap:7px}
+.mcp .bar-row{grid-template-columns:minmax(150px,280px) 1fr 44px;font-size:12.5px}
+.mcp .bar-label a{overflow-wrap:anywhere}
+@media (max-width:760px){.kstack{grid-template-columns:1fr}.mcp .bar-row{grid-template-columns:1fr 44px}.mcp .bar-row .bar-label{grid-column:1/-1}}
 /* community */
 .ft-list{border:1px solid var(--line);border-radius:14px;overflow:visible}
 .ft-row{display:grid;grid-template-columns:minmax(200px,1.1fr) 1.3fr 1.3fr 84px;gap:16px;align-items:start;padding:14px 18px;border-top:1px solid var(--line);font-size:14px;line-height:1.5}
