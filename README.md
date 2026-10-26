@@ -125,6 +125,63 @@ Every provider worked on the first call. The full timed friction log is on the [
 
 The full test harness is in [`eval/`](eval/): promptfoo configs, Python providers for each API, the assertions behind every metric, ground-truth pullers, answer keys and grades. Metric definitions are in [`eval/METRICS.md`](eval/METRICS.md) and the query set is in [`reports/Agent queries.md`](reports/Agent%20queries.md).
 
+### The 30 questions
+
+Every API gets the same search call and parameters. The answer keys (expected answer, source link, Wayback snapshot) are in [`eval/answer_keys.csv`](eval/answer_keys.csv), and the test files built from these questions are in [`eval/tests/`](eval/tests/).
+
+<details><summary><b>GTM agent (developer and company buying signals)</b>: 10 questions</summary>
+
+| ID | What the agent is asked | Search call sent to each API | Parameters | Freshness |
+|---|---|---|---|---|
+| G1 | Find developers hitting Kafka latency problems right now | `kafka consumer lag high latency issue` | window last ~6 h (tightest available), domains: github.com | real-time |
+| G2 | Account signal: anything new at Confluent today? | `Confluent news` | window 24h | real-time |
+| G3 | Any new mentions of Apache Iggy in the last day? | `"Apache Iggy"` | window 24h | real-time |
+| G4 | Draft a note on Apache Iggy's latest release for a prospect | `Apache Iggy release notes` | window 7 days, domains: github.com, iggy.apache.org | week |
+| G5 | Coding agent fixing a consumer-lag bug needs the official tuning guidance | `kafka consumer lag max.poll.records fetch.min.bytes` | window 1 year, domains: kafka.apache.org, docs.confluent.io | year |
+| G6 | Competitive brief: what's the latest NATS server release? | `NATS server release` | window 7 days, domains: github.com | week |
+| G7 | Is Confluent Cloud having an incident right now? (outage = switching trigger) | `Confluent Cloud incident` | window 24h, domains: status.confluent.cloud | real-time |
+| G8 | Which AI-agent / data-infra startups just raised money? | `AI agent infrastructure startup funding round` | window 48h | 48h |
+| G9 | Find this week's content about memory/event logs for AI agents | `durable event log memory for AI agents` | window 7 days | week |
+| G10 | Competitive brief: published Redpanda vs Kafka latency benchmarks | `Redpanda vs Kafka p99 latency benchmark` | window 1 year | year |
+
+</details>
+
+<details><summary><b>Insurance agent (voice and claims, live catastrophe status)</b>: 10 questions</summary>
+
+| ID | What the agent is asked | Search call sent to each API | Parameters | Freshness |
+|---|---|---|---|---|
+| I1 | Caller wants a new Florida homeowners policy | `Citizens Property Insurance binding suspension Florida` | window 24h, domains: citizensfla.com | real-time |
+| I2 | Caller in Pensacola asks if the storm is coming | `Hurricane Isaias latest advisory NHC` | window 24h | real-time |
+| I3 | Agent must check warnings for the policy's county before binding | `hurricane warning Escambia County Florida active` | window 24h | real-time |
+| I4 | Claims agent validating a wind-damage report in progress | `Pensacola weather wind speed` | window 24h | real-time |
+| I5 | Policyholder asks if they must evacuate | `Baldwin County Alabama evacuation order Isaias` | window 24h | real-time |
+| I6 | Claims ops checks whether federal aid applies | `FEMA disaster declaration Hurricane Isaias 2026` | window 48h | 48h |
+| I7 | Compliance agent checks for new regulator orders | `Florida OIR OR Alabama DOI emergency order Isaias insurance` | window 48h | 48h |
+| I8 | Underwriting checks which states declared emergencies | `governor state of emergency Hurricane Isaias` | window 7 days | week |
+| I9 | Claims agent validating a Texas hail claim | `Texas hail storm reports` | window 24h, domains: spc.noaa.gov | 24h |
+| I10 | Caller asks whether their 2024 Toyota RAV4 has an open recall | `NHTSA recall 2024 Toyota RAV4` | window 1 year, domains: nhtsa.gov | year |
+
+</details>
+
+<details><summary><b>Finance agent (analyst Q&A with primary sources)</b>: 10 questions</summary>
+
+| ID | What the agent is asked | Search call sent to each API | Parameters | Freshness |
+|---|---|---|---|---|
+| F1 | Where is NVIDIA trading? | `NVDA stock price` | window 24h | real-time |
+| F2 | Where's the 10-year? | `US 10-year Treasury yield` | window 24h | real-time |
+| F3 | Bitcoin price? | `BTC USD price` | window 24h | real-time |
+| F4 | How's oil moving today? | `WTI crude oil price` | window 24h | real-time |
+| F5 | What did jobless claims print? | `initial jobless claims weekly report` | window 24h, domains: dol.gov | real-time |
+| F6 | Summarize the latest Fed minutes | `FOMC minutes` | window 7 days, domains: federalreserve.gov | week |
+| F7 | List $1B+ M&A deals announced in the last two days | `definitive agreement to acquire billion` | window 48h | 48h |
+| F8 | Monitoring account Stryker: what did its latest 8-K report? | `Stryker 8-K item 5.02` | window 7 days, domains: sec.gov | week |
+| F9 | Analyst asks about the Chilwa Minerals listing | `Chilwa Minerals IPO price per share` | window 7 days | week |
+| F10 | When does JPMorgan report Q3? | `JPMorgan third quarter 2026 earnings release date` | window 7 days | week (upcoming) |
+
+</details>
+
+### Steps
+
 ```bash
 cd eval
 ./run.sh setup --playwright   # Python venv + requirements, promptfoo 0.124.0, Chromium
