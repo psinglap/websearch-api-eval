@@ -1,0 +1,25 @@
+{
+ "qid": "F5",
+ "pulled_at_utc": "2026-10-08T16:33:27.508456+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "dol_ui_data_pdf",
+   "url": "https://www.dol.gov/ui/data.pdf",
+   "status": 200,
+   "raw_file": "ground_truth/raw/F5_dol_ui_data_pdf_20261008T163327Z.pdf",
+   "sha256": "7b9eab817dcf8c818a9d37eeb6009d24a459a2da627c5ee54c28ab123e20799c"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://www.dol.gov/ui/data.pdf",
+   "title": "initial claims 197,000 (week ending October 3)",
+   "date": "2026-10-08T16:33:27.508409+00:00",
+   "initial_claims": "197,000"
+  }
+ ],
+ "notes": [
+  "First page text: 1 News Release Connect with DOL at https://blog.dol.gov TRANSMISSION OF MATERIALS IN THIS RELEASE IS EMBARGOED UNTIL 8:30 A.M. (Eastern) Thursday, October 8, 2026 UNEMPLOYMENT INSURANCE WEEKLY CLAIMS SEASONALLY ADJUSTED DATA In the week ending October 3, the advance figure for seasonally adjusted initial claims was 197,000, a decrease of 2,000 from the previous week's revised level. The previous week's level was revised up by 2,000 from 197,000 to 199,000. The 4-week moving average was 198,000, a decrease of 2,500 from the previous week's revised average. The previous week's average was revise"
+ ]
+}

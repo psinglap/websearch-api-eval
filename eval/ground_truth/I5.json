@@ -1,0 +1,189 @@
+{
+ "qid": "I5",
+ "pulled_at_utc": "2026-10-08T16:13:16.588530+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "nws_alerts_active",
+   "url": "https://api.weather.gov/alerts/active?zone=ALC003%2CALZ263%2CALZ264%2CALZ265%2CALZ266",
+   "status": 200,
+   "raw_file": "ground_truth/raw/I5_nws_alerts_active_20261008T161316Z.json",
+   "sha256": "3f05ee4d081d691cd818f0b1715aee9b6014fd74b5a29b6e1873668c5b2dc5b6"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7d3393b612536cfd5ed3631e8a72f615e8fc6ab6.001.1",
+   "title": "Tropical Cyclone Local Statement - Choctaw; Washington; Clarke; Wilcox; Monroe; Conecuh; Butler; Crenshaw; Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal; Wayne; Perry; Greene; Stone; George",
+   "date": "2026-10-08T10:42:00-05:00",
+   "event": "Tropical Cyclone Local Statement",
+   "severity": "Moderate",
+   "onset": "2026-10-08T10:42:00-05:00",
+   "expires": "2026-10-08T18:45:00-05:00",
+   "headline": "Tropical Cyclone Local Statement issued October 8 at 10:42AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.53f1738add9ba7e3c4c25156fe7f8035c6fb218d.001.1",
+   "title": "Flood Watch - Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal",
+   "date": "2026-10-08T10:09:00-05:00",
+   "event": "Flood Watch",
+   "severity": "Severe",
+   "onset": "2026-10-09T13:00:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Flood Watch issued October 8 at 10:09AM CDT until October 10 at 1:00PM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.014.2",
+   "title": "Storm Surge Warning - Baldwin Coastal",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Storm Surge Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Storm Surge Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.016.1",
+   "title": "Hurricane Warning - Baldwin Central",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Hurricane Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.017.2",
+   "title": "Storm Surge Warning - Mobile Central",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Storm Surge Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Storm Surge Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.014.1",
+   "title": "Hurricane Warning - Baldwin Coastal",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Hurricane Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.024.1",
+   "title": "Hurricane Warning - Baldwin Inland",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Hurricane Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.015.2",
+   "title": "Storm Surge Warning - Mobile Coastal",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Storm Surge Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Storm Surge Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.015.1",
+   "title": "Hurricane Warning - Mobile Coastal",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Hurricane Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.016.2",
+   "title": "Storm Surge Warning - Baldwin Central",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Storm Surge Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Storm Surge Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.017.1",
+   "title": "Hurricane Warning - Mobile Central",
+   "date": "2026-10-08T10:06:00-05:00",
+   "event": "Hurricane Warning",
+   "severity": "Extreme",
+   "onset": "2026-10-08T10:06:00-05:00",
+   "expires": "2026-10-08T18:15:00-05:00",
+   "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9aa83e6859343db06f14d12e330a6f2aa956b25.001.1",
+   "title": "Flood Warning - Baldwin, AL",
+   "date": "2026-10-08T08:40:00-05:00",
+   "event": "Flood Warning",
+   "severity": "Severe",
+   "onset": "2026-10-10T06:30:00-05:00",
+   "expires": "2026-10-08T20:45:00-05:00",
+   "headline": "Flood Warning issued October 8 at 8:40AM CDT until October 11 at 10:00AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06afd92b0b232b2dd076f9c1293b9a93a2855ad7.001.1",
+   "title": "Flood Warning - Baldwin, AL; Escambia, FL",
+   "date": "2026-10-08T08:37:00-05:00",
+   "event": "Flood Warning",
+   "severity": "Severe",
+   "onset": "2026-10-10T15:24:00-05:00",
+   "expires": "2026-10-08T20:45:00-05:00",
+   "headline": "Flood Warning issued October 8 at 8:37AM CDT until October 11 at 9:00PM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.1",
+   "title": "High Surf Warning - Mobile Coastal; Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+   "date": "2026-10-08T08:19:00-05:00",
+   "event": "High Surf Warning",
+   "severity": "Moderate",
+   "onset": "2026-10-09T07:00:00-05:00",
+   "expires": "2026-10-08T17:00:00-05:00",
+   "headline": "High Surf Warning issued October 8 at 8:19AM CDT until October 11 at 10:00AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.2",
+   "title": "Rip Current Statement - Mobile Coastal; Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+   "date": "2026-10-08T08:19:00-05:00",
+   "event": "Rip Current Statement",
+   "severity": "Moderate",
+   "onset": "2026-10-08T08:19:00-05:00",
+   "expires": "2026-10-08T17:00:00-05:00",
+   "headline": "Rip Current Statement issued October 8 at 8:19AM CDT until October 11 at 6:00AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.27240d7fccda2436eee805e050be1d18327bf8d3.001.1",
+   "title": "Tropical Cyclone Local Statement - Choctaw; Washington; Clarke; Wilcox; Monroe; Conecuh; Butler; Crenshaw; Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal; Wayne; Perry; Greene; Stone; George",
+   "date": "2026-10-08T07:01:00-05:00",
+   "event": "Tropical Cyclone Local Statement",
+   "severity": "Moderate",
+   "onset": "2026-10-08T07:01:00-05:00",
+   "expires": "2026-10-08T15:15:00-05:00",
+   "headline": "Tropical Cyclone Local Statement issued October 8 at 7:01AM CDT by NWS Mobile AL"
+  },
+  {
+   "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98b7d469183d2b341659be7bfa2309b52fe51bff.001.1",
+   "title": "Tropical Cyclone Local Statement - Choctaw; Washington; Clarke; Wilcox; Monroe; Conecuh; Butler; Crenshaw; Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal; Wayne; Perry; Greene; Stone; George",
+   "date": "2026-10-08T04:23:00-05:00",
+   "event": "Tropical Cyclone Local Statement",
+   "severity": "Moderate",
+   "onset": "2026-10-08T04:23:00-05:00",
+   "expires": "2026-10-08T12:30:00-05:00",
+   "headline": "Tropical Cyclone Local Statement issued October 8 at 4:23AM CDT by NWS Mobile AL"
+  }
+ ],
+ "notes": [
+  "Active NWS alerts for zones ['ALC003', 'ALZ263', 'ALZ264', 'ALZ265', 'ALZ266']. Evacuation orders: look for event 'Evacuation Immediate' and check Baldwin County EMA (manual, archived)."
+ ]
+}

@@ -1,0 +1,4 @@
+{
+  "tavily": {"search_depth": "basic", "include_raw_content": false, "max_results": 10},
+  "exa": {"type": "auto", "contents": {"highlights": true}, "numResults": 10}
+}

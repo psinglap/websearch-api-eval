@@ -1,0 +1,6 @@
+Task from the user: {upstream_task}
+What you must return: {needs_back}
+
+The search tool was called with: {query}
+Search results (numbered; the top {k} results returned by the search API, content truncated):
+{results_block}

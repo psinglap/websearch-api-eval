@@ -1,0 +1,12 @@
+{
+ "_request_url": "https://api.coinbase.com/v2/prices/BTC-USD/spot",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T09:47:36.676498+00:00",
+ "body": {
+  "data": {
+   "amount": "83080.86",
+   "base": "BTC",
+   "currency": "USD"
+  }
+ }
+}

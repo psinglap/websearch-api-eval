@@ -1,0 +1,204 @@
+{
+ "qid": "G3",
+ "pulled_at_utc": "2026-10-08T15:51:47.856415+00:00",
+ "window_hours": 168,
+ "sources": [
+  {
+   "name": "iggy_repo_issues_prs",
+   "url": "https://api.github.com/search/issues?q=repo%3Aapache%2Figgy+created%3A%3E%3D2026-10-01T15%3A51%3A44Z&per_page=100",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G3_iggy_repo_issues_prs_20261008T155145Z.json",
+   "sha256": "ef30b52fc87cc8703113bd4d1d05d9411da2019c175e751428bd7489c266a22a"
+  },
+  {
+   "name": "mentions_outside_repo",
+   "url": "https://api.github.com/search/issues?q=%22apache+iggy%22+-repo%3Aapache%2Figgy+created%3A%3E%3D2026-10-01T15%3A51%3A45Z&per_page=100",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G3_mentions_outside_repo_20261008T155146Z.json",
+   "sha256": "7e739ee42d7d751ac408dca3558028d4484f0ae4b0873f11cd347df0ba05f264"
+  },
+  {
+   "name": "iggy_releases",
+   "url": "https://api.github.com/repos/apache/iggy/releases?per_page=10",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G3_iggy_releases_20261008T155147Z.json",
+   "sha256": "06b3a874ca830a19b5985915963a73a007afef75ec79b495a7b03624f43af16d"
+  },
+  {
+   "name": "hn_iggy",
+   "url": "https://hn.algolia.com/api/v1/search_by_date?query=iggy&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790869907",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G3_hn_iggy_20261008T155147Z.json",
+   "sha256": "1cf3525bb5218e5b78277f0c160c5b302ba0e87cbf11fcdce917b7c97930057a"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/laserdata/laser-sdk/pull/47",
+   "title": "test(ts): expand robustness coverage for wire decoders",
+   "date": "2026-10-07T15:29:11Z",
+   "kind": "github_mention",
+   "repo": "laserdata/laser-sdk"
+  },
+  {
+   "url": "https://github.com/Kelvin-art-hub/laser-sdk/pull/1",
+   "title": "test(ts): expand robustness coverage for wire decoders",
+   "date": "2026-10-07T15:18:16Z",
+   "kind": "github_mention",
+   "repo": "Kelvin-art-hub/laser-sdk"
+  },
+  {
+   "url": "https://github.com/OxiBelt/FileBelt/pull/60",
+   "title": "chore(deps): bump the rust-bootstrap group across 1 directory with 24 updates",
+   "date": "2026-10-01T23:24:58Z",
+   "kind": "github_mention",
+   "repo": "OxiBelt/FileBelt"
+  },
+  {
+   "url": "https://github.com/sisaio/sisa-messaging-rs/issues/25",
+   "title": "iggy: add publication",
+   "date": "2026-10-06T11:30:56Z",
+   "kind": "github_mention",
+   "repo": "sisaio/sisa-messaging-rs"
+  },
+  {
+   "url": "https://github.com/sisaio/sisa-messaging-rs/issues/26",
+   "title": "iggy: add direct and inbox progress",
+   "date": "2026-10-06T11:31:19Z",
+   "kind": "github_mention",
+   "repo": "sisaio/sisa-messaging-rs"
+  },
+  {
+   "url": "https://github.com/laserdata/laser-sdk/pull/45",
+   "title": "test(sdk): implement deterministic publish recovery tests",
+   "date": "2026-10-07T06:35:07Z",
+   "kind": "github_mention",
+   "repo": "laserdata/laser-sdk"
+  },
+  {
+   "url": "https://github.com/sockudo/sockudo/pull/478",
+   "title": "feat(iggy): support Apache Iggy VSR clusters in the adapter and queue",
+   "date": "2026-10-07T06:47:33Z",
+   "kind": "github_mention",
+   "repo": "sockudo/sockudo"
+  },
+  {
+   "url": "https://github.com/ostrium-labs/loams/issues/209",
+   "title": "[FL] FL1 \u2014 Event Fabric Foundation (Iggy, Fluss, the Envelope and the Bridges) Implementation Plan",
+   "date": "2026-10-02T04:43:18Z",
+   "kind": "github_mention",
+   "repo": "ostrium-labs/loams"
+  },
+  {
+   "url": "https://github.com/TRO-Wolf/repark/pull/961",
+   "title": "docs(cdc): the CDC and micro-batch North Star \u2014 standing defaults for the track when the owner is away",
+   "date": "2026-10-06T00:37:15Z",
+   "kind": "github_mention",
+   "repo": "TRO-Wolf/repark"
+  },
+  {
+   "url": "https://github.com/laserdata/laser-sdk/pull/42",
+   "title": "fix(sdk): bound every publish and report what a failed one left",
+   "date": "2026-10-05T13:28:40Z",
+   "kind": "github_mention",
+   "repo": "laserdata/laser-sdk"
+  },
+  {
+   "url": "https://github.com/sisaio/sisa-messaging-rs/issues/10",
+   "title": "core: define single and batch publication results",
+   "date": "2026-10-06T11:25:07Z",
+   "kind": "github_mention",
+   "repo": "sisaio/sisa-messaging-rs"
+  },
+  {
+   "url": "https://github.com/AWeber-Imbi/imbi/pull/359",
+   "title": "Add a prompt CMS and global AI model catalog with decision models",
+   "date": "2026-10-05T19:28:49Z",
+   "kind": "github_mention",
+   "repo": "AWeber-Imbi/imbi"
+  },
+  {
+   "url": "https://github.com/ostrium-labs/loams/pull/178",
+   "title": "docs: \u00a732 Loam Flow, Event Fabric and House; \u00a733 connectors; FL1/FL2/CN1 plans (D330\u2013D359)",
+   "date": "2026-10-01T17:35:33Z",
+   "kind": "github_mention",
+   "repo": "ostrium-labs/loams"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50001044",
+   "title": "PS5 Jailbreaks Are Escalating at an Unprecedented Pace",
+   "date": "2026-10-08T01:43:04Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49997822",
+   "title": "$2599 Microsoft Surface Laptop Ultra",
+   "date": "2026-10-07T19:41:19Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49997607",
+   "title": "How many GPUs is 1M/B/T tokens?",
+   "date": "2026-10-07T19:25:12Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49992478",
+   "title": "Vulkan back end coming to SYCL",
+   "date": "2026-10-07T13:23:27Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49972381",
+   "title": "The era of software quality, or the era of ostriches?",
+   "date": "2026-10-05T23:56:06Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49965128",
+   "title": "Gitframes",
+   "date": "2026-10-05T14:10:10Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49964767",
+   "title": "Germany\u2019s RobCo hits $1B valuation",
+   "date": "2026-10-05T13:40:30Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49958193",
+   "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+   "date": "2026-10-04T21:42:32Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955078",
+   "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+   "date": "2026-10-04T16:03:15Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951386",
+   "title": "Vx \u2013 One Language, Every Chip",
+   "date": "2026-10-04T07:01:48Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49939246",
+   "title": "With most information hidden, the game Stratego had stumped AI until now",
+   "date": "2026-10-02T22:10:44Z",
+   "kind": "hn"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49926130",
+   "title": "Cloudflare K2: serverless event streams",
+   "date": "2026-10-01T19:38:09Z",
+   "kind": "hn"
+  }
+ ],
+ "notes": [
+  "apache/iggy issues+PRs created in window: 86",
+  "Blog/news mentions need a manual search (archived via evidence/capture.py)."
+ ]
+}

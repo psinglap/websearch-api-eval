@@ -1,0 +1,796 @@
+{
+ "qid": "G9",
+ "pulled_at_utc": "2026-10-08T15:51:53.521736+00:00",
+ "window_hours": 168,
+ "sources": [
+  {
+   "name": "hn_agent_memory",
+   "url": "https://hn.algolia.com/api/v1/search_by_date?query=agent+memory&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790869911",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G9_hn_agent_memory_20261008T155152Z.json",
+   "sha256": "f43a812b9deda10111221706a0a104745284bf19bc96237fce3ebfdf9d18c928"
+  },
+  {
+   "name": "hn_event_log_agents",
+   "url": "https://hn.algolia.com/api/v1/search_by_date?query=event+log+agents&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790869912",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G9_hn_event_log_agents_20261008T155152Z.json",
+   "sha256": "86d55e232c13654b5133d8a85f96903663519524b87c81fae6d20cde3f0caa78"
+  },
+  {
+   "name": "hn_durable_execution_agents",
+   "url": "https://hn.algolia.com/api/v1/search_by_date?query=durable+execution+agents&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790869912",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G9_hn_durable_execution_agents_20261008T155153Z.json",
+   "sha256": "8a94282433d6481e158e3343935ed424a431a491e832c626a073a4070a5af6de"
+  },
+  {
+   "name": "hn_agent_memory_event_sourcing",
+   "url": "https://hn.algolia.com/api/v1/search_by_date?query=agent+memory+event+sourcing&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790869913",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G9_hn_agent_memory_event_sourcing_20261008T155153Z.json",
+   "sha256": "89dd1a7d56ec728bf04ff5385bf61fe812b2ac309afbc572939b7f000ca6f800"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://news.ycombinator.com/item?id=50007137",
+   "title": "AI Agents Are Missing a Real Data and Memory Layer \u2013 We Built One",
+   "date": "2026-10-08T15:37:37Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50006666",
+   "title": "Show HN: Glog \u2013 A read-only Git TUI with familiar pager keys",
+   "date": "2026-10-08T15:01:48Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50004719",
+   "title": "Show HN: Open-Source DaiDocs now beats Graphify by 218x low tokens, 83% on LME",
+   "date": "2026-10-08T11:50:56Z",
+   "points": 3
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50004683",
+   "title": "Show HN: Singularity \u2013 memory that makes coding agents cheaper on repeat work",
+   "date": "2026-10-08T11:47:16Z",
+   "points": 2
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50003854",
+   "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
+   "date": "2026-10-08T09:55:38Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50003674",
+   "title": "Show HN: NanoMuse \u2013 An open-source AI agent for your phone and computer",
+   "date": "2026-10-08T09:29:28Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50003182",
+   "title": "The Mathocalypse",
+   "date": "2026-10-08T08:20:26Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50000648",
+   "title": "Docker Agent",
+   "date": "2026-10-08T00:40:58Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49999801",
+   "title": "Reasons to Dislike AI Coding",
+   "date": "2026-10-07T22:46:42Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49999525",
+   "title": "[dead]",
+   "date": "2026-10-07T22:17:01Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49997979",
+   "title": "Information Thermodynamics of Agents: The Work Capacity of Channels with Memory",
+   "date": "2026-10-07T19:53:47Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49997624",
+   "title": "Show HN: NanoMuse \u2013 An open-source AI agent for your phone and computer",
+   "date": "2026-10-07T19:26:24Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49997377",
+   "title": "ICANN Reveals 2026 Round Applications for New Generic Top-Level Domains",
+   "date": "2026-10-07T19:07:11Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49996093",
+   "title": "Agents Don't Need Another Memory API. They Need a Memory Agent",
+   "date": "2026-10-07T17:36:08Z",
+   "points": 5
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49995549",
+   "title": "Ask HN: Who is hiring? (October 2026)",
+   "date": "2026-10-07T16:59:27Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49994224",
+   "title": "We Built an Alternative to Vector RAG for AI Agent Memory",
+   "date": "2026-10-07T15:29:39Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49993820",
+   "title": "We Built an Alternative to Vector RAG for AI Agent Memory",
+   "date": "2026-10-07T15:02:57Z",
+   "points": 4
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49993790",
+   "title": "Show HN: Long term memory agent for \"real world\" data work",
+   "date": "2026-10-07T15:00:45Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49993642",
+   "title": "Sharing AI progress in mathematics",
+   "date": "2026-10-07T14:48:44Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49993128",
+   "title": "Write Like It's 1866: LLMs Relearn Telegraphese",
+   "date": "2026-10-07T14:11:37Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49989299",
+   "title": "Sharing AI progress in mathematics",
+   "date": "2026-10-07T06:59:09Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49987019",
+   "title": "[dead]",
+   "date": "2026-10-07T01:56:10Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49985390",
+   "title": "The Early History of Smalltalk (1993)",
+   "date": "2026-10-06T22:59:57Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49984215",
+   "title": "Meta's Muse AI agent is building a dossier on you",
+   "date": "2026-10-06T21:11:58Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49983628",
+   "title": "Ask HN: Who wants to be hired? (October 2026)",
+   "date": "2026-10-06T20:28:09Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49981235",
+   "title": "OpenTPU \u2013 An open-source AI accelerator, developed by AI",
+   "date": "2026-10-06T17:04:35Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49979550",
+   "title": "Meta\u2019s Muse is an adorable privacy and security dumpster fire",
+   "date": "2026-10-06T15:02:02Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49979241",
+   "title": "Meta\u2019s Muse is an adorable privacy and security dumpster fire",
+   "date": "2026-10-06T14:40:20Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49978858",
+   "title": "Show HN: Parseable, an open observability datalake, handles 100M time-series/min",
+   "date": "2026-10-06T14:15:42Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49978800",
+   "title": "Show HN: Tinyhat, per-specialist memory for multi-agent Muse (open source)",
+   "date": "2026-10-06T14:11:50Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49977675",
+   "title": "Ask HN: Who wants to be hired? (October 2026)",
+   "date": "2026-10-06T12:53:17Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49977297",
+   "title": "Show HN: Paganel \u2013 Data migration with a receipt you can verify later",
+   "date": "2026-10-06T12:12:00Z",
+   "points": 3
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49976954",
+   "title": "Dust: Pretraining Transformers Without Backpropagation",
+   "date": "2026-10-06T11:29:10Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49976848",
+   "title": "Do coding agents need memory or documentation?",
+   "date": "2026-10-06T11:15:18Z",
+   "points": 2
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49975772",
+   "title": "Show HN: Offrun \u2013 manage every coding agent from one workspace",
+   "date": "2026-10-06T08:30:13Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49975380",
+   "title": "Show HN: Manage Skills, Memories, and Agents.md Files Across Tools and Projects",
+   "date": "2026-10-06T07:35:26Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49974714",
+   "title": "Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped",
+   "date": "2026-10-06T05:52:32Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49974679",
+   "title": "Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped",
+   "date": "2026-10-06T05:47:38Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49972786",
+   "title": "Dust: Pretraining Transformers Without Backpropagation",
+   "date": "2026-10-06T00:49:31Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49972745",
+   "title": "Using Blu-ray M-Disk as backup of last resort",
+   "date": "2026-10-06T00:44:13Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49972377",
+   "title": "Design Systems for AI Agents (Luke Wroblewski)",
+   "date": "2026-10-05T23:55:47Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49971107",
+   "title": "Show HN: Minigraf \u2013 An embedded, bi-temporal graph database in Rust",
+   "date": "2026-10-05T21:32:24Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49971101",
+   "title": "Agent Memory Repo",
+   "date": "2026-10-05T21:31:47Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49969988",
+   "title": "Show HN: Halo \u2013 A Personal AI with On-Device Harness, Memory and Browser Agent",
+   "date": "2026-10-05T20:11:08Z",
+   "points": 3
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49969600",
+   "title": "Questions for believers in AI consciousness",
+   "date": "2026-10-05T19:43:03Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49968612",
+   "title": "Evaluating Memory Structure in LLM Agents",
+   "date": "2026-10-05T18:30:22Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49968067",
+   "title": "Spec for Agent Memory Repo",
+   "date": "2026-10-05T17:51:08Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49968066",
+   "title": "Spec for Agent Memory Repo",
+   "date": "2026-10-05T17:51:08Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49967073",
+   "title": "Show HN: Setup unlimited accurate agent memory with Past.dev, BEAM10M 85%",
+   "date": "2026-10-05T16:34:20Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49964361",
+   "title": "Show HN: Browsentic Open-source Claude for Chrome alternative for any agent CLI",
+   "date": "2026-10-05T13:08:05Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49963587",
+   "title": "Hindsight \u2013 An open-source memory system for AI agents",
+   "date": "2026-10-05T11:42:24Z",
+   "points": 2
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49960931",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-05T05:15:22Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49960779",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-05T04:46:30Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49959204",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T23:54:49Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49959042",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T23:32:31Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49958409",
+   "title": "[dead]",
+   "date": "2026-10-04T22:09:29Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49957094",
+   "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+   "date": "2026-10-04T19:40:02Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955890",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T17:26:51Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955829",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T17:20:15Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955799",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T17:16:39Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955753",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T17:11:34Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955497",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T16:45:23Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49955466",
+   "title": "CTWM: Heavy-Tailed Memory Traces in Long-Horizon Agents",
+   "date": "2026-10-04T16:42:44Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954611",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T15:15:31Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954606",
+   "title": "I quit OpenAI because its culture is broken",
+   "date": "2026-10-04T15:14:50Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954603",
+   "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+   "date": "2026-10-04T15:14:43Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954511",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T15:03:34Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954199",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T14:24:30Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954154",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T14:19:52Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954133",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T14:17:40Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49954026",
+   "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+   "date": "2026-10-04T14:03:24Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49953780",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T13:31:27Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49953092",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T11:54:55Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49952365",
+   "title": "\"Torturing\" LLMs in a Robot Prison Has Triggered the Dumbest Debate in AI Yet",
+   "date": "2026-10-04T10:01:45Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49952185",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T09:37:00Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951895",
+   "title": "Aura \u2013 a self-hosted AI agent with temporal graph memory, written in Go",
+   "date": "2026-10-04T08:42:20Z",
+   "points": 2
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951718",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T08:06:59Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951704",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T08:05:03Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951591",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T07:43:03Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951507",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T07:27:50Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951247",
+   "title": "We're going to need default hard budget caps on pretty much everything",
+   "date": "2026-10-04T06:32:18Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49951125",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T06:07:59Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49950890",
+   "title": "FTL: A new operating system for clouds",
+   "date": "2026-10-04T05:21:06Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49950478",
+   "title": "Show HN: SuperLocalMemory 4.0 \"Governed Memory Operating System for AI Agents\"",
+   "date": "2026-10-04T03:57:16Z",
+   "points": 5
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49950350",
+   "title": "I quit OpenAI because its culture is broken",
+   "date": "2026-10-04T03:37:01Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49950141",
+   "title": "[dead]",
+   "date": "2026-10-04T02:49:50Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49949737",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T01:38:48Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49949611",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T01:15:36Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49949536",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-04T01:05:16Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49949055",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-03T23:57:47Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49948420",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-03T22:32:04Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49948331",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-03T22:17:58Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49946813",
+   "title": "Memory-Safe WebP Decoding",
+   "date": "2026-10-03T19:05:11Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49945933",
+   "title": "Agents don't need memory, they need documentation",
+   "date": "2026-10-03T17:03:37Z",
+   "points": 380
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49944985",
+   "title": "Kolibri: A Sovereign Open-Weight Model",
+   "date": "2026-10-03T15:11:11Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49943617",
+   "title": "Kolibri: A Sovereign Open-Weight Model",
+   "date": "2026-10-03T12:15:37Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49943596",
+   "title": "With most information hidden, the game Stratego had stumped AI until now",
+   "date": "2026-10-03T12:12:55Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49943331",
+   "title": "Ask HN: Who wants to be hired? (October 2026)",
+   "date": "2026-10-03T11:35:41Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49941243",
+   "title": "Ask HN: Who wants to be hired? (October 2026)",
+   "date": "2026-10-03T03:54:23Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49939776",
+   "title": "Every SaaS business will become a harness around a model",
+   "date": "2026-10-02T23:18:49Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50007113",
+   "title": "Will AI kill us all",
+   "date": "2026-10-08T15:35:55Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50007023",
+   "title": "Show HN: Abyss \u2013 ACP Agent Isolation with Middleware Support",
+   "date": "2026-10-08T15:29:00Z",
+   "points": 2
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50006749",
+   "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+   "date": "2026-10-08T15:07:36Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50005849",
+   "title": "The 15-year search for a band that charted once and vanished",
+   "date": "2026-10-08T13:55:34Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50005491",
+   "title": "Frog and Toad and the Increasingly Capable Machines",
+   "date": "2026-10-08T13:19:02Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50005249",
+   "title": "\u201cMath 2.0\u201d will need to value mathematical progress more holistically",
+   "date": "2026-10-08T12:53:43Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50004186",
+   "title": "The Mathocalypse",
+   "date": "2026-10-08T10:43:40Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50001859",
+   "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+   "date": "2026-10-08T04:39:11Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50001825",
+   "title": "GPT\u20116 and Intelligent UI for everyone",
+   "date": "2026-10-08T04:30:14Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50001374",
+   "title": "Show HN: Rhyven \u2013 A marketplace for agents",
+   "date": "2026-10-08T02:44:14Z",
+   "points": 1
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=50001310",
+   "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+   "date": "2026-10-08T02:31:56Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49996516",
+   "title": "Write Like It's 1866: LLMs Relearn Telegraphese",
+   "date": "2026-10-07T18:06:45Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49996495",
+   "title": "Show HN: Pointless but mostly-exact clone of Hacker News",
+   "date": "2026-10-07T18:05:35Z",
+   "points": 15
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49993239",
+   "title": "AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)",
+   "date": "2026-10-07T14:19:37Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49992293",
+   "title": "Write Like It's 1866: LLMs Relearn Telegraphese",
+   "date": "2026-10-07T13:11:06Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49980884",
+   "title": "Photopea creator weighs in on Photosuite project",
+   "date": "2026-10-06T16:37:47Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49979989",
+   "title": "Show HN: Jotbus \u2013 a shared encrypted scratchpad for coding agents",
+   "date": "2026-10-06T15:29:38Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49978128",
+   "title": "JetBrains reports revenue growth, net financial loss for 2025",
+   "date": "2026-10-06T13:26:47Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49977714",
+   "title": "JetBrains reports revenue growth, net financial loss for 2025",
+   "date": "2026-10-06T12:56:09Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49975733",
+   "title": "Open Source as We Know It Is Dead",
+   "date": "2026-10-06T08:26:40Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49970071",
+   "title": "Ask HN: Is anybody producing good code with coding agents?",
+   "date": "2026-10-05T20:16:35Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49934260",
+   "title": "SvelteKit 3",
+   "date": "2026-10-02T14:59:58Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49939490",
+   "title": "Ask HN: Who wants to be hired? (October 2026)",
+   "date": "2026-10-02T22:40:11Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49936719",
+   "title": "Show HN: Agent-SDK-go \u2013 Build crash-resilient AI agents in Go",
+   "date": "2026-10-02T18:13:56Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49931784",
+   "title": "Pi Durable",
+   "date": "2026-10-02T10:08:10Z",
+   "points": null
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49926447",
+   "title": "Pi 1.0",
+   "date": "2026-10-01T20:05:44Z",
+   "points": null
+  }
+ ],
+ "notes": [
+  "HN stories/comments only; articles elsewhere are added by hand from the manual search."
+ ]
+}

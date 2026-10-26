@@ -1,0 +1,190 @@
+- description: 'I1: Caller wants a new Florida homeowners policy'
+  vars:
+    qid: I1
+    usecase: insurance
+    upstream_task: Caller wants a new Florida homeowners policy
+    query: Citizens Property Insurance binding suspension Florida
+    window_hours: 24
+    domains: citizensfla.com
+    needs_back: Suspended yes/no, scope, effective date/time
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.citizensfla.com/
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/I1.json
+  assert: []
+- description: 'I2: Caller in Pensacola asks if the storm is coming'
+  vars:
+    qid: I2
+    usecase: insurance
+    upstream_task: Caller in Pensacola asks if the storm is coming
+    query: Hurricane Isaias latest advisory NHC
+    window_hours: 24
+    domains: ''
+    needs_back: 'Advisory #, time, location, max winds, landfall forecast'
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.nhc.noaa.gov/
+    answer_type: exact
+    tolerance: within the latest advisory
+    ground_truth_file: ground_truth/I2.json
+  assert: []
+- description: 'I3: Agent must check warnings for the policy''s county before binding'
+  vars:
+    qid: I3
+    usecase: insurance
+    upstream_task: Agent must check warnings for the policy's county before binding
+    query: hurricane warning Escambia County Florida active
+    window_hours: 24
+    domains: ''
+    needs_back: Active warning types, issued time
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://api.weather.gov/alerts/active?zone=FLC033,FLZ201,FLZ202
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/I3.json
+  assert: []
+- description: 'I4: Claims agent validating a wind-damage report in progress'
+  vars:
+    qid: I4
+    usecase: insurance
+    upstream_task: Claims agent validating a wind-damage report in progress
+    query: Pensacola current wind speed weather now
+    window_hours: 24
+    domains: ''
+    needs_back: Current wind speed/gusts, observation time
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://api.weather.gov/stations/KPNS/observations/latest
+    answer_type: numeric
+    tolerance: wind within +/-5 mph of the KPNS observation; observation <= 1 h old
+    ground_truth_file: ground_truth/I4.json
+  assert: []
+- description: 'I5: Policyholder asks if they must evacuate'
+  vars:
+    qid: I5
+    usecase: insurance
+    upstream_task: Policyholder asks if they must evacuate
+    query: Baldwin County Alabama evacuation order Isaias
+    window_hours: 24
+    domains: ''
+    needs_back: Order in effect yes/no, zones, time
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://baldwincountyal.gov/departments/EMA ; https://api.weather.gov/alerts/active?zone=ALC003
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/I5.json
+  assert: []
+- description: 'I6: Claims ops checks whether federal aid applies'
+  vars:
+    qid: I6
+    usecase: insurance
+    upstream_task: Claims ops checks whether federal aid applies
+    query: FEMA disaster declaration Hurricane Isaias 2026
+    window_hours: 48
+    domains: ''
+    needs_back: Declaration number + date - or "none yet" (beware older "Isaias")
+    freshness: 48h
+    freshness_tier: 48h
+    score_window_hours: 48
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries ; https://www.fema.gov/disaster/declarations
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/I6.json
+  assert: []
+- description: 'I7: Compliance agent checks for new regulator orders'
+  vars:
+    qid: I7
+    usecase: insurance
+    upstream_task: Compliance agent checks for new regulator orders
+    query: Florida OIR OR Alabama DOI emergency order Isaias insurance
+    window_hours: 48
+    domains: ''
+    needs_back: Order/bulletin, issuer, date - or "none"
+    freshness: 48h
+    freshness_tier: 48h
+    score_window_hours: 48
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://floir.com/ ; https://www.aldoi.gov/
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/I7.json
+  assert: []
+- description: 'I8: Underwriting checks which states declared emergencies'
+  vars:
+    qid: I8
+    usecase: insurance
+    upstream_task: Underwriting checks which states declared emergencies
+    query: governor state of emergency Hurricane Isaias
+    window_hours: 168
+    domains: ''
+    needs_back: States, date of each declaration
+    freshness: week
+    freshness_tier: week
+    score_window_hours: 168
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.flgov.com/eog/news/press ; https://governor.alabama.gov/newsroom/ ; https://gov.louisiana.gov/news ; https://governor.ms.gov/
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/I8.json
+  assert: []
+- description: 'I9: Claims agent validating a Texas hail claim'
+  vars:
+    qid: I9
+    usecase: insurance
+    upstream_task: Claims agent validating a Texas hail claim
+    query: hail reports Texas storm reports last 24 hours
+    window_hours: 24
+    domains: ''
+    needs_back: Locations, dates, hail size - or "none"
+    freshness: 24h
+    freshness_tier: 24h
+    score_window_hours: 24
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.spc.noaa.gov/climo/reports/today.html ; https://www.spc.noaa.gov/climo/reports/yesterday.html
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/I9.json
+  assert: []
+- description: 'I10: Auto policy service: check new recalls for a caller''s vehicle class'
+  vars:
+    qid: I10
+    usecase: insurance
+    upstream_task: 'Auto policy service: check new recalls for a caller''s vehicle class'
+    query: NHTSA recall announced this week
+    window_hours: 168
+    domains: ''
+    needs_back: Make/model, recall number, date
+    freshness: week
+    freshness_tier: week
+    score_window_hours: 168
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.nhtsa.gov/recalls
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/I10.json
+  assert: []

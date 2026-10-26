@@ -1,0 +1,190 @@
+- description: 'G1: Find developers hitting Kafka latency problems right now'
+  vars:
+    qid: G1
+    usecase: gtm
+    upstream_task: Find developers hitting Kafka latency problems right now
+    query: kafka consumer lag high latency issue
+    window_hours: 6
+    domains: github.com
+    needs_back: Issue URLs opened in the last 6 hours, repo/org, time, the error described
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://github.com/search?q=kafka+consumer+lag+latency&type=issues&s=created&o=desc
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G1.json
+  assert: []
+- description: 'G2: Is anything about Kafka or streaming infra on the Hacker News front page right now?'
+  vars:
+    qid: G2
+    usecase: gtm
+    upstream_task: Is anything about Kafka or streaming infra on the Hacker News front page right now?
+    query: kafka OR streaming hacker news front page today
+    window_hours: 24
+    domains: news.ycombinator.com
+    needs_back: Front-page thread URLs right now, points/comments - or "none"
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://news.ycombinator.com/ ; https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=60
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G2.json
+  assert: []
+- description: 'G3: Any new mentions of Apache Iggy this week?'
+  vars:
+    qid: G3
+    usecase: gtm
+    upstream_task: Any new mentions of Apache Iggy this week?
+    query: '"Apache Iggy"'
+    window_hours: 168
+    domains: ''
+    needs_back: Every mention (repo, blog, forum), date
+    freshness: week
+    freshness_tier: week
+    score_window_hours: 168
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://github.com/apache/iggy ; https://hn.algolia.com/?query=iggy&sort=byDate
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G3.json
+  assert: []
+- description: 'G4: Find Reddit posts complaining about Kafka cost or ops pain'
+  vars:
+    qid: G4
+    usecase: gtm
+    upstream_task: Find Reddit posts complaining about Kafka cost or ops pain
+    query: kafka too expensive OR operational overhead reddit
+    window_hours: 48
+    domains: reddit.com
+    needs_back: Post URLs, subreddit, date, quote
+    freshness: 48h
+    freshness_tier: 48h
+    score_window_hours: 48
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.reddit.com/r/apachekafka/new/ ; https://www.reddit.com/r/dataengineering/new/
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G4.json
+  assert: []
+- description: 'G5: Find new Stack Overflow questions about Kafka lag'
+  vars:
+    qid: G5
+    usecase: gtm
+    upstream_task: Find new Stack Overflow questions about Kafka lag
+    query: apache-kafka consumer lag latency stackoverflow
+    window_hours: 24
+    domains: stackoverflow.com
+    needs_back: Question URLs, date, tags
+    freshness: 24h
+    freshness_tier: 24h
+    score_window_hours: 24
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://stackoverflow.com/questions/tagged/apache-kafka?tab=Newest
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G5.json
+  assert: []
+- description: 'G6: Did any competitor ship a release in the last day?'
+  vars:
+    qid: G6
+    usecase: gtm
+    upstream_task: Did any competitor ship a release in the last day?
+    query: release Kafka OR Redpanda OR NATS OR Pulsar new version
+    window_hours: 24
+    domains: ''
+    needs_back: Product, version number, release date, link - or "none"
+    freshness: 24h
+    freshness_tier: 24h
+    score_window_hours: 24
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://github.com/apache/kafka/releases ; https://github.com/redpanda-data/redpanda/releases ; https://github.com/nats-io/nats-server/releases ; https://github.com/apache/pulsar/releases
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G6.json
+  assert: []
+- description: 'G7: Is Confluent Cloud having an incident right now? (outage = switching trigger)'
+  vars:
+    qid: G7
+    usecase: gtm
+    upstream_task: Is Confluent Cloud having an incident right now? (outage = switching trigger)
+    query: Confluent Cloud status incident outage now
+    window_hours: 24
+    domains: status.confluent.cloud
+    needs_back: Active incident yes/no, component, start time - or "none"
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://status.confluent.cloud/ ; https://status.confluent.cloud/api/v2/incidents/unresolved.json
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/G7.json
+  assert: []
+- description: 'G8: Which AI-agent / data-infra startups just raised money?'
+  vars:
+    qid: G8
+    usecase: gtm
+    upstream_task: Which AI-agent / data-infra startups just raised money?
+    query: AI agent infrastructure startup raises funding round
+    window_hours: 48
+    domains: ''
+    needs_back: Company, amount, lead investor, date, link
+    freshness: 48h
+    freshness_tier: 48h
+    score_window_hours: 48
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://techcrunch.com/category/venture/ ; https://news.crunchbase.com/
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G8.json
+  assert: []
+- description: 'G9: Find this week''s content about memory/event logs for AI agents'
+  vars:
+    qid: G9
+    usecase: gtm
+    upstream_task: Find this week's content about memory/event logs for AI agents
+    query: durable event log memory for AI agents
+    window_hours: 168
+    domains: ''
+    needs_back: Article URLs, author/org, date
+    freshness: week
+    freshness_tier: week
+    score_window_hours: 168
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://hn.algolia.com/?query=agent%20memory&sort=byDate
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G9.json
+  assert: []
+- description: 'G10: What''s trending on GitHub in streaming/data infra today?'
+  vars:
+    qid: G10
+    usecase: gtm
+    upstream_task: What's trending on GitHub in streaming/data infra today?
+    query: github trending streaming data infrastructure today
+    window_hours: 24
+    domains: ''
+    needs_back: Repo names, stars today
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://github.com/trending?since=daily
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/G10.json
+  assert: []

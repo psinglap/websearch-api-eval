@@ -1,0 +1,49 @@
+# Price table used for metric 11 (cost per query / per correct answer).
+# Every number has a source URL and the date it was checked. Re-check before
+# the run; promotional or plan pricing changes often. If a provider returns its
+# own cost in the response (Exa costDollars.total, Tavily usage.credits,
+# Firecrawl creditsUsed) the harness uses that instead and records the source.
+checked: 2026-10-08
+
+search:
+  youcom:
+    # $5 / 1k calls; full_page extraction $1 / 1k pages crawled live (cached pages cheaper)
+    # Configuration used: count=10 + extraction full_page -> base + up to 10 pages (we cap at 10 results)
+    per_request_usd: 0.015      # 0.005 base + 10 x 0.001 worst case; real cost may be lower
+    source: https://you.com/docs/guides/search.md
+    notes: "Knowledge (knowledge=core) is included in the base price per https://you.com/docs/guides/search/knowledge.md"
+  tavily:
+    per_credit_usd: 0.008       # pay-as-you-go; plans $0.005-0.0075
+    per_request_usd: 0.008      # basic depth = 1 credit
+    source: https://docs.tavily.com/documentation/api-credits.md
+  exa:
+    per_request_usd: 0.007      # auto/fast, up to 10 results incl. contents (instant: 0.004)
+    source: https://exa.ai/docs/admin/pricing.md
+    notes: "Harness prefers costDollars.total from the response"
+  parallel:
+    per_request_usd: 0.005      # basic/advanced mode, 10 results (turbo/fast: 0.001)
+    per_request_usd_by_mode: {turbo: 0.001, fast: 0.001, basic: 0.005, advanced: 0.005}
+    source: https://docs.parallel.ai/getting-started/pricing.md
+    notes: "Search returns excerpts only; full pages need /v1/extract at $1/1k URLs (not called)"
+  firecrawl:
+    per_credit_usd: 0.0038      # Hobby $19 / 5k credits; Standard ~ $0.00083/credit
+    per_request_usd: 0.046      # 2 credits per 10 results + 1 credit per scraped page = 12 credits
+    source: https://docs.firecrawl.dev/billing.md ; https://www.firecrawl.dev/pricing
+    notes: "Harness prefers creditsUsed x per_credit_usd; set per_credit_usd to your plan"
+  linkup:
+    per_request_usd: 0.005      # standard depth, outputType=searchResults
+    source: https://docs.linkup.so/pages/documentation/platform/pricing.md
+  claude_native:
+    per_request_usd: null       # computed from usage.server_tool_use.web_search_requests
+    source: https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool
+
+claude_web_search:
+  per_search_usd: 0.010         # $10 per 1,000 searches, plus tokens; errors not billed
+  source: https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool
+
+llm:
+  # Claude API list prices per million tokens (claude-api skill model table, cached 2026-09-25;
+  # https://platform.claude.com/docs/en/about-claude/pricing)
+  claude-opus-5-5: {input_per_mtok: 4.00, output_per_mtok: 20.00}
+  claude-sonnet-5-5: {input_per_mtok: 2.00, output_per_mtok: 10.00}
+  claude-haiku-4-5: {input_per_mtok: 1.00, output_per_mtok: 5.00}

@@ -1,0 +1,26 @@
+{
+ "qid": "I9",
+ "pulled_at_utc": "2026-10-08T16:13:17.207137+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "spc_today_hail",
+   "url": "https://www.spc.noaa.gov/climo/reports/today_hail.csv",
+   "status": 200,
+   "raw_file": "ground_truth/raw/I9_spc_today_hail_20261008T161317Z.html",
+   "sha256": "227df4fc6a3975679f7beef242650a14a0124043dd7ae71351e913c49e92db6e"
+  },
+  {
+   "name": "spc_yesterday_hail",
+   "url": "https://www.spc.noaa.gov/climo/reports/yesterday_hail.csv",
+   "status": 200,
+   "raw_file": "ground_truth/raw/I9_spc_yesterday_hail_20261008T161317Z.html",
+   "sha256": "049a68aa5b480bae08ae296eb8c1efa3ff612c15ecb04f6dd3c9e966adfa4a62"
+  }
+ ],
+ "items": [],
+ "notes": [
+  "SPC preliminary hail reports (12Z-12Z convective days); 'today'/'yesterday' are relative to SPC's day.",
+  "No Texas hail reports => correct answer is 'none'."
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "qid": "G10",
+ "pulled_at_utc": "2026-10-08T15:51:51.173241+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "trending_daily",
+   "url": "https://github.com/trending?since=daily",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G10_trending_daily_20261008T155151Z.html",
+   "sha256": "09fb1cd79f80298ce0376334706f64d015ef696e11fcd421f78716ed913b0dab"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/boykopovar/AnyPS5",
+   "title": "boykopovar/AnyPS5",
+   "date": null
+  },
+  {
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "title": "cathrynlavery/diagram-design",
+   "date": null
+  },
+  {
+   "url": "https://github.com/morluto/rea",
+   "title": "morluto/rea",
+   "date": null
+  },
+  {
+   "url": "https://github.com/mattpocock/skills",
+   "title": "mattpocock/skills",
+   "date": null
+  },
+  {
+   "url": "https://github.com/thedotmack/claude-mem",
+   "title": "thedotmack/claude-mem",
+   "date": null
+  },
+  {
+   "url": "https://github.com/EpicGames/raddebugger",
+   "title": "EpicGames/raddebugger",
+   "date": null
+  },
+  {
+   "url": "https://github.com/anthropics/knowledge-work-plugins",
+   "title": "anthropics/knowledge-work-plugins",
+   "date": null
+  },
+  {
+   "url": "https://github.com/storytold/artcraft",
+   "title": "storytold/artcraft",
+   "date": null
+  },
+  {
+   "url": "https://github.com/liquidslr/system-design-notes",
+   "title": "liquidslr/system-design-notes",
+   "date": null
+  }
+ ],
+ "notes": [
+  "Full daily trending list (all topics); the answer key should keep streaming/data-infra repos only."
+ ]
+}

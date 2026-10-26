@@ -1,0 +1,19 @@
+# Python deps for the harness (installed into eval/.venv by ./run.sh setup; versions verified 2026-10-08)
+anthropic==1.12.1
+htmldate==1.11.0
+httpx==0.28.1
+lxml==6.1.3
+matplotlib==3.11.2
+numpy==2.5.3
+pandas==3.0.6
+pillow==12.3.0
+pypdf==6.19.0
+pytest==9.1.1
+python-dotenv==1.2.4
+pyyaml==6.0.3
+rapidfuzz==3.14.6
+scipy==1.18.1
+tabulate==0.10.0
+tiktoken==0.14.0
+# optional: screenshots in evidence/capture.py  ->  ./run.sh setup --playwright
+# playwright==1.63.0

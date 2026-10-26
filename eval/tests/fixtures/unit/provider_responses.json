@@ -1,0 +1,12 @@
+{
+  "_note": "FIXTURE - fake responses shaped like each provider's documented schema (docs checked 2026-10-08). Not real data.",
+  "youcom": {"results": {"web": [{"url": "https://fixture.invalid/y/1", "title": "FIXTURE web", "description": "d", "snippets": ["s1", "s2"], "page_age": "2026-10-08T06:00:00", "contents": {"markdown": "FIXTURE full page markdown text that is long enough to count as content. FIXTURE full page markdown text that is long enough to count as content. FIXTURE full page markdown text that is long enough to count as content."}}],
+                         "news": [{"url": "https://fixture.invalid/y/2", "title": "FIXTURE news", "description": "nd", "page_age": "2026-10-08T07:00:00"}],
+                         "knowledge": [{"type": "answer", "title": "FIXTURE NVDA price", "description": "FIXTURE last price 123.45", "attribution": [{"name": "FIXTURE vendor"}], "as_of": "2026-10-08"}]},
+             "metadata": {"query": "q", "latency": 0.342}},
+  "tavily": {"query": "q", "results": [{"url": "https://fixture.invalid/t/1", "title": "FIXTURE", "content": "snippet", "raw_content": "FIXTURE raw", "published_date": "Wed, 07 Oct 2026 10:00:00 GMT", "score": 0.9}], "response_time": 1.25, "usage": {"credits": 1}},
+  "exa": {"requestId": "r", "results": [{"id": "x", "url": "https://fixture.invalid/e/1", "title": "FIXTURE", "publishedDate": "2026-10-07T12:00:00.000Z", "text": "FIXTURE text", "highlights": ["h1"]}], "searchTime": 412.5, "costDollars": {"total": 0.007}},
+  "parallel": {"search_id": "s", "results": [{"url": "https://fixture.invalid/p/1", "title": "FIXTURE", "publish_date": "2026-10-07", "excerpts": ["ex1", "ex2"]}], "usage": [{"name": "sku_search", "count": 1}]},
+  "firecrawl": {"success": true, "data": {"web": [{"url": "https://fixture.invalid/f/1", "title": "FIXTURE", "description": "desc", "markdown": "FIXTURE md", "metadata": {"publishedTime": "2026-10-06T08:00:00Z"}}]}, "creditsUsed": 12},
+  "linkup": {"results": [{"type": "text", "name": "FIXTURE", "url": "https://fixture.invalid/l/1", "content": "FIXTURE content"}, {"type": "image", "name": "img", "url": "https://fixture.invalid/l/img"}]}
+}

@@ -1,0 +1,18 @@
+{
+ "qid": "G5",
+ "pulled_at_utc": "2026-10-08T15:51:53.866228+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "questions_apache_kafka",
+   "url": "https://api.stackexchange.com/2.3/questions?tagged=apache-kafka&site=stackoverflow&sort=creation&order=desc&fromdate=1791388313&pagesize=100",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G5_questions_apache_kafka_20261008T155153Z.json",
+   "sha256": "71e63bcad71ae5b86dc107916d026d508b3526649794fa587479c31c2dd3d0cd"
+  }
+ ],
+ "items": [],
+ "notes": [
+  "0 apache-kafka questions in the window; kept 0 about lag/latency."
+ ]
+}

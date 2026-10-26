@@ -1,0 +1,15 @@
+{
+ "_request_url": "https://status.confluent.cloud/api/v2/incidents/unresolved.json",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T14:58:06.490110+00:00",
+ "body": {
+  "page": {
+   "id": "3yz1tdpdnjl3",
+   "name": "Confluent Cloud",
+   "url": "https://status.confluent.cloud",
+   "time_zone": "Etc/UTC",
+   "updated_at": "2026-10-08T14:55:18.416Z"
+  },
+  "incidents": []
+ }
+}

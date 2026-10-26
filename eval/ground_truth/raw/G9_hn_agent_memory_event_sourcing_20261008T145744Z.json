@@ -1,0 +1,32 @@
+{
+ "_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=agent+memory+event+sourcing&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790866664",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T14:57:44.497830+00:00",
+ "body": {
+  "exhaustive": {
+   "nbHits": false,
+   "typo": false
+  },
+  "exhaustiveNbHits": false,
+  "exhaustiveTypo": false,
+  "hits": [],
+  "hitsPerPage": 100,
+  "nbHits": 0,
+  "nbPages": 0,
+  "page": 0,
+  "params": "query=agent+memory+event+sourcing&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790866664&advancedSyntax=true&analyticsTags=backend",
+  "processingTimeMS": 15,
+  "processingTimingsMS": {
+   "_request": {
+    "roundTrip": 18
+   },
+   "fetch": {
+    "query": 14,
+    "total": 15
+   },
+   "total": 15
+  },
+  "query": "agent memory event sourcing",
+  "serverTimeMS": 16
+ }
+}

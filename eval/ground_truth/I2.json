@@ -1,0 +1,50 @@
+{
+ "qid": "I2",
+ "pulled_at_utc": "2026-10-08T16:13:15.019386+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "nhc_current_storms",
+   "url": "https://www.nhc.noaa.gov/CurrentStorms.json",
+   "status": 200,
+   "raw_file": "ground_truth/raw/I2_nhc_current_storms_20261008T161315Z.json",
+   "sha256": "be8c1a86c1c21db626a1ac77b6b22f1589193ec0cacdae0897758f4b49cc2f41"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
+   "title": "Isaias (HU)",
+   "date": "2026-10-08T15:00:00.000Z",
+   "intensity_kt": "75",
+   "pressure_mb": "975",
+   "lat": 23.7,
+   "lon": -90.2,
+   "advisory": "008",
+   "movement": "60 deg at 10 mph"
+  },
+  {
+   "url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
+   "title": "Rachel (TS)",
+   "date": "2026-10-08T15:00:00.000Z",
+   "intensity_kt": "60",
+   "pressure_mb": "985",
+   "lat": 22.1,
+   "lon": -124.2,
+   "advisory": "046",
+   "movement": "300 deg at 7 mph"
+  },
+  {
+   "url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
+   "title": "Simon (TS)",
+   "date": "2026-10-08T15:00:00.000Z",
+   "intensity_kt": "55",
+   "pressure_mb": "995",
+   "lat": 15.4,
+   "lon": -103.3,
+   "advisory": "005",
+   "movement": "275 deg at 5 mph"
+  }
+ ],
+ "notes": []
+}

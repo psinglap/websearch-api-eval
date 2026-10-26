@@ -14,6 +14,7 @@ By Pallavi Singla · final run Oct 8, 2026
 - [Methodology](#methodology)
 - [Metrics and the benchmarks they follow](#metrics-and-the-benchmarks-they-follow)
 - [Developer setup and friction](#developer-setup-and-friction)
+- [Run it yourself](#run-it-yourself)
 - [Limits](#limits)
 - [Sources](#sources)
 - [Repo layout](#repo-layout)
@@ -120,6 +121,23 @@ Each signup was screen-recorded from sign-in to a copied API key, then to a firs
 
 Every provider worked on the first call. The full timed friction log is on the [Evaluation page](https://psinglap.github.io/websearch-api-eval/).
 
+## Run it yourself
+
+The full test harness is in [`eval/`](eval/): promptfoo configs, Python providers for each API, the assertions behind every metric, ground-truth pullers, answer keys and grades. Metric definitions are in [`eval/METRICS.md`](eval/METRICS.md) and the query set is in [`reports/Agent queries.md`](reports/Agent%20queries.md).
+
+```bash
+cd eval
+./run.sh setup --playwright   # Python venv + requirements, promptfoo 0.124.0, Chromium
+cp .env.example .env          # add your own API keys; .env is git-ignored
+./run.sh smoke                # one call per provider to check keys
+./run.sh run gtm              # also: insurance, finance
+./run.sh analyze              # scorecards and charts into eval/out/
+```
+
+You need your own keys for each search API (`YDC_API_KEY`, `TAVILY_API_KEY`, `EXA_API_KEY`, `PARALLEL_API_KEY`, plus `FIRECRAWL_API_KEY` and `LINKUP_API_KEY` for the six-provider configs) and an `SEC_USER_AGENT` with your contact email for SEC EDGAR. No keys are stored in this repo. Full steps are in [`eval/README.md`](eval/README.md).
+
+**Included for audit:** answer keys with source and Wayback links (`eval/answer_keys.csv`), per-query grades (`eval/grading/`), raw ground-truth snapshots pulled at run time (`eval/ground_truth/raw/`), the evidence log (`eval/evidence/evidence_log.csv`) and the friction log (`eval/friction_log.csv`). Raw provider responses are not included because of their size.
+
 ## Limits
 
 - 10 queries per use case is a focused test, not a leaderboard; differences of a query or two are within noise.
@@ -142,3 +160,5 @@ Every provider worked on the first call. The full timed friction log is on the [
 | `atlas/` | Search Atlas |
 | `img/` | Scorecards, per-query grids, activation charts and page screenshots |
 | `pdf/` | PDF versions of the evaluation and memo |
+| `eval/` | Test harness: configs, providers, metric assertions, answer keys, grades, ground truth |
+| `reports/` | The 30 agent queries |

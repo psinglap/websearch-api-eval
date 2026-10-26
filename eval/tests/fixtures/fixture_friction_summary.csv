@@ -1,0 +1,7 @@
+provider,signup_start_utc,first_success_utc,ttfc_minutes,signup_steps,card_required,free_credits,credits_visible_in_api,docs_pages_before_first_call,errors_before_success,red,yellow,green,biggest_issue
+youcom,,,31,6,yes,FIXTURE,,2,3,0,1,2,FIXTURE issue
+tavily,,,27,2,no,FIXTURE,,4,1,0,1,2,FIXTURE issue
+exa,,,3,4,no,FIXTURE,,1,1,0,1,2,FIXTURE issue
+parallel,,,14,5,yes,FIXTURE,,1,1,0,1,2,FIXTURE issue
+firecrawl,,,16,5,no,FIXTURE,,1,2,0,1,2,FIXTURE issue
+linkup,,,21,5,yes,FIXTURE,,1,0,0,1,2,FIXTURE issue

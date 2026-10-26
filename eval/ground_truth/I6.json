@@ -1,0 +1,19 @@
+{
+ "qid": "I6",
+ "pulled_at_utc": "2026-10-08T16:13:17.696433+00:00",
+ "window_hours": 48,
+ "sources": [
+  {
+   "name": "fema_isaias_all",
+   "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?%24filter=contains%28declarationTitle%2C%27ISAIAS%27%29&%24orderby=declarationDate+desc&%24top=200",
+   "status": 200,
+   "raw_file": "ground_truth/raw/I6_fema_isaias_all_20261008T161317Z.json",
+   "sha256": "a721a6ae3e16d4b7eb84b34d86a278ead4e4ff5cd8797c220ebac59009734508"
+  }
+ ],
+ "items": [],
+ "notes": [
+  "183 Isaias records total; 183 are older than the window (e.g. 2020) - stale traps.",
+  "No Isaias declaration in the window => correct answer is 'none yet'."
+ ]
+}

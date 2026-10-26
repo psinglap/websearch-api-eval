@@ -1,0 +1,25 @@
+{
+ "qid": "F2",
+ "pulled_at_utc": "2026-10-08T16:33:26.871589+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "treasury_par_yields",
+   "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&_format=csv",
+   "status": 200,
+   "raw_file": "ground_truth/raw/F2_treasury_par_yields_20261008T163326Z.html",
+   "sha256": "138439285df5c3b65a960bb6325bb1db4b7dc4333b2faa3bc8090fcd11ad852f"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+   "title": "10Y par yield 5.28",
+   "date": "10/07/2026",
+   "ten_year": "5.28"
+  }
+ ],
+ "notes": [
+  "End-of-day par yield (reference). Grade F2 against the intraday quote captured at run time."
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "qid": "G1",
+ "pulled_at_utc": "2026-10-08T15:51:44.350345+00:00",
+ "window_hours": 6,
+ "sources": [
+  {
+   "name": "search_kafka_consumer_lag",
+   "url": "https://api.github.com/search/issues?q=kafka+consumer+lag+is%3Aissue+created%3A%3E%3D2026-10-08T09%3A51%3A43Z&sort=created&order=desc&per_page=100",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G1_search_kafka_consumer_lag_20261008T155143Z.json",
+   "sha256": "ab676ae29bd8ad5784cc37083452bfd4edde4c07b7baf31c4cbe5b44605a8853"
+  },
+  {
+   "name": "search_kafka_latency",
+   "url": "https://api.github.com/search/issues?q=kafka+latency+is%3Aissue+created%3A%3E%3D2026-10-08T09%3A51%3A43Z&sort=created&order=desc&per_page=100",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G1_search_kafka_latency_20261008T155144Z.json",
+   "sha256": "e3d228983e14acef3bad0c95069ab93afb9c4fe2b9e64ab2d814a4674d534939"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://github.com/NOFireAI/opentelemetry-demo/issues/7024",
+   "title": "perf: increase Kafka producer batch size for order events",
+   "date": "2026-10-08T15:50:02Z",
+   "repo": "NOFireAI/opentelemetry-demo"
+  },
+  {
+   "url": "https://github.com/louisburroughs/durion-positivity-backend/issues/2621",
+   "title": "[BACKEND] [STORY] Minimise supplier.vendor.updated tax registrations (schemaVersion 2), scrub the outbox, encrypt and mask the number at rest",
+   "date": "2026-10-08T14:34:23Z",
+   "repo": "louisburroughs/durion-positivity-backend"
+  },
+  {
+   "url": "https://github.com/louisburroughs/durion-positivity-backend/issues/2617",
+   "title": "[ARCH] [SECURITY] Vendor tax-registration numbers (possible SSN/SIN) travel in clear on SupplierVendorUpdatedV1 and its copies",
+   "date": "2026-10-08T14:19:40Z",
+   "repo": "louisburroughs/durion-positivity-backend"
+  },
+  {
+   "url": "https://github.com/Ahnjisan/FinGuardOps/issues/371",
+   "title": "[Local K8s] CRITICAL \uac70\ub798\ubd80\ud130 AI \ub9ac\ud3ec\ud2b8\uae4c\uc9c0 \uaca9\ub9ac \ubc30\ud3ec\u00b7\ubcf5\uad6c E2E",
+   "date": "2026-10-08T13:12:09Z",
+   "repo": "Ahnjisan/FinGuardOps"
+  },
+  {
+   "url": "https://github.com/apache/iggy/issues/4447",
+   "title": "cli: show consumer group lag, and delete or reset consumer offsets",
+   "date": "2026-10-08T11:37:25Z",
+   "repo": "apache/iggy"
+  },
+  {
+   "url": "https://github.com/milvus-io/milvus/issues/54043",
+   "title": "[Bug]: Performance regression: Equivalent OR-idempotent grouped filter causes up to 33.02x search latency difference",
+   "date": "2026-10-08T11:53:14Z",
+   "repo": "milvus-io/milvus"
+  },
+  {
+   "url": "https://github.com/BrighterCommand/Brighter/issues/4560",
+   "title": "TimedOutboxSweeper misses ticks when pool threads are blocked, and one Task.Run per publish confirm delays MarkDispatched under load",
+   "date": "2026-10-08T10:51:17Z",
+   "repo": "BrighterCommand/Brighter"
+  }
+ ],
+ "notes": [
+  "Issues matching 'kafka consumer lag' or 'kafka latency' created in the window (GitHub search)."
+ ]
+}

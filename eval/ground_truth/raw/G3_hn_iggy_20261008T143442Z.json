@@ -1,0 +1,31 @@
+{
+ "_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=iggy&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790865281",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T14:34:42.579729+00:00",
+ "body": {
+  "exhaustive": {
+   "nbHits": true
+  },
+  "exhaustiveNbHits": true,
+  "hits": [],
+  "hitsPerPage": 100,
+  "nbHits": 0,
+  "nbPages": 0,
+  "page": 0,
+  "params": "query=iggy&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790865281&advancedSyntax=true&analyticsTags=backend&typoTolerance=false&removeWordsIfNoResults=none",
+  "processingTimeMS": 3,
+  "processingTimingsMS": {
+   "_request": {
+    "queue": 689,
+    "roundTrip": 19
+   },
+   "fetch": {
+    "query": 1,
+    "total": 2
+   },
+   "total": 4
+  },
+  "query": "iggy",
+  "serverTimeMS": 693
+ }
+}

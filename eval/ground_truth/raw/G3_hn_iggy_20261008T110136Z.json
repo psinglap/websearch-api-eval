@@ -1,0 +1,566 @@
+{
+ "_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=iggy&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790852495",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T11:01:36.772314+00:00",
+ "body": {
+  "exhaustive": {
+   "nbHits": true,
+   "typo": true
+  },
+  "exhaustiveNbHits": true,
+  "exhaustiveTypo": true,
+  "hits": [
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "autoexec"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "&gt; Something like 15% of PS5 game sales are physical now and only 5-10 games managed to crack 100K disc sales in a recent year, last I heard.<p>I'd be very careful about using those kinds of numbers to indicate what consumers what. Many PS5 consoles don't come with disk drives. The ones that don't were cheaper which increased their popularity. The numbers themselves are questionable after a leak showed first-party titles sold more physical copies than digital copies. <a href=\"https://en.gamegpu.com/news/igry/utechka-insomniac-raskryla-realnoe-sootnoshenie-fizicheskikh-i-tsifrovykh-prodazh-playstation\" rel=\"nofollow\">https://en.gamegpu.com/news/<em>igry</em>/utechka-insomniac-raskryla-...</a><p>&gt; Also, online purchases are cheaper. Frequent sales happen, at steeper discounts than brick and mortar retailers ever have.<p>This has not be my experience at all. Steam sales can be very cheap. The prices on the playstation store are high and tend to stay high. Retail (especially used games) prices are extremely cheap and every person who walks into a store pays the same price while the playstation store uses dynamic prices so one person might get a great deal, but if Sony thinks they can squeeze you for more money your price for the identical game can be much higher. Zero price transparency makes price tracking and discount data unreliable."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "PS5 Jailbreaks Are Escalating at an Unprecedented Pace"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.pushsquare.com/news/2026/10/ps5-jailbreaks-are-escalating-at-an-unprecedented-pace-and-sony-must-be-sweating"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_autoexec",
+     "story_49990763"
+    ],
+    "author": "autoexec",
+    "comment_text": "&gt; Something like 15% of PS5 game sales are physical now and only 5-10 games managed to crack 100K disc sales in a recent year, last I heard.<p>I&#x27;d be very careful about using those kinds of numbers to indicate what consumers what. Many PS5 consoles don&#x27;t come with disk drives. The ones that don&#x27;t were cheaper which increased their popularity. The numbers themselves are questionable after a leak showed first-party titles sold more physical copies than digital copies. <a href=\"https:&#x2F;&#x2F;en.gamegpu.com&#x2F;news&#x2F;igry&#x2F;utechka-insomniac-raskryla-realnoe-sootnoshenie-fizicheskikh-i-tsifrovykh-prodazh-playstation\" rel=\"nofollow\">https:&#x2F;&#x2F;en.gamegpu.com&#x2F;news&#x2F;igry&#x2F;utechka-insomniac-raskryla-...</a><p>&gt; Also, online purchases are cheaper. Frequent sales happen, at steeper discounts than brick and mortar retailers ever have.<p>This has not be my experience at all. Steam sales can be very cheap. The prices on the playstation store are high and tend to stay high. Retail (especially used games) prices are extremely cheap and every person who walks into a store pays the same price while the playstation store uses dynamic prices so one person might get a great deal, but if Sony thinks they can squeeze you for more money your price for the identical game can be much higher. Zero price transparency makes price tracking and discount data unreliable.",
+    "created_at": "2026-10-08T01:43:04Z",
+    "created_at_i": 1791423784,
+    "objectID": "50001044",
+    "parent_id": 49993348,
+    "story_id": 49990763,
+    "story_title": "PS5 Jailbreaks Are Escalating at an Unprecedented Pace",
+    "story_url": "https://www.pushsquare.com/news/2026/10/ps5-jailbreaks-are-escalating-at-an-unprecedented-pace-and-sony-must-be-sweating",
+    "updated_at": "2026-10-08T01:49:52Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "<em>Diggy</em>Johnson"
+     },
+     "comment_text": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Can you recoup the cost somehow? I\u2019m just flabbergasted by your first sentence."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "$2599 Microsoft Surface Laptop Ultra"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_DiggyJohnson",
+     "story_49996102"
+    ],
+    "author": "DiggyJohnson",
+    "children": [
+     50001120
+    ],
+    "comment_text": "Can you recoup the cost somehow? I\u2019m just flabbergasted by your first sentence.",
+    "created_at": "2026-10-07T19:41:19Z",
+    "created_at_i": 1791402079,
+    "objectID": "49997822",
+    "parent_id": 49997238,
+    "story_id": 49996102,
+    "story_title": "$2599 Microsoft Surface Laptop Ultra",
+    "story_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra",
+    "updated_at": "2026-10-08T10:11:53Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "triwats"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "<em>Piggy</em>backing as you may find it useful. I built <a href=\"https://flopper.io\" rel=\"nofollow\">https://flopper.io</a> and aim to do this differently that OP. We started with datasheets and individual GPUs. We're trying to get as many as we can.<p>Currently trying to work to have a plugin of similar to post back to get accurate benchmarks.<p>Take a look if you're interested!"
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "How many GPUs is 1M/B/T tokens?"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://cedana.com/resources/tokens-to-gpus/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_triwats",
+     "story_49982096"
+    ],
+    "author": "triwats",
+    "children": [
+     49997713,
+     49999711
+    ],
+    "comment_text": "Piggybacking as you may find it useful. I built <a href=\"https:&#x2F;&#x2F;flopper.io\" rel=\"nofollow\">https:&#x2F;&#x2F;flopper.io</a> and aim to do this differently that OP. We started with datasheets and individual GPUs. We&#x27;re trying to get as many as we can.<p>Currently trying to work to have a plugin of similar to post back to get accurate benchmarks.<p>Take a look if you&#x27;re interested!",
+    "created_at": "2026-10-07T19:25:12Z",
+    "created_at_i": 1791401112,
+    "objectID": "49997607",
+    "parent_id": 49994662,
+    "story_id": 49982096,
+    "story_title": "How many GPUs is 1M/B/T tokens?",
+    "story_url": "https://cedana.com/resources/tokens-to-gpus/",
+    "updated_at": "2026-10-08T04:31:37Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "<em>Jiggy</em>Mac"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Vulkan back end coming to SYCL"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://adaptivecpp.github.io/hipsycl/adaptivecpp/sycl/vulkan/android/vulkan-android/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_JiggyMac",
+     "story_49992478"
+    ],
+    "author": "JiggyMac",
+    "created_at": "2026-10-07T13:23:27Z",
+    "created_at_i": 1791379407,
+    "num_comments": 0,
+    "objectID": "49992478",
+    "points": 1,
+    "story_id": 49992478,
+    "title": "Vulkan back end coming to SYCL",
+    "updated_at": "2026-10-07T13:27:58Z",
+    "url": "https://adaptivecpp.github.io/hipsycl/adaptivecpp/sycl/vulkan/android/vulkan-android/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "agentultra"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "It remains viable as long as frontier models remain subsidized, too. How long will it take before these providers have to raise the prices to such a degree that such attacks would be reduced to only the most determined, financially capable attackers?<p>And even then there is the risk that the frontier model providers collapse. There\u2019s no indication yet that these companies are going to become profitable. And open source models simply <em>piggy</em> back on frontier ones and are generally not powerful enough for this level of adversarial attacks as far as I know.<p>And finally are LLMs the only method to hardening software? There is still a lot left on the table that could still allow a project to resist attacks from a frontier model.<p>Sure, humans are bad at catching this stuff. But in order to drive an LLM you have to be able to catch this stuff. Otherwise your only option is to trust the model and give up."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "The era of software quality, or the era of ostriches?"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_agentultra",
+     "story_49944392"
+    ],
+    "author": "agentultra",
+    "children": [
+     49972473,
+     49974228
+    ],
+    "comment_text": "It remains viable as long as frontier models remain subsidized, too. How long will it take before these providers have to raise the prices to such a degree that such attacks would be reduced to only the most determined, financially capable attackers?<p>And even then there is the risk that the frontier model providers collapse. There\u2019s no indication yet that these companies are going to become profitable. And open source models simply piggy back on frontier ones and are generally not powerful enough for this level of adversarial attacks as far as I know.<p>And finally are LLMs the only method to hardening software? There is still a lot left on the table that could still allow a project to resist attacks from a frontier model.<p>Sure, humans are bad at catching this stuff. But in order to drive an LLM you have to be able to catch this stuff. Otherwise your only option is to trust the model and give up.",
+    "created_at": "2026-10-05T23:56:06Z",
+    "created_at_i": 1791244566,
+    "objectID": "49972381",
+    "parent_id": 49971669,
+    "story_id": 49944392,
+    "story_title": "The era of software quality, or the era of ostriches?",
+    "story_url": "https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/",
+    "updated_at": "2026-10-06T09:27:01Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Supermancho"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "Gitframes seems like a confusing name, trying to <em>piggy</em>back off git popularity, while being unrelated."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Gitframes"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://github.com/gatewai-dev/gitframes"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_Supermancho",
+     "story_49964265"
+    ],
+    "author": "Supermancho",
+    "children": [
+     49966600,
+     49967134,
+     49972004
+    ],
+    "comment_text": "Gitframes seems like a confusing name, trying to piggyback off git popularity, while being unrelated.",
+    "created_at": "2026-10-05T14:10:10Z",
+    "created_at_i": 1791209410,
+    "objectID": "49965128",
+    "parent_id": 49964265,
+    "story_id": 49964265,
+    "story_title": "Gitframes",
+    "story_url": "https://github.com/gatewai-dev/gitframes",
+    "updated_at": "2026-10-06T02:33:14Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "jurgenburgen"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "You\u2019re right. Let me break open my kids <em>piggy</em> bank and grab a few million."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Germany\u2019s RobCo hits $1B valuation"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_jurgenburgen",
+     "story_49963366"
+    ],
+    "author": "jurgenburgen",
+    "comment_text": "You\u2019re right. Let me break open my kids piggy bank and grab a few million.",
+    "created_at": "2026-10-05T13:40:30Z",
+    "created_at_i": 1791207630,
+    "objectID": "49964767",
+    "parent_id": 49964745,
+    "story_id": 49963366,
+    "story_title": "Germany\u2019s RobCo hits $1B valuation",
+    "story_url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
+    "updated_at": "2026-10-05T17:23:44Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "majormajor"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "&gt;I think this misses OP's point that LLM capabilities have rapidly made progress towards being more generally intelligent and capable, which is not true of most tech advances.<p>A PC of today can accomplish many more &quot;general&quot; tasks than one of 40 years ago.\n Much of the &quot;why&quot; is because of the huge infrastructure built up around them in the meantime. The abilities of LLMs to accomplish those same tasks <i>through</i> the PC is heavily <em>piggy</em>backing on that (both in the specific, with the existence of all the APIs and tools; and in the generic, using search engines to find specific sources and using that for instruction or troubleshooting).<p>In the world of &quot;agents&quot; much of the improvement appears to have been on a <i>specific</i> set of skills: impersonation of an 'I' that wants to accomplish a goal, and synthesizing existing information from documents with trial-and-error execution loops to move rapidly toward a solution much faster and with less boredom than a human would. The quality of the output when there is <i>not</i> a rapid-evaluation-and-validation harness lags considerably.<p>It's incredibly powerful automation but doesn't appear to be trending towards Matrix-style conscious AIs. The <i>quality</i> of an individual method written by the agent also is not particularly advanced compared to GPT-4 in early 2023, as far as I can tell\u2014I was dabbling with trying to make such harnesses back then, where a major challenge was that the model itself was bad at staying on-track in a conversation, so instead much of that logic was moved to deterministic code, which was much more limited as it was super-tedious to enumerate all the necessary tool calls/etc to find its way out of corners. Staying on task is much better now, as is &quot;read compiler error, fix try next thing&quot; harness loop-handling. But the output remains\u2014across Fable, Astra, whatever else I've tried\u2014&quot;iffy&quot; in terms of the actual code structure on the first pass output. You can set it then on a <i>different</i> task to review and clean up the code, and it can do that well too, but it is a curious gap of generality where the &quot;create&quot; focus is much more limited than the &quot;review&quot; one (and conversely the &quot;review&quot; focus can make suggestions, but if it goes deep down the well of implementing them, loses that big-picture again).<p>If it kills us all, it will because someone decided to give the trial-and-error-loop-machine access to nukes or similar. The blame for that is on the &quot;someone&quot; not on some sort of &quot;rogue&quot; AI.<p>(I wonder if re-watching Terminator/Terminator 2 would support this sort of interpretation of it. Unlike in the Matrix, I don't think we get much sentient-AI POV/infodumping. Is it a plausible universe for &quot;someone made ChatGPT control a fleet of soldier robots and gave it a bad harness with an insufficient sandbox&quot;?)"
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_majormajor",
+     "story_49946228"
+    ],
+    "author": "majormajor",
+    "children": [
+     49958645
+    ],
+    "comment_text": "&gt;I think this misses OP&#x27;s point that LLM capabilities have rapidly made progress towards being more generally intelligent and capable, which is not true of most tech advances.<p>A PC of today can accomplish many more &quot;general&quot; tasks than one of 40 years ago.\n Much of the &quot;why&quot; is because of the huge infrastructure built up around them in the meantime. The abilities of LLMs to accomplish those same tasks <i>through</i> the PC is heavily piggybacking on that (both in the specific, with the existence of all the APIs and tools; and in the generic, using search engines to find specific sources and using that for instruction or troubleshooting).<p>In the world of &quot;agents&quot; much of the improvement appears to have been on a <i>specific</i> set of skills: impersonation of an &#x27;I&#x27; that wants to accomplish a goal, and synthesizing existing information from documents with trial-and-error execution loops to move rapidly toward a solution much faster and with less boredom than a human would. The quality of the output when there is <i>not</i> a rapid-evaluation-and-validation harness lags considerably.<p>It&#x27;s incredibly powerful automation but doesn&#x27;t appear to be trending towards Matrix-style conscious AIs. The <i>quality</i> of an individual method written by the agent also is not particularly advanced compared to GPT-4 in early 2023, as far as I can tell\u2014I was dabbling with trying to make such harnesses back then, where a major challenge was that the model itself was bad at staying on-track in a conversation, so instead much of that logic was moved to deterministic code, which was much more limited as it was super-tedious to enumerate all the necessary tool calls&#x2F;etc to find its way out of corners. Staying on task is much better now, as is &quot;read compiler error, fix try next thing&quot; harness loop-handling. But the output remains\u2014across Fable, Astra, whatever else I&#x27;ve tried\u2014&quot;iffy&quot; in terms of the actual code structure on the first pass output. You can set it then on a <i>different</i> task to review and clean up the code, and it can do that well too, but it is a curious gap of generality where the &quot;create&quot; focus is much more limited than the &quot;review&quot; one (and conversely the &quot;review&quot; focus can make suggestions, but if it goes deep down the well of implementing them, loses that big-picture again).<p>If it kills us all, it will because someone decided to give the trial-and-error-loop-machine access to nukes or similar. The blame for that is on the &quot;someone&quot; not on some sort of &quot;rogue&quot; AI.<p>(I wonder if re-watching Terminator&#x2F;Terminator 2 would support this sort of interpretation of it. Unlike in the Matrix, I don&#x27;t think we get much sentient-AI POV&#x2F;infodumping. Is it a plausible universe for &quot;someone made ChatGPT control a fleet of soldier robots and gave it a bad harness with an insufficient sandbox&quot;?)",
+    "created_at": "2026-10-04T21:42:32Z",
+    "created_at_i": 1791150152,
+    "objectID": "49958193",
+    "parent_id": 49957072,
+    "story_id": 49946228,
+    "story_title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+    "story_url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+    "updated_at": "2026-10-05T05:39:41Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "lukifer"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "Humans seem to struggle conceptually with the liminal space between selection-pressure automata (an RNA virus; an insect which evolved camouflage), and an evolved complexity with agency, capable of &quot;understanding&quot; its actions (certainly humans; arguably many animals). And this makes a certain sense: we evolved to treat agentic things as being categorically different from non-agentic things. If we see sudden movement, it's vital to rapidly assess the difference between a tree branch in the wind, versus a predator.<p>The evolved complexity of the corporation seems to fit within that middle space: more sophisticated than a stick-bug (which exists merely from non-stick bugs being eaten), but not quite to the point where OpenAI/Anthrophic/Google/etc can &quot;understand&quot; its actions. And yet those quasi-intelligent feedback loops, evolving from iterated selection pressures of markets and ROI, seem to already be sufficient to domesticate us in their own interests, <em>piggy</em>backing on the nervous systems of employees, investors, customers, and citizens."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_lukifer",
+     "story_49946228"
+    ],
+    "author": "lukifer",
+    "children": [
+     49955357
+    ],
+    "comment_text": "Humans seem to struggle conceptually with the liminal space between selection-pressure automata (an RNA virus; an insect which evolved camouflage), and an evolved complexity with agency, capable of &quot;understanding&quot; its actions (certainly humans; arguably many animals). And this makes a certain sense: we evolved to treat agentic things as being categorically different from non-agentic things. If we see sudden movement, it&#x27;s vital to rapidly assess the difference between a tree branch in the wind, versus a predator.<p>The evolved complexity of the corporation seems to fit within that middle space: more sophisticated than a stick-bug (which exists merely from non-stick bugs being eaten), but not quite to the point where OpenAI&#x2F;Anthrophic&#x2F;Google&#x2F;etc can &quot;understand&quot; its actions. And yet those quasi-intelligent feedback loops, evolving from iterated selection pressures of markets and ROI, seem to already be sufficient to domesticate us in their own interests, piggybacking on the nervous systems of employees, investors, customers, and citizens.",
+    "created_at": "2026-10-04T16:03:15Z",
+    "created_at_i": 1791129795,
+    "objectID": "49955078",
+    "parent_id": 49952240,
+    "story_id": 49946228,
+    "story_title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+    "story_url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+    "updated_at": "2026-10-05T07:03:57Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "heartlights"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "IIUC, anything supported by LLVM is fine. The language <em>piggy</em>backs on llvm mlir. So, you should be able to target that."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Vx \u2013 One Language, Every Chip"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://vxlang.org/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_heartlights",
+     "story_49946076"
+    ],
+    "author": "heartlights",
+    "children": [
+     49957931
+    ],
+    "comment_text": "IIUC, anything supported by LLVM is fine. The language piggybacks on llvm mlir. So, you should be able to target that.",
+    "created_at": "2026-10-04T07:01:48Z",
+    "created_at_i": 1791097308,
+    "objectID": "49951386",
+    "parent_id": 49951277,
+    "story_id": 49946076,
+    "story_title": "Vx \u2013 One Language, Every Chip",
+    "story_url": "https://vxlang.org/",
+    "updated_at": "2026-10-04T21:12:41Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "andrepd"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "RH would require completely novel insight and a brilliant original thought. Unlike Navier-Stokes it's not a gradual effort and you cannot <em>piggy</em>back off of other mathematician's works, so &quot;AI&quot; will not solve it anytime soon."
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "With most information hidden, the game Stratego had stumped AI until now"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_andrepd",
+     "story_49933740"
+    ],
+    "author": "andrepd",
+    "children": [
+     49939317,
+     50000610,
+     49941393
+    ],
+    "comment_text": "RH would require completely novel insight and a brilliant original thought. Unlike Navier-Stokes it&#x27;s not a gradual effort and you cannot piggyback off of other mathematician&#x27;s works, so &quot;AI&quot; will not solve it anytime soon.",
+    "created_at": "2026-10-02T22:10:44Z",
+    "created_at_i": 1790979044,
+    "objectID": "49939246",
+    "parent_id": 49938044,
+    "story_id": 49933740,
+    "story_title": "With most information hidden, the game Stratego had stumped AI until now",
+    "story_url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+    "updated_at": "2026-10-08T10:34:24Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "vira28"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "iggy"
+      ],
+      "value": "I wonder how many of data infra startups are wrapper on top of S3.<p>Also, the boundary between OLTP and OLAP is blurring every day.<p>For folks who want an off shelf version of this you may be interested in <a href=\"https://github.com/viggy28/streambed\" rel=\"nofollow\">https://github.com/<em>viggy</em>28/streambed</a><p>(Disclaimer: I am one of the committers)"
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Cloudflare K2: serverless event streams"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://blog.cloudflare.com/cloudflare-k2-streams/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_vira28",
+     "story_49921923"
+    ],
+    "author": "vira28",
+    "children": [
+     49926414,
+     49926678
+    ],
+    "comment_text": "I wonder how many of data infra startups are wrapper on top of S3.<p>Also, the boundary between OLTP and OLAP is blurring every day.<p>For folks who want an off shelf version of this you may be interested in <a href=\"https:&#x2F;&#x2F;github.com&#x2F;viggy28&#x2F;streambed\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;viggy28&#x2F;streambed</a><p>(Disclaimer: I am one of the committers)",
+    "created_at": "2026-10-01T19:38:09Z",
+    "created_at_i": 1790883489,
+    "objectID": "49926130",
+    "parent_id": 49921923,
+    "story_id": 49921923,
+    "story_title": "Cloudflare K2: serverless event streams",
+    "story_url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+    "updated_at": "2026-10-05T23:05:29Z"
+   }
+  ],
+  "hitsPerPage": 100,
+  "nbHits": 12,
+  "nbPages": 1,
+  "page": 0,
+  "params": "query=iggy&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790852495&advancedSyntax=true&analyticsTags=backend",
+  "processingTimeMS": 3,
+  "processingTimingsMS": {
+   "_request": {
+    "roundTrip": 15
+   },
+   "fetch": {
+    "query": 1,
+    "total": 2
+   },
+   "total": 3
+  },
+  "query": "iggy",
+  "serverTimeMS": 4
+ }
+}

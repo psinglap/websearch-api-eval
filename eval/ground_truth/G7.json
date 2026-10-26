@@ -1,0 +1,26 @@
+{
+ "qid": "G7",
+ "pulled_at_utc": "2026-10-08T15:51:54.269720+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "incidents_unresolved",
+   "url": "https://status.confluent.cloud/api/v2/incidents/unresolved.json",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G7_incidents_unresolved_20261008T155154Z.json",
+   "sha256": "94ba1b960f3916da506c7f2f76d1152628e4fb36e21092161b892bb824597952"
+  },
+  {
+   "name": "summary",
+   "url": "https://status.confluent.cloud/api/v2/summary.json",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G7_summary_20261008T155154Z.json",
+   "sha256": "5fba27076cfd198c306f65699bb75508aba0ab731f691b616193acea57edc26e"
+  }
+ ],
+ "items": [],
+ "notes": [
+  "status indicator: none - All Systems Operational",
+  "No unresolved incidents at pull time => correct answer is 'none'."
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "qid": "G6",
+ "pulled_at_utc": "2026-10-08T15:51:50.076204+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "releases_apache_kafka",
+   "url": "https://api.github.com/repos/apache/kafka/releases?per_page=20",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G6_releases_apache_kafka_20261008T155148Z.json",
+   "sha256": "e532077cb81cd65bfd4070f01277cb555edb9124dedca124a38b31a6a52c3d90"
+  },
+  {
+   "name": "releases_redpanda-data_redpanda",
+   "url": "https://api.github.com/repos/redpanda-data/redpanda/releases?per_page=20",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G6_releases_redpanda-data_redpanda_20261008T155148Z.json",
+   "sha256": "650ef909323446aac545d190f44f4ef5a5d240833600375fa8d6f0eb87b058c4"
+  },
+  {
+   "name": "releases_nats-io_nats-server",
+   "url": "https://api.github.com/repos/nats-io/nats-server/releases?per_page=20",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G6_releases_nats-io_nats-server_20261008T155149Z.json",
+   "sha256": "d39ba76f90e39885b4eadf0ae5ff00ceaf00948659476becbd45e3469de44677"
+  },
+  {
+   "name": "releases_apache_pulsar",
+   "url": "https://api.github.com/repos/apache/pulsar/releases?per_page=20",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G6_releases_apache_pulsar_20261008T155150Z.json",
+   "sha256": "dc13a3a5830cfa838bbbcbbd4393ce6f8ed11b25f3c2066c382167b7b7317e4c"
+  }
+ ],
+ "items": [],
+ "notes": [
+  "Releases published in the window; empty list => correct answer is 'none'.",
+  "apache/kafka publishes few GitHub releases; also check kafka.apache.org/downloads (evidence)."
+ ]
+}

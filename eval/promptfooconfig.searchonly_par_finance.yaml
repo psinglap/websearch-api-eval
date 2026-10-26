@@ -1,0 +1,59 @@
+description: 'Config A (search only) - finance: one request at a time, 3 spaced runs'
+prompts:
+- file://prompts/query.txt
+providers:
+- id: file://providers/youcom.py
+  label: You.com
+  config:
+    pythonExecutable: .venv/bin/python
+    workers: 1
+    timeout: 300000
+- id: file://providers/tavily.py
+  label: Tavily
+  config:
+    pythonExecutable: .venv/bin/python
+    workers: 1
+    timeout: 300000
+- id: file://providers/exa.py
+  label: Exa
+  config:
+    pythonExecutable: .venv/bin/python
+    workers: 1
+    timeout: 300000
+- id: file://providers/parallel.py
+  label: Parallel
+  config:
+    pythonExecutable: .venv/bin/python
+    workers: 1
+    timeout: 300000
+defaultTest:
+  assert:
+  - type: python
+    value: file://asserts/freshness.py
+    metric: freshness
+  - type: python
+    value: file://asserts/recall.py
+    metric: recall
+  - type: python
+    value: file://asserts/citation_validity.py
+    metric: url_validity
+  - type: python
+    value: file://asserts/content_one_call.py
+    metric: content_in_one_call
+  - type: python
+    value: file://asserts/latency_budget.py
+    metric: latency_budget
+  - type: latency
+    threshold: 3000
+    weight: 0
+  - type: python
+    value: file://asserts/token_cost.py
+    metric: token_cost
+  - type: python
+    value: file://asserts/reliability.py
+    metric: reliability
+tests: file://tests/searchonly_finance.yaml
+evaluateOptions:
+  maxConcurrency: 4
+outputPath:
+- out/finance_results.json

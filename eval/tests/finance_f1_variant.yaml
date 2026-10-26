@@ -1,0 +1,20 @@
+# F1 only: You.com with knowledge=core, reported as a variant (not a separate competitor)
+- description: 'F1: Where is NVIDIA trading?'
+  vars:
+    qid: F1
+    usecase: finance
+    upstream_task: Where is NVIDIA trading?
+    query: NVDA stock price
+    window_hours: 24
+    domains: ''
+    needs_back: Price, % change, timestamp
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://finance.yahoo.com/quote/NVDA/ ; https://www.nasdaq.com/market-activity/stocks/nvda
+    answer_type: numeric
+    tolerance: price within +/-0.5% of the quote at run time
+    ground_truth_file: ground_truth/F1.json
+  assert: []

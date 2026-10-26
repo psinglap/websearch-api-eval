@@ -1,0 +1,46 @@
+{
+ "qid": "G1",
+ "FIXTURE": true,
+ "items": [
+  {
+   "url": "https://fixture.invalid/firecrawl/46a0eaef/0",
+   "title": "FIXTURE gold item",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/firecrawl/46a0eaef/3",
+   "title": "FIXTURE gold item",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/linkup/46a0eaef/0",
+   "title": "FIXTURE gold item",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/linkup/46a0eaef/8",
+   "title": "FIXTURE gold item",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/parallel/46a0eaef/2",
+   "title": "FIXTURE gold item",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/parallel/46a0eaef/4",
+   "title": "FIXTURE gold item",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/missed/46a0eaef/0",
+   "title": "FIXTURE gold item nobody found",
+   "date": null
+  },
+  {
+   "url": "https://fixture.invalid/missed/46a0eaef/1",
+   "title": "FIXTURE gold item nobody found",
+   "date": null
+  }
+ ]
+}

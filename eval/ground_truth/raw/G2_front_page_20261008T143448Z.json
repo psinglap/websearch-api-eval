@@ -1,0 +1,2118 @@
+{
+ "_request_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=100",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T14:34:48.757612+00:00",
+ "body": {
+  "exhaustive": {
+   "nbHits": true,
+   "typo": true
+  },
+  "exhaustiveNbHits": true,
+  "exhaustiveTypo": true,
+  "hits": [
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "muglug"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Margaret Hamilton has died"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_muglug",
+     "story_49998895",
+     "front_page"
+    ],
+    "author": "muglug",
+    "children": [
+     49999090,
+     49999247,
+     49999279,
+     49999336,
+     49999628,
+     49999652,
+     49999747,
+     49999783,
+     49999810,
+     49999961,
+     50000000,
+     50000250,
+     50000296,
+     50000325,
+     50000360,
+     50000424,
+     50000434,
+     50000476,
+     50000624,
+     50000740,
+     50000834,
+     50000865,
+     50000950,
+     50001001,
+     50001156,
+     50001171,
+     50001218,
+     50001327,
+     50001385,
+     50001395,
+     50001419,
+     50001643,
+     50001751,
+     50002092,
+     50002548,
+     50002616,
+     50002781,
+     50002802,
+     50002853,
+     50002858,
+     50002888,
+     50003096,
+     50003146,
+     50003152,
+     50004238,
+     50004301,
+     50004331,
+     50004768,
+     50004792,
+     50005477,
+     50005600,
+     50005896
+    ],
+    "created_at": "2026-10-07T21:16:18Z",
+    "created_at_i": 1791407778,
+    "num_comments": 209,
+    "objectID": "49998895",
+    "points": 1865,
+    "story_id": 49998895,
+    "title": "Margaret Hamilton has died",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "OfficialTurkey"
+     },
+     "story_text": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "<a href=\"https://github.com/openai/math\" rel=\"nofollow\">https://github.com/openai/math</a><p><a href=\"https://github.com/openai/math/tree/main/preprints\" rel=\"nofollow\">https://github.com/openai/math/tree/main/preprints</a>"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Sharing AI progress in mathematics"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_OfficialTurkey",
+     "story_49984923",
+     "front_page"
+    ],
+    "author": "OfficialTurkey",
+    "children": [
+     49984998,
+     49985003,
+     49985029,
+     49985038,
+     49985068,
+     49985070,
+     49985100,
+     49985101,
+     49985106,
+     49985109,
+     49985114,
+     49985149,
+     49985176,
+     49985212,
+     49985214,
+     49985230,
+     49985243,
+     49985273,
+     49985297,
+     49985315,
+     49985321,
+     49985322,
+     49985330,
+     49985358,
+     49985374,
+     49985429,
+     49985459,
+     49985516,
+     49985540,
+     49985590,
+     49985593,
+     49985622,
+     49985635,
+     49985655,
+     49985692,
+     49985695,
+     49985733,
+     49985741,
+     49985767,
+     49985784,
+     49985820,
+     49985868,
+     49985884,
+     49985902,
+     49985930,
+     49985938,
+     49985941,
+     49985951,
+     49985968,
+     49985977,
+     49985989,
+     49986052,
+     49986075,
+     49986150,
+     49986192,
+     49986303,
+     49986424,
+     49986440,
+     49986565,
+     49986581,
+     49986608,
+     49986624,
+     49986658,
+     49986745,
+     49986815,
+     49986875,
+     49986941,
+     49986976,
+     49986977,
+     49986986,
+     49987051,
+     49987078,
+     49987200,
+     49987367,
+     49987525,
+     49987558,
+     49987581,
+     49987633,
+     49987642,
+     49987652,
+     49987682,
+     49987715,
+     49987778,
+     49987790,
+     49987820,
+     49987844,
+     49987870,
+     49987908,
+     49987931,
+     49987996,
+     49988247,
+     49988271,
+     49988447,
+     49988578,
+     49988756,
+     49988780,
+     49988980,
+     49989013,
+     49989088,
+     49989162,
+     49989210,
+     49989310,
+     49989330,
+     49989339,
+     49989683,
+     49989834,
+     49990026,
+     49990057,
+     49990100,
+     49990198,
+     49990216,
+     49990316,
+     49990413,
+     49990530,
+     49990565,
+     49990714,
+     49990750,
+     49991164,
+     49991289,
+     49991349,
+     49991369,
+     49991372,
+     49991552,
+     49991821,
+     49991884,
+     49992020,
+     49992185,
+     49992526,
+     49992713,
+     49993209,
+     49993584,
+     49994456,
+     49994785,
+     49995417,
+     49995523,
+     49995947,
+     49995998,
+     49996193,
+     49997167,
+     49997510,
+     49998153,
+     49998427,
+     49998652,
+     50000234,
+     50002000,
+     50002080,
+     50003081
+    ],
+    "created_at": "2026-10-06T22:17:21Z",
+    "created_at_i": 1791325041,
+    "num_comments": 1476,
+    "objectID": "49984923",
+    "points": 1296,
+    "story_id": 49984923,
+    "story_text": "<a href=\"https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;math\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;math</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;math&#x2F;tree&#x2F;main&#x2F;preprints\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;math&#x2F;tree&#x2F;main&#x2F;preprints</a>",
+    "title": "Sharing AI progress in mathematics",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "sfkgtbor"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Claude Haiku 5.5"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.anthropic.com/claude-haiku-5-5"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_sfkgtbor",
+     "story_49996437",
+     "front_page"
+    ],
+    "author": "sfkgtbor",
+    "children": [
+     49996475,
+     49996490,
+     49996502,
+     49996531,
+     49996562,
+     49996567,
+     49996578,
+     49996585,
+     49996606,
+     49996607,
+     49996610,
+     49996624,
+     49996633,
+     49996662,
+     49996683,
+     49996721,
+     49996723,
+     49996757,
+     49996770,
+     49996774,
+     49996791,
+     49996794,
+     49996887,
+     49996898,
+     49996976,
+     49997003,
+     49997038,
+     49997151,
+     49997193,
+     49997194,
+     49997265,
+     49997287,
+     49997381,
+     49997391,
+     49997419,
+     49997463,
+     49997476,
+     49997533,
+     49997638,
+     49997686,
+     49997716,
+     49997726,
+     49997744,
+     49997858,
+     49998067,
+     49998170,
+     49998188,
+     49998192,
+     49998213,
+     49998620,
+     49998734,
+     49999201,
+     49999345,
+     49999409,
+     49999514,
+     49999546,
+     49999726,
+     49999876,
+     50000119,
+     50000487,
+     50000926,
+     50000946,
+     50001415,
+     50001575,
+     50001905,
+     50002013,
+     50002086,
+     50002103,
+     50002857,
+     50004451,
+     50005646,
+     50005796,
+     50005862,
+     50005938,
+     50006070,
+     50006175
+    ],
+    "created_at": "2026-10-07T18:01:32Z",
+    "created_at_i": 1791396092,
+    "num_comments": 452,
+    "objectID": "49996437",
+    "points": 961,
+    "story_id": 49996437,
+    "title": "Claude Haiku 5.5",
+    "updated_at": "2026-10-08T14:29:39Z",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "joshuawright11"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "GPT\u20116 and Intelligent UI for everyone"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://openai.com/index/gpt-6-for-everyone/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_joshuawright11",
+     "story_49996425",
+     "front_page"
+    ],
+    "author": "joshuawright11",
+    "children": [
+     49996604,
+     49996649,
+     49996670,
+     49996733,
+     49996734,
+     49996796,
+     49996798,
+     49996809,
+     49996815,
+     49996831,
+     49996848,
+     49996852,
+     49996854,
+     49996861,
+     49996883,
+     49996884,
+     49996896,
+     49996897,
+     49996900,
+     49996909,
+     49996934,
+     49996963,
+     49996989,
+     49997016,
+     49997066,
+     49997068,
+     49997132,
+     49997134,
+     49997184,
+     49997197,
+     49997206,
+     49997229,
+     49997246,
+     49997247,
+     49997262,
+     49997274,
+     49997353,
+     49997363,
+     49997384,
+     49997484,
+     49997505,
+     49997524,
+     49997528,
+     49997547,
+     49997570,
+     49997631,
+     49997651,
+     49997751,
+     49997786,
+     49997866,
+     49997907,
+     49997920,
+     49998081,
+     49998148,
+     49998166,
+     49998262,
+     49998273,
+     49998315,
+     49998364,
+     49998376,
+     49998414,
+     49998417,
+     49998423,
+     49998484,
+     49998710,
+     49998726,
+     49998797,
+     49998813,
+     49998818,
+     49999361,
+     49999380,
+     49999462,
+     49999468,
+     49999599,
+     49999607,
+     49999662,
+     49999700,
+     49999712,
+     49999746,
+     49999995,
+     50000039,
+     50000047,
+     50000295,
+     50000343,
+     50000704,
+     50000838,
+     50001005,
+     50001012,
+     50001051,
+     50001057,
+     50001401,
+     50001872,
+     50001889,
+     50001920,
+     50002777,
+     50002818,
+     50002902,
+     50002929,
+     50003078,
+     50003369,
+     50003439,
+     50003475,
+     50003525,
+     50003574,
+     50003691,
+     50003871,
+     50004413,
+     50004456,
+     50004494,
+     50004657,
+     50004776,
+     50004814,
+     50004912,
+     50005294
+    ],
+    "created_at": "2026-10-07T18:00:58Z",
+    "created_at_i": 1791396058,
+    "num_comments": 409,
+    "objectID": "49996425",
+    "points": 697,
+    "story_id": 49996425,
+    "title": "GPT\u20116 and Intelligent UI for everyone",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://openai.com/index/gpt-6-for-everyone/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "SpeakingOfBrad"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Show HN: Bigwords.page \u2013 Turn any screen into a sign. The URL is the app"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://bigwords.page/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_SpeakingOfBrad",
+     "story_49994443",
+     "show_hn",
+     "front_page"
+    ],
+    "author": "SpeakingOfBrad",
+    "children": [
+     49994461,
+     49995625,
+     49995735,
+     49995913,
+     49995925,
+     49995953,
+     49996012,
+     49996019,
+     49996021,
+     49996131,
+     49996167,
+     49996177,
+     49996217,
+     49996220,
+     49996230,
+     49996255,
+     49996307,
+     49996371,
+     49996646,
+     49996755,
+     49996763,
+     49996869,
+     49996940,
+     49997126,
+     49997258,
+     49997424,
+     49997466,
+     49997519,
+     49997779,
+     49998125,
+     49998517,
+     49999387,
+     49999436,
+     49999471,
+     49999698,
+     49999818,
+     49999921,
+     50000012,
+     50000408,
+     50000459,
+     50000481,
+     50001143,
+     50001529,
+     50001537,
+     50001628,
+     50001699,
+     50001811,
+     50001827,
+     50001839,
+     50001893,
+     50001925,
+     50001980,
+     50001983,
+     50002157,
+     50002764,
+     50002967,
+     50003271,
+     50003426,
+     50003625,
+     50003786
+    ],
+    "created_at": "2026-10-07T15:44:21Z",
+    "created_at_i": 1791387861,
+    "num_comments": 144,
+    "objectID": "49994443",
+    "points": 588,
+    "story_id": 49994443,
+    "title": "Show HN: Bigwords.page \u2013 Turn any screen into a sign. The URL is the app",
+    "updated_at": "2026-10-08T14:30:09Z",
+    "url": "https://bigwords.page/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "ent101"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "\u201cMath 2.0\u201d will need to value mathematical progress more holistically"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://mathstodon.xyz/@tao/117395269325940185"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_ent101",
+     "story_50002008",
+     "front_page"
+    ],
+    "author": "ent101",
+    "children": [
+     50002098,
+     50002101,
+     50002110,
+     50002116,
+     50002121,
+     50002122,
+     50002125,
+     50002127,
+     50002135,
+     50002148,
+     50002156,
+     50002166,
+     50002192,
+     50002206,
+     50002213,
+     50002217,
+     50002234,
+     50002255,
+     50002269,
+     50002273,
+     50002277,
+     50002298,
+     50002333,
+     50002356,
+     50002418,
+     50002464,
+     50002490,
+     50002540,
+     50002585,
+     50002659,
+     50002727,
+     50002784,
+     50002813,
+     50002918,
+     50002948,
+     50002972,
+     50002975,
+     50003020,
+     50003077,
+     50003082,
+     50003122,
+     50003135,
+     50003155,
+     50003168,
+     50003171,
+     50003247,
+     50003472,
+     50003537,
+     50003552,
+     50003572,
+     50003718,
+     50003772,
+     50003892,
+     50003906,
+     50004004,
+     50004016,
+     50004062,
+     50004095,
+     50004133,
+     50004188,
+     50004245,
+     50004334,
+     50004423,
+     50004433,
+     50004496,
+     50004620,
+     50004682,
+     50004757,
+     50004797,
+     50004956,
+     50005022,
+     50005043,
+     50005086,
+     50005134,
+     50005253,
+     50005264,
+     50005293,
+     50005395,
+     50005448,
+     50005506,
+     50005532,
+     50005857,
+     50005949,
+     50006054,
+     50006094,
+     50006137,
+     50006235
+    ],
+    "created_at": "2026-10-08T05:14:14Z",
+    "created_at_i": 1791436454,
+    "num_comments": 439,
+    "objectID": "50002008",
+    "points": 452,
+    "story_id": 50002008,
+    "title": "\u201cMath 2.0\u201d will need to value mathematical progress more holistically",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://mathstodon.xyz/@tao/117395269325940185"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "turrini"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Animated ASCII Art for Web Pages"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://ascii.rest/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_turrini",
+     "story_49993857",
+     "front_page"
+    ],
+    "author": "turrini",
+    "children": [
+     49994539,
+     49995051,
+     49995217,
+     49995275,
+     49995350,
+     49995351,
+     49995373,
+     49995376,
+     49995453,
+     49995481,
+     49995615,
+     49995705,
+     49995919,
+     49996303,
+     49996444,
+     49996504,
+     49996577,
+     49996984,
+     49997080,
+     49997378,
+     49997636,
+     49998211,
+     50001648,
+     50002479,
+     50004443,
+     50004737,
+     50005435,
+     50005605,
+     50005880
+    ],
+    "created_at": "2026-10-07T15:05:37Z",
+    "created_at_i": 1791385537,
+    "num_comments": 72,
+    "objectID": "49993857",
+    "points": 409,
+    "story_id": 49993857,
+    "title": "Animated ASCII Art for Web Pages",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://ascii.rest/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "6bitquant"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "The Mathocalypse"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://scottaaronson.blog/?p=10169"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_6bitquant",
+     "story_49997718",
+     "front_page"
+    ],
+    "author": "6bitquant",
+    "children": [
+     49998151,
+     49998157,
+     49998165,
+     49998185,
+     49998214,
+     49998219,
+     49998243,
+     49998263,
+     49998276,
+     49998280,
+     49998348,
+     49998359,
+     49998453,
+     49998479,
+     49998491,
+     49998533,
+     49998579,
+     49998665,
+     49998712,
+     49998762,
+     49998771,
+     49998784,
+     49998794,
+     49998872,
+     49999003,
+     49999037,
+     49999050,
+     49999092,
+     49999119,
+     49999125,
+     49999156,
+     49999174,
+     49999536,
+     50000077,
+     50000816,
+     50001373,
+     50003203,
+     50003303,
+     50004205,
+     50004340,
+     50004436,
+     50004976,
+     50005445
+    ],
+    "created_at": "2026-10-07T19:33:40Z",
+    "created_at_i": 1791401620,
+    "num_comments": 319,
+    "objectID": "49997718",
+    "points": 312,
+    "story_id": 49997718,
+    "title": "The Mathocalypse",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://scottaaronson.blog/?p=10169"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Muhammad523"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Living off-grid: Hundred Rabbits"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://100r.ca/site/home.html"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_Muhammad523",
+     "story_49970767",
+     "front_page"
+    ],
+    "author": "Muhammad523",
+    "children": [
+     49971341,
+     50001477,
+     50001549,
+     50001646,
+     50001659,
+     50001710,
+     50001795,
+     50001824,
+     50001849,
+     50001876,
+     50002038,
+     50002117,
+     50002224,
+     50002459,
+     50002522,
+     50002702,
+     50002739,
+     50003130,
+     50003567,
+     50003739,
+     50004065,
+     50004521,
+     50005717,
+     50005964
+    ],
+    "created_at": "2026-10-05T21:08:33Z",
+    "created_at_i": 1791234513,
+    "num_comments": 113,
+    "objectID": "49970767",
+    "points": 295,
+    "story_id": 49970767,
+    "title": "Living off-grid: Hundred Rabbits",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://100r.ca/site/home.html"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "saikatsg"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Docker Agent"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://github.com/docker/docker-agent"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_saikatsg",
+     "story_49996259",
+     "front_page"
+    ],
+    "author": "saikatsg",
+    "children": [
+     49996927,
+     49996977,
+     49997009,
+     49997022,
+     49997052,
+     49997097,
+     49997121,
+     49997583,
+     49997595,
+     49997599,
+     49997615,
+     49997758,
+     49997840,
+     49998290,
+     49998300,
+     49998570,
+     49999046,
+     49999110,
+     49999229,
+     49999966,
+     50000177,
+     50000373,
+     50000405,
+     50000435,
+     50000492,
+     50000648,
+     50000904,
+     50000923,
+     50001185,
+     50001814,
+     50002950,
+     50003749,
+     50003757,
+     50004020,
+     50004572,
+     50004603,
+     50005465,
+     50005918
+    ],
+    "created_at": "2026-10-07T17:48:38Z",
+    "created_at_i": 1791395318,
+    "num_comments": 125,
+    "objectID": "49996259",
+    "points": 274,
+    "story_id": 49996259,
+    "title": "Docker Agent",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://github.com/docker/docker-agent"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "shahidhussain"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "The 15-year search for a band that charted once and vanished"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://shahidhussain.com/writing/search-for-salvage/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_shahidhussain",
+     "story_49959280",
+     "front_page"
+    ],
+    "author": "shahidhussain",
+    "children": [
+     49959281,
+     50002165,
+     50002167,
+     50002178,
+     50002252,
+     50002481,
+     50002486,
+     50002491,
+     50002550,
+     50002738,
+     50003062,
+     50003218,
+     50003360,
+     50003559,
+     50003649,
+     50003657,
+     50003827,
+     50003856,
+     50003966,
+     50003972,
+     50004191,
+     50004200,
+     50004212,
+     50004214,
+     50004237,
+     50004314,
+     50004342,
+     50004357,
+     50004498,
+     50004501,
+     50004546,
+     50004624,
+     50004869,
+     50004929,
+     50005000,
+     50005211,
+     50005331,
+     50005339,
+     50005479,
+     50005827,
+     50005849,
+     50005983
+    ],
+    "created_at": "2026-10-05T00:06:43Z",
+    "created_at_i": 1791158803,
+    "num_comments": 89,
+    "objectID": "49959280",
+    "points": 241,
+    "story_id": 49959280,
+    "title": "The 15-year search for a band that charted once and vanished",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://shahidhussain.com/writing/search-for-salvage/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "pavel_lishin"
+     },
+     "story_text": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Paper: <a href=\"https://link.springer.com/article/10.1007/s10739-026-09866-7\" rel=\"nofollow\">https://link.springer.com/article/10.1007/s10739-026-09866-7</a>"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "How did Rosalind Franklin miss the helix in her iconic DNA image? She didn't"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_pavel_lishin",
+     "story_49969073",
+     "front_page"
+    ],
+    "author": "pavel_lishin",
+    "children": [
+     49969695,
+     49969703,
+     49969720,
+     49969743,
+     49998955,
+     49999025,
+     49999072,
+     49999139,
+     49999355,
+     49999427,
+     49999445,
+     49999568,
+     49999611,
+     49999636,
+     49999688,
+     49999767,
+     50000412,
+     50001059,
+     50001314,
+     50002596,
+     50003608,
+     50004174,
+     50004955
+    ],
+    "created_at": "2026-10-05T19:07:07Z",
+    "created_at_i": 1791227227,
+    "num_comments": 83,
+    "objectID": "49969073",
+    "points": 239,
+    "story_id": 49969073,
+    "story_text": "Paper: <a href=\"https:&#x2F;&#x2F;link.springer.com&#x2F;article&#x2F;10.1007&#x2F;s10739-026-09866-7\" rel=\"nofollow\">https:&#x2F;&#x2F;link.springer.com&#x2F;article&#x2F;10.1007&#x2F;s10739-026-09866-7</a>",
+    "title": "How did Rosalind Franklin miss the helix in her iconic DNA image? She didn't",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "theemathas"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "OpenAI Withdraws 3 Math Papers"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://github.com/openai/math/blob/main/history.md"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_theemathas",
+     "story_50003107",
+     "front_page"
+    ],
+    "author": "theemathas",
+    "children": [
+     50004488,
+     50004536,
+     50004539,
+     50004661,
+     50004716,
+     50004733,
+     50004921,
+     50004980,
+     50004982,
+     50005070,
+     50005072,
+     50005074,
+     50005081,
+     50005216,
+     50005297,
+     50005312,
+     50005324,
+     50005358,
+     50005545,
+     50005633,
+     50005792,
+     50005841,
+     50006040,
+     50006113,
+     50006125,
+     50006228,
+     50006249,
+     50006272
+    ],
+    "created_at": "2026-10-08T08:08:37Z",
+    "created_at_i": 1791446917,
+    "num_comments": 170,
+    "objectID": "50003107",
+    "points": 219,
+    "story_id": 50003107,
+    "title": "OpenAI Withdraws 3 Math Papers",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://github.com/openai/math/blob/main/history.md"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "gumby"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "'Jonathan' is the oldest land animal on Earth"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_gumby",
+     "story_49998066",
+     "front_page"
+    ],
+    "author": "gumby",
+    "children": [
+     50000383,
+     50000401,
+     50000419,
+     50000463,
+     50000509,
+     50000633,
+     50000762,
+     50000889,
+     50001099,
+     50001170,
+     50001398,
+     50001754,
+     50001873,
+     50002250,
+     50002487,
+     50002534,
+     50003159,
+     50003248,
+     50003413,
+     50003661,
+     50003682,
+     50003835,
+     50004232,
+     50004556,
+     50005147,
+     50005660,
+     50005986,
+     50006172
+    ],
+    "created_at": "2026-10-07T20:01:37Z",
+    "created_at_i": 1791403297,
+    "num_comments": 115,
+    "objectID": "49998066",
+    "points": 209,
+    "story_id": 49998066,
+    "title": "'Jonathan' is the oldest land animal on Earth",
+    "updated_at": "2026-10-08T14:29:39Z",
+    "url": "https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "djoldman"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Cleo (Mathematician)"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://en.wikipedia.org/wiki/Cleo_(mathematician)"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_djoldman",
+     "story_49982445",
+     "front_page"
+    ],
+    "author": "djoldman",
+    "children": [
+     50000971,
+     50001193,
+     50001383,
+     50001509,
+     50001621,
+     50001632,
+     50002188,
+     50002204,
+     50002377,
+     50002748,
+     50005238,
+     50005594,
+     50006138
+    ],
+    "created_at": "2026-10-06T18:49:45Z",
+    "created_at_i": 1791312585,
+    "num_comments": 39,
+    "objectID": "49982445",
+    "points": 206,
+    "story_id": 49982445,
+    "title": "Cleo (Mathematician)",
+    "updated_at": "2026-10-08T14:30:09Z",
+    "url": "https://en.wikipedia.org/wiki/Cleo_(mathematician)"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "speckx"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Push ifs up and fors down: The idiom, its algebra, and its limits"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://debasishg.github.io/blog/push-ifs-up-fors-down/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_speckx",
+     "story_49997073",
+     "front_page"
+    ],
+    "author": "speckx",
+    "children": [
+     49998049,
+     49998443,
+     49998629,
+     49998640,
+     49998706,
+     49998841,
+     49998856,
+     49999040,
+     49999280,
+     49999467,
+     50000064,
+     50000082,
+     50000130,
+     50000172,
+     50000298,
+     50000906,
+     50001854,
+     50002063,
+     50002379,
+     50002397,
+     50004006,
+     50006105
+    ],
+    "created_at": "2026-10-07T18:43:18Z",
+    "created_at_i": 1791398598,
+    "num_comments": 76,
+    "objectID": "49997073",
+    "points": 168,
+    "story_id": 49997073,
+    "title": "Push ifs up and fors down: The idiom, its algebra, and its limits",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "stared"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://quesma.com/blog/invisible-cities-one-shot/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_stared",
+     "story_50004790",
+     "front_page"
+    ],
+    "author": "stared",
+    "children": [
+     50004895,
+     50005059,
+     50005128,
+     50005137,
+     50005144,
+     50005202,
+     50005223,
+     50005247,
+     50005329,
+     50005362,
+     50005419,
+     50005562,
+     50005585,
+     50005658,
+     50005667,
+     50005669,
+     50005725,
+     50005756,
+     50005764,
+     50005774,
+     50005778,
+     50005782,
+     50005878,
+     50005999,
+     50006006,
+     50006026,
+     50006042,
+     50006126,
+     50006142,
+     50006155,
+     50006165,
+     50006181
+    ],
+    "created_at": "2026-10-08T12:00:20Z",
+    "created_at_i": 1791460820,
+    "num_comments": 78,
+    "objectID": "50004790",
+    "points": 152,
+    "story_id": 50004790,
+    "title": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://quesma.com/blog/invisible-cities-one-shot/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "gumby"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "In Vienna and Beijing, the first (thorium) nuclear clocks begin to tick"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.nytimes.com/2026/10/07/science/first-nuclear-clocks-thorium-229.html"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_gumby",
+     "story_49996406",
+     "front_page"
+    ],
+    "author": "gumby",
+    "children": [
+     50000432,
+     50000910,
+     50001007,
+     50002094,
+     50002275,
+     50003214,
+     50003531,
+     50004686,
+     50004959
+    ],
+    "created_at": "2026-10-07T17:59:34Z",
+    "created_at_i": 1791395974,
+    "num_comments": 40,
+    "objectID": "49996406",
+    "points": 131,
+    "story_id": 49996406,
+    "title": "In Vienna and Beijing, the first (thorium) nuclear clocks begin to tick",
+    "updated_at": "2026-10-08T14:27:24Z",
+    "url": "https://www.nytimes.com/2026/10/07/science/first-nuclear-clocks-thorium-229.html"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "adunk"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Classic PC demoscene productions running natively in the browser"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://treylorswift.github.io/demoscene-recomp/web/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_adunk",
+     "story_50002426",
+     "front_page"
+    ],
+    "author": "adunk",
+    "children": [
+     50003310,
+     50003342,
+     50003358,
+     50003442,
+     50003509,
+     50003647,
+     50003709,
+     50003747,
+     50003783,
+     50003800,
+     50003859,
+     50004287,
+     50004677,
+     50005376,
+     50005504,
+     50005597,
+     50005797,
+     50005961,
+     50006073
+    ],
+    "created_at": "2026-10-08T06:29:25Z",
+    "created_at_i": 1791440965,
+    "num_comments": 108,
+    "objectID": "50002426",
+    "points": 127,
+    "story_id": 50002426,
+    "title": "Classic PC demoscene productions running natively in the browser",
+    "updated_at": "2026-10-08T14:30:09Z",
+    "url": "https://treylorswift.github.io/demoscene-recomp/web/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "benbreen"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "The Slow Formation of Durable Software"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://newsletter.dancohen.org/archive/the-slow-formation-of-durable-software/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_benbreen",
+     "story_49980346",
+     "front_page"
+    ],
+    "author": "benbreen",
+    "children": [
+     50004669,
+     50004704,
+     50004727,
+     50004843,
+     50004853,
+     50004901,
+     50005088,
+     50005121,
+     50005126,
+     50005388,
+     50005411,
+     50005687,
+     50006011,
+     50006146
+    ],
+    "created_at": "2026-10-06T15:54:24Z",
+    "created_at_i": 1791302064,
+    "num_comments": 28,
+    "objectID": "49980346",
+    "points": 103,
+    "story_id": 49980346,
+    "title": "The Slow Formation of Durable Software",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://newsletter.dancohen.org/archive/the-slow-formation-of-durable-software/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "sonabinu"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Anne Carson wins Nobel Prize in literature 2026"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.theguardian.com/books/2026/oct/08/wins-the-nobel-prize-in-literature-2026"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_sonabinu",
+     "story_50004777",
+     "front_page"
+    ],
+    "author": "sonabinu",
+    "children": [
+     50004824,
+     50004856,
+     50006198
+    ],
+    "created_at": "2026-10-08T11:58:50Z",
+    "created_at_i": 1791460730,
+    "num_comments": 5,
+    "objectID": "50004777",
+    "points": 74,
+    "story_id": 50004777,
+    "title": "Anne Carson wins Nobel Prize in literature 2026",
+    "updated_at": "2026-10-08T14:29:39Z",
+    "url": "https://www.theguardian.com/books/2026/oct/08/wins-the-nobel-prize-in-literature-2026"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "kmstout"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Telnet BBS Guide"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.telnetbbsguide.com/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_kmstout",
+     "story_50005017",
+     "front_page"
+    ],
+    "author": "kmstout",
+    "children": [
+     50005359,
+     50005392,
+     50005638,
+     50006135,
+     50006234
+    ],
+    "created_at": "2026-10-08T12:28:35Z",
+    "created_at_i": 1791462515,
+    "num_comments": 16,
+    "objectID": "50005017",
+    "points": 41,
+    "story_id": 50005017,
+    "title": "Telnet BBS Guide",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://www.telnetbbsguide.com/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "speckx"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Beauty in DVD Menus"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://vale.rocks/posts/dvd-menus"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_speckx",
+     "story_50005527",
+     "front_page"
+    ],
+    "author": "speckx",
+    "children": [
+     50006058,
+     50006075,
+     50006098,
+     50006123,
+     50006214,
+     50006220,
+     50006226,
+     50006241,
+     50006250,
+     50006261,
+     50006266
+    ],
+    "created_at": "2026-10-08T13:22:01Z",
+    "created_at_i": 1791465721,
+    "num_comments": 16,
+    "objectID": "50005527",
+    "points": 40,
+    "story_id": 50005527,
+    "title": "Beauty in DVD Menus",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://vale.rocks/posts/dvd-menus"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Bluestein"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "New repository settings for configuring pull request access"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://github.blog/changelog/2026-02-13-new-repository-settings-for-configuring-pull-request-access/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_Bluestein",
+     "story_49975158",
+     "front_page"
+    ],
+    "author": "Bluestein",
+    "children": [
+     50002947,
+     50003040,
+     50003377,
+     50003392,
+     50003631,
+     50005823
+    ],
+    "created_at": "2026-10-06T07:01:51Z",
+    "created_at_i": 1791270111,
+    "num_comments": 21,
+    "objectID": "49975158",
+    "points": 34,
+    "story_id": 49975158,
+    "title": "New repository settings for configuring pull request access",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://github.blog/changelog/2026-02-13-new-repository-settings-for-configuring-pull-request-access/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Ariarule"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Time Travel in Braid (2015)"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://qntm.org/braid"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_Ariarule",
+     "story_49958194",
+     "front_page"
+    ],
+    "author": "Ariarule",
+    "children": [
+     50005808,
+     50005864,
+     50005933,
+     50005951,
+     50006148,
+     50006186,
+     50006248
+    ],
+    "created_at": "2026-10-04T21:42:43Z",
+    "created_at_i": 1791150163,
+    "num_comments": 7,
+    "objectID": "49958194",
+    "points": 34,
+    "story_id": 49958194,
+    "title": "Time Travel in Braid (2015)",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://qntm.org/braid"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "janandonly"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Dat-ecosystem: high level applications built on top of P2P protocols"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://dat-ecosystem.org/"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_janandonly",
+     "story_50002505",
+     "front_page"
+    ],
+    "author": "janandonly",
+    "children": [
+     50002924,
+     50002956,
+     50003093,
+     50003189,
+     50004344
+    ],
+    "created_at": "2026-10-08T06:43:13Z",
+    "created_at_i": 1791441793,
+    "num_comments": 13,
+    "objectID": "50002505",
+    "points": 32,
+    "story_id": 50002505,
+    "title": "Dat-ecosystem: high level applications built on top of P2P protocols",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://dat-ecosystem.org/"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "kkoncevicius"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "AHM Statement on OpenAI's October 6 Release of Mathematical Documents"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.ahmath.org/statements"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_kkoncevicius",
+     "story_50003677",
+     "front_page"
+    ],
+    "author": "kkoncevicius",
+    "children": [
+     50005069,
+     50005093,
+     50005112,
+     50005131,
+     50005156,
+     50005197,
+     50005204,
+     50005321,
+     50005463,
+     50005480,
+     50005543,
+     50005551,
+     50005588,
+     50005614,
+     50005634,
+     50005794,
+     50005835,
+     50005868,
+     50006066,
+     50006129,
+     50006157
+    ],
+    "created_at": "2026-10-08T09:29:48Z",
+    "created_at_i": 1791451788,
+    "num_comments": 30,
+    "objectID": "50003677",
+    "points": 28,
+    "story_id": 50003677,
+    "title": "AHM Statement on OpenAI's October 6 Release of Mathematical Documents",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://www.ahmath.org/statements"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Thevet"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Bloody Cavemen"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.lrb.co.uk/the-paper/v48/n18/edmund-gordon/bloody-cavemen"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_Thevet",
+     "story_49983765",
+     "front_page"
+    ],
+    "author": "Thevet",
+    "children": [
+     50003583,
+     50004024,
+     50004703,
+     50005524
+    ],
+    "created_at": "2026-10-06T20:39:03Z",
+    "created_at_i": 1791319143,
+    "num_comments": 3,
+    "objectID": "49983765",
+    "points": 26,
+    "story_id": 49983765,
+    "title": "Bloody Cavemen",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://www.lrb.co.uk/the-paper/v48/n18/edmund-gordon/bloody-cavemen"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "speckx"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "'The eels were climbing out of the water to die'"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://www.theguardian.com/environment/2026/sep/24/furnace-book-east-sussex-fishing-lake"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_speckx",
+     "story_49978010",
+     "front_page"
+    ],
+    "author": "speckx",
+    "children": [
+     49979601
+    ],
+    "created_at": "2026-10-06T13:18:34Z",
+    "created_at_i": 1791292714,
+    "num_comments": 2,
+    "objectID": "49978010",
+    "points": 17,
+    "story_id": 49978010,
+    "title": "'The eels were climbing out of the water to die'",
+    "updated_at": "2026-10-08T14:30:24Z",
+    "url": "https://www.theguardian.com/environment/2026/sep/24/furnace-book-east-sussex-fishing-lake"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "ibobev"
+     },
+     "title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Float and integer arithmetic follow two different paradigms"
+     },
+     "url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://blog.pkh.me/p/49-float-and-integer-arithmetic-follow-two-different-paradigms.html"
+     }
+    },
+    "_tags": [
+     "story",
+     "author_ibobev",
+     "story_49965117",
+     "front_page"
+    ],
+    "author": "ibobev",
+    "children": [
+     50005879,
+     50006127
+    ],
+    "created_at": "2026-10-05T14:09:14Z",
+    "created_at_i": 1791209354,
+    "num_comments": 2,
+    "objectID": "49965117",
+    "points": 13,
+    "story_id": 49965117,
+    "title": "Float and integer arithmetic follow two different paradigms",
+    "updated_at": "2026-10-08T14:28:54Z",
+    "url": "https://blog.pkh.me/p/49-float-and-integer-arithmetic-follow-two-different-paradigms.html"
+   }
+  ],
+  "hitsPerPage": 100,
+  "nbHits": 30,
+  "nbPages": 1,
+  "page": 0,
+  "params": "tags=front_page&hitsPerPage=100&page=0&advancedSyntax=true&analyticsTags=backend",
+  "processingTimeMS": 1,
+  "processingTimingsMS": {
+   "_request": {
+    "queue": 43,
+    "roundTrip": 14
+   },
+   "total": 1
+  },
+  "query": "",
+  "serverTimeMS": 44
+ }
+}

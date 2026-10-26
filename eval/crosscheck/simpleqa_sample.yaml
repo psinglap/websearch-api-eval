@@ -1,0 +1,404 @@
+# SimpleQA control sample: 20 questions, pandas random_state=42, from https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv
+# window_hours is empty => no provider date filter (static facts).
+- description: 'SQ01: At what age was Ken Noda invited by President Ronald Reagan and First Lady Nancy'
+  vars:
+    qid: SQ01
+    usecase: simpleqa
+    upstream_task: At what age was Ken Noda invited by President Ronald Reagan and First Lady Nancy Reagan to perform at the White House?
+    query: At what age was Ken Noda invited by President Ronald Reagan and First Lady Nancy Reagan to perform at the White House?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '20'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ01.json
+    simpleqa_source_row: 2333
+  assert: []
+- description: 'SQ02: Which art dealership did Peter Arrell Browne Widener buy "Portrait of Elena Grim'
+  vars:
+    qid: SQ02
+    usecase: simpleqa
+    upstream_task: Which art dealership did Peter Arrell Browne Widener buy "Portrait of Elena Grimaldi Cattaneo" from in 1906?
+    query: Which art dealership did Peter Arrell Browne Widener buy "Portrait of Elena Grimaldi Cattaneo" from in 1906?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Knoedler
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ02.json
+    simpleqa_source_row: 803
+  assert: []
+- description: 'SQ03: What was composer Sigrid Ingeborg Henriette Wienecke''s mother''s name?'
+  vars:
+    qid: SQ03
+    usecase: simpleqa
+    upstream_task: What was composer Sigrid Ingeborg Henriette Wienecke's mother's name?
+    query: What was composer Sigrid Ingeborg Henriette Wienecke's mother's name?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Anna Bruun Tordenskjold
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ03.json
+    simpleqa_source_row: 3113
+  assert: []
+- description: 'SQ04: What is the forest cover area of Madhya Pradesh in square kilometers according t'
+  vars:
+    qid: SQ04
+    usecase: simpleqa
+    upstream_task: What is the forest cover area of Madhya Pradesh in square kilometers according to the India State of Forest Report 2019?
+    query: What is the forest cover area of Madhya Pradesh in square kilometers according to the India State of Forest Report 2019?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: 77,482.49
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ04.json
+    simpleqa_source_row: 3524
+  assert: []
+- description: 'SQ05: Who kills Daryl Garrs in Happy Valley?'
+  vars:
+    qid: SQ05
+    usecase: simpleqa
+    upstream_task: Who kills Daryl Garrs in Happy Valley?
+    query: Who kills Daryl Garrs in Happy Valley?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Alison Garrs
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ05.json
+    simpleqa_source_row: 1675
+  assert: []
+- description: 'SQ06: Which district did Mary Ann Arty serve in the Pennsylvania House of Representati'
+  vars:
+    qid: SQ06
+    usecase: simpleqa
+    upstream_task: Which district did Mary Ann Arty serve in the Pennsylvania House of Representatives in 1981?
+    query: Which district did Mary Ann Arty serve in the Pennsylvania House of Representatives in 1981?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '165'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ06.json
+    simpleqa_source_row: 2659
+  assert: []
+- description: 'SQ07: In what year did Augustus De Morgan publish the article "Trochoidal Curve" in th'
+  vars:
+    qid: SQ07
+    usecase: simpleqa
+    upstream_task: In what year did Augustus De Morgan publish the article "Trochoidal Curve" in the Penny Cyclopaedia?
+    query: In what year did Augustus De Morgan publish the article "Trochoidal Curve" in the Penny Cyclopaedia?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '1843'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ07.json
+    simpleqa_source_row: 1210
+  assert: []
+- description: 'SQ08: In what year was American music producer George Avakian discharged from the U.S.'
+  vars:
+    qid: SQ08
+    usecase: simpleqa
+    upstream_task: In what year was American music producer George Avakian discharged from the U.S. Army?
+    query: In what year was American music producer George Avakian discharged from the U.S. Army?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '1946.'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ08.json
+    simpleqa_source_row: 1237
+  assert: []
+- description: 'SQ09: From what school did Phyllida Barlow graduate in 1966?'
+  vars:
+    qid: SQ09
+    usecase: simpleqa
+    upstream_task: From what school did Phyllida Barlow graduate in 1966?
+    query: From what school did Phyllida Barlow graduate in 1966?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: 'the Slade School of Art '
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ09.json
+    simpleqa_source_row: 315
+  assert: []
+- description: 'SQ10: What is the surname of the psychiatrist who prescribes medication for Marie Hans'
+  vars:
+    qid: SQ10
+    usecase: simpleqa
+    upstream_task: What is the surname of the psychiatrist who prescribes medication for Marie Hanson for her periodic blackouts in Season 1, Episode 20 of Ally McBeal?
+    query: What is the surname of the psychiatrist who prescribes medication for Marie Hanson for her periodic blackouts in Season 1, Episode 20 of Ally McBeal?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Peters
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ10.json
+    simpleqa_source_row: 17
+  assert: []
+- description: 'SQ11: What is the architectural style of the Odd Fellows Hall building in Eureka, Cali'
+  vars:
+    qid: SQ11
+    usecase: simpleqa
+    upstream_task: What is the architectural style of the Odd Fellows Hall building in Eureka, California?
+    query: What is the architectural style of the Odd Fellows Hall building in Eureka, California?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Second Empire style
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ11.json
+    simpleqa_source_row: 4145
+  assert: []
+- description: 'SQ12: In what month and year was Nikolai Talyzin dismissed from Nikolai Ryzhkov''s gove'
+  vars:
+    qid: SQ12
+    usecase: simpleqa
+    upstream_task: In what month and year was Nikolai Talyzin dismissed from Nikolai Ryzhkov's government, along with many other conservatives, during the period of perestroika?
+    query: In what month and year was Nikolai Talyzin dismissed from Nikolai Ryzhkov's government, along with many other conservatives, during the period of perestroika?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: September 1989
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ12.json
+    simpleqa_source_row: 1497
+  assert: []
+- description: 'SQ13: What day, month, and year was David Crombie appointed an Officer of the Order of'
+  vars:
+    qid: SQ13
+    usecase: simpleqa
+    upstream_task: What day, month, and year was David Crombie appointed an Officer of the Order of Canada?
+    query: What day, month, and year was David Crombie appointed an Officer of the Order of Canada?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: 13 May 2004
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ13.json
+    simpleqa_source_row: 1295
+  assert: []
+- description: 'SQ14: In which city in India is the flyover bridge named after Sam Manekshaw?'
+  vars:
+    qid: SQ14
+    usecase: simpleqa
+    upstream_task: In which city in India is the flyover bridge named after Sam Manekshaw?
+    query: In which city in India is the flyover bridge named after Sam Manekshaw?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Ahmedabad
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ14.json
+    simpleqa_source_row: 3669
+  assert: []
+- description: 'SQ15: What total number of newly discovered pieces of music by Maddalena Casulana were'
+  vars:
+    qid: SQ15
+    usecase: simpleqa
+    upstream_task: What total number of newly discovered pieces of music by Maddalena Casulana were played for the first time in 400 years on March 8, 2022, as part of BBC Radio 3's programming for International
+      Women's Day?
+    query: What total number of newly discovered pieces of music by Maddalena Casulana were played for the first time in 400 years on March 8, 2022, as part of BBC Radio 3's programming for International
+      Women's Day?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '12'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ15.json
+    simpleqa_source_row: 2804
+  assert: []
+- description: 'SQ16: What is the surname of the individual who won the Herman Skolnik Award in 1977?'
+  vars:
+    qid: SQ16
+    usecase: simpleqa
+    upstream_task: What is the surname of the individual who won the Herman Skolnik Award in 1977?
+    query: What is the surname of the individual who won the Herman Skolnik Award in 1977?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: Garfield
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ16.json
+    simpleqa_source_row: 2422
+  assert: []
+- description: 'SQ17: What year was the municipality of Cómbita, Boyacá, Colombia, founded?'
+  vars:
+    qid: SQ17
+    usecase: simpleqa
+    upstream_task: What year was the municipality of Cómbita, Boyacá, Colombia, founded?
+    query: What year was the municipality of Cómbita, Boyacá, Colombia, founded?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '1586'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ17.json
+    simpleqa_source_row: 3380
+  assert: []
+- description: 'SQ18: In which month and year was Hakyung Lee, the mother of the children whose bodies'
+  vars:
+    qid: SQ18
+    usecase: simpleqa
+    upstream_task: In which month and year was Hakyung Lee, the mother of the children whose bodies were found in a suitcase in New Zealand, arrested in South Korea?
+    query: In which month and year was Hakyung Lee, the mother of the children whose bodies were found in a suitcase in New Zealand, arrested in South Korea?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: September 2022
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ18.json
+    simpleqa_source_row: 471
+  assert: []
+- description: 'SQ19: As of 31 March 2017, how many post offices does the Indian Postal Service have?'
+  vars:
+    qid: SQ19
+    usecase: simpleqa
+    upstream_task: As of 31 March 2017, how many post offices does the Indian Postal Service have?
+    query: As of 31 March 2017, how many post offices does the Indian Postal Service have?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: 154,965
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ19.json
+    simpleqa_source_row: 2118
+  assert: []
+- description: 'SQ20: Within plus or minus one minute, when was Isco given a yellow card in the Champi'
+  vars:
+    qid: SQ20
+    usecase: simpleqa
+    upstream_task: Within plus or minus one minute, when was Isco given a yellow card in the Champions League semi-final between Real Madrid and Bayern in 2014?
+    query: Within plus or minus one minute, when was Isco given a yellow card in the Champions League semi-final between Real Madrid and Bayern in 2014?
+    window_hours: ''
+    domains: ''
+    needs_back: A short factual answer with a citation
+    freshness: static
+    freshness_tier: static
+    score_window_hours: 876000
+    expected_answer: '57'
+    expect_none: false
+    source_urls: ''
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/SQ20.json
+    simpleqa_source_row: 4202
+  assert: []

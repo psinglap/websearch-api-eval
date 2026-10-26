@@ -1,0 +1,18 @@
+{
+ "qid": "G2",
+ "pulled_at_utc": "2026-10-08T15:51:51.588109+00:00",
+ "window_hours": 24,
+ "sources": [
+  {
+   "name": "front_page",
+   "url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=100",
+   "status": 200,
+   "raw_file": "ground_truth/raw/G2_front_page_20261008T155151Z.json",
+   "sha256": "1032496ede10111533e132cac84b12043ee96f4b7cd9378488cd8eff72b1101c"
+  }
+ ],
+ "items": [],
+ "notes": [
+  "31 stories on the front page at pull time; kept those matching streaming terms (kafka|stream|redpanda|pulsar|\\bnats\\b|event[- ]?(log|driven|sourcing)|message (queue|broker)|flink|kinesis|iggy|real[- ]time data|pub/?sub). Empty => correct answer is 'none'. Review the raw list by hand."
+ ]
+}

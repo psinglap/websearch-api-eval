@@ -1,0 +1,24 @@
+{
+ "qid": "F3",
+ "pulled_at_utc": "2026-10-08T16:33:27.010732+00:00",
+ "window_hours": 1,
+ "sources": [
+  {
+   "name": "coinbase_spot",
+   "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot",
+   "status": 200,
+   "raw_file": "ground_truth/raw/F3_coinbase_spot_20261008T163327Z.json",
+   "sha256": "6244ab8a7da1405c6c74851bd6cf84e1897111ac496b79b37c1239bcd07a8a6d"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot",
+   "title": "BTC-USD 81168.675",
+   "date": "2026-10-08T16:33:27.010717+00:00",
+   "price": "81168.675",
+   "currency": "USD"
+  }
+ ],
+ "notes": []
+}

@@ -1,0 +1,25 @@
+{
+ "qid": "F6",
+ "pulled_at_utc": "2026-10-08T16:33:27.825553+00:00",
+ "window_hours": 48,
+ "sources": [
+  {
+   "name": "fomc_calendar",
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "status": 200,
+   "raw_file": "ground_truth/raw/F6_fomc_calendar_20261008T163327Z.html",
+   "sha256": "1946e27117cb8014757bc4d5678d6be3b1c840a63ae3ba767b37b63324ccd73b"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+   "title": "FOMC minutes of meeting 20260916",
+   "date": null,
+   "meeting_date": "20260916"
+  }
+ ],
+ "notes": [
+  "Latest minutes link on the calendar page; the RELEASE date (3 weeks after the meeting) must be confirmed on the page and in the press release."
+ ]
+}

@@ -1,0 +1,1957 @@
+{
+ "_request_url": "https://api.weather.gov/alerts/active?zone=FLC033%2CFLZ201%2CFLZ202",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T15:15:19.339587+00:00",
+ "body": {
+  "@context": [
+   "https://geojson.org/geojson-ld/geojson-context.jsonld",
+   {
+    "@version": "1.1",
+    "wx": "https://api.weather.gov/ontology#",
+    "@vocab": "https://api.weather.gov/ontology#"
+   }
+  ],
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.53f1738add9ba7e3c4c25156fe7f8035c6fb218d.001.1",
+    "type": "Feature",
+    "geometry": null,
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.53f1738add9ba7e3c4c25156fe7f8035c6fb218d.001.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.53f1738add9ba7e3c4c25156fe7f8035c6fb218d.001.1",
+     "areaDesc": "Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal",
+     "geocode": {
+      "SAME": [
+       "001053",
+       "001039",
+       "001097",
+       "001003",
+       "012033",
+       "012113",
+       "012091"
+      ],
+      "UGC": [
+       "ALZ059",
+       "ALZ060",
+       "ALZ261",
+       "ALZ262",
+       "ALZ263",
+       "ALZ264",
+       "ALZ265",
+       "ALZ266",
+       "FLZ201",
+       "FLZ202",
+       "FLZ203",
+       "FLZ204",
+       "FLZ205",
+       "FLZ206"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/ALZ059",
+      "https://api.weather.gov/zones/forecast/ALZ060",
+      "https://api.weather.gov/zones/forecast/ALZ261",
+      "https://api.weather.gov/zones/forecast/ALZ262",
+      "https://api.weather.gov/zones/forecast/ALZ263",
+      "https://api.weather.gov/zones/forecast/ALZ264",
+      "https://api.weather.gov/zones/forecast/ALZ265",
+      "https://api.weather.gov/zones/forecast/ALZ266",
+      "https://api.weather.gov/zones/forecast/FLZ201",
+      "https://api.weather.gov/zones/forecast/FLZ202",
+      "https://api.weather.gov/zones/forecast/FLZ203",
+      "https://api.weather.gov/zones/forecast/FLZ204",
+      "https://api.weather.gov/zones/forecast/FLZ205",
+      "https://api.weather.gov/zones/forecast/FLZ206"
+     ],
+     "references": [
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2534947d95b43a7c5cb3bc2a3632e98eb454fe0f.001.1",
+       "identifier": "urn:oid:2.49.0.1.840.0.2534947d95b43a7c5cb3bc2a3632e98eb454fe0f.001.1",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T09:56:00-05:00"
+      }
+     ],
+     "sent": "2026-10-08T10:09:00-05:00",
+     "effective": "2026-10-08T10:09:00-05:00",
+     "onset": "2026-10-09T13:00:00-05:00",
+     "expires": "2026-10-08T18:15:00-05:00",
+     "ends": "2026-10-10T13:00:00-05:00",
+     "status": "Actual",
+     "messageType": "Update",
+     "category": "Met",
+     "severity": "Severe",
+     "certainty": "Possible",
+     "urgency": "Future",
+     "event": "Flood Watch",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Flood Watch issued October 8 at 10:09AM CDT until October 10 at 1:00PM CDT by NWS Mobile AL",
+     "description": "* WHAT...Flash flooding caused by excessive rainfall continues to be\npossible.\n\n* WHERE...Portions of Alabama, including the following areas, Baldwin\nCentral, Baldwin Coastal, Baldwin Inland, Covington, Escambia,\nMobile Central, Mobile Coastal and Mobile Inland and northwest\nFlorida, including the following areas, Escambia Coastal, Escambia\nInland, Okaloosa Coastal, Okaloosa Inland, Santa Rosa Coastal and\nSanta Rosa Inland.\n\n* WHEN...From Friday afternoon through Saturday afternoon.\n\n* IMPACTS...Excessive runoff may result in flooding of rivers,\ncreeks, streams, and other low-lying and flood-prone locations.\nFlooding may occur in poor drainage and urban areas.\n\n* ADDITIONAL DETAILS...\n- Hurricane Isaias will move onshore on the northern Gulf coast\nFriday night, with bands of rain ahead of the storm moving\nonshore Friday afternoon. From Friday through the weekend, Isaias\nis expected to produce rainfall amounts of 3 to 7 inches across\nthe central U.S. Gulf Coast extending from far southeastern\nLouisiana to the Florida Big Bend region. Localized totals up to\n15 inches are possible, particularly within banding across the\nFlorida Panhandle. Flash and urban flooding is possible across\nthe region, with considerable impacts possible across much of\nsouthern Alabama and the Florida Panhandle.\n- http://www.weather.gov/safety/flood",
+     "instruction": "You should monitor later forecasts and be prepared to take action\nshould Flash Flood Warnings be issued.",
+     "response": "Prepare",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "FFAMOB"
+      ],
+      "WMOidentifier": [
+       "WGUS64 KMOB 081509"
+      ],
+      "NWSheadline": [
+       "FLOOD WATCH REMAINS IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY AFTERNOON"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ],
+      "VTEC": [
+       "/O.CON.KMOB.FA.A.0005.261009T1800Z-261010T1800Z/"
+      ],
+      "eventEndingTime": [
+       "2026-10-10T13:00:00-05:00"
+      ],
+      "expiredReferences": [
+       "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.859eb7e168f63e11e12feaf26095356444880455.002.1,2026-10-08T01:37:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.859eb7e168f63e11e12feaf26095356444880455.001.1,2026-10-08T01:37:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.72a2980bef41de3cd22cc8ddb418a6035006fd94.001.1,2026-10-08T01:29:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "FFA"
+      ],
+      "NationalWeatherService": [
+       "FAA"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.019.1",
+    "type": "Feature",
+    "geometry": {
+     "type": "MultiPolygon",
+     "coordinates": [
+      [
+       [
+        [
+         -86.92,
+         30.371
+        ],
+        [
+         -87.097,
+         30.334
+        ],
+        [
+         -87.216,
+         30.32
+        ],
+        [
+         -87.284,
+         30.31
+        ],
+        [
+         -87.302,
+         30.329
+        ],
+        [
+         -87.289,
+         30.337
+        ],
+        [
+         -87.185,
+         30.344
+        ],
+        [
+         -87.182,
+         30.343
+        ],
+        [
+         -87.078,
+         30.351
+        ],
+        [
+         -87.052,
+         30.359
+        ],
+        [
+         -86.928,
+         30.381
+        ],
+        [
+         -86.92,
+         30.371
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         -87.161,
+         30.515
+        ],
+        [
+         -87.159,
+         30.497
+        ],
+        [
+         -87.15,
+         30.49
+        ],
+        [
+         -87.162,
+         30.479
+        ],
+        [
+         -87.16,
+         30.468
+        ],
+        [
+         -87.163,
+         30.427
+        ],
+        [
+         -87.192,
+         30.414
+        ],
+        [
+         -87.208,
+         30.401
+        ],
+        [
+         -87.239,
+         30.396
+        ],
+        [
+         -87.267,
+         30.374
+        ],
+        [
+         -87.267,
+         30.344
+        ],
+        [
+         -87.306,
+         30.346
+        ],
+        [
+         -87.315,
+         30.336
+        ],
+        [
+         -87.314,
+         30.327
+        ],
+        [
+         -87.321,
+         30.317
+        ],
+        [
+         -87.553,
+         30.271
+        ],
+        [
+         -87.553,
+         30.275
+        ],
+        [
+         -87.554,
+         30.283
+        ],
+        [
+         -87.551,
+         30.287
+        ],
+        [
+         -87.515,
+         30.301
+        ],
+        [
+         -87.499,
+         30.318
+        ],
+        [
+         -87.49,
+         30.32
+        ],
+        [
+         -87.442,
+         30.324
+        ],
+        [
+         -87.434,
+         30.339
+        ],
+        [
+         -87.415,
+         30.347
+        ],
+        [
+         -87.422,
+         30.359
+        ],
+        [
+         -87.428,
+         30.353
+        ],
+        [
+         -87.441,
+         30.366
+        ],
+        [
+         -87.425,
+         30.375
+        ],
+        [
+         -87.431,
+         30.39
+        ],
+        [
+         -87.426,
+         30.402
+        ],
+        [
+         -87.398,
+         30.401
+        ],
+        [
+         -87.391,
+         30.411
+        ],
+        [
+         -87.358,
+         30.417
+        ],
+        [
+         -87.34,
+         30.431
+        ],
+        [
+         -87.355,
+         30.445
+        ],
+        [
+         -87.365,
+         30.458
+        ],
+        [
+         -87.389,
+         30.446
+        ],
+        [
+         -87.417,
+         30.453
+        ],
+        [
+         -87.438,
+         30.481
+        ],
+        [
+         -87.436,
+         30.489
+        ],
+        [
+         -87.429,
+         30.488
+        ],
+        [
+         -87.433,
+         30.498
+        ],
+        [
+         -87.438,
+         30.494
+        ],
+        [
+         -87.438,
+         30.504
+        ],
+        [
+         -87.442,
+         30.503
+        ],
+        [
+         -87.448,
+         30.513
+        ],
+        [
+         -87.446,
+         30.522
+        ],
+        [
+         -87.374,
+         30.562
+        ],
+        [
+         -87.293,
+         30.577
+        ],
+        [
+         -87.265,
+         30.612
+        ],
+        [
+         -87.257,
+         30.615
+        ],
+        [
+         -87.259,
+         30.612
+        ],
+        [
+         -87.242,
+         30.606
+        ],
+        [
+         -87.246,
+         30.599
+        ],
+        [
+         -87.233,
+         30.595
+        ],
+        [
+         -87.225,
+         30.582
+        ],
+        [
+         -87.219,
+         30.569
+        ],
+        [
+         -87.208,
+         30.555
+        ],
+        [
+         -87.201,
+         30.554
+        ],
+        [
+         -87.195,
+         30.55
+        ],
+        [
+         -87.18,
+         30.544
+        ],
+        [
+         -87.187,
+         30.541
+        ],
+        [
+         -87.188,
+         30.532
+        ],
+        [
+         -87.161,
+         30.515
+        ]
+       ]
+      ]
+     ]
+    },
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.019.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.019.1",
+     "areaDesc": "Escambia Coastal",
+     "geocode": {
+      "SAME": [
+       "012033"
+      ],
+      "UGC": [
+       "FLZ202"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/FLZ202"
+     ],
+     "references": [
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b1adfc3aa32e19ce305cd56969a46d06a8d16f3.015.1",
+       "identifier": "urn:oid:2.49.0.1.840.0.9b1adfc3aa32e19ce305cd56969a46d06a8d16f3.015.1",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T04:14:00-05:00"
+      },
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9dea11819dc31ec960d4929e6e2e275297f8149a.019.1",
+       "identifier": "urn:oid:2.49.0.1.840.0.9dea11819dc31ec960d4929e6e2e275297f8149a.019.1",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T06:56:00-05:00"
+      }
+     ],
+     "sent": "2026-10-08T10:06:00-05:00",
+     "effective": "2026-10-08T10:06:00-05:00",
+     "onset": "2026-10-08T10:06:00-05:00",
+     "expires": "2026-10-08T18:15:00-05:00",
+     "ends": null,
+     "status": "Actual",
+     "messageType": "Update",
+     "category": "Met",
+     "severity": "Extreme",
+     "certainty": "Likely",
+     "urgency": "Immediate",
+     "event": "Hurricane Warning",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL",
+     "description": "* LOCATIONS AFFECTED\n- Pensacola\n- Pensacola Beach\n- Perdido Bay\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Cat 1 Hurricane force wind\n- Peak Wind Forecast: 70-90 mph with gusts to 110 mph\n- Window for Tropical Storm force winds: Friday afternoon\nuntil early Saturday morning\n- Window for Hurricane force winds: Friday afternoon until\nFriday evening\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for considerable wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places.\n- Large areas with power and communications outages.\n\n* STORM SURGE\n- LATEST LOCAL FORECAST: Life-threatening storm surge possible\n- Peak Storm Surge Inundation: The potential for 4-7 feet\nabove ground somewhere within surge prone areas\n- Window of concern: Friday morning until Saturday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for storm\nsurge flooding greater than 6 feet above ground\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for life-threatening storm surge flooding of\ngreater than 6 feet above ground.\n- PREPARE: Evacuation efforts should soon be brought to\ncompletion before driving conditions become unsafe.\n- ACT: Leave immediately if evacuation orders are given for\nyour area to avoid being cut off from emergency services or\nneedlessly risk lives.\n\n- POTENTIAL IMPACTS: Extensive\n- Large areas of deep inundation with storm surge flooding\naccentuated by battering waves. Structural damage to\nbuildings, with several washing away. Damage compounded by\nfloating debris. Locations may be uninhabitable for an\nextended period.\n- Large sections of near-shore escape routes and secondary\nroads washed out or severely flooded.\n- Severe beach erosion with significant dune loss.\n- Major damage to marinas, docks, boardwalks, and piers. Many\nsmall craft broken away from moorings, especially in\nunprotected anchorages with some lifted onshore and\nstranded.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: 4-8 inches, with locally higher\namounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for major\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmajor flooding from heavy rain. Evacuations and rescues are\nlikely.\n- PREPARE: Strongly consider protective actions, especially\nif you are in an area vulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Extensive\n- Major rainfall flooding may prompt many evacuations and\nrescues.\n- Rivers and tributaries may rapidly overflow their banks in\nmultiple places. Small streams, creeks, canals, and ditches\nmay become dangerous rivers. Flood control systems and\nbarriers may become stressed.\n- Flood waters can enter many structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Many places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nmoving water with underpasses submerged. Driving conditions\nbecome dangerous. Many road and bridge closures with some\nweakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for several\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for\nseveral tornadoes with a few possibly intense having larger\ndamage paths.\n- PREPARE: Those living in manufactured homes or on boats are\nurged to relocate to safe shelter before hazardous weather\narrives.\n- ACT: Listen for tornado watches and warnings. If a tornado\nwarning is issued, be ready to shelter quickly.\n\n- POTENTIAL IMPACTS: Significant\n- The occurrence of scattered tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- Several places may experience tornado damage with a few\nspots of considerable damage, power loss, and\ncommunications failures.\n- Locations could realize roofs torn off frame houses, mobile\nhomes demolished, boxcars overturned, large trees snapped\nor uprooted, vehicles tumbled, and small boats tossed\nabout. Dangerous projectiles can add to the toll.\n\n* FOR MORE INFORMATION:\n- For evacuation and shelter information, please refer to:\n- Escambia County EMA: 850-471-6400 or myescambia.com/beready\n- For storm surge threat graphics and other storm impacts:\n- NWS Mobile: www.weather.gov/mob",
+     "instruction": null,
+     "response": "Avoid",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "TCVMOB"
+      ],
+      "WMOidentifier": [
+       "WTUS84 KMOB 081506"
+      ],
+      "NWSheadline": [
+       "HURRICANE WARNING REMAINS IN EFFECT... ...STORM SURGE WARNING REMAINS IN EFFECT"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ],
+      "VTEC": [
+       "/O.CON.KMOB.HU.W.1009.000000T0000Z-000000T0000Z/"
+      ],
+      "expiredReferences": [
+       "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3b57344546d9a75ace0ae98630257694a426815f.015.1,2026-10-07T21:53:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "HUW"
+      ],
+      "NationalWeatherService": [
+       "HUW"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.019.2",
+    "type": "Feature",
+    "geometry": {
+     "type": "MultiPolygon",
+     "coordinates": [
+      [
+       [
+        [
+         -87.185,
+         30.344
+        ],
+        [
+         -87.182,
+         30.343
+        ],
+        [
+         -87.078,
+         30.351
+        ],
+        [
+         -87.052,
+         30.359
+        ],
+        [
+         -86.928,
+         30.381
+        ],
+        [
+         -86.92,
+         30.371
+        ],
+        [
+         -87.097,
+         30.334
+        ],
+        [
+         -87.21,
+         30.321
+        ],
+        [
+         -87.284,
+         30.31
+        ],
+        [
+         -87.302,
+         30.329
+        ],
+        [
+         -87.289,
+         30.337
+        ],
+        [
+         -87.185,
+         30.344
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         -87.162,
+         30.479
+        ],
+        [
+         -87.16,
+         30.468
+        ],
+        [
+         -87.163,
+         30.427
+        ],
+        [
+         -87.192,
+         30.414
+        ],
+        [
+         -87.208,
+         30.401
+        ],
+        [
+         -87.239,
+         30.396
+        ],
+        [
+         -87.267,
+         30.374
+        ],
+        [
+         -87.267,
+         30.344
+        ],
+        [
+         -87.306,
+         30.346
+        ],
+        [
+         -87.315,
+         30.336
+        ],
+        [
+         -87.314,
+         30.327
+        ],
+        [
+         -87.321,
+         30.317
+        ],
+        [
+         -87.553,
+         30.271
+        ],
+        [
+         -87.553,
+         30.275
+        ],
+        [
+         -87.554,
+         30.283
+        ],
+        [
+         -87.551,
+         30.287
+        ],
+        [
+         -87.542,
+         30.289
+        ],
+        [
+         -87.515,
+         30.301
+        ],
+        [
+         -87.499,
+         30.318
+        ],
+        [
+         -87.49,
+         30.32
+        ],
+        [
+         -87.442,
+         30.324
+        ],
+        [
+         -87.434,
+         30.339
+        ],
+        [
+         -87.415,
+         30.347
+        ],
+        [
+         -87.422,
+         30.359
+        ],
+        [
+         -87.428,
+         30.353
+        ],
+        [
+         -87.441,
+         30.366
+        ],
+        [
+         -87.425,
+         30.375
+        ],
+        [
+         -87.431,
+         30.39
+        ],
+        [
+         -87.426,
+         30.402
+        ],
+        [
+         -87.398,
+         30.401
+        ],
+        [
+         -87.391,
+         30.411
+        ],
+        [
+         -87.358,
+         30.417
+        ],
+        [
+         -87.34,
+         30.431
+        ],
+        [
+         -87.355,
+         30.445
+        ],
+        [
+         -87.365,
+         30.458
+        ],
+        [
+         -87.389,
+         30.446
+        ],
+        [
+         -87.417,
+         30.453
+        ],
+        [
+         -87.438,
+         30.481
+        ],
+        [
+         -87.436,
+         30.489
+        ],
+        [
+         -87.429,
+         30.488
+        ],
+        [
+         -87.433,
+         30.498
+        ],
+        [
+         -87.438,
+         30.494
+        ],
+        [
+         -87.438,
+         30.504
+        ],
+        [
+         -87.442,
+         30.503
+        ],
+        [
+         -87.448,
+         30.513
+        ],
+        [
+         -87.446,
+         30.522
+        ],
+        [
+         -87.374,
+         30.562
+        ],
+        [
+         -87.409,
+         30.532
+        ],
+        [
+         -87.41,
+         30.509
+        ],
+        [
+         -87.358,
+         30.506
+        ],
+        [
+         -87.34,
+         30.52
+        ],
+        [
+         -87.323,
+         30.496
+        ],
+        [
+         -87.334,
+         30.46
+        ],
+        [
+         -87.267,
+         30.462
+        ],
+        [
+         -87.244,
+         30.432
+        ],
+        [
+         -87.228,
+         30.477
+        ],
+        [
+         -87.175,
+         30.475
+        ],
+        [
+         -87.173,
+         30.498
+        ],
+        [
+         -87.249,
+         30.547
+        ],
+        [
+         -87.287,
+         30.584
+        ],
+        [
+         -87.265,
+         30.612
+        ],
+        [
+         -87.257,
+         30.615
+        ],
+        [
+         -87.259,
+         30.612
+        ],
+        [
+         -87.242,
+         30.606
+        ],
+        [
+         -87.246,
+         30.599
+        ],
+        [
+         -87.233,
+         30.595
+        ],
+        [
+         -87.219,
+         30.569
+        ],
+        [
+         -87.208,
+         30.555
+        ],
+        [
+         -87.201,
+         30.554
+        ],
+        [
+         -87.195,
+         30.55
+        ],
+        [
+         -87.18,
+         30.544
+        ],
+        [
+         -87.187,
+         30.541
+        ],
+        [
+         -87.188,
+         30.532
+        ],
+        [
+         -87.161,
+         30.515
+        ],
+        [
+         -87.159,
+         30.497
+        ],
+        [
+         -87.15,
+         30.49
+        ],
+        [
+         -87.162,
+         30.479
+        ]
+       ]
+      ]
+     ]
+    },
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.019.2",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.019.2",
+     "areaDesc": "Escambia Coastal",
+     "geocode": {
+      "SAME": [
+       "012033"
+      ],
+      "UGC": [
+       "FLZ202"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/FLZ202"
+     ],
+     "references": [
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b1adfc3aa32e19ce305cd56969a46d06a8d16f3.015.2",
+       "identifier": "urn:oid:2.49.0.1.840.0.9b1adfc3aa32e19ce305cd56969a46d06a8d16f3.015.2",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T04:14:00-05:00"
+      },
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9dea11819dc31ec960d4929e6e2e275297f8149a.019.2",
+       "identifier": "urn:oid:2.49.0.1.840.0.9dea11819dc31ec960d4929e6e2e275297f8149a.019.2",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T06:56:00-05:00"
+      }
+     ],
+     "sent": "2026-10-08T10:06:00-05:00",
+     "effective": "2026-10-08T10:06:00-05:00",
+     "onset": "2026-10-08T10:06:00-05:00",
+     "expires": "2026-10-08T18:15:00-05:00",
+     "ends": null,
+     "status": "Actual",
+     "messageType": "Update",
+     "category": "Met",
+     "severity": "Extreme",
+     "certainty": "Likely",
+     "urgency": "Immediate",
+     "event": "Storm Surge Warning",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Storm Surge Warning issued October 8 at 10:06AM CDT by NWS Mobile AL",
+     "description": "* LOCATIONS AFFECTED\n- Pensacola\n- Pensacola Beach\n- Perdido Bay\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Cat 1 Hurricane force wind\n- Peak Wind Forecast: 70-90 mph with gusts to 110 mph\n- Window for Tropical Storm force winds: Friday afternoon\nuntil early Saturday morning\n- Window for Hurricane force winds: Friday afternoon until\nFriday evening\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for considerable wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places.\n- Large areas with power and communications outages.\n\n* STORM SURGE\n- LATEST LOCAL FORECAST: Life-threatening storm surge possible\n- Peak Storm Surge Inundation: The potential for 4-7 feet\nabove ground somewhere within surge prone areas\n- Window of concern: Friday morning until Saturday morning\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for storm\nsurge flooding greater than 6 feet above ground\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Plan for life-threatening storm surge flooding of\ngreater than 6 feet above ground.\n- PREPARE: Evacuation efforts should soon be brought to\ncompletion before driving conditions become unsafe.\n- ACT: Leave immediately if evacuation orders are given for\nyour area to avoid being cut off from emergency services or\nneedlessly risk lives.\n\n- POTENTIAL IMPACTS: Extensive\n- Large areas of deep inundation with storm surge flooding\naccentuated by battering waves. Structural damage to\nbuildings, with several washing away. Damage compounded by\nfloating debris. Locations may be uninhabitable for an\nextended period.\n- Large sections of near-shore escape routes and secondary\nroads washed out or severely flooded.\n- Severe beach erosion with significant dune loss.\n- Major damage to marinas, docks, boardwalks, and piers. Many\nsmall craft broken away from moorings, especially in\nunprotected anchorages with some lifted onshore and\nstranded.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: 4-8 inches, with locally higher\namounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for major\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmajor flooding from heavy rain. Evacuations and rescues are\nlikely.\n- PREPARE: Strongly consider protective actions, especially\nif you are in an area vulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Extensive\n- Major rainfall flooding may prompt many evacuations and\nrescues.\n- Rivers and tributaries may rapidly overflow their banks in\nmultiple places. Small streams, creeks, canals, and ditches\nmay become dangerous rivers. Flood control systems and\nbarriers may become stressed.\n- Flood waters can enter many structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Many places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nmoving water with underpasses submerged. Driving conditions\nbecome dangerous. Many road and bridge closures with some\nweakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for several\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for\nseveral tornadoes with a few possibly intense having larger\ndamage paths.\n- PREPARE: Those living in manufactured homes or on boats are\nurged to relocate to safe shelter before hazardous weather\narrives.\n- ACT: Listen for tornado watches and warnings. If a tornado\nwarning is issued, be ready to shelter quickly.\n\n- POTENTIAL IMPACTS: Significant\n- The occurrence of scattered tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- Several places may experience tornado damage with a few\nspots of considerable damage, power loss, and\ncommunications failures.\n- Locations could realize roofs torn off frame houses, mobile\nhomes demolished, boxcars overturned, large trees snapped\nor uprooted, vehicles tumbled, and small boats tossed\nabout. Dangerous projectiles can add to the toll.\n\n* FOR MORE INFORMATION:\n- For evacuation and shelter information, please refer to:\n- Escambia County EMA: 850-471-6400 or myescambia.com/beready\n- For storm surge threat graphics and other storm impacts:\n- NWS Mobile: www.weather.gov/mob",
+     "instruction": null,
+     "response": "Avoid",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "TCVMOB"
+      ],
+      "WMOidentifier": [
+       "WTUS84 KMOB 081506"
+      ],
+      "NWSheadline": [
+       "HURRICANE WARNING REMAINS IN EFFECT... ...STORM SURGE WARNING REMAINS IN EFFECT"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ],
+      "VTEC": [
+       "/O.CON.KMOB.SS.W.1009.000000T0000Z-000000T0000Z/"
+      ],
+      "expiredReferences": [
+       "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3b57344546d9a75ace0ae98630257694a426815f.015.2,2026-10-07T21:53:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "SSW"
+      ],
+      "NationalWeatherService": [
+       "SSW"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.021.1",
+    "type": "Feature",
+    "geometry": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        -87.163,
+        30.999
+       ],
+       [
+        -87.169,
+        30.993
+       ],
+       [
+        -87.175,
+        30.996
+       ],
+       [
+        -87.177,
+        30.987
+       ],
+       [
+        -87.213,
+        30.963
+       ],
+       [
+        -87.228,
+        30.961
+       ],
+       [
+        -87.231,
+        30.968
+       ],
+       [
+        -87.242,
+        30.961
+       ],
+       [
+        -87.242,
+        30.949
+       ],
+       [
+        -87.252,
+        30.943
+       ],
+       [
+        -87.256,
+        30.932
+       ],
+       [
+        -87.266,
+        30.935
+       ],
+       [
+        -87.287,
+        30.925
+       ],
+       [
+        -87.284,
+        30.909
+       ],
+       [
+        -87.29,
+        30.909
+       ],
+       [
+        -87.285,
+        30.888
+       ],
+       [
+        -87.299,
+        30.881
+       ],
+       [
+        -87.298,
+        30.872
+       ],
+       [
+        -87.302,
+        30.864
+       ],
+       [
+        -87.309,
+        30.864
+       ],
+       [
+        -87.313,
+        30.849
+       ],
+       [
+        -87.303,
+        30.842
+       ],
+       [
+        -87.294,
+        30.812
+       ],
+       [
+        -87.313,
+        30.785
+       ],
+       [
+        -87.305,
+        30.765
+       ],
+       [
+        -87.312,
+        30.735
+       ],
+       [
+        -87.302,
+        30.72
+       ],
+       [
+        -87.282,
+        30.72
+       ],
+       [
+        -87.269,
+        30.712
+       ],
+       [
+        -87.272,
+        30.694
+       ],
+       [
+        -87.265,
+        30.692
+       ],
+       [
+        -87.269,
+        30.679
+       ],
+       [
+        -87.264,
+        30.649
+       ],
+       [
+        -87.252,
+        30.624
+       ],
+       [
+        -87.261,
+        30.621
+       ],
+       [
+        -87.257,
+        30.615
+       ],
+       [
+        -87.265,
+        30.612
+       ],
+       [
+        -87.293,
+        30.577
+       ],
+       [
+        -87.374,
+        30.562
+       ],
+       [
+        -87.446,
+        30.522
+       ],
+       [
+        -87.435,
+        30.548
+       ],
+       [
+        -87.412,
+        30.573
+       ],
+       [
+        -87.407,
+        30.602
+       ],
+       [
+        -87.397,
+        30.609
+       ],
+       [
+        -87.394,
+        30.627
+       ],
+       [
+        -87.398,
+        30.655
+       ],
+       [
+        -87.407,
+        30.675
+       ],
+       [
+        -87.451,
+        30.7
+       ],
+       [
+        -87.468,
+        30.7
+       ],
+       [
+        -87.482,
+        30.718
+       ],
+       [
+        -87.501,
+        30.721
+       ],
+       [
+        -87.511,
+        30.733
+       ],
+       [
+        -87.532,
+        30.744
+       ],
+       [
+        -87.545,
+        30.779
+       ],
+       [
+        -87.561,
+        30.793
+       ],
+       [
+        -87.582,
+        30.812
+       ],
+       [
+        -87.601,
+        30.821
+       ],
+       [
+        -87.605,
+        30.831
+       ],
+       [
+        -87.616,
+        30.835
+       ],
+       [
+        -87.634,
+        30.866
+       ],
+       [
+        -87.591,
+        30.954
+       ],
+       [
+        -87.589,
+        30.965
+       ],
+       [
+        -87.599,
+        30.996
+       ],
+       [
+        -87.163,
+        30.999
+       ]
+      ]
+     ]
+    },
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.021.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.81d665aae579beaebd150cbc9241060829477fa6.021.1",
+     "areaDesc": "Escambia Inland",
+     "geocode": {
+      "SAME": [
+       "012033"
+      ],
+      "UGC": [
+       "FLZ201"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/FLZ201"
+     ],
+     "references": [
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b1adfc3aa32e19ce305cd56969a46d06a8d16f3.017.1",
+       "identifier": "urn:oid:2.49.0.1.840.0.9b1adfc3aa32e19ce305cd56969a46d06a8d16f3.017.1",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T04:14:00-05:00"
+      },
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9dea11819dc31ec960d4929e6e2e275297f8149a.021.1",
+       "identifier": "urn:oid:2.49.0.1.840.0.9dea11819dc31ec960d4929e6e2e275297f8149a.021.1",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T06:56:00-05:00"
+      }
+     ],
+     "sent": "2026-10-08T10:06:00-05:00",
+     "effective": "2026-10-08T10:06:00-05:00",
+     "onset": "2026-10-08T10:06:00-05:00",
+     "expires": "2026-10-08T18:15:00-05:00",
+     "ends": null,
+     "status": "Actual",
+     "messageType": "Update",
+     "category": "Met",
+     "severity": "Extreme",
+     "certainty": "Likely",
+     "urgency": "Immediate",
+     "event": "Hurricane Warning",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Hurricane Warning issued October 8 at 10:06AM CDT by NWS Mobile AL",
+     "description": "* LOCATIONS AFFECTED\n- Century\n- Walnut Hill\n- Molino\n\n* WIND\n- LATEST LOCAL FORECAST: Equivalent Cat 1 Hurricane force wind\n- Peak Wind Forecast: 55-75 mph with gusts to 95 mph\n- Window for Tropical Storm force winds: Friday afternoon\nuntil early Saturday morning\n- Window for Hurricane force winds: Friday evening\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 74\nto 110 mph\n- The wind threat has increased from the previous assessment.\n- PLAN: Plan for life-threatening wind of equivalent CAT 1 or\n2 hurricane force.\n- PREPARE: Remaining efforts to protect life and property\nshould be urgently completed. Prepare for considerable wind\ndamage.\n- ACT: Move to safe shelter before the wind becomes hazardous.\n\n- POTENTIAL IMPACTS: Extensive\n- Considerable roof damage to sturdy buildings, with some\nhaving window, door, and garage door failures leading to\nstructural damage. Mobile homes severely damaged, with some\ndestroyed. Damage accentuated by airborne projectiles.\nLocations may be uninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within\nurban or heavily wooded places.\n- Large areas with power and communications outages.\n\n* STORM SURGE\n- No storm surge inundation forecast\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Little to no storm\nsurge flooding\n- The storm surge threat has remained nearly steady from the\nprevious assessment.\n- PLAN: There is little to no threat of storm surge flooding.\nRough surf, coastal erosion, and life-threatening rip\ncurrents are possible.\n- PREPARE: Little to no preparations for storm surge flooding\nare needed.\n- ACT: Follow the instructions of local officials. Monitor\nforecasts.\n\n- POTENTIAL IMPACTS: Little to None\n- Little to no potential impacts from storm surge flooding.\n\n* FLOODING RAIN\n- LATEST LOCAL FORECAST: Flood Watch is in effect\n- Peak Rainfall Amounts: 3-6 inches, with locally higher\namounts\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for major\nflooding rain\n- The flooding rain threat has remained nearly steady from\nthe previous assessment.\n- PLAN: Emergency plans should include the potential for\nmajor flooding from heavy rain. Evacuations and rescues are\nlikely.\n- PREPARE: Strongly consider protective actions, especially\nif you are in an area vulnerable to flooding.\n- ACT: Heed any flood watches and warnings. Failure to take\naction will likely result in serious injury or loss of life.\n\n- POTENTIAL IMPACTS: Extensive\n- Major rainfall flooding may prompt many evacuations and\nrescues.\n- Rivers and tributaries may rapidly overflow their banks in\nmultiple places. Small streams, creeks, canals, and ditches\nmay become dangerous rivers. Flood control systems and\nbarriers may become stressed.\n- Flood waters can enter many structures within multiple\ncommunities, some structures becoming uninhabitable or\nwashed away. Many places where flood waters may cover\nescape routes. Streets and parking lots become rivers of\nmoving water with underpasses submerged. Driving conditions\nbecome dangerous. Many road and bridge closures with some\nweakened or washed out.\n\n* TORNADO\n- LATEST LOCAL FORECAST:\n- Situation is favorable for tornadoes\n\n- THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST\nUNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for several\ntornadoes\n- The tornado threat has remained nearly steady from the\nprevious assessment.\n- PLAN: Emergency plans should include the potential for\nseveral tornadoes with a few possibly intense having larger\ndamage paths.\n- PREPARE: Those living in manufactured homes or on boats are\nurged to relocate to safe shelter before hazardous weather\narrives.\n- ACT: Listen for tornado watches and warnings. If a tornado\nwarning is issued, be ready to shelter quickly.\n\n- POTENTIAL IMPACTS: Significant\n- The occurrence of scattered tornadoes can hinder the\nexecution of emergency plans during tropical events.\n- Several places may experience tornado damage with a few\nspots of considerable damage, power loss, and\ncommunications failures.\n- Locations could realize roofs torn off frame houses, mobile\nhomes demolished, boxcars overturned, large trees snapped\nor uprooted, vehicles tumbled, and small boats tossed\nabout. Dangerous projectiles can add to the toll.\n\n* FOR MORE INFORMATION:\n- For evacuation and shelter information, please refer to:\n- Escambia County EMA: 850-471-6400 or myescambia.com/beready\n- For storm surge threat graphics and other storm impacts:\n- NWS Mobile: www.weather.gov/mob",
+     "instruction": null,
+     "response": "Avoid",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "TCVMOB"
+      ],
+      "WMOidentifier": [
+       "WTUS84 KMOB 081506"
+      ],
+      "NWSheadline": [
+       "HURRICANE WARNING REMAINS IN EFFECT"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ],
+      "VTEC": [
+       "/O.CON.KMOB.HU.W.1009.000000T0000Z-000000T0000Z/"
+      ],
+      "expiredReferences": [
+       "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3b57344546d9a75ace0ae98630257694a426815f.017.1,2026-10-07T21:53:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "HUW"
+      ],
+      "NationalWeatherService": [
+       "HUW"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06afd92b0b232b2dd076f9c1293b9a93a2855ad7.001.1",
+    "type": "Feature",
+    "geometry": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        -87.61,
+        30.8
+       ],
+       [
+        -87.56,
+        30.8
+       ],
+       [
+        -87.37,
+        30.65
+       ],
+       [
+        -87.44,
+        30.51
+       ],
+       [
+        -87.46,
+        30.52
+       ],
+       [
+        -87.4,
+        30.64
+       ],
+       [
+        -87.61,
+        30.8
+       ]
+      ]
+     ]
+    },
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06afd92b0b232b2dd076f9c1293b9a93a2855ad7.001.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.06afd92b0b232b2dd076f9c1293b9a93a2855ad7.001.1",
+     "areaDesc": "Baldwin, AL; Escambia, FL",
+     "geocode": {
+      "SAME": [
+       "001003",
+       "012033"
+      ],
+      "UGC": [
+       "ALC003",
+       "FLC033"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/county/ALC003",
+      "https://api.weather.gov/zones/county/FLC033"
+     ],
+     "references": [],
+     "sent": "2026-10-08T08:37:00-05:00",
+     "effective": "2026-10-08T08:37:00-05:00",
+     "onset": "2026-10-10T15:24:00-05:00",
+     "expires": "2026-10-08T20:45:00-05:00",
+     "ends": "2026-10-11T21:00:00-05:00",
+     "status": "Actual",
+     "messageType": "Alert",
+     "category": "Met",
+     "severity": "Severe",
+     "certainty": "Likely",
+     "urgency": "Expected",
+     "event": "Flood Warning",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Flood Warning issued October 8 at 8:37AM CDT until October 11 at 9:00PM CDT by NWS Mobile AL",
+     "description": "...The National Weather Service in Mobile has issued a Flood Warning\nfor the following rivers in Alabama...Florida...\n\nPerdido River Near Barrineau Park affecting Baldwin and Escambia\nCounties.\n\nFor the Perdido River...including Barrineau Park...Minor flooding is\nforecast.\n\n* WHAT...Minor flooding is forecast.\n\n* WHERE...Perdido River near Barrineau Park.\n\n* WHEN...From Saturday afternoon to Sunday evening.\n\n* IMPACTS...At 14.0 feet, Water begins to flood bridge roadway and\nFlorida side of bridge.\n\n* ADDITIONAL DETAILS...\n- At 7:00 AM CDT Thursday the stage was 2.2 feet.\n- Forecast...The river is expected to rise above flood stage\nSaturday afternoon to a crest of 14.6 feet early Sunday morning.\nIt will then fall below flood stage Sunday afternoon.\n- Flood stage is 13.0 feet.\n- http://www.weather.gov/safety/flood",
+     "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.\n\nMotorists should not attempt to drive around barricades or drive cars\nthrough flooded areas.\n\nAdditional information is available at www.weather.gov/mob. Click on\nthe Rivers and Lakes menu for forecasts and observations.\n\nThe next statement will be issued when updates occur.",
+     "response": "Avoid",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "FLWMOB"
+      ],
+      "WMOidentifier": [
+       "WGUS44 KMOB 081337"
+      ],
+      "NWSheadline": [
+       "FLOOD WARNING IN EFFECT FROM SATURDAY AFTERNOON TO SUNDAY EVENING"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ],
+      "VTEC": [
+       "/O.NEW.KMOB.FL.W.0047.261010T2024Z-261012T0200Z/"
+      ],
+      "eventEndingTime": [
+       "2026-10-11T21:00:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "FLW"
+      ],
+      "NationalWeatherService": [
+       "FLW"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.1",
+    "type": "Feature",
+    "geometry": null,
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.1",
+     "areaDesc": "Mobile Coastal; Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+     "geocode": {
+      "SAME": [
+       "001097",
+       "001003",
+       "012033",
+       "012113",
+       "012091"
+      ],
+      "UGC": [
+       "ALZ265",
+       "ALZ266",
+       "FLZ202",
+       "FLZ204",
+       "FLZ206"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/ALZ265",
+      "https://api.weather.gov/zones/forecast/ALZ266",
+      "https://api.weather.gov/zones/forecast/FLZ202",
+      "https://api.weather.gov/zones/forecast/FLZ204",
+      "https://api.weather.gov/zones/forecast/FLZ206"
+     ],
+     "references": [],
+     "sent": "2026-10-08T08:19:00-05:00",
+     "effective": "2026-10-08T08:19:00-05:00",
+     "onset": "2026-10-09T07:00:00-05:00",
+     "expires": "2026-10-08T17:00:00-05:00",
+     "ends": "2026-10-11T10:00:00-05:00",
+     "status": "Actual",
+     "messageType": "Alert",
+     "category": "Met",
+     "severity": "Moderate",
+     "certainty": "Likely",
+     "urgency": "Expected",
+     "event": "High Surf Warning",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "High Surf Warning issued October 8 at 8:19AM CDT until October 11 at 10:00AM CDT by NWS Mobile AL",
+     "description": "* WHAT...For the High Rip Current Risk, dangerous rip currents.\nFor the High Surf Warning, dangerously large breaking waves of 6\nto 10 feet developing Friday morning in the surf zone builds to\n12 to 18 feet over the Alabama beaches and 20 to 25 feet over\nthe northwest Florida beaches Friday night. These heights likely\nto linger through Saturday. Surf begins to abate Saturday night\nbut remains high through Sunday morning.\n\n* WHERE...In Alabama, Mobile Coastal and Baldwin Coastal\nCounties. In Florida, Escambia Coastal, Santa Rosa Coastal and\nOkaloosa Coastal Counties.\n\n* WHEN...For the High Rip Current Risk, through late Saturday\nnight. For the High Surf Warning, from 7 AM Friday to 10 AM\nCDT Sunday.\n\n* IMPACTS...Breaking waves can sweep people off jetties and\ndocks, and into dangerous seas. Life-threatening swimming\nconditions and significant beach erosion can be expected. Rip\ncurrents can sweep even the best swimmers away from shore into\ndeeper water.",
+     "instruction": "Everyone should remain out of the water due to life-threatening\nsurf conditions. Stay off of jetties, piers, and other waterside\ninfrastructure.\n\nSwim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+     "response": "Avoid",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "CFWMOB"
+      ],
+      "WMOidentifier": [
+       "WHUS44 KMOB 081319"
+      ],
+      "NWSheadline": [
+       "HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SATURDAY NIGHT... ...HIGH SURF WARNING IN EFFECT FROM 7 AM FRIDAY TO 10 AM CDT SUNDAY"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "VTEC": [
+       "/O.NEW.KMOB.SU.W.0002.261009T1200Z-261011T1500Z/"
+      ],
+      "eventEndingTime": [
+       "2026-10-11T10:00:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "NWS"
+      ],
+      "NationalWeatherService": [
+       "SUW"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.2",
+    "type": "Feature",
+    "geometry": null,
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.2",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.ad47e935bd44a2eb07898704ea5b1ef3dd6af2a8.001.2",
+     "areaDesc": "Mobile Coastal; Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+     "geocode": {
+      "SAME": [
+       "001097",
+       "001003",
+       "012033",
+       "012113",
+       "012091"
+      ],
+      "UGC": [
+       "ALZ265",
+       "ALZ266",
+       "FLZ202",
+       "FLZ204",
+       "FLZ206"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/ALZ265",
+      "https://api.weather.gov/zones/forecast/ALZ266",
+      "https://api.weather.gov/zones/forecast/FLZ202",
+      "https://api.weather.gov/zones/forecast/FLZ204",
+      "https://api.weather.gov/zones/forecast/FLZ206"
+     ],
+     "references": [
+      {
+       "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae2630c72b9f4fa1cf40f0dee2817e9eeff9b43b.001.1",
+       "identifier": "urn:oid:2.49.0.1.840.0.ae2630c72b9f4fa1cf40f0dee2817e9eeff9b43b.001.1",
+       "sender": "w-nws.webmaster@noaa.gov",
+       "sent": "2026-10-08T04:30:00-05:00"
+      }
+     ],
+     "sent": "2026-10-08T08:19:00-05:00",
+     "effective": "2026-10-08T08:19:00-05:00",
+     "onset": "2026-10-08T08:19:00-05:00",
+     "expires": "2026-10-08T17:00:00-05:00",
+     "ends": "2026-10-11T06:00:00-05:00",
+     "status": "Actual",
+     "messageType": "Update",
+     "category": "Met",
+     "severity": "Moderate",
+     "certainty": "Likely",
+     "urgency": "Expected",
+     "event": "Rip Current Statement",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Rip Current Statement issued October 8 at 8:19AM CDT until October 11 at 6:00AM CDT by NWS Mobile AL",
+     "description": "* WHAT...For the High Rip Current Risk, dangerous rip currents.\nFor the High Surf Warning, dangerously large breaking waves of 6\nto 10 feet developing Friday morning in the surf zone builds to\n12 to 18 feet over the Alabama beaches and 20 to 25 feet over\nthe northwest Florida beaches Friday night. These heights likely\nto linger through Saturday. Surf begins to abate Saturday night\nbut remains high through Sunday morning.\n\n* WHERE...In Alabama, Mobile Coastal and Baldwin Coastal\nCounties. In Florida, Escambia Coastal, Santa Rosa Coastal and\nOkaloosa Coastal Counties.\n\n* WHEN...For the High Rip Current Risk, through late Saturday\nnight. For the High Surf Warning, from 7 AM Friday to 10 AM\nCDT Sunday.\n\n* IMPACTS...Breaking waves can sweep people off jetties and\ndocks, and into dangerous seas. Life-threatening swimming\nconditions and significant beach erosion can be expected. Rip\ncurrents can sweep even the best swimmers away from shore into\ndeeper water.",
+     "instruction": "Everyone should remain out of the water due to life-threatening\nsurf conditions. Stay off of jetties, piers, and other waterside\ninfrastructure.\n\nSwim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+     "response": "Avoid",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "CFWMOB"
+      ],
+      "WMOidentifier": [
+       "WHUS44 KMOB 081319"
+      ],
+      "NWSheadline": [
+       "HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SATURDAY NIGHT... ...HIGH SURF WARNING IN EFFECT FROM 7 AM FRIDAY TO 10 AM CDT SUNDAY"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "VTEC": [
+       "/O.CON.KMOB.RP.S.0027.000000T0000Z-261011T1100Z/"
+      ],
+      "eventEndingTime": [
+       "2026-10-11T06:00:00-05:00"
+      ],
+      "expiredReferences": [
+       "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b0edaeba332dd26f51ab7361c3a77703a74abad6.001.1,2026-10-07T17:55:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dfdb03f17e300464352f6c7ccd6eb9fb9d9faa63.001.1,2026-10-07T11:37:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bfcc718e992f022a1dcca438f16f12e4f54bb01b.001.1,2026-10-06T18:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.39833925db1898afb246978225f139ae73deec29.001.1,2026-10-06T12:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3592868ac24bf895b30d9f5f5d799bcad25906e3.001.1,2026-10-06T03:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.31229e74ed504ca805a7384b66de3346ed5cd167.001.1,2026-10-05T19:20:00-05:00"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "NWS"
+      ],
+      "NationalWeatherService": [
+       "RPS"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.27240d7fccda2436eee805e050be1d18327bf8d3.001.1",
+    "type": "Feature",
+    "geometry": null,
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.27240d7fccda2436eee805e050be1d18327bf8d3.001.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.27240d7fccda2436eee805e050be1d18327bf8d3.001.1",
+     "areaDesc": "Choctaw; Washington; Clarke; Wilcox; Monroe; Conecuh; Butler; Crenshaw; Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal; Wayne; Perry; Greene; Stone; George",
+     "geocode": {
+      "SAME": [
+       "001023",
+       "001129",
+       "001025",
+       "001131",
+       "001099",
+       "001035",
+       "001013",
+       "001041",
+       "001053",
+       "001039",
+       "001097",
+       "001003",
+       "012033",
+       "012113",
+       "012091",
+       "028153",
+       "028111",
+       "028041",
+       "028131",
+       "028039"
+      ],
+      "UGC": [
+       "ALZ051",
+       "ALZ052",
+       "ALZ053",
+       "ALZ054",
+       "ALZ055",
+       "ALZ056",
+       "ALZ057",
+       "ALZ058",
+       "ALZ059",
+       "ALZ060",
+       "ALZ261",
+       "ALZ262",
+       "ALZ263",
+       "ALZ264",
+       "ALZ265",
+       "ALZ266",
+       "FLZ201",
+       "FLZ202",
+       "FLZ203",
+       "FLZ204",
+       "FLZ205",
+       "FLZ206",
+       "MSZ067",
+       "MSZ075",
+       "MSZ076",
+       "MSZ078",
+       "MSZ079"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/ALZ051",
+      "https://api.weather.gov/zones/forecast/ALZ052",
+      "https://api.weather.gov/zones/forecast/ALZ053",
+      "https://api.weather.gov/zones/forecast/ALZ054",
+      "https://api.weather.gov/zones/forecast/ALZ055",
+      "https://api.weather.gov/zones/forecast/ALZ056",
+      "https://api.weather.gov/zones/forecast/ALZ057",
+      "https://api.weather.gov/zones/forecast/ALZ058",
+      "https://api.weather.gov/zones/forecast/ALZ059",
+      "https://api.weather.gov/zones/forecast/ALZ060",
+      "https://api.weather.gov/zones/forecast/ALZ261",
+      "https://api.weather.gov/zones/forecast/ALZ262",
+      "https://api.weather.gov/zones/forecast/ALZ263",
+      "https://api.weather.gov/zones/forecast/ALZ264",
+      "https://api.weather.gov/zones/forecast/ALZ265",
+      "https://api.weather.gov/zones/forecast/ALZ266",
+      "https://api.weather.gov/zones/forecast/FLZ201",
+      "https://api.weather.gov/zones/forecast/FLZ202",
+      "https://api.weather.gov/zones/forecast/FLZ203",
+      "https://api.weather.gov/zones/forecast/FLZ204",
+      "https://api.weather.gov/zones/forecast/FLZ205",
+      "https://api.weather.gov/zones/forecast/FLZ206",
+      "https://api.weather.gov/zones/forecast/MSZ067",
+      "https://api.weather.gov/zones/forecast/MSZ075",
+      "https://api.weather.gov/zones/forecast/MSZ076",
+      "https://api.weather.gov/zones/forecast/MSZ078",
+      "https://api.weather.gov/zones/forecast/MSZ079"
+     ],
+     "references": [],
+     "sent": "2026-10-08T07:01:00-05:00",
+     "effective": "2026-10-08T07:01:00-05:00",
+     "onset": "2026-10-08T07:01:00-05:00",
+     "expires": "2026-10-08T15:15:00-05:00",
+     "ends": null,
+     "status": "Actual",
+     "messageType": "Alert",
+     "category": "Met",
+     "severity": "Moderate",
+     "certainty": "Likely",
+     "urgency": "Expected",
+     "event": "Tropical Cyclone Local Statement",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Tropical Cyclone Local Statement issued October 8 at 7:01AM CDT by NWS Mobile AL",
+     "description": "HLSMOB\n\nThis product covers portions of southwest Alabama...northwest Florida...south\ncentral Alabama...and inland southeast Mississippi.\n\n**HURRICANE HUNTERS CURRENTLY INVESTIGATING ISAIAS**\n**PREPARATIONS TO PROTECT LIFE AND PROPERTY FROM STORM SURGE AND\nDAMAGING WINDS ALONG THE WARNING AREA OF THE GULF COAST SHOULD BE\nRUSHED TO COMPLETION TODAY**\n\nNEW INFORMATION\n---------------\n\n* CHANGES TO WATCHES AND WARNINGS:\n- None\n\n* CURRENT WATCHES AND WARNINGS:\n- A Storm Surge Warning and Hurricane Warning are in effect for\nBaldwin Central, Baldwin Coastal, Escambia Coastal, Mobile\nCentral, Mobile Coastal, Okaloosa Coastal, and Santa Rosa\nCoastal\n- A Hurricane Warning is in effect for Baldwin Inland, Escambia\nInland, Mobile Inland, Okaloosa Inland, and Santa Rosa Inland\n- A Hurricane Watch is in effect for Conecuh, Covington, and\nEscambia\n- A Tropical Storm Watch is in effect for Butler, Clarke,\nCrenshaw, George, Greene, Monroe, Washington, and Wilcox\n\n* STORM INFORMATION:\n- About 540 miles south-southwest of Mobile AL or about 550 miles\nsouth-southwest of Pensacola FL\n- 23.3N 91.2W\n- Storm Intensity 80 mph\n- Movement East-northeast or 60 degrees at 9 mph\n\nSITUATION OVERVIEW\n------------------\n\nTropical Storm Isaias has strengthened and should continue to\nintensify through Friday morning. Isaias is currently moving east-\nnortheast and should eventually turn northward and accelerate towards\nthe north central Gulf coast. As it nears the coast, wind fields will\nexpand with the potential for significant wind impacts and a life\nthreatening storm surge along and to the east of where the hurricane\nmakes landfall. There still remains uncertainty with the eventual\nspeed and track of the hurricane so everyone should continue to\nclosely monitor the latest forecast over the next few days.\n\nAreas of heavy rainfall and flooding are possible although with the\nfast speed of the hurricane at landfall we are currently expecting\n3 to 7 inches with localized amounts up to 10 inches near the coast.\nIn addition, a favorable environment for tornadoes will also develop\nto the east of the track as it moves inland Friday through Saturday.\n\nPlease continue to monitor the latest forecast updates and follow the\nadvise of your local emergency management officials.\n\nPOTENTIAL IMPACTS\n-----------------\n\n* SURGE:\nProtect against life-threatening surge having possible extensive\nimpacts across the Alabama and western Florida panhandle coasts.\nPotential impacts in this area include:\n- Large areas of deep inundation with storm surge flooding\naccentuated by battering waves. Structural damage to buildings,\nwith several washing away. Damage compounded by floating\ndebris. Locations may be uninhabitable for an extended period.\n- Large sections of near-shore escape routes and secondary roads\nwashed out or severely flooded. Flood control systems and\nbarriers may become stressed.\n- Severe beach erosion with significant dune loss.\n- Major damage to marinas, docks, boardwalks, and piers. Many\nsmall craft broken away from moorings, especially in\nunprotected anchorages with some lifted onshore and stranded.\n\n* WIND:\nProtect against life-threatening wind having possible extensive\nimpacts across across southwest and portions of south central Alabama\nand the western Florida panhandle. Potential impacts in this area include:\n- Considerable roof damage to sturdy buildings, with some having\nwindow, door, and garage door failures leading to structural\ndamage. Mobile homes severely damaged, with some destroyed.\nDamage accentuated by airborne projectiles. Locations may be\nuninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within urban\nor heavily wooded places.\n- Large areas with power and communications outages.\n\nAlso, protect against dangerous wind having possible limited to\nsignificant impacts across southeast Mississippi and the remainder of\nsouthwest Alabama.\n* TORNADOES:\nProtect against a dangerous tornado event having possible significant\nimpacts across portions of coastal Alabama...northwest Florida...south\ncentral Alabama. Potential impacts include:\n- The occurrence of scattered tornadoes can hinder the execution\nof emergency plans during tropical events.\n- Several places may experience tornado damage with a few spots\nof considerable damage, power loss, and communications failures.\n- Locations could realize roofs torn off frame houses, mobile\nhomes demolished, boxcars overturned, large trees snapped or\nuprooted, vehicles tumbled, and small boats tossed about.\nDangerous projectiles can add to the toll.\n\nProtect against a tornado event having possible limited impacts\nacross interior southwest Alabama.\n\n* FLOODING RAIN:\nProtect against life-threatening rainfall flooding having possible\nextensive impacts across coastal Alabama and the western Florida\npanhandle. Potential impacts include:\n- Major rainfall flooding may prompt many evacuations and rescues.\n- Rivers and tributaries may rapidly overflow their banks in\nmultiple places. Small streams, creeks, canals, and ditches may\nbecome dangerous rivers. Flood control systems and barriers may\nbecome stressed.\n- Flood waters can enter many structures within multiple\ncommunities, some structures becoming uninhabitable or washed\naway. Many places where flood waters may cover escape routes.\nStreets and parking lots become rivers of moving water with\nunderpasses submerged. Driving conditions become dangerous.\nMany road and bridge closures with some weakened or washed out.\n\nProtect against dangerous rainfall flooding having possible significant\nimpacts across interior areas of southwest and south central Alabama.\n\nPRECAUTIONARY/PREPAREDNESS ACTIONS\n----------------------------------\n\n* EVACUATIONS:\nFollow the advice of local officials.\n\n* OTHER PREPAREDNESS INFORMATION:\nNow is the time to complete all preparations to protect life and\nproperty in accordance with your emergency plan. Ensure you are in a\nsafe location before the onset of strong winds or possible flooding.\n\nIf you are relocating to safe shelter, leave as early as possible.\nAllow extra time to reach your destination. Many roads and bridges\nwill be closed once strong winds arrive. Check the latest weather\nforecast before departing and drive with caution.\n\nFailure to adequately shelter may result in serious injury or loss of\nlife. Always heed the advice of local officials and comply with any\norders that are issued. Remember, during the storm 9 1 1 Emergency\nServices may not be able to immediately respond if conditions are\nunsafe. This should be a big factor in your decision making.\n\nStorm surge is the leading killer associated with tropical storms and\nhurricanes! Make sure you are in a safe area away from the surge\nzone. Even if you are not in a surge-prone area, you could find\nyourself cutoff by flood waters during and after the storm. Heed\nevacuation orders issued by the local authorities.\n\nClosely monitor weather.gov, NOAA Weather radio or local news outlets\nfor official storm information. Be ready to adapt to possible changes\nto the forecast. Ensure you have multiple ways to receive weather\nwarnings.\n\n* ADDITIONAL SOURCES OF INFORMATION:\n- For the latest detailed evacuation and shelter information...please\nrefer to your local emergency management agency at the phone number\nor website listed below.\n- Coastal Alabama:\n- Baldwin County: 251-972-6807 or\nwww.baldwincountyal.gov/departments/EMA\n- Mobile County: 251-460-8000 or mobilecountyema.gov\n- Northwest Florida:\n- Escambia County: 850-471-6400 or myescambia.com/beready\n- Santa Rosa County: 850-983-5360 www.santarosa.fl.gov/emergency\n- Okaloosa County: 850-651-7150 or myokaloosa.com/emergency-management\n- For information on appropriate preparations see ready.gov\n- For additional disaster preparedness information see redcross.org\n\nNEXT UPDATE\n-----------\n\nThe next local statement will be issued by the National Weather\nService in Mobile AL around 10 AM CDT, or sooner if conditions\nwarrant.",
+     "instruction": null,
+     "response": "Monitor",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "HLSMOB"
+      ],
+      "WMOidentifier": [
+       "WTUS84 KMOB 081201"
+      ],
+      "NWSheadline": [
+       "HURRICANE HUNTERS CURRENTLY INVESTIGATING ISAIAS**\n**PREPARATIONS TO PROTECT LIFE AND PROPERTY FROM STORM SURGE AND\nDAMAGING WINDS ALONG THE WARNING AREA OF THE GULF COAST SHOULD BE\nRUSHED TO COMPLETION TODAY"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "HLS"
+      ],
+      "NationalWeatherService": [
+       "HLS"
+      ]
+     }
+    }
+   },
+   {
+    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98b7d469183d2b341659be7bfa2309b52fe51bff.001.1",
+    "type": "Feature",
+    "geometry": null,
+    "properties": {
+     "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98b7d469183d2b341659be7bfa2309b52fe51bff.001.1",
+     "@type": "wx:Alert",
+     "id": "urn:oid:2.49.0.1.840.0.98b7d469183d2b341659be7bfa2309b52fe51bff.001.1",
+     "areaDesc": "Choctaw; Washington; Clarke; Wilcox; Monroe; Conecuh; Butler; Crenshaw; Escambia; Covington; Mobile Inland; Baldwin Inland; Mobile Central; Baldwin Central; Mobile Coastal; Baldwin Coastal; Escambia Inland; Escambia Coastal; Santa Rosa Inland; Santa Rosa Coastal; Okaloosa Inland; Okaloosa Coastal; Wayne; Perry; Greene; Stone; George",
+     "geocode": {
+      "SAME": [
+       "001023",
+       "001129",
+       "001025",
+       "001131",
+       "001099",
+       "001035",
+       "001013",
+       "001041",
+       "001053",
+       "001039",
+       "001097",
+       "001003",
+       "012033",
+       "012113",
+       "012091",
+       "028153",
+       "028111",
+       "028041",
+       "028131",
+       "028039"
+      ],
+      "UGC": [
+       "ALZ051",
+       "ALZ052",
+       "ALZ053",
+       "ALZ054",
+       "ALZ055",
+       "ALZ056",
+       "ALZ057",
+       "ALZ058",
+       "ALZ059",
+       "ALZ060",
+       "ALZ261",
+       "ALZ262",
+       "ALZ263",
+       "ALZ264",
+       "ALZ265",
+       "ALZ266",
+       "FLZ201",
+       "FLZ202",
+       "FLZ203",
+       "FLZ204",
+       "FLZ205",
+       "FLZ206",
+       "MSZ067",
+       "MSZ075",
+       "MSZ076",
+       "MSZ078",
+       "MSZ079"
+      ]
+     },
+     "affectedZones": [
+      "https://api.weather.gov/zones/forecast/ALZ051",
+      "https://api.weather.gov/zones/forecast/ALZ052",
+      "https://api.weather.gov/zones/forecast/ALZ053",
+      "https://api.weather.gov/zones/forecast/ALZ054",
+      "https://api.weather.gov/zones/forecast/ALZ055",
+      "https://api.weather.gov/zones/forecast/ALZ056",
+      "https://api.weather.gov/zones/forecast/ALZ057",
+      "https://api.weather.gov/zones/forecast/ALZ058",
+      "https://api.weather.gov/zones/forecast/ALZ059",
+      "https://api.weather.gov/zones/forecast/ALZ060",
+      "https://api.weather.gov/zones/forecast/ALZ261",
+      "https://api.weather.gov/zones/forecast/ALZ262",
+      "https://api.weather.gov/zones/forecast/ALZ263",
+      "https://api.weather.gov/zones/forecast/ALZ264",
+      "https://api.weather.gov/zones/forecast/ALZ265",
+      "https://api.weather.gov/zones/forecast/ALZ266",
+      "https://api.weather.gov/zones/forecast/FLZ201",
+      "https://api.weather.gov/zones/forecast/FLZ202",
+      "https://api.weather.gov/zones/forecast/FLZ203",
+      "https://api.weather.gov/zones/forecast/FLZ204",
+      "https://api.weather.gov/zones/forecast/FLZ205",
+      "https://api.weather.gov/zones/forecast/FLZ206",
+      "https://api.weather.gov/zones/forecast/MSZ067",
+      "https://api.weather.gov/zones/forecast/MSZ075",
+      "https://api.weather.gov/zones/forecast/MSZ076",
+      "https://api.weather.gov/zones/forecast/MSZ078",
+      "https://api.weather.gov/zones/forecast/MSZ079"
+     ],
+     "references": [],
+     "sent": "2026-10-08T04:23:00-05:00",
+     "effective": "2026-10-08T04:23:00-05:00",
+     "onset": "2026-10-08T04:23:00-05:00",
+     "expires": "2026-10-08T12:30:00-05:00",
+     "ends": null,
+     "status": "Actual",
+     "messageType": "Alert",
+     "category": "Met",
+     "severity": "Moderate",
+     "certainty": "Likely",
+     "urgency": "Expected",
+     "event": "Tropical Cyclone Local Statement",
+     "sender": "w-nws.webmaster@noaa.gov",
+     "senderName": "NWS Mobile AL",
+     "headline": "Tropical Cyclone Local Statement issued October 8 at 4:23AM CDT by NWS Mobile AL",
+     "description": "HLSMOB\n\nThis product covers portions of southwest Alabama...northwest Florida...south\ncentral Alabama...and inland southeast Mississippi.\n\n**NOAA HURRICANE HUNTERS INDICATE THAT ISAIAS CONTINUES TO\nINTENSIFY**\n\nNEW INFORMATION\n---------------\n\n* CHANGES TO WATCHES AND WARNINGS:\n- None\n\n* CURRENT WATCHES AND WARNINGS:\n- A Storm Surge Warning and Hurricane Warning are in effect for\nBaldwin Central, Baldwin Coastal, Escambia Coastal, Mobile\nCentral, Mobile Coastal, Okaloosa Coastal, and Santa Rosa\nCoastal\n- A Hurricane Warning is in effect for Baldwin Inland, Escambia\nInland, Mobile Inland, Okaloosa Inland, and Santa Rosa Inland\n- A Hurricane Watch is in effect for Conecuh, Covington, and\nEscambia\n- A Tropical Storm Watch is in effect for Butler, Clarke,\nCrenshaw, George, Greene, Monroe, Washington, and Wilcox\n\n* STORM INFORMATION:\n- About 540 miles south-southwest of Mobile AL or about 550 miles\nsouth-southwest of Pensacola FL\n- 23.3N 91.2W\n- Storm Intensity 80 mph\n- Movement East-northeast or 60 degrees at 9 mph\n\nSITUATION OVERVIEW\n------------------\n\nIsaias has strengthened to a hurricane and should continue to\nintensify through Friday morning. Isaias is currently moving east-\nnortheast and should eventually turn northward and accelerate towards\nthe north central Gulf coast. As it nears the coast, wind fields will\nexpand with the potential for significant wind impacts and a life\nthreatening storm surge along and to the east of where the hurricane\nmakes landfall. There still remains uncertainty with the eventual\nspeed and track of the hurricane so everyone should continue to\nclosely monitor the latest forecast over the next few days.\n\nAreas of heavy rainfall and flooding are possible although with the\nfast speed of the hurricane at landfall we are currently expecting\n3 to 7 inches with localized amounts up to 10 inches near the coast.\nIn addition, a favorable environment for tornadoes will also develop\nto the east of the track as it moves inland Friday through Saturday.\n\nPlease continue to monitor the latest forecast updates and follow the\nadvise of your local emergency management officials.\n\nPOTENTIAL IMPACTS\n-----------------\n\n* SURGE:\nPrepare for life-threatening surge having possible extensive impacts\nacross the Alabama and western Florida panhandle coasts. Potential\nimpacts in this area include:\n- Large areas of deep inundation with storm surge flooding\naccentuated by battering waves. Structural damage to buildings,\nwith several washing away. Damage compounded by floating\ndebris. Locations may be uninhabitable for an extended period.\n- Large sections of near-shore escape routes and secondary roads\nwashed out or severely flooded. Flood control systems and\nbarriers may become stressed.\n- Severe beach erosion with significant dune loss.\n- Major damage to marinas, docks, boardwalks, and piers. Many\nsmall craft broken away from moorings, especially in\nunprotected anchorages with some lifted onshore and stranded.\n\nElsewhere across portions of southwest Alabama...northwest\nFlorida...south central Alabama...and inland southeast Mississippi,\nlittle to no impact is anticipated.\n\n* WIND:\nProtect against life-threatening wind having possible extensive\nimpacts across southwest and portions of south central Alabama and\nthe western Florida panhandle. Potential impacts in this area include:\n- Considerable roof damage to sturdy buildings, with some having\nwindow, door, and garage door failures leading to structural\ndamage. Mobile homes severely damaged, with some destroyed.\nDamage accentuated by airborne projectiles. Locations may be\nuninhabitable for weeks.\n- Many large trees snapped or uprooted along with fences and\nroadway signs blown over.\n- Some roads impassable from large debris, and more within urban\nor heavily wooded places.\n- Large areas with power and communications outages.\n\nAlso, protect against dangerous wind having possible limited to\nsignificant impacts across southeast Mississippi and the remainder of\nsouthwest Alabama.\n\n* TORNADOES:\nProtect against a dangerous tornado event having possible significant\nimpacts across portions of coastal Alabama...northwest Florida...south\ncentral Alabama. Potential impacts include:\n- The occurrence of scattered tornadoes can hinder the execution\nof emergency plans during tropical events.\n- Several places may experience tornado damage with a few spots\nof considerable damage, power loss, and communications failures.\n- Locations could realize roofs torn off frame houses, mobile\nhomes demolished, boxcars overturned, large trees snapped or\nuprooted, vehicles tumbled, and small boats tossed about.\nDangerous projectiles can add to the toll.\n\nProtect against a tornado event having possible limited impacts\nacross interior southwest Alabama.\n\n* FLOODING RAIN:\nPrepare for life-threatening rainfall flooding having possible\nextensive impacts across coastal Alabama and the western Florida\npanhandle. Potential impacts include:\n- Major rainfall flooding may prompt many evacuations and rescues.\n- Rivers and tributaries may rapidly overflow their banks in\nmultiple places. Small streams, creeks, canals, and ditches may\nbecome dangerous rivers. Flood control systems and barriers may\nbecome stressed.\n- Flood waters can enter many structures within multiple\ncommunities, some structures becoming uninhabitable or washed\naway. Many places where flood waters may cover escape routes.\nStreets and parking lots become rivers of moving water with\nunderpasses submerged. Driving conditions become dangerous.\nMany road and bridge closures with some weakened or washed out.\n\nPrepare for dangerous rainfall flooding having possible significant\nimpacts across interior areas of southwest and south central Alabama.\n\nPRECAUTIONARY/PREPAREDNESS ACTIONS\n----------------------------------\n\n* EVACUATIONS:\nFollow the advice of local officials.\n\n* OTHER PREPAREDNESS INFORMATION:\nNow is the time to complete all preparations to protect life and\nproperty in accordance with your emergency plan. Ensure you are in a\nsafe location before the onset of strong winds or possible flooding.\n\nIf you are relocating to safe shelter, leave as early as possible.\nAllow extra time to reach your destination. Many roads and bridges\nwill be closed once strong winds arrive. Check the latest weather\nforecast before departing and drive with caution.\n\nFailure to adequately shelter may result in serious injury or loss of\nlife. Always heed the advice of local officials and comply with any\norders that are issued. Remember, during the storm 9 1 1 Emergency\nServices may not be able to immediately respond if conditions are\nunsafe. This should be a big factor in your decision making.\n\nStorm surge is the leading killer associated with tropical storms and\nhurricanes! Make sure you are in a safe area away from the surge\nzone. Even if you are not in a surge-prone area, you could find\nyourself cutoff by flood waters during and after the storm. Heed\nevacuation orders issued by the local authorities.\n\nClosely monitor weather.gov, NOAA Weather radio or local news outlets\nfor official storm information. Be ready to adapt to possible changes\nto the forecast. Ensure you have multiple ways to receive weather\nwarnings.\n\n* ADDITIONAL SOURCES OF INFORMATION:\n- For the latest detailed evacuation and shelter information...please\nrefer to your local emergency management agency at the phone number\nor website listed below.\n- Coastal Alabama:\n- Baldwin County: 251-972-6807 or\nwww.baldwincountyal.gov/departments/EMA\n- Mobile County: 251-460-8000 or mobilecountyema.gov\n- Northwest Florida:\n- Escambia County: 850-471-6400 or myescambia.com/beready\n- Santa Rosa County: 850-983-5360 www.santarosa.fl.gov/emergency\n- Okaloosa County: 850-651-7150 or myokaloosa.com/emergency-management\n- For information on appropriate preparations see ready.gov\n- For additional disaster preparedness information see redcross.org\n\nNEXT UPDATE\n-----------\n\nThe next local statement will be issued by the National Weather\nService in Mobile AL around 10 AM CDT, or sooner if conditions\nwarrant.",
+     "instruction": null,
+     "response": "Monitor",
+     "note": null,
+     "parameters": {
+      "AWIPSidentifier": [
+       "HLSMOB"
+      ],
+      "WMOidentifier": [
+       "WTUS84 KMOB 080923"
+      ],
+      "NWSheadline": [
+       "NOAA HURRICANE HUNTERS INDICATE THAT ISAIAS CONTINUES TO\nINTENSIFY"
+      ],
+      "BLOCKCHANNEL": [
+       "EAS",
+       "NWEM",
+       "CMAS"
+      ],
+      "EAS-ORG": [
+       "WXR"
+      ]
+     },
+     "scope": "Public",
+     "code": "IPAWSv1.0",
+     "language": "en-US",
+     "web": "http://www.weather.gov",
+     "eventCode": {
+      "SAME": [
+       "HLS"
+      ],
+      "NationalWeatherService": [
+       "HLS"
+      ]
+     }
+    }
+   }
+  ],
+  "title": "Current watches, warnings, and advisories",
+  "updated": "2026-10-08T15:14:59+00:00"
+ }
+}

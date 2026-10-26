@@ -1,0 +1,11 @@
+{
+  "name": "search-api-live-eval",
+  "private": true,
+  "description": "promptfoo harness comparing 7 web search providers for AI agents",
+  "scripts": {
+    "pf": "promptfoo"
+  },
+  "devDependencies": {
+    "promptfoo": "0.124.0"
+  }
+}

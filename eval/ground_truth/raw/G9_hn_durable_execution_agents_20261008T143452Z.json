@@ -1,0 +1,216 @@
+{
+ "_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=durable+execution+agents&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790865291",
+ "_status": 200,
+ "_fetched_at_utc": "2026-10-08T14:34:52.289868+00:00",
+ "body": {
+  "exhaustive": {
+   "nbHits": false,
+   "typo": false
+  },
+  "exhaustiveNbHits": false,
+  "exhaustiveTypo": false,
+  "hits": [
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "coderish"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "durable",
+       "execution",
+       "agents"
+      ],
+      "value": "Location: Vancouver, Canada\nRemote: Yes\nWilling to relocate: No\nTechnologies: Python, TypeScript/JavaScript, Go, C#/.NET, SQL, FastAPI, PydanticAI, React/Next.js, PostgreSQL, Redis, AWS, Docker, Kubernetes<p>Software engineer / technical lead with 6+ years building production AI, backend, full-stack, data, and enterprise systems. I\u2019m strongest in high-ownership environments where product behavior, state, reliability, infrastructure, and user-facing <em>execution</em> all have to work as one system.<p>Most recently I\u2019ve been a Technical Lead / Founding Engineer at Siift, where I built much of the production AI platform: a Python/PydanticAI runtime coordinating 50+ specialized <em>agents</em>, PostgreSQL-backed <em>durable</em> <em>execution</em> and memory, retries/checkpoints/recovery, model-provider routing, retrieval, evaluations, and the real-time FastAPI/Redis/SSE \u2192 React/Zustand product path. I also own substantial parts of infrastructure, deployment, releases, production debugging, authentication, teams, permissions, connectors, search, scheduled workflows, and product architecture.<p>At RentAHuman.ai, I shipped the payments/bounty MVP for a marketplace with 600k+ users, including Stripe Connect escrow, payouts, refunds, disputes, idempotent state transitions, reconciliation, messaging, and notifications.<p>Previously, I built resumable Go ingestion/data pipelines for a genomic research platform and led modernization of a ~20-year-old manufacturing ERP across C#/.NET, Python, PostgreSQL/SQL Server, Redis, RabbitMQ, Docker, React, and cloud infrastructure.<p>Outside work I\u2019m building NullDown, a persistent context and memory runtime for <em>agents</em>: versioned/snapshot-based state, structured mutations, branching and replay, retrieval/context compilation, and near-lossless compaction so information removed from an active agent session remains queryable instead of disappearing.<p>Looking for founding engineer, senior backend, senior full-stack, AI/agent infrastructure, or product/platform engineering roles where I can own substantial systems end-to-end.<p>GitHub: <a href=\"https://github.com/rishit-singh\" rel=\"nofollow\">https://github.com/rishit-singh</a><p>Website: <a href=\"https://coderi.sh\" rel=\"nofollow\">https://coderi.sh</a><p>LinkedIn: <a href=\"https://linkedin.com/in/rishit-singh\" rel=\"nofollow\">https://linkedin.com/in/rishit-singh</a><p>Resume: <a href=\"https://drive.google.com/file/d/1bS8PRZBXh_ACTe0BPAtfJplS6zF7m3fu/view?usp=sharing\" rel=\"nofollow\">https://drive.google.com/file/d/1bS8PRZBXh_ACTe0BPAtfJplS6zF...</a><p>Email: rsrishitsingh@gmail.com"
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Ask HN: Who wants to be hired? (October 2026)"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_coderish",
+     "story_49922568"
+    ],
+    "author": "coderish",
+    "comment_text": "Location: Vancouver, Canada\nRemote: Yes\nWilling to relocate: No\nTechnologies: Python, TypeScript&#x2F;JavaScript, Go, C#&#x2F;.NET, SQL, FastAPI, PydanticAI, React&#x2F;Next.js, PostgreSQL, Redis, AWS, Docker, Kubernetes<p>Software engineer &#x2F; technical lead with 6+ years building production AI, backend, full-stack, data, and enterprise systems. I\u2019m strongest in high-ownership environments where product behavior, state, reliability, infrastructure, and user-facing execution all have to work as one system.<p>Most recently I\u2019ve been a Technical Lead &#x2F; Founding Engineer at Siift, where I built much of the production AI platform: a Python&#x2F;PydanticAI runtime coordinating 50+ specialized agents, PostgreSQL-backed durable execution and memory, retries&#x2F;checkpoints&#x2F;recovery, model-provider routing, retrieval, evaluations, and the real-time FastAPI&#x2F;Redis&#x2F;SSE \u2192 React&#x2F;Zustand product path. I also own substantial parts of infrastructure, deployment, releases, production debugging, authentication, teams, permissions, connectors, search, scheduled workflows, and product architecture.<p>At RentAHuman.ai, I shipped the payments&#x2F;bounty MVP for a marketplace with 600k+ users, including Stripe Connect escrow, payouts, refunds, disputes, idempotent state transitions, reconciliation, messaging, and notifications.<p>Previously, I built resumable Go ingestion&#x2F;data pipelines for a genomic research platform and led modernization of a ~20-year-old manufacturing ERP across C#&#x2F;.NET, Python, PostgreSQL&#x2F;SQL Server, Redis, RabbitMQ, Docker, React, and cloud infrastructure.<p>Outside work I\u2019m building NullDown, a persistent context and memory runtime for agents: versioned&#x2F;snapshot-based state, structured mutations, branching and replay, retrieval&#x2F;context compilation, and near-lossless compaction so information removed from an active agent session remains queryable instead of disappearing.<p>Looking for founding engineer, senior backend, senior full-stack, AI&#x2F;agent infrastructure, or product&#x2F;platform engineering roles where I can own substantial systems end-to-end.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;rishit-singh\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;rishit-singh</a><p>Website: <a href=\"https:&#x2F;&#x2F;coderi.sh\" rel=\"nofollow\">https:&#x2F;&#x2F;coderi.sh</a><p>LinkedIn: <a href=\"https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;rishit-singh\" rel=\"nofollow\">https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;rishit-singh</a><p>Resume: <a href=\"https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1bS8PRZBXh_ACTe0BPAtfJplS6zF7m3fu&#x2F;view?usp=sharing\" rel=\"nofollow\">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1bS8PRZBXh_ACTe0BPAtfJplS6zF...</a><p>Email: rsrishitsingh@gmail.com",
+    "created_at": "2026-10-02T22:40:11Z",
+    "created_at_i": 1790980811,
+    "objectID": "49939490",
+    "parent_id": 49922568,
+    "story_id": 49922568,
+    "story_title": "Ask HN: Who wants to be hired? (October 2026)",
+    "updated_at": "2026-10-02T22:44:05Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "vnjrp"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "durable",
+       "execution",
+       "agents"
+      ],
+      "value": "Most long-running AI <em>agent</em> loops that run in memory lose <em>execution</em> progress on process crashes, restarts, or timeouts. When a process restarts, an AI <em>agent</em> starts from the beginning, re-executing the previous steps of LLM and tool calls, and wasting more tokens.<p><em>agent</em>-sdk-go ensures <em>durable</em> <em>execution</em> across both single binary and distributed environments.<p>- In-Process / Single Binary: Uses <em>durable</em>-go (agenticenv/<em>durable</em>-go) for local file-system journaling to provide process-restart resilience without using external databases or orchestrators.<p>- Distributed Services: Plugs into Temporal or Restate for multi-node workflow orchestration.<p>Across all backends, step state is persisted and replayed so the <em>agent</em> loop resumes right where it left off. The repository includes a reference <em>agent</em>-chat app demonstrating live server crash recovery.<p>Would love feedback on the <em>execution</em> model and general requirements for production AI <em>agents</em>!"
+     },
+     "story_title": {
+      "fullyHighlighted": false,
+      "matchLevel": "partial",
+      "matchedWords": [
+       "agents"
+      ],
+      "value": "Show HN: <em>Agent</em>-SDK-go \u2013 Build crash-resilient AI <em>agents</em> in Go"
+     },
+     "story_url": {
+      "fullyHighlighted": false,
+      "matchLevel": "partial",
+      "matchedWords": [
+       "agents"
+      ],
+      "value": "https://github.com/agenticenv/<em>agent</em>-sdk-go"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_vnjrp",
+     "story_49936287"
+    ],
+    "author": "vnjrp",
+    "comment_text": "Most long-running AI agent loops that run in memory lose execution progress on process crashes, restarts, or timeouts. When a process restarts, an AI agent starts from the beginning, re-executing the previous steps of LLM and tool calls, and wasting more tokens.<p>agent-sdk-go ensures durable execution across both single binary and distributed environments.<p>- In-Process &#x2F; Single Binary: Uses durable-go (agenticenv&#x2F;durable-go) for local file-system journaling to provide process-restart resilience without using external databases or orchestrators.<p>- Distributed Services: Plugs into Temporal or Restate for multi-node workflow orchestration.<p>Across all backends, step state is persisted and replayed so the agent loop resumes right where it left off. The repository includes a reference agent-chat app demonstrating live server crash recovery.<p>Would love feedback on the execution model and general requirements for production AI agents!",
+    "created_at": "2026-10-02T18:13:56Z",
+    "created_at_i": 1790964836,
+    "objectID": "49936719",
+    "parent_id": 49936287,
+    "story_id": 49936287,
+    "story_title": "Show HN: Agent-SDK-go \u2013 Build crash-resilient AI agents in Go",
+    "story_url": "https://github.com/agenticenv/agent-sdk-go",
+    "updated_at": "2026-10-02T18:16:34Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "badlogic"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "durable",
+       "execution",
+       "agents"
+      ],
+      "value": "I do not see any resemblence to Gastown at all? Pi <em>Durable</em> is a library for writing <em>durable</em> <em>agents</em>. You can plug in any sandbox solution you like (aka <em>execution</em> environment in Pi <em>Durable</em> speak).<p>Within a session, you can give each conversation its own sandbox, based on your application's needs and policies."
+     },
+     "story_title": {
+      "fullyHighlighted": false,
+      "matchLevel": "partial",
+      "matchedWords": [
+       "durable"
+      ],
+      "value": "Pi <em>Durable</em>"
+     },
+     "story_url": {
+      "fullyHighlighted": false,
+      "matchLevel": "partial",
+      "matchedWords": [
+       "durable"
+      ],
+      "value": "https://earendil.com/posts/pi-<em>durable</em>/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_badlogic",
+     "story_49925969"
+    ],
+    "author": "badlogic",
+    "comment_text": "I do not see any resemblence to Gastown at all? Pi Durable is a library for writing durable agents. You can plug in any sandbox solution you like (aka execution environment in Pi Durable speak).<p>Within a session, you can give each conversation its own sandbox, based on your application&#x27;s needs and policies.",
+    "created_at": "2026-10-02T10:08:10Z",
+    "created_at_i": 1790935690,
+    "objectID": "49931784",
+    "parent_id": 49929069,
+    "story_id": 49925969,
+    "story_title": "Pi Durable",
+    "story_url": "https://earendil.com/posts/pi-durable/",
+    "updated_at": "2026-10-02T11:03:49Z"
+   },
+   {
+    "_highlightResult": {
+     "author": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "imnotr0b0t"
+     },
+     "comment_text": {
+      "fullyHighlighted": false,
+      "matchLevel": "full",
+      "matchedWords": [
+       "durable",
+       "execution",
+       "agents"
+      ],
+      "value": "I like that Pi is holding the line on minimalism instead of absorbing every new trend. Curious how Pi <em>Durable</em> differs from existing <em>durable</em>-<em>execution</em> setups for <em>agents</em>"
+     },
+     "story_title": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "Pi 1.0"
+     },
+     "story_url": {
+      "matchLevel": "none",
+      "matchedWords": [],
+      "value": "https://earendil.com/posts/pi-1-0/"
+     }
+    },
+    "_tags": [
+     "comment",
+     "author_imnotr0b0t",
+     "story_49926069"
+    ],
+    "author": "imnotr0b0t",
+    "comment_text": "I like that Pi is holding the line on minimalism instead of absorbing every new trend. Curious how Pi Durable differs from existing durable-execution setups for agents",
+    "created_at": "2026-10-01T20:05:44Z",
+    "created_at_i": 1790885144,
+    "objectID": "49926447",
+    "parent_id": 49926069,
+    "story_id": 49926069,
+    "story_title": "Pi 1.0",
+    "story_url": "https://earendil.com/posts/pi-1-0/",
+    "updated_at": "2026-10-02T08:05:02Z"
+   }
+  ],
+  "hitsPerPage": 100,
+  "nbHits": 4,
+  "nbPages": 1,
+  "page": 0,
+  "params": "query=durable+execution+agents&tags=%28story%2Ccomment%29&hitsPerPage=100&numericFilters=created_at_i%3E1790865291&advancedSyntax=true&analyticsTags=backend",
+  "processingTimeMS": 40,
+  "processingTimingsMS": {
+   "_request": {
+    "queue": 24,
+    "roundTrip": 24
+   },
+   "fetch": {
+    "query": 38,
+    "total": 39
+   },
+   "total": 40
+  },
+  "query": "durable execution agents",
+  "serverTimeMS": 64
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "qid": "I4",
+ "pulled_at_utc": "2026-10-08T16:13:16.031814+00:00",
+ "window_hours": 1,
+ "sources": [
+  {
+   "name": "kpns_latest_observation",
+   "url": "https://api.weather.gov/stations/KPNS/observations/latest",
+   "status": 200,
+   "raw_file": "ground_truth/raw/I4_kpns_latest_observation_20261008T161316Z.json",
+   "sha256": "960df5ed39b2b35765912031de9f082009d70c5fa66358c2a9d6a4ec60f8e933"
+  }
+ ],
+ "items": [
+  {
+   "url": "https://api.weather.gov/stations/KPNS/observations/2026-10-08T15:50:00+00:00",
+   "title": "Clear",
+   "date": "2026-10-08T15:50:00+00:00",
+   "wind_speed_kmh": 16.668,
+   "wind_speed_mph": 10.4,
+   "wind_gust_kmh": 25.92,
+   "wind_gust_mph": 16.1,
+   "wind_direction_deg": 50
+  }
+ ],
+ "notes": []
+}

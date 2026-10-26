@@ -1,0 +1,190 @@
+- description: 'F1: Where is NVIDIA trading?'
+  vars:
+    qid: F1
+    usecase: finance
+    upstream_task: Where is NVIDIA trading?
+    query: NVDA stock price today
+    window_hours: 24
+    domains: ''
+    needs_back: Price, % change, timestamp
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.nasdaq.com/market-activity/stocks/nvda
+    answer_type: numeric
+    tolerance: price within +/-0.5% of the quote at run time
+    ground_truth_file: ground_truth/F1.json
+  assert: []
+- description: 'F2: Where''s the 10-year?'
+  vars:
+    qid: F2
+    usecase: finance
+    upstream_task: Where's the 10-year?
+    query: 10-year Treasury yield today
+    window_hours: 24
+    domains: ''
+    needs_back: Yield %, timestamp
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.cnbc.com/quotes/US10Y ; https://home.treasury.gov/resource-center/data-chart-center/interest-rates
+    answer_type: numeric
+    tolerance: within +/-3 basis points
+    ground_truth_file: ground_truth/F2.json
+  assert: []
+- description: 'F3: Bitcoin price?'
+  vars:
+    qid: F3
+    usecase: finance
+    upstream_task: Bitcoin price?
+    query: bitcoin price now
+    window_hours: 24
+    domains: ''
+    needs_back: Price, timestamp
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.coinbase.com/price/bitcoin ; https://api.coinbase.com/v2/prices/BTC-USD/spot
+    answer_type: numeric
+    tolerance: within +/-1%
+    ground_truth_file: ground_truth/F3.json
+  assert: []
+- description: 'F4: How''s oil moving today?'
+  vars:
+    qid: F4
+    usecase: finance
+    upstream_task: How's oil moving today?
+    query: WTI crude oil price today
+    window_hours: 24
+    domains: ''
+    needs_back: Price, change, timestamp
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.cnbc.com/quotes/@CL.1
+    answer_type: numeric
+    tolerance: within +/-1%
+    ground_truth_file: ground_truth/F4.json
+  assert: []
+- description: 'F5: What did jobless claims print?'
+  vars:
+    qid: F5
+    usecase: finance
+    upstream_task: What did jobless claims print?
+    query: initial jobless claims this week Department of Labor
+    window_hours: 24
+    domains: ''
+    needs_back: Number, week ending, release time
+    freshness: real-time
+    freshness_tier: real-time
+    score_window_hours: 6
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.dol.gov/ui/data.pdf ; https://www.dol.gov/newsroom/releases
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/F5.json
+  assert: []
+- description: 'F6: Summarize the latest Fed minutes'
+  vars:
+    qid: F6
+    usecase: finance
+    upstream_task: Summarize the latest Fed minutes
+    query: FOMC minutes released
+    window_hours: 48
+    domains: ''
+    needs_back: Release date, 3 key points, federalreserve.gov link
+    freshness: 48h
+    freshness_tier: 48h
+    score_window_hours: 48
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+    answer_type: exact
+    tolerance: ''
+    ground_truth_file: ground_truth/F6.json
+  assert: []
+- description: 'F7: List $1B+ M&A deals announced in the last two days'
+  vars:
+    qid: F7
+    usecase: finance
+    upstream_task: List $1B+ M&A deals announced in the last two days
+    query: announces acquisition billion deal
+    window_hours: 48
+    domains: ''
+    needs_back: Acquirer, target, value, date, source
+    freshness: 48h
+    freshness_tier: 48h
+    score_window_hours: 48
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://efts.sec.gov/LATEST/search-index?q=%22merger%20agreement%22&forms=8-K
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/F7.json
+  assert: []
+- description: 'F8: Any S&P 500 CEO/CFO departures filed in the last day?'
+  vars:
+    qid: F8
+    usecase: finance
+    upstream_task: Any S&P 500 CEO/CFO departures filed in the last day?
+    query: 8-K item 5.02 chief executive officer departure
+    window_hours: 24
+    domains: sec.gov
+    needs_back: Company, role, filing date, EDGAR link - or "none"
+    freshness: 24h
+    freshness_tier: 24h
+    score_window_hours: 24
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://efts.sec.gov/LATEST/search-index?forms=8-K ; https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/F8.json
+  assert: []
+- description: 'F9: Which IPOs priced this week?'
+  vars:
+    qid: F9
+    usecase: finance
+    upstream_task: Which IPOs priced this week?
+    query: IPO priced shares this week
+    window_hours: 168
+    domains: ''
+    needs_back: Company, ticker, price, date
+    freshness: week
+    freshness_tier: week
+    score_window_hours: 168
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: '[FILL AT RUN TIME]'
+    source_urls: https://www.nasdaq.com/market-activity/ipos
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/F9.json
+  assert: []
+- description: 'F10: When do the big banks report Q3?'
+  vars:
+    qid: F10
+    usecase: finance
+    upstream_task: When do the big banks report Q3?
+    query: Q3 2026 earnings date JPMorgan Goldman Citi Wells Fargo
+    window_hours: 168
+    domains: ''
+    needs_back: Bank, date, time (JPMorgan Oct 13 ~7:00 a.m. ET)
+    freshness: week (upcoming)
+    freshness_tier: week
+    score_window_hours: 168
+    expected_answer: '[FILL AT RUN TIME]'
+    expect_none: false
+    source_urls: https://www.jpmorganchase.com/ir ; https://www.goldmansachs.com/investor-relations ; https://www.citigroup.com/global/investors ; https://www.wellsfargo.com/about/investor-relations/
+    answer_type: list
+    tolerance: ''
+    ground_truth_file: ground_truth/F10.json
+  assert: []
