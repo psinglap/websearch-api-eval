@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.psinglap/websearch-api-eval",
+  "title": "Web Search API Eval",
+  "description": "Web search API benchmark for AI agents: You.com, Tavily, Exa, Parallel. Results and charts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://psinglap.github.io/websearch-api-eval/",
+  "repository": {
+    "url": "https://github.com/psinglap/websearch-api-eval",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://websearch-api-eval.psberkeleymba.workers.dev/mcp"
+    }
+  ]
+}

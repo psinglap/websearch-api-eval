@@ -1,0 +1,9 @@
+# Cloudflare Worker that serves the read-only MCP server at /mcp
+name = "websearch-api-eval"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Data is read from the published site, so a new benchmark run only needs a git push, not a redeploy
+DATA_BASE = "https://psinglap.github.io/websearch-api-eval/"

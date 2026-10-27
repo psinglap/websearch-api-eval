@@ -6,6 +6,10 @@ Headline: You.com is the fastest API tested and the most dependable at returning
 
 Overall (90 calls per API): accuracy You.com 63%, Tavily 51%, Exa 53%, Parallel 67%; results inside the query's time window 59% / 37% / 44% / 29%; empty responses 0 / 27 / 12 / 3; client latency p50 593 / 1,864 / 1,106 / 2,038 ms; search cost per correct answer $0.026 / $0.016 / $0.012 / $0.008.
 
+## Use it from an AI assistant
+
+- MCP server (read-only, no sign-in, Streamable HTTP): https://websearch-api-eval.psberkeleymba.workers.dev/mcp. Tools: get_overall_results, get_scorecard, compare_providers, recommend_provider, list_questions, get_question, get_charts, get_methodology, how_to_run_locally, search, fetch. [Docs](https://github.com/psinglap/websearch-api-eval/tree/main/mcp)
+
 ## Results and data (JSON, same numbers as the site)
 
 - [Overall and per-use-case results](https://psinglap.github.io/websearch-api-eval/data/results.json): headline, overall scorecard, per-use-case scorecards, which API fits which agent, developer activation

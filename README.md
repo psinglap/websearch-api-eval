@@ -9,6 +9,7 @@ By Pallavi Singla · final run Oct 8, 2026
 ## Contents
 
 - [The four pages](#the-four-pages)
+- [Use it in Claude or ChatGPT](#use-it-in-claude-or-chatgpt)
 - [Results at a glance](#results-at-a-glance)
 - [Results by use case](#results-by-use-case)
 - [Methodology](#methodology)
@@ -27,6 +28,28 @@ By Pallavi Singla · final run Oct 8, 2026
 | [![GTM memo](img/pages/memo.png)](https://psinglap.github.io/websearch-api-eval/memo/) | **[GTM memo](https://psinglap.github.io/websearch-api-eval/memo/)** | A one-page recommendation for an engineering lead choosing the web search API behind a live GTM chat agent. [PDF](pdf/gtm-memo.pdf) |
 | [![Target accounts](img/pages/accounts.png)](https://psinglap.github.io/websearch-api-eval/accounts/) | **[Target accounts](https://psinglap.github.io/websearch-api-eval/accounts/)** | 60 accounts across 6 agent use cases, the developer pain behind them, seven GTM plays and where to reach buyers. Filterable. |
 | [![Search Atlas](img/pages/atlas.png)](https://psinglap.github.io/websearch-api-eval/atlas/) | **[Search Atlas](https://psinglap.github.io/websearch-api-eval/atlas/)** | The six ways AI products get web search, with market size today and in 2030, who leads each way, how the market is moving and how to win. |
+
+## Use it in Claude or ChatGPT
+
+Ask about these results from inside your AI assistant with the read-only MCP server. It needs no sign-in or API keys and never runs searches.
+
+**Server URL:** `https://websearch-api-eval.psberkeleymba.workers.dev/mcp`
+
+| Where | How |
+|---|---|
+| **Claude** (web, desktop) | Settings → Connectors → Add custom connector → paste the URL → No sign-in |
+| **ChatGPT** (Plus and above) | Plugins/Apps → Create MCP app (turn on Developer mode if asked) → paste the URL → No authentication |
+| **Claude Code** | `claude mcp add --transport http websearch-api-eval https://websearch-api-eval.psberkeleymba.workers.dev/mcp` |
+| **Cursor / VS Code / others** | Add a remote MCP server with the URL above (Streamable HTTP) |
+
+Then ask, for example:
+- "Which web search API is fastest for a voice agent?"
+- "Compare Exa and Parallel on finance."
+- "What was question F5 and who got it right?"
+- "Show me the overall scorecard chart."
+- "How do I run this benchmark on my own queries?"
+
+Answers come from the published results (run Oct 8, 2026) and link back here. Tools, data and deployment are documented in [`mcp/`](mcp/).
 
 ## Results at a glance
 
@@ -219,3 +242,6 @@ You need your own keys for each search API (`YDC_API_KEY`, `TAVILY_API_KEY`, `EX
 | `pdf/` | PDF versions of the evaluation and memo |
 | `eval/` | Test harness: configs, providers, metric assertions, answer keys, grades, ground truth |
 | `reports/` | The 30 agent queries |
+| `mcp/` | Read-only MCP server for Claude, ChatGPT and other assistants |
+| `data/` | Published results as JSON (built from the site by `data/build_data.py`) |
+| `llms.txt` | Summary and map of the repo for AI tools |
