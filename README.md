@@ -49,7 +49,7 @@ Then ask, for example:
 - "Show me the overall scorecard chart."
 - "How do I run this benchmark on my own queries?"
 
-Answers come from the published results (run Oct 8, 2026) and link back here. Tools, data and deployment are documented in [`mcp/`](mcp/).
+Answers come from the published results (run Oct 8, 2026) and link back here. [Support](https://psinglap.github.io/websearch-api-eval/support/) · [Privacy Policy](https://psinglap.github.io/websearch-api-eval/privacy/) · [Terms](https://psinglap.github.io/websearch-api-eval/terms/). Tools, data and deployment are documented in [`mcp/`](mcp/).
 
 ## Results at a glance
 
