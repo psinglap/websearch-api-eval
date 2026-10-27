@@ -1,6 +1,6 @@
-# Web Search API Eval
+# Web Search API Eval: a web search API evaluation for AI agents
 
-A live, side-by-side benchmark of four web search APIs for AI agents (**You.com, Tavily, Exa and Parallel**) on 30 agent-style queries across GTM, insurance and finance use cases, plus a buyer memo, a target-account list and a market map built on the results.
+A web search API evaluation and live, side-by-side benchmark of four web search APIs for AI agents (**You.com, Tavily, Exa and Parallel**) on 30 agent-style queries across GTM, insurance and finance use cases, plus a buyer memo, a target-account list and a market map built on the results.
 
 By Pallavi Singla · final run Oct 8, 2026
 

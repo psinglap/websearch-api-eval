@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://psinglap.github.io/websearch-api-eval/sitemap.xml

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, its data or its harness, please cite it as below."
+title: "Web Search API Eval: a web search API evaluation for AI agents"
+abstract: >-
+  A live, side-by-side evaluation of four web search APIs for AI agents (You.com, Tavily, Exa and Parallel)
+  on 30 agent-style queries across GTM, insurance and finance, with 3 runs per query, graded with the
+  SimpleQA rubric and FreshQA strict rules. Includes the test harness, answer keys, results and an MCP server.
+type: software
+authors:
+  - family-names: Singla
+    given-names: Pallavi
+version: 1.0.0
+date-released: 2026-10-27
+license: MIT
+repository-code: "https://github.com/psinglap/websearch-api-eval"
+url: "https://psinglap.github.io/websearch-api-eval/"
+keywords:
+  - web search API
+  - evaluation
+  - benchmark
+  - AI agents
+  - RAG
+  - MCP
+  - You.com
+  - Tavily
+  - Exa
+  - Parallel
