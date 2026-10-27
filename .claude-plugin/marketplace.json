@@ -1,0 +1,15 @@
+{
+  "name": "psinglap",
+  "description": "Claude Code plugins from the Web Search API Eval project",
+  "owner": {
+    "name": "Pallavi Singla",
+    "url": "https://github.com/psinglap"
+  },
+  "plugins": [
+    {
+      "name": "websearch-api-eval",
+      "source": "./plugins/websearch-api-eval",
+      "description": "Choose and benchmark web search APIs for AI agents: published results for You.com, Tavily, Exa and Parallel, plus live spot checks with your own keys."
+    }
+  ]
+}

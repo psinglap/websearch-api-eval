@@ -1,0 +1,13 @@
+{
+  "name": "websearch-api-eval",
+  "description": "Choose and benchmark web search APIs for AI agents. Published benchmark of You.com, Tavily, Exa and Parallel (30 agent queries across GTM, insurance and finance), live search spot checks with your own API keys, and a guided full rerun.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Pallavi Singla",
+    "url": "https://github.com/psinglap"
+  },
+  "homepage": "https://psinglap.github.io/websearch-api-eval/",
+  "repository": "https://github.com/psinglap/websearch-api-eval",
+  "license": "MIT",
+  "keywords": ["web-search", "search-api", "benchmark", "evaluation", "mcp", "ai-agents", "rag"]
+}
