@@ -1,0 +1,136 @@
+{"scope": "overall", "metric": "Accuracy score (% of max)", "provider": "You.com", "value": "63%"}
+{"scope": "overall", "metric": "Accuracy score (% of max)", "provider": "Tavily", "value": "51%"}
+{"scope": "overall", "metric": "Accuracy score (% of max)", "provider": "Exa", "value": "53%"}
+{"scope": "overall", "metric": "Accuracy score (% of max)", "provider": "Parallel", "value": "67%"}
+{"scope": "overall", "metric": "Queries fully correct in all 3 repeats", "provider": "You.com", "value": "57%"}
+{"scope": "overall", "metric": "Queries fully correct in all 3 repeats", "provider": "Tavily", "value": "37%"}
+{"scope": "overall", "metric": "Queries fully correct in all 3 repeats", "provider": "Exa", "value": "50%"}
+{"scope": "overall", "metric": "Queries fully correct in all 3 repeats", "provider": "Parallel", "value": "57%"}
+{"scope": "overall", "metric": "Precision@5 (on-topic share of top 5)", "provider": "You.com", "value": "37%"}
+{"scope": "overall", "metric": "Precision@5 (on-topic share of top 5)", "provider": "Tavily", "value": "26%"}
+{"scope": "overall", "metric": "Precision@5 (on-topic share of top 5)", "provider": "Exa", "value": "40%"}
+{"scope": "overall", "metric": "Precision@5 (on-topic share of top 5)", "provider": "Parallel", "value": "26%"}
+{"scope": "overall", "metric": "Results dated inside the query's window", "provider": "You.com", "value": "59%"}
+{"scope": "overall", "metric": "Results dated inside the query's window", "provider": "Tavily", "value": "37%"}
+{"scope": "overall", "metric": "Results dated inside the query's window", "provider": "Exa", "value": "44%"}
+{"scope": "overall", "metric": "Results dated inside the query's window", "provider": "Parallel", "value": "29%"}
+{"scope": "overall", "metric": "Newest relevant result, median age", "provider": "You.com", "value": "4.1 h"}
+{"scope": "overall", "metric": "Newest relevant result, median age", "provider": "Tavily", "value": "11.9 h"}
+{"scope": "overall", "metric": "Newest relevant result, median age", "provider": "Exa", "value": "8.2 h"}
+{"scope": "overall", "metric": "Newest relevant result, median age", "provider": "Parallel", "value": "16.6 h"}
+{"scope": "overall", "metric": "Empty responses (of 90)", "provider": "You.com", "value": "0"}
+{"scope": "overall", "metric": "Empty responses (of 90)", "provider": "Tavily", "value": "27"}
+{"scope": "overall", "metric": "Empty responses (of 90)", "provider": "Exa", "value": "12"}
+{"scope": "overall", "metric": "Empty responses (of 90)", "provider": "Parallel", "value": "3"}
+{"scope": "overall", "metric": "Failed calls: errors, timeouts (of 90)", "provider": "You.com", "value": "0"}
+{"scope": "overall", "metric": "Failed calls: errors, timeouts (of 90)", "provider": "Tavily", "value": "0"}
+{"scope": "overall", "metric": "Failed calls: errors, timeouts (of 90)", "provider": "Exa", "value": "0"}
+{"scope": "overall", "metric": "Failed calls: errors, timeouts (of 90)", "provider": "Parallel", "value": "0"}
+{"scope": "overall", "metric": "Latency p50 / p95, client (ms)", "provider": "You.com", "value": "593 / 804"}
+{"scope": "overall", "metric": "Latency p50 / p95, client (ms)", "provider": "Tavily", "value": "1,864 / 3,305"}
+{"scope": "overall", "metric": "Latency p50 / p95, client (ms)", "provider": "Exa", "value": "1,106 / 3,997"}
+{"scope": "overall", "metric": "Latency p50 / p95, client (ms)", "provider": "Parallel", "value": "2,038 / 4,117"}
+{"scope": "overall", "metric": "Latency p50, server-reported (ms)", "provider": "You.com", "value": "379"}
+{"scope": "overall", "metric": "Latency p50, server-reported (ms)", "provider": "Tavily", "value": "1,650"}
+{"scope": "overall", "metric": "Latency p50, server-reported (ms)", "provider": "Exa", "value": "831"}
+{"scope": "overall", "metric": "Latency p50, server-reported (ms)", "provider": "Parallel", "value": "n/a"}
+{"scope": "overall", "metric": "Search cost per correct answer", "provider": "You.com", "value": "$0.026"}
+{"scope": "overall", "metric": "Search cost per correct answer", "provider": "Tavily", "value": "$0.016"}
+{"scope": "overall", "metric": "Search cost per correct answer", "provider": "Exa", "value": "$0.012"}
+{"scope": "overall", "metric": "Search cost per correct answer", "provider": "Parallel", "value": "$0.008"}
+{"scope": "gtm", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "You.com", "value": "381 / 627 · 512 / 751 (fastest)"}
+{"scope": "gtm", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Tavily", "value": "2,670 / 2,843 · 3,295 / 3,425"}
+{"scope": "gtm", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Exa", "value": "812 / 1,102 · 3,178 / 3,403"}
+{"scope": "gtm", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Parallel", "value": "n/a / 2,268 · n/a / 4,268"}
+{"scope": "gtm", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "You.com", "value": "10 of 10; slowest 781 ms"}
+{"scope": "gtm", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Tavily", "value": "0 of 10; slowest 3,473 ms"}
+{"scope": "gtm", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Exa", "value": "3 of 10; slowest 3,419 ms"}
+{"scope": "gtm", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Parallel", "value": "1 of 10; slowest 4,289 ms"}
+{"scope": "gtm", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "You.com", "value": "45%"}
+{"scope": "gtm", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Tavily", "value": "47%"}
+{"scope": "gtm", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Exa", "value": "45%"}
+{"scope": "gtm", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Parallel", "value": "45%"}
+{"scope": "gtm", "metric": "Freshness: % in window", "provider": "You.com", "value": "75%"}
+{"scope": "gtm", "metric": "Freshness: % in window", "provider": "Tavily", "value": "47%"}
+{"scope": "gtm", "metric": "Freshness: % in window", "provider": "Exa", "value": "58%"}
+{"scope": "gtm", "metric": "Freshness: % in window", "provider": "Parallel", "value": "28%"}
+{"scope": "gtm", "metric": "Freshness: newest relevant result (h)", "provider": "You.com", "value": "4.1"}
+{"scope": "gtm", "metric": "Freshness: newest relevant result (h)", "provider": "Tavily", "value": "39.9"}
+{"scope": "gtm", "metric": "Freshness: newest relevant result (h)", "provider": "Exa", "value": "15.9"}
+{"scope": "gtm", "metric": "Freshness: newest relevant result (h)", "provider": "Parallel", "value": "399.9"}
+{"scope": "gtm", "metric": "Content in one call", "provider": "You.com", "value": "100%"}
+{"scope": "gtm", "metric": "Content in one call", "provider": "Tavily", "value": "70%"}
+{"scope": "gtm", "metric": "Content in one call", "provider": "Exa", "value": "90%"}
+{"scope": "gtm", "metric": "Content in one call", "provider": "Parallel", "value": "100%"}
+{"scope": "gtm", "metric": "Tokens, top-5 results: per query / per correct", "provider": "You.com", "value": "95,707 / 239,254"}
+{"scope": "gtm", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Tavily", "value": "20,199 / 42,276"}
+{"scope": "gtm", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Exa", "value": "10,563 / 26,409"}
+{"scope": "gtm", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Parallel", "value": "1,814 / 4,887"}
+{"scope": "gtm", "metric": "Search cost: per query / per correct ($)", "provider": "You.com", "value": "0.0150 / 0.0375"}
+{"scope": "gtm", "metric": "Search cost: per query / per correct ($)", "provider": "Tavily", "value": "0.0080 / 0.0160"}
+{"scope": "gtm", "metric": "Search cost: per query / per correct ($)", "provider": "Exa", "value": "0.0063 / 0.0158"}
+{"scope": "gtm", "metric": "Search cost: per query / per correct ($)", "provider": "Parallel", "value": "0.0050 / 0.0125"}
+{"scope": "insurance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "You.com", "value": "379 / 589 · 496 / 772 (fastest)"}
+{"scope": "insurance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Tavily", "value": "1,650 / 1,864 · 2,959 / 3,128"}
+{"scope": "insurance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Exa", "value": "856 / 1,093 · 4,194 / 4,448"}
+{"scope": "insurance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Parallel", "value": "n/a / 2,038 · n/a / 3,450"}
+{"scope": "insurance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "You.com", "value": "10 of 10; slowest 865 ms"}
+{"scope": "insurance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Tavily", "value": "1 of 10; slowest 3,230 ms"}
+{"scope": "insurance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Exa", "value": "3 of 10; slowest 4,593 ms"}
+{"scope": "insurance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Parallel", "value": "1 of 10; slowest 3,963 ms"}
+{"scope": "insurance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "You.com", "value": "65%"}
+{"scope": "insurance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Tavily", "value": "67%"}
+{"scope": "insurance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Exa", "value": "75%"}
+{"scope": "insurance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Parallel", "value": "67%"}
+{"scope": "insurance", "metric": "Freshness: % in window", "provider": "You.com", "value": "56%"}
+{"scope": "insurance", "metric": "Freshness: % in window", "provider": "Tavily", "value": "34%"}
+{"scope": "insurance", "metric": "Freshness: % in window", "provider": "Exa", "value": "31%"}
+{"scope": "insurance", "metric": "Freshness: % in window", "provider": "Parallel", "value": "31%"}
+{"scope": "insurance", "metric": "Freshness: newest relevant result (h)", "provider": "You.com", "value": "2.3"}
+{"scope": "insurance", "metric": "Freshness: newest relevant result (h)", "provider": "Tavily", "value": "11.9"}
+{"scope": "insurance", "metric": "Freshness: newest relevant result (h)", "provider": "Exa", "value": "7.1"}
+{"scope": "insurance", "metric": "Freshness: newest relevant result (h)", "provider": "Parallel", "value": "16.3"}
+{"scope": "insurance", "metric": "Content in one call", "provider": "You.com", "value": "100%"}
+{"scope": "insurance", "metric": "Content in one call", "provider": "Tavily", "value": "70%"}
+{"scope": "insurance", "metric": "Content in one call", "provider": "Exa", "value": "80%"}
+{"scope": "insurance", "metric": "Content in one call", "provider": "Parallel", "value": "90%"}
+{"scope": "insurance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "You.com", "value": "14,524 / 29,048"}
+{"scope": "insurance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Tavily", "value": "13,986 / 28,383"}
+{"scope": "insurance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Exa", "value": "4,731 / 6,759"}
+{"scope": "insurance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Parallel", "value": "1,418 / 2,352"}
+{"scope": "insurance", "metric": "Search cost: per query / per correct ($)", "provider": "You.com", "value": "0.0150 / 0.0300"}
+{"scope": "insurance", "metric": "Search cost: per query / per correct ($)", "provider": "Tavily", "value": "0.0080 / 0.0160"}
+{"scope": "insurance", "metric": "Search cost: per query / per correct ($)", "provider": "Exa", "value": "0.0056 / 0.0080"}
+{"scope": "insurance", "metric": "Search cost: per query / per correct ($)", "provider": "Parallel", "value": "0.0050 / 0.0083"}
+{"scope": "finance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "You.com", "value": "372 / 592 · 422 / 776 (fastest)"}
+{"scope": "finance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Tavily", "value": "1,465 / 1,642 · 1,699 / 1,889"}
+{"scope": "finance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Exa", "value": "870 / 1,106 · 2,743 / 3,008"}
+{"scope": "finance", "metric": "Search-only latency p50 · p95, server / client (ms)", "provider": "Parallel", "value": "n/a / 1,972 · n/a / 3,511"}
+{"scope": "finance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "You.com", "value": "10 of 10; slowest 823 ms"}
+{"scope": "finance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Tavily", "value": "0 of 10; slowest 1,997 ms"}
+{"scope": "finance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Exa", "value": "3 of 10; slowest 3,170 ms"}
+{"scope": "finance", "metric": "Search-only calls ≤1 s, client (of 10); slowest call", "provider": "Parallel", "value": "0 of 10; slowest 3,847 ms"}
+{"scope": "finance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "You.com", "value": "80%"}
+{"scope": "finance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Tavily", "value": "40%"}
+{"scope": "finance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Exa", "value": "40%"}
+{"scope": "finance", "metric": "Accuracy score (% of max, 10 queries × 3 repeats)", "provider": "Parallel", "value": "88%"}
+{"scope": "finance", "metric": "Freshness: % in window", "provider": "You.com", "value": "45%"}
+{"scope": "finance", "metric": "Freshness: % in window", "provider": "Tavily", "value": "31%"}
+{"scope": "finance", "metric": "Freshness: % in window", "provider": "Exa", "value": "44%"}
+{"scope": "finance", "metric": "Freshness: % in window", "provider": "Parallel", "value": "29%"}
+{"scope": "finance", "metric": "Freshness: newest relevant result (h)", "provider": "You.com", "value": "6.4"}
+{"scope": "finance", "metric": "Freshness: newest relevant result (h)", "provider": "Tavily", "value": "5.6"}
+{"scope": "finance", "metric": "Freshness: newest relevant result (h)", "provider": "Exa", "value": "8.2"}
+{"scope": "finance", "metric": "Freshness: newest relevant result (h)", "provider": "Parallel", "value": "16.6"}
+{"scope": "finance", "metric": "Content in one call", "provider": "You.com", "value": "90%"}
+{"scope": "finance", "metric": "Content in one call", "provider": "Tavily", "value": "70%"}
+{"scope": "finance", "metric": "Content in one call", "provider": "Exa", "value": "90%"}
+{"scope": "finance", "metric": "Content in one call", "provider": "Parallel", "value": "100%"}
+{"scope": "finance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "You.com", "value": "13,146 / 16,433"}
+{"scope": "finance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Tavily", "value": "11,737 / 25,644"}
+{"scope": "finance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Exa", "value": "9,785 / 23,613"}
+{"scope": "finance", "metric": "Tokens, top-5 results: per query / per correct", "provider": "Parallel", "value": "1,793 / 1,999"}
+{"scope": "finance", "metric": "Search cost: per query / per correct ($)", "provider": "You.com", "value": "0.0150 / 0.0188"}
+{"scope": "finance", "metric": "Search cost: per query / per correct ($)", "provider": "Tavily", "value": "0.0080 / 0.0160"}
+{"scope": "finance", "metric": "Search cost: per query / per correct ($)", "provider": "Exa", "value": "0.0063 / 0.0158"}
+{"scope": "finance", "metric": "Search cost: per query / per correct ($)", "provider": "Parallel", "value": "0.0050 / 0.0056"}

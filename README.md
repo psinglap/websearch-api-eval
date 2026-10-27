@@ -6,8 +6,33 @@ By Pallavi Singla · final run Oct 8, 2026
 
 **Live site: https://psinglap.github.io/websearch-api-eval/**
 
+[![npm](https://img.shields.io/npm/v/websearch-api-eval-mcp?label=npm&color=cb3837)](https://www.npmjs.com/package/websearch-api-eval-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.github.psinglap%2Fwebsearch--api--eval-4b5bdc)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.psinglap/websearch-api-eval)
+[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](#available-on)
+[![Hugging Face dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-dataset-ffcc4d)](https://huggingface.co/datasets/psinglap/websearch-api-eval)
+[![Glama](https://glama.ai/mcp/connectors/io.github.psinglap/websearch-api-eval/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.psinglap/websearch-api-eval)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+## Available on
+
+Use the benchmark from wherever you work. Everything is free and read-only; nothing runs on a hosted server with your keys.
+
+| Where | What you get | How to get it |
+|---|---|---|
+| **Website** | Full results, charts, memo, target accounts, market map | https://psinglap.github.io/websearch-api-eval/ |
+| **Claude, ChatGPT, Cursor** (hosted MCP server) | Ask about the results in chat: scorecards, comparisons, any of the 30 queries, charts, methodology | Add a custom connector with `https://websearch-api-eval.psberkeleymba.workers.dev/mcp` (no sign-in). [Setup](#use-it-in-claude-or-chatgpt) |
+| **npm** (local MCP server) | Same tools plus `run_live_search`: query all four APIs with your own keys | `npx -y websearch-api-eval-mcp` · [npm page](https://www.npmjs.com/package/websearch-api-eval-mcp) |
+| **Claude Code plugin** | The MCP server plus an "evaluate web search APIs" skill | `/plugin marketplace add psinglap/websearch-api-eval` then `/plugin install websearch-api-eval@psinglap` |
+| **Official MCP Registry** | Listing that MCP clients and directories read from | [`io.github.psinglap/websearch-api-eval`](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.psinglap/websearch-api-eval) |
+| **Glama** | MCP directory listing with a tool-quality score | [glama.ai](https://glama.ai/mcp/connectors/io.github.psinglap/websearch-api-eval) |
+| **Hugging Face** | The 30 questions, answer keys, per-provider results and scorecards as a dataset | [`psinglap/websearch-api-eval`](https://huggingface.co/datasets/psinglap/websearch-api-eval) · `load_dataset("psinglap/websearch-api-eval")` |
+| **This repo** | The full test harness to rerun the benchmark on your own queries | [Run it yourself](#run-it-yourself) |
+
+In review: Claude's Connectors Directory and mcp.so.
+
 ## Contents
 
+- [Available on](#available-on)
 - [The four pages](#the-four-pages)
 - [Use it in Claude or ChatGPT](#use-it-in-claude-or-chatgpt)
 - [Results at a glance](#results-at-a-glance)
@@ -41,6 +66,7 @@ Ask about these results from inside your AI assistant with the read-only MCP ser
 | **ChatGPT** (Plus and above) | Plugins/Apps → Create MCP app (turn on Developer mode if asked) → paste the URL → No authentication |
 | **Claude Code** | `claude mcp add --transport http websearch-api-eval https://websearch-api-eval.psberkeleymba.workers.dev/mcp` |
 | **Local via npm** (adds `run_live_search` with your own API keys) | `npx -y websearch-api-eval-mcp` ([npm](https://www.npmjs.com/package/websearch-api-eval-mcp)) · Claude Code: `claude mcp add websearch-api-eval -- npx -y websearch-api-eval-mcp` |
+| **Claude Code plugin** (MCP server + skill) | `/plugin marketplace add psinglap/websearch-api-eval` then `/plugin install websearch-api-eval@psinglap` |
 | **Cursor / VS Code / others** | Add a remote MCP server with the URL above (Streamable HTTP) |
 
 Then ask, for example:
@@ -243,6 +269,8 @@ You need your own keys for each search API (`YDC_API_KEY`, `TAVILY_API_KEY`, `EX
 | `pdf/` | PDF versions of the evaluation and memo |
 | `eval/` | Test harness: configs, providers, metric assertions, answer keys, grades, ground truth |
 | `reports/` | The 30 agent queries |
-| `mcp/` | Read-only MCP server for Claude, ChatGPT and other assistants |
+| `mcp/` | MCP server: hosted (Cloudflare Worker) and npm package (`websearch-api-eval-mcp`) |
+| `plugins/`, `.claude-plugin/` | Claude Code plugin and its marketplace |
+| `dataset/` | Hugging Face dataset files and dataset card |
 | `data/` | Published results as JSON (built from the site by `data/build_data.py`) |
 | `llms.txt` | Summary and map of the repo for AI tools |

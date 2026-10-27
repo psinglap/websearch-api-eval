@@ -1,0 +1,120 @@
+{"id": "G1", "use_case": "gtm", "provider": "You.com", "returned": "Issues opened Oct 7, just outside the 6 h window", "accuracy_0_2": 0.0}
+{"id": "G1", "use_case": "gtm", "provider": "Tavily", "returned": "No results", "accuracy_0_2": 0.0}
+{"id": "G1", "use_case": "gtm", "provider": "Exa", "returned": "Generic repo issue-list pages, no Kafka issue", "accuracy_0_2": 0.0}
+{"id": "G1", "use_case": "gtm", "provider": "Parallel", "returned": "Undated Kafka-lag tool repos, no issues", "accuracy_0_2": 0.0}
+{"id": "G2", "use_case": "gtm", "provider": "You.com", "returned": "Keyword noise; missed the Oct 8 ATO interview", "accuracy_0_2": 0.0}
+{"id": "G2", "use_case": "gtm", "provider": "Tavily", "returned": "ATO interview with Confluent's VP (Oct 8), in 2 of 3 runs", "accuracy_0_2": 1.33}
+{"id": "G2", "use_case": "gtm", "provider": "Exa", "returned": "ATO interview with Confluent's VP (Oct 8)", "accuracy_0_2": 2.0}
+{"id": "G2", "use_case": "gtm", "provider": "Parallel", "returned": "Undated newsroom and profile pages", "accuracy_0_2": 0.0}
+{"id": "G3", "use_case": "gtm", "provider": "You.com", "returned": "5 in-window apache/iggy issues (Oct 8)", "accuracy_0_2": 2.0}
+{"id": "G3", "use_case": "gtm", "provider": "Tavily", "returned": "Undated Reddit post, rest noise", "accuracy_0_2": 0.0}
+{"id": "G3", "use_case": "gtm", "provider": "Exa", "returned": "Matched \"Apache\" only, no Iggy", "accuracy_0_2": 0.0}
+{"id": "G3", "use_case": "gtm", "provider": "Parallel", "returned": "Evergreen landing pages, nothing dated", "accuracy_0_2": 0.0}
+{"id": "G4", "use_case": "gtm", "provider": "You.com", "returned": "GitHub issues, no release page", "accuracy_0_2": 0.0}
+{"id": "G4", "use_case": "gtm", "provider": "Tavily", "returned": "No results", "accuracy_0_2": 0.0}
+{"id": "G4", "use_case": "gtm", "provider": "Exa", "returned": "Other Apache projects' issue lists", "accuracy_0_2": 0.0}
+{"id": "G4", "use_case": "gtm", "provider": "Parallel", "returned": "server-0.9.0 (Sep 18) with release link", "accuracy_0_2": 2.0}
+{"id": "G5", "use_case": "gtm", "provider": "You.com", "returned": "Right official pages, but both settings cut from the text", "accuracy_0_2": 0.0}
+{"id": "G5", "use_case": "gtm", "provider": "Tavily", "returned": "Confluent docs, both settings described", "accuracy_0_2": 2.0}
+{"id": "G5", "use_case": "gtm", "provider": "Exa", "returned": "Official Kafka pages, only fetch.min.bytes visible", "accuracy_0_2": 0.0}
+{"id": "G5", "use_case": "gtm", "provider": "Parallel", "returned": "max.poll.records named, not described", "accuracy_0_2": 0.0}
+{"id": "G6", "use_case": "gtm", "provider": "You.com", "returned": "GitHub issues, no release page", "accuracy_0_2": 0.0}
+{"id": "G6", "use_case": "gtm", "provider": "Tavily", "returned": "Other projects' release pages", "accuracy_0_2": 0.0}
+{"id": "G6", "use_case": "gtm", "provider": "Exa", "returned": "nats-io issue lists, no release", "accuracy_0_2": 0.0}
+{"id": "G6", "use_case": "gtm", "provider": "Parallel", "returned": "v2.15.1-RC.2 (Oct 6) and v2.15.0 stable", "accuracy_0_2": 2.0}
+{"id": "G7", "use_case": "gtm", "provider": "You.com", "returned": "No active incident; flagged the cached Sep 21 page as stale", "accuracy_0_2": 2.0}
+{"id": "G7", "use_case": "gtm", "provider": "Tavily", "returned": "No results, read as \"none\"", "accuracy_0_2": 2.0}
+{"id": "G7", "use_case": "gtm", "provider": "Exa", "returned": "No results, read as \"none\"", "accuracy_0_2": 2.0}
+{"id": "G7", "use_case": "gtm", "provider": "Parallel", "returned": "No active incident; history page header only", "accuracy_0_2": 2.0}
+{"id": "G8", "use_case": "gtm", "provider": "You.com", "returned": "Manus $500M+ (Oct 8), no lead investor", "accuracy_0_2": 2.0}
+{"id": "G8", "use_case": "gtm", "provider": "Tavily", "returned": "TODAY €2.8M seed (Oct 8), Monid $7.7M", "accuracy_0_2": 2.0}
+{"id": "G8", "use_case": "gtm", "provider": "Exa", "returned": "5 in-window raises (Ampersand, Monid, Nous, Rein)", "accuracy_0_2": 2.0}
+{"id": "G8", "use_case": "gtm", "provider": "Parallel", "returned": "Rein Security $25M (Oct 8)", "accuracy_0_2": 2.0}
+{"id": "G9", "use_case": "gtm", "provider": "You.com", "returned": "Arize, dev.to and Ability.ai articles (Oct 2-6)", "accuracy_0_2": 2.0}
+{"id": "G9", "use_case": "gtm", "provider": "Tavily", "returned": "4 in-window articles (Oct 4-7)", "accuracy_0_2": 2.0}
+{"id": "G9", "use_case": "gtm", "provider": "Exa", "returned": "4 in-window items (Like One, Databricks, arXiv, AgentLensHQ)", "accuracy_0_2": 2.0}
+{"id": "G9", "use_case": "gtm", "provider": "Parallel", "returned": "On-topic, but nothing dated this week", "accuracy_0_2": 0.0}
+{"id": "G10", "use_case": "gtm", "provider": "You.com", "returned": "Medium p99 numbers in window; who ran them not stated", "accuracy_0_2": 1.0}
+{"id": "G10", "use_case": "gtm", "provider": "Tavily", "returned": "Vendor pages, no Redpanda vs Kafka p99", "accuracy_0_2": 0.0}
+{"id": "G10", "use_case": "gtm", "provider": "Exa", "returned": "5 dated benchmarks with authors, no p99 numbers", "accuracy_0_2": 1.0}
+{"id": "G10", "use_case": "gtm", "provider": "Parallel", "returned": "In-window benchmark without p99", "accuracy_0_2": 1.0}
+{"id": "I1", "use_case": "insurance", "provider": "You.com", "returned": "2020-23 Citizens minutes and contracts; active suspension missed", "accuracy_0_2": 0.0}
+{"id": "I1", "use_case": "insurance", "provider": "Tavily", "returned": "No results; suspension missed", "accuracy_0_2": 0.0}
+{"id": "I1", "use_case": "insurance", "provider": "Exa", "returned": "No results; suspension missed", "accuracy_0_2": 0.0}
+{"id": "I1", "use_case": "insurance", "provider": "Parallel", "returned": "Evergreen binding rule + 2024 Helene page; suspension missed", "accuracy_0_2": 0.0}
+{"id": "I2", "use_case": "insurance", "provider": "You.com", "returned": "10 AM CDT advisory (#8, by time): 23.7N 90.2W, 86 mph", "accuracy_0_2": 2.0}
+{"id": "I2", "use_case": "insurance", "provider": "Tavily", "returned": "Stale: newest item Advisory #6A", "accuracy_0_2": 0.0}
+{"id": "I2", "use_case": "insurance", "provider": "Exa", "returned": "Advisory #8, 10 AM CDT, ~85 mph; warning area includes Pensacola", "accuracy_0_2": 2.0}
+{"id": "I2", "use_case": "insurance", "provider": "Parallel", "returned": "10 AM CDT advisory, 86 mph; a stale 8 a.m. advisory in 1 of 3 runs", "accuracy_0_2": 1.33}
+{"id": "I3", "use_case": "insurance", "provider": "You.com", "returned": "Hurricane Warning only, no time; Storm Surge Warning missing", "accuracy_0_2": 1.0}
+{"id": "I3", "use_case": "insurance", "provider": "Tavily", "returned": "Hurricane Warning only; Storm Surge Warning missing", "accuracy_0_2": 1.0}
+{"id": "I3", "use_case": "insurance", "provider": "Exa", "returned": "Both warnings for Escambia, issued 9:53 PM CDT Oct 7", "accuracy_0_2": 2.0}
+{"id": "I3", "use_case": "insurance", "provider": "Parallel", "returned": "Hurricane Warning (issued ~10 p.m. Oct 7); Storm Surge Warning missing", "accuracy_0_2": 1.0}
+{"id": "I4", "use_case": "insurance", "provider": "You.com", "returned": "Stale cached weather pages (NWS block from Aug 5, Fox Weather from Feb 16)", "accuracy_0_2": 0.0}
+{"id": "I4", "use_case": "insurance", "provider": "Tavily", "returned": "Averages and forecasts; current 13 mph ENE (16:00Z) on repeats 2-3 only", "accuracy_0_2": 1.33}
+{"id": "I4", "use_case": "insurance", "provider": "Exa", "returned": "13 mph NE at 11:00 AM CDT (model estimate)", "accuracy_0_2": 2.0}
+{"id": "I4", "use_case": "insurance", "provider": "Parallel", "returned": "Forecasts only; newest station report ~5 h old", "accuracy_0_2": 0.0}
+{"id": "I5", "use_case": "insurance", "provider": "You.com", "returned": "No mandatory order; voluntary coastal evacuation (Oct 7)", "accuracy_0_2": 2.0}
+{"id": "I5", "use_case": "insurance", "provider": "Tavily", "returned": "No mandatory order; voluntary evacuation in effect", "accuracy_0_2": 2.0}
+{"id": "I5", "use_case": "insurance", "provider": "Exa", "returned": "Explicitly \"no mandatory evacuation\"; voluntary in effect", "accuracy_0_2": 2.0}
+{"id": "I5", "use_case": "insurance", "provider": "Parallel", "returned": "No mandatory order; voluntary recommendation (Oct 7)", "accuracy_0_2": 2.0}
+{"id": "I6", "use_case": "insurance", "provider": "You.com", "returned": "None yet; only Florida's state of emergency", "accuracy_0_2": 2.0}
+{"id": "I6", "use_case": "insurance", "provider": "Tavily", "returned": "None yet; off-target results", "accuracy_0_2": 2.0}
+{"id": "I6", "use_case": "insurance", "provider": "Exa", "returned": "None yet; no 2020 declaration surfaced", "accuracy_0_2": 2.0}
+{"id": "I6", "use_case": "insurance", "provider": "Parallel", "returned": "None yet; FEMA press page (Oct 7) shows no Isaias declaration", "accuracy_0_2": 2.0}
+{"id": "I7", "use_case": "insurance", "provider": "You.com", "returned": "None; no regulator order in results", "accuracy_0_2": 2.0}
+{"id": "I7", "use_case": "insurance", "provider": "Tavily", "returned": "No results (correct none by default)", "accuracy_0_2": 2.0}
+{"id": "I7", "use_case": "insurance", "provider": "Exa", "returned": "None; found the Oct 7 FLOIR notice and ALDOI release and did not call them orders", "accuracy_0_2": 2.0}
+{"id": "I7", "use_case": "insurance", "provider": "Parallel", "returned": "None; old Helene order labelled as old", "accuracy_0_2": 2.0}
+{"id": "I8", "use_case": "insurance", "provider": "You.com", "returned": "FL EO 26-202 (Oct 6); AL named without its date", "accuracy_0_2": 1.0}
+{"id": "I8", "use_case": "insurance", "provider": "Tavily", "returned": "FL (Oct 6) + AL (Oct 7)", "accuracy_0_2": 2.0}
+{"id": "I8", "use_case": "insurance", "provider": "Exa", "returned": "FL EO 26-202 (Oct 6) only; AL missing", "accuracy_0_2": 1.0}
+{"id": "I8", "use_case": "insurance", "provider": "Parallel", "returned": "AL (Oct 7) + FL EO 26-202 (Oct 6)", "accuracy_0_2": 2.0}
+{"id": "I9", "use_case": "insurance", "provider": "You.com", "returned": "None: a 1998 SPC paper and the reports index, no storm data", "accuracy_0_2": 2.0}
+{"id": "I9", "use_case": "insurance", "provider": "Tavily", "returned": "No results, read as \"none\"", "accuracy_0_2": 2.0}
+{"id": "I9", "use_case": "insurance", "provider": "Exa", "returned": "No results, read as \"none\"", "accuracy_0_2": 2.0}
+{"id": "I9", "use_case": "insurance", "provider": "Parallel", "returned": "No results, read as \"none\"", "accuracy_0_2": 2.0}
+{"id": "I10", "use_case": "insurance", "provider": "You.com", "returned": "Only 26V179 (2024 RAV4 Hybrid label); 24V911000 missed", "accuracy_0_2": 1.0}
+{"id": "I10", "use_case": "insurance", "provider": "Tavily", "returned": "25V595 + 25V744 + 26V179; 24V911000 missed", "accuracy_0_2": 1.0}
+{"id": "I10", "use_case": "insurance", "provider": "Exa", "returned": "2 results: a Lexus recall excerpt and a Nissan page; no RAV4 recall", "accuracy_0_2": 0.0}
+{"id": "I10", "use_case": "insurance", "provider": "Parallel", "returned": "25V744 + 26V179; 24V911000 missed", "accuracy_0_2": 1.0}
+{"id": "F1", "use_case": "finance", "provider": "You.com", "returned": "$235.72 dated Oct 8, no intraday time (Robinhood)", "accuracy_0_2": 2.0}
+{"id": "F1", "use_case": "finance", "provider": "Tavily", "returned": "$235.22 at 12:05 PM EDT (Yahoo); only the Oct 7 close in 1 of 3 runs", "accuracy_0_2": 1.33}
+{"id": "F1", "use_case": "finance", "provider": "Exa", "returned": "Stale: the Oct 7 close of $237.47", "accuracy_0_2": 0.0}
+{"id": "F1", "use_case": "finance", "provider": "Parallel", "returned": "$235.25 at 12:21 PM EDT (StockAnalysis)", "accuracy_0_2": 2.0}
+{"id": "F2", "use_case": "finance", "provider": "You.com", "returned": "~5.27% (Trading Economics; CNBC 5.284% at 12:22 PM)", "accuracy_0_2": 2.0}
+{"id": "F2", "use_case": "finance", "provider": "Tavily", "returned": "No current yield: old Binance posts (4.33%, March); morning highs on repeats", "accuracy_0_2": 0.0}
+{"id": "F2", "use_case": "finance", "provider": "Exa", "returned": "Stale: 5.322% from 5:19 AM, a morning high outside ±3 bp", "accuracy_0_2": 0.0}
+{"id": "F2", "use_case": "finance", "provider": "Parallel", "returned": "5.273% (CNBC); 5.28% (Trading Economics)", "accuracy_0_2": 2.0}
+{"id": "F3", "use_case": "finance", "provider": "You.com", "returned": "$81,307 (CoinGecko), within 0.2% of spot", "accuracy_0_2": 2.0}
+{"id": "F3", "use_case": "finance", "provider": "Tavily", "returned": "$81,028 at 15:57 UTC (Yahoo)", "accuracy_0_2": 2.0}
+{"id": "F3", "use_case": "finance", "provider": "Exa", "returned": "No point quote: \"below $82,000\" and older $82,650-82,970", "accuracy_0_2": 0.0}
+{"id": "F3", "use_case": "finance", "provider": "Parallel", "returned": "$81,063 (CoinMarketCap); $81,248 (CoinGecko)", "accuracy_0_2": 2.0}
+{"id": "F4", "use_case": "finance", "provider": "You.com", "returned": "Stale: $92.63 at 8:18 AM ET, +1.7% vs the key", "accuracy_0_2": 0.0}
+{"id": "F4", "use_case": "finance", "provider": "Tavily", "returned": "$91.58, an Asian-session figure in tolerance by luck; $92.90 (11:52 AM) in 1 of 3 runs", "accuracy_0_2": 1.33}
+{"id": "F4", "use_case": "finance", "provider": "Exa", "returned": "Stale: $92.29 at 10:43 AM EDT, +1.4%", "accuracy_0_2": 0.0}
+{"id": "F4", "use_case": "finance", "provider": "Parallel", "returned": "$90.91 (OilPrice.com, 10-min delayed); stale quotes in 2 of 3 runs", "accuracy_0_2": 0.67}
+{"id": "F5", "use_case": "finance", "provider": "You.com", "returned": "None: 2 irrelevant dol.gov pages (2009-10 archive, a FOIA PDF)", "accuracy_0_2": 0.0}
+{"id": "F5", "use_case": "finance", "provider": "Tavily", "returned": "No results (dol.gov filter)", "accuracy_0_2": 0.0}
+{"id": "F5", "use_case": "finance", "provider": "Exa", "returned": "No results (dol.gov filter)", "accuracy_0_2": 0.0}
+{"id": "F5", "use_case": "finance", "provider": "Parallel", "returned": "197,000 for the week ending Oct 3 (DOL PDF, released 8:30 a.m. Oct 8)", "accuracy_0_2": 2.0}
+{"id": "F6", "use_case": "finance", "provider": "You.com", "returned": "Sep 15-16 minutes, released Oct 7, federalreserve.gov link, 2 key points", "accuracy_0_2": 2.0}
+{"id": "F6", "use_case": "finance", "provider": "Tavily", "returned": "No results (federalreserve.gov filter)", "accuracy_0_2": 0.0}
+{"id": "F6", "use_case": "finance", "provider": "Exa", "returned": "Sep 15-16 minutes, released Oct 7, with link; 1 key point", "accuracy_0_2": 2.0}
+{"id": "F6", "use_case": "finance", "provider": "Parallel", "returned": "Sep 15-16 minutes, released Oct 7, press-release link; no key points", "accuracy_0_2": 2.0}
+{"id": "F7", "use_case": "finance", "provider": "You.com", "returned": "Viatris-Pacira $1.65B (Oct 8) + borderline RXO, Hormel, Sunrise; old Roche deal excluded", "accuracy_0_2": 2.0}
+{"id": "F7", "use_case": "finance", "provider": "Tavily", "returned": "Schneider-PTC (Oct 5, out of window) shown as new; RXO borderline", "accuracy_0_2": 0.0}
+{"id": "F7", "use_case": "finance", "provider": "Exa", "returned": "Wittington-Boots $8.9B (Oct 7) + Viatris-Pacira $1.65B (Oct 8)", "accuracy_0_2": 2.0}
+{"id": "F7", "use_case": "finance", "provider": "Parallel", "returned": "None in window (July and Sept deals); in-window deals on repeats 2-3", "accuracy_0_2": 1.0}
+{"id": "F8", "use_case": "finance", "provider": "You.com", "returned": "Oct 6 8-K, Items 5.02/7.01/9.01, EDGAR index link; Stiles named incoming CEO", "accuracy_0_2": 2.0}
+{"id": "F8", "use_case": "finance", "provider": "Tavily", "returned": "No results (sec.gov filter)", "accuracy_0_2": 0.0}
+{"id": "F8", "use_case": "finance", "provider": "Exa", "returned": "Other issuers' 8-Ks; no Stryker filing", "accuracy_0_2": 0.0}
+{"id": "F8", "use_case": "finance", "provider": "Parallel", "returned": "Oct 6 8-K: Lobo to Executive Chair, Stiles CEO from Jan 1, 2027", "accuracy_0_2": 2.0}
+{"id": "F9", "use_case": "finance", "provider": "You.com", "returned": "$5.60 per ADS, CHWM, Nasdaq Capital Market, priced Sep 30/Oct 1", "accuracy_0_2": 2.0}
+{"id": "F9", "use_case": "finance", "provider": "Tavily", "returned": "$5.60, CHWM, Nasdaq, Oct 1", "accuracy_0_2": 2.0}
+{"id": "F9", "use_case": "finance", "provider": "Exa", "returned": "$5.60 per ADS, Nasdaq Capital Market, Oct 1 (424B1 confirms)", "accuracy_0_2": 2.0}
+{"id": "F9", "use_case": "finance", "provider": "Parallel", "returned": "$5.60, CHWM, Nasdaq Capital Market, Oct 1; flagged stale $5.00 terms", "accuracy_0_2": 2.0}
+{"id": "F10", "use_case": "finance", "provider": "You.com", "returned": "Tue Oct 13, release ~7:00 a.m. ET, call 8:30 a.m.", "accuracy_0_2": 2.0}
+{"id": "F10", "use_case": "finance", "provider": "Tavily", "returned": "Oct 13, ~7:00 release, 8:30 call; other companies' dates in 1 of 3 runs", "accuracy_0_2": 1.33}
+{"id": "F10", "use_case": "finance", "provider": "Exa", "returned": "Oct 13, before the open; call 8:30 a.m. ET", "accuracy_0_2": 2.0}
+{"id": "F10", "use_case": "finance", "provider": "Parallel", "returned": "Oct 13, results ~7:00 a.m. ET, call 8:30 a.m.", "accuracy_0_2": 2.0}
