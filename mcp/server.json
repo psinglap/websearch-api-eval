@@ -3,7 +3,7 @@
   "name": "io.github.psinglap/websearch-api-eval",
   "title": "Web Search API Eval",
   "description": "Web search API benchmark for AI agents: You.com, Tavily, Exa, Parallel. Results and charts.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "websiteUrl": "https://psinglap.github.io/websearch-api-eval/",
   "repository": {
     "url": "https://github.com/psinglap/websearch-api-eval",
@@ -14,6 +14,42 @@
     {
       "type": "streamable-http",
       "url": "https://websearch-api-eval.psberkeleymba.workers.dev/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "websearch-api-eval-mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YDC_API_KEY",
+          "description": "Optional. You.com API key, used only by run_live_search",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "TAVILY_API_KEY",
+          "description": "Optional. Tavily API key, used only by run_live_search",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "EXA_API_KEY",
+          "description": "Optional. Exa API key, used only by run_live_search",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PARALLEL_API_KEY",
+          "description": "Optional. Parallel API key, used only by run_live_search",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }
