@@ -86,7 +86,7 @@ function buildServer(env: Env): McpServer {
       description:
         "Headline findings and the overall scorecard across all 30 queries (90 calls per API): accuracy, fully correct, precision@5, " +
         "freshness, empty responses, failed calls, latency p50/p95, cost per correct answer. Also the per-use-case summary, which API fits " +
-        "which agent, and developer activation time. Use this first for any general question about the benchmark.",
+        "which agent, and developer activation time.",
       annotations: { ...READ_ONLY, title: "Overall results" },
     },
     async () => {
@@ -238,7 +238,7 @@ function buildServer(env: Env): McpServer {
       title: "Charts",
       description:
         "The published graphs: overall scorecard, key metrics and per-query grids for GTM, insurance and finance, and developer activation. " +
-        "Without chart_id, lists them with titles and image links. With chart_id, also returns the image itself.",
+        "Without chart_id, lists them with titles and image links; with chart_id, also returns the image.",
       inputSchema: {
         chart_id: z.string().optional().describe("e.g. overall_scorecard, finance_key_metrics, gtm_query_grid, time_steps_activation"),
         use_case: z.enum(["all", "gtm", "insurance", "finance", "setup"]).default("all").describe("Filter the list"),
@@ -304,7 +304,7 @@ function buildServer(env: Env): McpServer {
     "search",
     {
       title: "Search the benchmark",
-      description: "Search the Web Search API Eval benchmark (results, questions, methodology, charts, how to run). Returns matching document IDs to pass to fetch.",
+      description: "Search the Web Search API Eval benchmark (results, questions, methodology, charts, how to run). Returns matching document IDs, titles and URLs.",
       inputSchema: { query: z.string().describe("What to look for") },
       annotations: { ...READ_ONLY, title: "Search the benchmark" },
     },
@@ -325,7 +325,7 @@ function buildServer(env: Env): McpServer {
     "fetch",
     {
       title: "Fetch a benchmark document",
-      description: "Fetch the full text of a document returned by search, by its ID.",
+      description: "Full text of one benchmark document by its ID (for example question-F5, scorecard-finance, overall, methodology).",
       inputSchema: { id: z.string().describe("Document ID from search") },
       annotations: { ...READ_ONLY, title: "Fetch a benchmark document" },
     },
