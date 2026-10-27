@@ -40,6 +40,7 @@ Ask about these results from inside your AI assistant with the read-only MCP ser
 | **Claude** (web, desktop) | Settings → Connectors → Add custom connector → paste the URL → No sign-in |
 | **ChatGPT** (Plus and above) | Plugins/Apps → Create MCP app (turn on Developer mode if asked) → paste the URL → No authentication |
 | **Claude Code** | `claude mcp add --transport http websearch-api-eval https://websearch-api-eval.psberkeleymba.workers.dev/mcp` |
+| **Local via npm** (adds `run_live_search` with your own API keys) | `npx -y websearch-api-eval-mcp` ([npm](https://www.npmjs.com/package/websearch-api-eval-mcp)) · Claude Code: `claude mcp add websearch-api-eval -- npx -y websearch-api-eval-mcp` |
 | **Cursor / VS Code / others** | Add a remote MCP server with the URL above (Streamable HTTP) |
 
 Then ask, for example:

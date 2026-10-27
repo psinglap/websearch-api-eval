@@ -9,6 +9,7 @@ Overall (90 calls per API): accuracy You.com 63%, Tavily 51%, Exa 53%, Parallel 
 ## Use it from an AI assistant
 
 - MCP server (read-only, no sign-in, Streamable HTTP): https://websearch-api-eval.psberkeleymba.workers.dev/mcp. Tools: get_overall_results, get_scorecard, compare_providers, recommend_provider, list_questions, get_question, get_charts, get_methodology, how_to_run_locally, search, fetch. [Docs](https://github.com/psinglap/websearch-api-eval/tree/main/mcp)
+- Local MCP server on npm: `npx -y websearch-api-eval-mcp` (https://www.npmjs.com/package/websearch-api-eval-mcp). Same tools plus run_live_search, which queries the four providers with your own API keys.
 
 ## Results and data (JSON, same numbers as the site)
 
