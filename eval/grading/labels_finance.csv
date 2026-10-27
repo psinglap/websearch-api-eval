@@ -1,0 +1,41 @@
+qid,query,key_short,provider,returned_short,mean
+F1,NVDA stock price,$235.58–235.60 (12:24–12:35 ET),You.com,"$235.72, no intraday time",2.0
+F1,NVDA stock price,$235.58–235.60 (12:24–12:35 ET),Tavily,$235.22 at 12:05 ET (1 repeat stale),1.33
+F1,NVDA stock price,$235.58–235.60 (12:24–12:35 ET),Exa,Oct 7 close $237.47 (stale),0.0
+F1,NVDA stock price,$235.58–235.60 (12:24–12:35 ET),Parallel,$235.25 at 12:21 ET,2.0
+F2,US 10-year Treasury yield,5.265–5.269% (12:25–12:36 ET),You.com,5.27–5.28% (TE; CNBC 5.284%),2.0
+F2,US 10-year Treasury yield,5.265–5.269% (12:25–12:36 ET),Tavily,Nothing current — old 2026 posts,0.0
+F2,US 10-year Treasury yield,5.265–5.269% (12:25–12:36 ET),Exa,5.322% from 5:19 AM (morning high),0.0
+F2,US 10-year Treasury yield,5.265–5.269% (12:25–12:36 ET),Parallel,"5.273% (CNBC), TE 5.28%",2.0
+F3,BTC USD price,"$81,169–81,376 (Coinbase spot)",You.com,"$81,306.68 (CoinGecko)",2.0
+F3,BTC USD price,"$81,169–81,376 (Coinbase spot)",Tavily,"$81,027.80 at 15:57 UTC",2.0
+F3,BTC USD price,"$81,169–81,376 (Coinbase spot)",Exa,Only dated quotes ~$82.6–83.0k,0.0
+F3,BTC USD price,"$81,169–81,376 (Coinbase spot)",Parallel,"$81,062.89 (CMC), $81,247.90",2.0
+F4,WTI crude oil price,$90.95–91.04 (12:20–12:31 ET),You.com,$92.63 at 8:18 ET (4h stale),0.0
+F4,WTI crude oil price,$90.95–91.04 (12:20–12:31 ET),Tavily,$91.58 Asian session (repeats differ),1.33
+F4,WTI crude oil price,$90.95–91.04 (12:20–12:31 ET),Exa,$92.29 at 10:43 ET (stale),0.0
+F4,WTI crude oil price,$90.95–91.04 (12:20–12:31 ET),Parallel,"$90.91 (repeats differ, stale)",0.67
+F5,initial jobless claims weekly report,"197,000 (wk ending Oct 3)",You.com,Only a 2009-10 claims archive,0.0
+F5,initial jobless claims weekly report,"197,000 (wk ending Oct 3)",Tavily,Empty — no results,0.0
+F5,initial jobless claims weekly report,"197,000 (wk ending Oct 3)",Exa,Empty — no results,0.0
+F5,initial jobless claims weekly report,"197,000 (wk ending Oct 3)",Parallel,"197,000, wk ending Oct 3 (DOL PDF)",2.0
+F6,FOMC minutes,"Sep 15-16 minutes, out Oct 7 2pm ET",You.com,"Sep 15-16 minutes, Oct 7 2pm ET",2.0
+F6,FOMC minutes,"Sep 15-16 minutes, out Oct 7 2pm ET",Tavily,Empty — no results,0.0
+F6,FOMC minutes,"Sep 15-16 minutes, out Oct 7 2pm ET",Exa,"Sep 15-16 minutes, Oct 7 2pm ET",2.0
+F6,FOMC minutes,"Sep 15-16 minutes, out Oct 7 2pm ET",Parallel,"Date and link, no key points",2.0
+F7,definitive agreement to acquire billion,Viatris–Pacira $1.65B; Boots $8.9B,You.com,"Viatris–Pacira $1.65B, plus RXO",2.0
+F7,definitive agreement to acquire billion,Viatris–Pacira $1.65B; Boots $8.9B,Tavily,"Schneider–PTC (Oct 5, out of window)",0.0
+F7,definitive agreement to acquire billion,Viatris–Pacira $1.65B; Boots $8.9B,Exa,"Boots $8.9B, Viatris–Pacira",2.0
+F7,definitive agreement to acquire billion,Viatris–Pacira $1.65B; Boots $8.9B,Parallel,Out-of-window deals; repeats vary,1.0
+F8,Stryker 8-K item 5.02,Oct 6 8-K: Lobo to step down as CEO,You.com,"Stryker Oct 6 8-K, index link",2.0
+F8,Stryker 8-K item 5.02,Oct 6 8-K: Lobo to step down as CEO,Tavily,Empty — no results,0.0
+F8,Stryker 8-K item 5.02,Oct 6 8-K: Lobo to step down as CEO,Exa,Nothing — other issuers' 8-Ks,0.0
+F8,Stryker 8-K item 5.02,Oct 6 8-K: Lobo to step down as CEO,Parallel,Stryker 8-K text: Lobo to Exec Chair,2.0
+F9,Chilwa Minerals IPO price per share,"$5.60 per ADS (CHWM, Oct 1)",You.com,"$5.60 per ADS, CHWM",2.0
+F9,Chilwa Minerals IPO price per share,"$5.60 per ADS (CHWM, Oct 1)",Tavily,"$5.60/share, 625,000 shares",2.0
+F9,Chilwa Minerals IPO price per share,"$5.60 per ADS (CHWM, Oct 1)",Exa,$5.60 per ADS (424B1),2.0
+F9,Chilwa Minerals IPO price per share,"$5.60 per ADS (CHWM, Oct 1)",Parallel,$5.60 (one source says $5.00),2.0
+F10,JPMorgan third quarter 2026 earnings release date,"Tue Oct 13, 2026 (call 8:30 ET)",You.com,"Oct 13, before open, call 8:30",2.0
+F10,JPMorgan third quarter 2026 earnings release date,"Tue Oct 13, 2026 (call 8:30 ET)",Tavily,Oct 13 (one repeat: nothing),1.33
+F10,JPMorgan third quarter 2026 earnings release date,"Tue Oct 13, 2026 (call 8:30 ET)",Exa,"Oct 13, before open, call 8:30",2.0
+F10,JPMorgan third quarter 2026 earnings release date,"Tue Oct 13, 2026 (call 8:30 ET)",Parallel,"Oct 13, ~7:00 release, 8:30 call",2.0

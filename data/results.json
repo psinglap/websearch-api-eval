@@ -1,0 +1,349 @@
+{
+ "as_of": "2026-10-08",
+ "site": "https://psinglap.github.io/websearch-api-eval/",
+ "repo": "https://github.com/psinglap/websearch-api-eval",
+ "note": "Snapshot of the published benchmark run on 2026-10-08. Not live data.",
+ "headline": "You.com is the fastest API tested and the most dependable at returning something fresh: it leads on freshness, reliability and search-only speed. Parallel leads accuracy, with You.com a close second and tied on fully correct queries. Exa returns the most on-topic top 5; Parallel is cheapest per correct answer.",
+ "overall": {
+  "basis": "30 queries x 3 repeats = 90 calls per API",
+  "metrics": [
+   {
+    "metric": "Accuracy score (% of max)",
+    "You.com": "63%",
+    "Tavily": "51%",
+    "Exa": "53%",
+    "Parallel": "67%"
+   },
+   {
+    "metric": "Queries fully correct in all 3 repeats",
+    "You.com": "57%",
+    "Tavily": "37%",
+    "Exa": "50%",
+    "Parallel": "57%"
+   },
+   {
+    "metric": "Precision@5 (on-topic share of top 5)",
+    "You.com": "37%",
+    "Tavily": "26%",
+    "Exa": "40%",
+    "Parallel": "26%"
+   },
+   {
+    "metric": "Results dated inside the query's window",
+    "You.com": "59%",
+    "Tavily": "37%",
+    "Exa": "44%",
+    "Parallel": "29%"
+   },
+   {
+    "metric": "Newest relevant result, median age",
+    "You.com": "4.1 h",
+    "Tavily": "11.9 h",
+    "Exa": "8.2 h",
+    "Parallel": "16.6 h"
+   },
+   {
+    "metric": "Empty responses (of 90)",
+    "You.com": "0",
+    "Tavily": "27",
+    "Exa": "12",
+    "Parallel": "3"
+   },
+   {
+    "metric": "Failed calls: errors, timeouts (of 90)",
+    "You.com": "0",
+    "Tavily": "0",
+    "Exa": "0",
+    "Parallel": "0"
+   },
+   {
+    "metric": "Latency p50 / p95, client (ms)",
+    "You.com": "593 / 804",
+    "Tavily": "1,864 / 3,305",
+    "Exa": "1,106 / 3,997",
+    "Parallel": "2,038 / 4,117"
+   },
+   {
+    "metric": "Latency p50, server-reported (ms)",
+    "You.com": "379",
+    "Tavily": "1,650",
+    "Exa": "831",
+    "Parallel": "n/a"
+   },
+   {
+    "metric": "Search cost per correct answer",
+    "You.com": "$0.026",
+    "Tavily": "$0.016",
+    "Exa": "$0.012",
+    "Parallel": "$0.008"
+   }
+  ],
+  "chart": "https://psinglap.github.io/websearch-api-eval/img/overall_scorecard.png"
+ },
+ "by_use_case_summary": {
+  "basis": "Accuracy score (% of max) · search-only client latency p50",
+  "rows": [
+   {
+    "use_case": "GTM",
+    "agent_job": "Find fresh developer and company buying signals (issues, releases, funding, incidents)",
+    "You.com": "45% · 627 ms",
+    "Tavily": "47% · 2,843 ms",
+    "Exa": "45% · 1,102 ms",
+    "Parallel": "45% · 2,268 ms"
+   },
+   {
+    "use_case": "Insurance",
+    "agent_job": "Voice and claims agent that needs live catastrophe status mid-call (500 ms budget)",
+    "You.com": "65% · 589 ms",
+    "Tavily": "67% · 1,864 ms",
+    "Exa": "75% · 1,093 ms",
+    "Parallel": "67% · 2,038 ms"
+   },
+   {
+    "use_case": "Finance",
+    "agent_job": "Analyst agent that needs exact, current numbers with primary-source citations",
+    "You.com": "80% · 592 ms",
+    "Tavily": "40% · 1,642 ms",
+    "Exa": "40% · 1,106 ms",
+    "Parallel": "88% · 1,972 ms"
+   }
+  ]
+ },
+ "scorecards": {
+  "gtm": {
+   "use_case": "GTM agent",
+   "agent_job": "Find fresh developer and company buying signals (issues, releases, funding, incidents) for a streaming-infra vendor.",
+   "metrics": [
+    {
+     "metric": "Search-only latency p50 · p95, server / client (ms)",
+     "You.com": "381 / 627 · 512 / 751 (fastest)",
+     "Tavily": "2,670 / 2,843 · 3,295 / 3,425",
+     "Exa": "812 / 1,102 · 3,178 / 3,403",
+     "Parallel": "n/a / 2,268 · n/a / 4,268"
+    },
+    {
+     "metric": "Search-only calls ≤1 s, client (of 10); slowest call",
+     "You.com": "10 of 10; slowest 781 ms",
+     "Tavily": "0 of 10; slowest 3,473 ms",
+     "Exa": "3 of 10; slowest 3,419 ms",
+     "Parallel": "1 of 10; slowest 4,289 ms"
+    },
+    {
+     "metric": "Accuracy score (% of max, 10 queries × 3 repeats)",
+     "You.com": "45%",
+     "Tavily": "47%",
+     "Exa": "45%",
+     "Parallel": "45%"
+    },
+    {
+     "metric": "Freshness: % in window",
+     "You.com": "75%",
+     "Tavily": "47%",
+     "Exa": "58%",
+     "Parallel": "28%"
+    },
+    {
+     "metric": "Freshness: newest relevant result (h)",
+     "You.com": "4.1",
+     "Tavily": "39.9",
+     "Exa": "15.9",
+     "Parallel": "399.9"
+    },
+    {
+     "metric": "Content in one call",
+     "You.com": "100%",
+     "Tavily": "70%",
+     "Exa": "90%",
+     "Parallel": "100%"
+    },
+    {
+     "metric": "Tokens, top-5 results: per query / per correct",
+     "You.com": "95,707 / 239,254",
+     "Tavily": "20,199 / 42,276",
+     "Exa": "10,563 / 26,409",
+     "Parallel": "1,814 / 4,887"
+    },
+    {
+     "metric": "Search cost: per query / per correct ($)",
+     "You.com": "0.0150 / 0.0375",
+     "Tavily": "0.0080 / 0.0160",
+     "Exa": "0.0063 / 0.0158",
+     "Parallel": "0.0050 / 0.0125"
+    }
+   ]
+  },
+  "insurance": {
+   "use_case": "Insurance agent",
+   "agent_job": "Voice and claims agent for P&C insurers that must know live catastrophe status mid-call (500 ms latency budget).",
+   "metrics": [
+    {
+     "metric": "Search-only latency p50 · p95, server / client (ms)",
+     "You.com": "379 / 589 · 496 / 772 (fastest)",
+     "Tavily": "1,650 / 1,864 · 2,959 / 3,128",
+     "Exa": "856 / 1,093 · 4,194 / 4,448",
+     "Parallel": "n/a / 2,038 · n/a / 3,450"
+    },
+    {
+     "metric": "Search-only calls ≤1 s, client (of 10); slowest call",
+     "You.com": "10 of 10; slowest 865 ms",
+     "Tavily": "1 of 10; slowest 3,230 ms",
+     "Exa": "3 of 10; slowest 4,593 ms",
+     "Parallel": "1 of 10; slowest 3,963 ms"
+    },
+    {
+     "metric": "Accuracy score (% of max, 10 queries × 3 repeats)",
+     "You.com": "65%",
+     "Tavily": "67%",
+     "Exa": "75%",
+     "Parallel": "67%"
+    },
+    {
+     "metric": "Freshness: % in window",
+     "You.com": "56%",
+     "Tavily": "34%",
+     "Exa": "31%",
+     "Parallel": "31%"
+    },
+    {
+     "metric": "Freshness: newest relevant result (h)",
+     "You.com": "2.3",
+     "Tavily": "11.9",
+     "Exa": "7.1",
+     "Parallel": "16.3"
+    },
+    {
+     "metric": "Content in one call",
+     "You.com": "100%",
+     "Tavily": "70%",
+     "Exa": "80%",
+     "Parallel": "90%"
+    },
+    {
+     "metric": "Tokens, top-5 results: per query / per correct",
+     "You.com": "14,524 / 29,048",
+     "Tavily": "13,986 / 28,383",
+     "Exa": "4,731 / 6,759",
+     "Parallel": "1,418 / 2,352"
+    },
+    {
+     "metric": "Search cost: per query / per correct ($)",
+     "You.com": "0.0150 / 0.0300",
+     "Tavily": "0.0080 / 0.0160",
+     "Exa": "0.0056 / 0.0080",
+     "Parallel": "0.0050 / 0.0083"
+    }
+   ]
+  },
+  "finance": {
+   "use_case": "Finance agent",
+   "agent_job": "Analyst agent that answers with exact, current numbers and a primary-source citation.",
+   "metrics": [
+    {
+     "metric": "Search-only latency p50 · p95, server / client (ms)",
+     "You.com": "372 / 592 · 422 / 776 (fastest)",
+     "Tavily": "1,465 / 1,642 · 1,699 / 1,889",
+     "Exa": "870 / 1,106 · 2,743 / 3,008",
+     "Parallel": "n/a / 1,972 · n/a / 3,511"
+    },
+    {
+     "metric": "Search-only calls ≤1 s, client (of 10); slowest call",
+     "You.com": "10 of 10; slowest 823 ms",
+     "Tavily": "0 of 10; slowest 1,997 ms",
+     "Exa": "3 of 10; slowest 3,170 ms",
+     "Parallel": "0 of 10; slowest 3,847 ms"
+    },
+    {
+     "metric": "Accuracy score (% of max, 10 queries × 3 repeats)",
+     "You.com": "80%",
+     "Tavily": "40%",
+     "Exa": "40%",
+     "Parallel": "88%"
+    },
+    {
+     "metric": "Freshness: % in window",
+     "You.com": "45%",
+     "Tavily": "31%",
+     "Exa": "44%",
+     "Parallel": "29%"
+    },
+    {
+     "metric": "Freshness: newest relevant result (h)",
+     "You.com": "6.4",
+     "Tavily": "5.6",
+     "Exa": "8.2",
+     "Parallel": "16.6"
+    },
+    {
+     "metric": "Content in one call",
+     "You.com": "90%",
+     "Tavily": "70%",
+     "Exa": "90%",
+     "Parallel": "100%"
+    },
+    {
+     "metric": "Tokens, top-5 results: per query / per correct",
+     "You.com": "13,146 / 16,433",
+     "Tavily": "11,737 / 25,644",
+     "Exa": "9,785 / 23,613",
+     "Parallel": "1,793 / 1,999"
+    },
+    {
+     "metric": "Search cost: per query / per correct ($)",
+     "You.com": "0.0150 / 0.0188",
+     "Tavily": "0.0080 / 0.0160",
+     "Exa": "0.0063 / 0.0158",
+     "Parallel": "0.0050 / 0.0056"
+    }
+   ]
+  }
+ },
+ "which_api_for_which_agent": [
+  {
+   "if_your_agent": "Answers inside a live turn (voice, chat, alerts)",
+   "pick": "You.com",
+   "why": "Fastest at p50 and p95, freshest results, never returned empty"
+  },
+  {
+   "if_your_agent": "Does deep research where seconds don't matter",
+   "pick": "Parallel",
+   "why": "Highest finance accuracy; found the release pages and jobless-claims report others missed"
+  },
+  {
+   "if_your_agent": "Needs the most on-topic top 5 for semantic or long-tail queries",
+   "pick": "Exa",
+   "why": "Best precision@5 in GTM and insurance; best insurance accuracy"
+  },
+  {
+   "if_your_agent": "Looks up docs or how-to answers",
+   "pick": "Tavily",
+   "why": "Best GTM accuracy; correct on the config-docs query"
+  }
+ ],
+ "developer_activation": {
+  "basis": "Sign-in to copied API key, from screen recordings",
+  "metrics": [
+   {
+    "metric": "Seconds from sign-in to copied key",
+    "Tavily": "25 s",
+    "You.com": "55 s",
+    "Parallel": "60 s",
+    "Exa": "95 s"
+   },
+   {
+    "metric": "Steps (screens or clicks)",
+    "Tavily": "3",
+    "You.com": "11",
+    "Parallel": "10",
+    "Exa": "13"
+   },
+   {
+    "metric": "First API call",
+    "Tavily": "1.28 s, HTTP 200",
+    "You.com": "0.65 s, HTTP 200",
+    "Parallel": "3.57 s, HTTP 200",
+    "Exa": "3.20 s, HTTP 200"
+   }
+  ],
+  "chart": "https://psinglap.github.io/websearch-api-eval/img/time_steps_activation.png"
+ }
+}

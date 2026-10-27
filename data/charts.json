@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-10-08",
+ "site": "https://psinglap.github.io/websearch-api-eval/",
+ "repo": "https://github.com/psinglap/websearch-api-eval",
+ "note": "Snapshot of the published benchmark run on 2026-10-08. Not live data.",
+ "charts": [
+  {
+   "id": "overall_scorecard",
+   "use_case": "all",
+   "title": "Overall scorecard: 30 queries, 3 use cases, 4 search APIs",
+   "caption": "Quality, freshness, reliability, speed and cost for each API, colored by rank on each row.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/overall_scorecard.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "gtm_key_metrics",
+   "use_case": "gtm",
+   "title": "GTM agent: key metrics",
+   "caption": "Accuracy, freshness, latency and cost for the developer-signal agent.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/gtm_key_metrics.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "gtm_query_grid",
+   "use_case": "gtm",
+   "title": "GTM agent: per-query results",
+   "caption": "What each API returned on G1-G10 and how it scored.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/gtm_query_grid.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "insurance_key_metrics",
+   "use_case": "insurance",
+   "title": "Insurance agent: key metrics",
+   "caption": "Accuracy, freshness, latency and cost for the voice and claims agent.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/insurance_key_metrics.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "insurance_query_grid",
+   "use_case": "insurance",
+   "title": "Insurance agent: per-query results",
+   "caption": "What each API returned on I1-I10 and how it scored.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/insurance_query_grid.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "finance_key_metrics",
+   "use_case": "finance",
+   "title": "Finance agent: key metrics",
+   "caption": "Accuracy, freshness, latency and cost for the analyst agent.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/finance_key_metrics.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "finance_query_grid",
+   "use_case": "finance",
+   "title": "Finance agent: per-query results",
+   "caption": "What each API returned on F1-F10 and how it scored.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/finance_query_grid.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "time_steps_activation",
+   "use_case": "setup",
+   "title": "Time and steps to activation",
+   "caption": "Seconds and steps from sign-in to a copied API key for each provider.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/time_steps_activation.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  },
+  {
+   "id": "activation_gates",
+   "use_case": "setup",
+   "title": "What stands between sign-in and the API key",
+   "caption": "The screens and gates each provider puts before the first API key.",
+   "image_url": "https://psinglap.github.io/websearch-api-eval/img/activation_gates.png",
+   "page": "https://psinglap.github.io/websearch-api-eval/"
+  }
+ ]
+}

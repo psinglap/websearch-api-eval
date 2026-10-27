@@ -1,0 +1,41 @@
+qid,query,key_short,provider,returned_short,mean
+G1,kafka consumer lag high latency issue,Kafka lag issue opened in last 6h,You.com,Issues from Oct 7 (outside 6h),0.0
+G1,kafka consumer lag high latency issue,Kafka lag issue opened in last 6h,Tavily,Empty — no results,0.0
+G1,kafka consumer lag high latency issue,Kafka lag issue opened in last 6h,Exa,Unrelated repo issue-list pages,0.0
+G1,kafka consumer lag high latency issue,Kafka lag issue opened in last 6h,Parallel,Undated Kafka lag tool repos,0.0
+G2,Confluent news,"Oct 8 ATO interview, Confluent VP",You.com,"Keyword noise, no Confluent news",0.0
+G2,Confluent news,"Oct 8 ATO interview, Confluent VP",Tavily,Hit in 2 of 3 runs (ATO Oct 8),1.33
+G2,Confluent news,"Oct 8 ATO interview, Confluent VP",Exa,ATO Oct 8 interview with VP,2.0
+G2,Confluent news,"Oct 8 ATO interview, Confluent VP",Parallel,"Undated newsroom, IBM deal page",0.0
+G3,"""Apache Iggy""",Iggy repo issues/PRs from last 24h,You.com,Dated apache/iggy issues (Oct 8),2.0
+G3,"""Apache Iggy""",Iggy repo issues/PRs from last 24h,Tavily,"Undated Reddit post, noise",0.0
+G3,"""Apache Iggy""",Iggy repo issues/PRs from last 24h,Exa,Unrelated Apache pages,0.0
+G3,"""Apache Iggy""",Iggy repo issues/PRs from last 24h,Parallel,Undated landing and docs pages,0.0
+G4,Apache Iggy release notes,server-0.9.0 (Sep 18),You.com,"Iggy issues, no release page",0.0
+G4,Apache Iggy release notes,server-0.9.0 (Sep 18),Tavily,Empty — no results,0.0
+G4,Apache Iggy release notes,server-0.9.0 (Sep 18),Exa,Other Apache projects' issue lists,0.0
+G4,Apache Iggy release notes,server-0.9.0 (Sep 18),Parallel,server-0.9.0 release page (Sep 18),2.0
+G5,kafka consumer lag max.poll.records fetch.min.bytes,"Official doc URL, both settings",You.com,"Official docs, settings text cut off",0.0
+G5,kafka consumer lag max.poll.records fetch.min.bytes,"Official doc URL, both settings",Tavily,"Confluent docs, both settings",2.0
+G5,kafka consumer lag max.poll.records fetch.min.bytes,"Official doc URL, both settings",Exa,"Kafka docs, only fetch.min.bytes",0.0
+G5,kafka consumer lag max.poll.records fetch.min.bytes,"Official doc URL, both settings",Parallel,Docs; max.poll.records not described,0.0
+G6,NATS server release,v2.15.1-RC.2 (Oct 6) / v2.15.0,You.com,"nats-server issues, no release",0.0
+G6,NATS server release,v2.15.1-RC.2 (Oct 6) / v2.15.0,Tavily,Other projects' release pages,0.0
+G6,NATS server release,v2.15.1-RC.2 (Oct 6) / v2.15.0,Exa,"nats-io issue lists, no release",0.0
+G6,NATS server release,v2.15.1-RC.2 (Oct 6) / v2.15.0,Parallel,v2.15.1-RC.2 and v2.15.0,2.0
+G7,Confluent Cloud incident,No active incident,You.com,No incident; Sep 21 page is stale,2.0
+G7,Confluent Cloud incident,No active incident,Tavily,Empty — no results,2.0
+G7,Confluent Cloud incident,No active incident,Exa,Empty — no results,2.0
+G7,Confluent Cloud incident,No active incident,Parallel,Incident history header only,2.0
+G8,AI agent infrastructure startup funding round,Agent/data-infra raise in last 48h,You.com,Manus $500M+ (Oct 8),2.0
+G8,AI agent infrastructure startup funding round,Agent/data-infra raise in last 48h,Tavily,"TODAY €2.8M, Monid $7.7M",2.0
+G8,AI agent infrastructure startup funding round,Agent/data-infra raise in last 48h,Exa,5 in-window raises incl. Rein $25M,2.0
+G8,AI agent infrastructure startup funding round,Agent/data-infra raise in last 48h,Parallel,Rein $25M Series A (Oct 8),2.0
+G9,durable event log memory for AI agents,Agent-memory articles this week,You.com,"Arize, Ability.ai, dev.to (Oct 2-6)",2.0
+G9,durable event log memory for AI agents,Agent-memory articles this week,Tavily,"Ability.ai, Wenlan, Eigent (Oct 4-7)",2.0
+G9,durable event log memory for AI agents,Agent-memory articles this week,Exa,"Like One, Databricks, arXiv (Oct 2-6)",2.0
+G9,durable event log memory for AI agents,Agent-memory articles this week,Parallel,On-topic but nothing dated in window,0.0
+G10,Redpanda vs Kafka p99 latency benchmark,In-window Redpanda vs Kafka p99 data,You.com,"Medium p99.99 numbers, no runner",1.0
+G10,Redpanda vs Kafka p99 latency benchmark,In-window Redpanda vs Kafka p99 data,Tavily,"Vendor pages, no benchmark",0.0
+G10,Redpanda vs Kafka p99 latency benchmark,In-window Redpanda vs Kafka p99 data,Exa,"5 dated benchmarks, no p99 numbers",1.0
+G10,Redpanda vs Kafka p99 latency benchmark,In-window Redpanda vs Kafka p99 data,Parallel,"ComputingForGeeks, avg latency only",1.0

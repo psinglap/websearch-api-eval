@@ -1,0 +1,41 @@
+qid,query,key_short,provider,returned_short,mean
+I1,Citizens Property Insurance binding suspension Florida,"YES, statewide, eff. Oct 7 11:05am",You.com,Old 2020-23 minutes; missed suspension,0.0
+I1,Citizens Property Insurance binding suspension Florida,"YES, statewide, eff. Oct 7 11:05am",Tavily,Empty — no results,0.0
+I1,Citizens Property Insurance binding suspension Florida,"YES, statewide, eff. Oct 7 11:05am",Exa,Empty — no results,0.0
+I1,Citizens Property Insurance binding suspension Florida,"YES, statewide, eff. Oct 7 11:05am",Parallel,Evergreen rule + Helene 2024; missed,0.0
+I2,Hurricane Isaias latest advisory NHC,"Advisory #8, 85 mph, 23.7N 90.2W",You.com,"Adv #8 by time: 75 kt, 23.7N 90.2W",2.0
+I2,Hurricane Isaias latest advisory NHC,"Advisory #8, 85 mph, 23.7N 90.2W",Tavily,Stale: Adv #6A (1 AM CDT),0.0
+I2,Hurricane Isaias latest advisory NHC,"Advisory #8, 85 mph, 23.7N 90.2W",Exa,"Advisory #8, 75 kt (~85 mph)",2.0
+I2,Hurricane Isaias latest advisory NHC,"Advisory #8, 85 mph, 23.7N 90.2W",Parallel,"10 AM adv, 75 kt; stale in 1 of 3 runs",1.33
+I3,hurricane warning Escambia County Florida active,Hurricane + Storm Surge Warning,You.com,Hurricane Warning only; no surge,1.0
+I3,hurricane warning Escambia County Florida active,Hurricane + Storm Surge Warning,Tavily,Hurricane Warning only; no surge,1.0
+I3,hurricane warning Escambia County Florida active,Hurricane + Storm Surge Warning,Exa,"Hurricane + Surge Warnings, Oct 7",2.0
+I3,hurricane warning Escambia County Florida active,Hurricane + Storm Surge Warning,Parallel,Hurricane Warning only; no surge,1.0
+I4,Pensacola weather wind speed,"~10 mph NE, KPNS obs 15:50Z",You.com,Stale cached weather pages (Aug/Feb),0.0
+I4,Pensacola weather wind speed,"~10 mph NE, KPNS obs 15:50Z",Tavily,Current obs 13 mph in 2 of 3 runs,1.33
+I4,Pensacola weather wind speed,"~10 mph NE, KPNS obs 15:50Z",Exa,"13 mph NE, 11am (model estimate)",2.0
+I4,Pensacola weather wind speed,"~10 mph NE, KPNS obs 15:50Z",Parallel,Forecasts + 5-hr-old Windfinder report,0.0
+I5,Baldwin County Alabama evacuation order Isaias,NONE (voluntary only),You.com,No mandatory order; voluntary only,2.0
+I5,Baldwin County Alabama evacuation order Isaias,NONE (voluntary only),Tavily,No mandatory order; voluntary only,2.0
+I5,Baldwin County Alabama evacuation order Isaias,NONE (voluntary only),Exa,No mandatory order; voluntary only,2.0
+I5,Baldwin County Alabama evacuation order Isaias,NONE (voluntary only),Parallel,No mandatory order; voluntary urged,2.0
+I6,FEMA disaster declaration Hurricane Isaias 2026,NONE yet (no 2026 FEMA decl.),You.com,None yet; FL state emergency only,2.0
+I6,FEMA disaster declaration Hurricane Isaias 2026,NONE yet (no 2026 FEMA decl.),Tavily,None yet; off-target results,2.0
+I6,FEMA disaster declaration Hurricane Isaias 2026,NONE yet (no 2026 FEMA decl.),Exa,None yet; NHC advisories only,2.0
+I6,FEMA disaster declaration Hurricane Isaias 2026,NONE yet (no 2026 FEMA decl.),Parallel,None yet; FEMA releases Oct 7 lack it,2.0
+I7,Florida OIR OR Alabama DOI emergency order Isaias insurance,NONE (no OIR/DOI order),You.com,No regulator order found,2.0
+I7,Florida OIR OR Alabama DOI emergency order Isaias insurance,NONE (no OIR/DOI order),Tavily,Empty — no results,2.0
+I7,Florida OIR OR Alabama DOI emergency order Isaias insurance,NONE (no OIR/DOI order),Exa,No order; OIR notice + ALDOI release,2.0
+I7,Florida OIR OR Alabama DOI emergency order Isaias insurance,NONE (no OIR/DOI order),Parallel,No order; old Helene order flagged,2.0
+I8,governor state of emergency Hurricane Isaias,FL EO 26-202 (Oct 6) + AL (Oct 7),You.com,FL EO 26-202 Oct 6; AL without date,1.0
+I8,governor state of emergency Hurricane Isaias,FL EO 26-202 (Oct 6) + AL (Oct 7),Tavily,FL Oct 6 + AL 40 counties Oct 7,2.0
+I8,governor state of emergency Hurricane Isaias,FL EO 26-202 (Oct 6) + AL (Oct 7),Exa,FL EO 26-202 only; AL missing,1.0
+I8,governor state of emergency Hurricane Isaias,FL EO 26-202 (Oct 6) + AL (Oct 7),Parallel,AL Oct 7 + FL EO 26-202 Oct 6,2.0
+I9,Texas hail storm reports,NONE (no TX hail in 24h),You.com,No Texas hail reports in results,2.0
+I9,Texas hail storm reports,NONE (no TX hail in 24h),Tavily,Empty — no results,2.0
+I9,Texas hail storm reports,NONE (no TX hail in 24h),Exa,Empty — no results,2.0
+I9,Texas hail storm reports,NONE (no TX hail in 24h),Parallel,Empty — no results,2.0
+I10,NHTSA recall 2024 Toyota RAV4,"3 recalls: 24V911, 25V595, 25V744",You.com,Only 26V179 (RAV4 Hybrid),1.0
+I10,NHTSA recall 2024 Toyota RAV4,"3 recalls: 24V911, 25V595, 25V744",Tavily,"25V744, 25V595, 26V179; no 24V911",1.0
+I10,NHTSA recall 2024 Toyota RAV4,"3 recalls: 24V911, 25V595, 25V744",Exa,No RAV4 recall found,0.0
+I10,NHTSA recall 2024 Toyota RAV4,"3 recalls: 24V911, 25V595, 25V744",Parallel,25V744 + 26V179; run 2 only 26V179,1.0

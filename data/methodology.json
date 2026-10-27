@@ -1,0 +1,81 @@
+{
+ "as_of": "2026-10-08",
+ "site": "https://psinglap.github.io/websearch-api-eval/",
+ "repo": "https://github.com/psinglap/websearch-api-eval",
+ "note": "Snapshot of the published benchmark run on 2026-10-08. Not live data.",
+ "summary": "30 agent-style queries (10 each for GTM, insurance, finance). Every API gets the same search call and parameters (10 results, full content where supported, freshness window, domain filters where supported). Searches ran in promptfoo, 3 runs per query (90 calls per API); latency is client wall-clock around the HTTP request after a discarded warm-up call, with server-reported latency alongside. Answers were written and graded from each provider's saved top-5 results using the SimpleQA grader rubric and FreshQA strict rules; answer keys were captured live and archived to the Wayback Machine.",
+ "metrics": [
+  {
+   "n": "1",
+   "metric": "Latency p50 / p95, % within budget",
+   "how_measured": "Client wall-clock per call; budget 3 s (GTM, finance), 500 ms (insurance)",
+   "standard": "Artificial Analysis search methodology (https://artificialanalysis.ai/methodology/search-api)"
+  },
+  {
+   "n": "2",
+   "metric": "Accuracy (0–2)",
+   "how_measured": "Correct = 2, incorrect or not attempted = 0; a partly right list = 1",
+   "standard": "SimpleQA (https://arxiv.org/html/2411.04368) grader template, verbatim"
+  },
+  {
+   "n": "3",
+   "metric": "Correct \"none\"",
+   "how_measured": "Says \"none\" when true without citing stale pages as current; never claims \"none\" when an answer exists",
+   "standard": "FreshQA (https://arxiv.org/pdf/2310.03214) strict rules"
+  },
+  {
+   "n": "4",
+   "metric": "Freshness: % in window",
+   "how_measured": "Share of returned results dated inside the query's window",
+   "standard": "Provider dates + htmldate (https://htmldate.readthedocs.io/en/latest/evaluation.html)"
+  },
+  {
+   "n": "5",
+   "metric": "Freshness: newest relevant result",
+   "how_measured": "Age in hours of the newest relevant result at run time",
+   "standard": "FreshQA"
+  },
+  {
+   "n": "6",
+   "metric": "Precision@5",
+   "how_measured": "Share of the top 5 judged relevant, time window included",
+   "standard": "TREC-style binary relevance"
+  },
+  {
+   "n": "7",
+   "metric": "Content in one call",
+   "how_measured": "Search response itself includes usable page text, no second fetch",
+   "standard": "Measured directly"
+  },
+  {
+   "n": "8",
+   "metric": "Token efficiency",
+   "how_measured": "Tokens in the top 5 results, per query and per correct answer",
+   "standard": "tiktoken (cl100k)"
+  },
+  {
+   "n": "9",
+   "metric": "Cost per correct answer",
+   "how_measured": "Search list price × calls ÷ correct answers",
+   "standard": "Vendor list prices, dated"
+  },
+  {
+   "n": "10",
+   "metric": "Reliability",
+   "how_measured": "Errors, timeouts and empty result lists per 90 calls",
+   "standard": "promptfoo"
+  }
+ ],
+ "statistics": "With 10 queries per use case, results are reported per query ('won 7 of 10') rather than as percentage-point margins.",
+ "limits": [
+  "10 queries per use case is a focused test, not a leaderboard; differences of a query or two are within noise.",
+  "Results reflect one run day (Oct 8, 2026); freshness and accuracy depend on what was published that day.",
+  "Prices are vendor list prices as of the run date; cost covers search only, not the answering model."
+ ],
+ "files": {
+  "metric_definitions": "https://github.com/psinglap/websearch-api-eval/blob/main/eval/METRICS.md",
+  "grading_rubric": "https://github.com/psinglap/websearch-api-eval/blob/main/eval/grading/RUBRIC.md",
+  "answer_keys": "https://github.com/psinglap/websearch-api-eval/blob/main/eval/answer_keys.csv",
+  "questions": "https://github.com/psinglap/websearch-api-eval/blob/main/reports/Agent%20queries.md"
+ }
+}

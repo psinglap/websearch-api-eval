@@ -1,0 +1,42 @@
+# Web Search API Eval
+
+> A live, side-by-side benchmark of four web search APIs for AI agents (You.com, Tavily, Exa and Parallel) on 30 agent-style queries across GTM, insurance and finance use cases. Final run Oct 8, 2026, by Pallavi Singla. Results are a published snapshot, not live data. Anyone can rerun the harness with their own API keys; nothing runs on a hosted server.
+
+Headline: You.com is the fastest API tested and the most dependable at returning something fresh (leads freshness, reliability and search-only speed). Parallel leads accuracy, with You.com a close second and tied on fully correct queries. Exa returns the most on-topic top 5; Parallel is cheapest per correct answer.
+
+Overall (90 calls per API): accuracy You.com 63%, Tavily 51%, Exa 53%, Parallel 67%; results inside the query's time window 59% / 37% / 44% / 29%; empty responses 0 / 27 / 12 / 3; client latency p50 593 / 1,864 / 1,106 / 2,038 ms; search cost per correct answer $0.026 / $0.016 / $0.012 / $0.008.
+
+## Results and data (JSON, same numbers as the site)
+
+- [Overall and per-use-case results](https://psinglap.github.io/websearch-api-eval/data/results.json): headline, overall scorecard, per-use-case scorecards, which API fits which agent, developer activation
+- [The 30 questions](https://psinglap.github.io/websearch-api-eval/data/questions.json): task, search call, parameters, answer key, sources, what each API returned and its score (0-2)
+- [Methodology](https://psinglap.github.io/websearch-api-eval/data/methodology.json): how tests ran, the 10 metrics and the benchmarks they follow (SimpleQA, FreshQA, TREC-style relevance, htmldate)
+- [Charts](https://psinglap.github.io/websearch-api-eval/data/charts.json): titles, captions and image links for every published graph
+- [How to run it yourself](https://psinglap.github.io/websearch-api-eval/data/run_locally.json): setup steps and the API keys you need
+
+## Pages
+
+- [Evaluation](https://psinglap.github.io/websearch-api-eval/): every query, answer key, what each API returned, per-use-case scorecards and the setup friction log
+- [GTM memo](https://psinglap.github.io/websearch-api-eval/memo/): which web search API should power a live GTM chat agent
+- [Target accounts](https://psinglap.github.io/websearch-api-eval/accounts/): 60 accounts across 6 agent use cases, GTM plays and distribution
+- [Search Atlas](https://psinglap.github.io/websearch-api-eval/atlas/): the six ways AI products get web search, market size today and in 2030, how to win
+
+## Charts
+
+- [Overall scorecard](https://psinglap.github.io/websearch-api-eval/img/overall_scorecard.png)
+- [GTM key metrics](https://psinglap.github.io/websearch-api-eval/img/gtm_key_metrics.png) · [GTM per-query grid](https://psinglap.github.io/websearch-api-eval/img/gtm_query_grid.png)
+- [Insurance key metrics](https://psinglap.github.io/websearch-api-eval/img/insurance_key_metrics.png) · [Insurance per-query grid](https://psinglap.github.io/websearch-api-eval/img/insurance_query_grid.png)
+- [Finance key metrics](https://psinglap.github.io/websearch-api-eval/img/finance_key_metrics.png) · [Finance per-query grid](https://psinglap.github.io/websearch-api-eval/img/finance_query_grid.png)
+- [Time and steps to activation](https://psinglap.github.io/websearch-api-eval/img/time_steps_activation.png)
+
+## Run it yourself
+
+- [Repo README](https://github.com/psinglap/websearch-api-eval#run-it-yourself): the 30 questions and setup steps
+- [Harness README](https://github.com/psinglap/websearch-api-eval/blob/main/eval/README.md): promptfoo configs, providers, assertions, ground-truth pullers
+- [Metric definitions](https://github.com/psinglap/websearch-api-eval/blob/main/eval/METRICS.md)
+- [Answer keys](https://github.com/psinglap/websearch-api-eval/blob/main/eval/answer_keys.csv) and [grading rubric](https://github.com/psinglap/websearch-api-eval/blob/main/eval/grading/RUBRIC.md)
+
+## Optional
+
+- [PDF: full evaluation](https://psinglap.github.io/websearch-api-eval/pdf/web-search-api-evaluation.pdf)
+- [PDF: GTM memo](https://psinglap.github.io/websearch-api-eval/pdf/gtm-memo.pdf)
