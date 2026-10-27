@@ -139,7 +139,7 @@
    "parameters": "window 7 days, domains: github.com, iggy.apache.org",
    "needs_back": "Latest release version, date, key changes, link",
    "freshness": "Week",
-   "answer_key": "server-0.9.0 , released Sep 18 (GitHub \"Latest\"): consensus per partition (VSR clustering), QUIC/TLS/WS transports, Delta Lake sink, Avro. The downloads page's 0.5.0-incubating is wrong.",
+   "answer_key": "server-0.9.0, released Sep 18 (GitHub \"Latest\"): consensus per partition (VSR clustering), QUIC/TLS/WS transports, Delta Lake sink, Avro. The downloads page's 0.5.0-incubating is wrong.",
    "answer_key_links": [
     {
      "text": "server-0.9.0",
@@ -265,7 +265,7 @@
   {
    "id": "G7",
    "use_case": "gtm",
-   "task": "Is Confluent Cloud having an incident right now?\" (outage = switching trigger)",
+   "task": "Is Confluent Cloud having an incident right now? (outage = switching trigger)",
    "search_call": "Confluent Cloud incident",
    "parameters": "window 24h, domains: status.confluent.cloud",
    "needs_back": "Active incident yes/no, component, start time or \"none\"",
@@ -1043,7 +1043,7 @@
    "parameters": "window 7 days, domains: federalreserve.gov",
    "needs_back": "Release date, 3 key points, federalreserve.gov link",
    "freshness": "Week",
-   "answer_key": "Minutes of the Sep 15-16, 2026 meeting, released Oct 7 at 2:00 p.m. EDT ( fomcminutes20260916 ). The July minutes (released Aug 19) are stale.",
+   "answer_key": "Minutes of the Sep 15-16, 2026 meeting, released Oct 7 at 2:00 p.m. EDT (fomcminutes20260916). The July minutes (released Aug 19) are stale.",
    "answer_key_links": [
     {
      "text": "fomcminutes20260916",
@@ -1122,7 +1122,7 @@
    "parameters": "window 7 days, domains: sec.gov",
    "needs_back": "Filing date, items, what changed (officer/director), EDGAR link",
    "freshness": "Week",
-   "answer_key": "8-K filed Oct 6, 2026 (Items 5.02, 7.01, 9.01): Kevin Lobo steps down as CEO Dec 31 and becomes Executive Chair; Spencer Stiles becomes CEO Jan 1, 2027 ( filing index ). The May 20 8-K is stale.",
+   "answer_key": "8-K filed Oct 6, 2026 (Items 5.02, 7.01, 9.01): Kevin Lobo steps down as CEO Dec 31 and becomes Executive Chair; Spencer Stiles becomes CEO Jan 1, 2027 (filing index). The May 20 8-K is stale.",
    "answer_key_links": [
     {
      "text": "filing index",

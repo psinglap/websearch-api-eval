@@ -32,8 +32,8 @@ USE_CASES = {
 
 
 def text(cell_html):
-    t = re.sub(r"<br\s*/?>", " ", cell_html)
-    t = re.sub(r"<[^>]+>", " ", t)
+    t = re.sub(r"<br\s*/?>|</?(p|div|li|tr|td|th)[^>]*>", " ", cell_html)
+    t = re.sub(r"<[^>]+>", "", t)
     return re.sub(r"\s+", " ", html.unescape(t)).strip()
 
 
@@ -101,7 +101,7 @@ for uc, qt, rt in zip(USE_CASES, q_tables, ret_tables):
         q = {
             "id": qid,
             "use_case": uc,
-            "task": text(d["Upstream task given to the agent"]).strip('"'),
+            "task": re.sub(r'^"([^"]*)"', r"\1", text(d["Upstream task given to the agent"])),
             "search_call": text(d["Search call the agent sends"]),
             "parameters": text(d["Params"]),
             "needs_back": text(d["What the agent needs back"]),
