@@ -18,7 +18,7 @@ def _isolate(tmp_path, monkeypatch):
     monkeypatch.setenv("EVAL_OUT_DIR", str(tmp_path / "out"))
     monkeypatch.setenv("EVAL_NO_FRICTION_AUTOLOG", "1")
     monkeypatch.setenv("FRICTION_LOG", str(tmp_path / "friction.csv"))
-    for k in ("YDC_API_KEY", "TAVILY_API_KEY", "EXA_API_KEY", "PARALLEL_API_KEY", "FIRECRAWL_API_KEY", "LINKUP_API_KEY"):
+    for k in ("YDC_API_KEY", "TAVILY_API_KEY", "EXA_API_KEY", "PARALLEL_API_KEY", "FIRECRAWL_API_KEY", "LINKUP_API_KEY", "KEENABLE_API_KEY"):
         monkeypatch.setenv(k, "FIXTURE-NOT-A-KEY")  # HTTP is mocked in these tests
     yield
 

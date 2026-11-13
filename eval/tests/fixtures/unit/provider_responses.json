@@ -8,5 +8,6 @@
   "exa": {"requestId": "r", "results": [{"id": "x", "url": "https://fixture.invalid/e/1", "title": "FIXTURE", "publishedDate": "2026-10-07T12:00:00.000Z", "text": "FIXTURE text", "highlights": ["h1"]}], "searchTime": 412.5, "costDollars": {"total": 0.007}},
   "parallel": {"search_id": "s", "results": [{"url": "https://fixture.invalid/p/1", "title": "FIXTURE", "publish_date": "2026-10-07", "excerpts": ["ex1", "ex2"]}], "usage": [{"name": "sku_search", "count": 1}]},
   "firecrawl": {"success": true, "data": {"web": [{"url": "https://fixture.invalid/f/1", "title": "FIXTURE", "description": "desc", "markdown": "FIXTURE md", "metadata": {"publishedTime": "2026-10-06T08:00:00Z"}}]}, "creditsUsed": 12},
-  "linkup": {"results": [{"type": "text", "name": "FIXTURE", "url": "https://fixture.invalid/l/1", "content": "FIXTURE content"}, {"type": "image", "name": "img", "url": "https://fixture.invalid/l/img"}]}
+  "linkup": {"results": [{"type": "text", "name": "FIXTURE", "url": "https://fixture.invalid/l/1", "content": "FIXTURE content"}, {"type": "image", "name": "img", "url": "https://fixture.invalid/l/img"}]},
+  "keenable": {"query": "q", "mode": "pro", "results": [{"title": "FIXTURE", "url": "https://fixture.invalid/k/1", "snippet": "FIXTURE snippet", "published_at": "2026-10-07T12:00:00Z", "acquired_at": "2026-10-08T08:00:00Z"}], "usage": {"sku": "search.pro", "amount": 1, "credits": 1, "paid": false}}
 }

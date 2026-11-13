@@ -32,6 +32,8 @@ BUDGET = {"gtm": 3000, "insurance": 500, "finance": 3000, "simpleqa": 3000, "smo
 
 PROVIDERS = [("youcom", "You.com"), ("tavily", "Tavily"), ("exa", "Exa"), ("parallel", "Parallel")]
 # Firecrawl and Linkup excluded by the user (2026-10-08); adapters kept on disk, unused.
+# Keenable adapter is in providers/keenable.py (optional). Add ("keenable", "Keenable") here and
+# rerun this script to include it in a run; the published four-provider configs stay unchanged.
 # Claude built-in web search (providers/claude_native.py) is dropped from the comparison (kept on disk, unused).
 
 CONTEXT_JS = (

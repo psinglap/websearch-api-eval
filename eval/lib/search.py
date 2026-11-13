@@ -1,4 +1,4 @@
-"""Shared runner for the six search-API providers (promptfoo Python providers).
+"""Shared runner for the search-API providers (promptfoo Python providers).
 
 Each adapter in providers/*.py supplies three functions:
   build_request(query, vars, s) -> dict(method, url, headers, json|params)

@@ -33,6 +33,10 @@ search:
   linkup:
     per_request_usd: 0.005      # standard depth, outputType=searchResults
     source: https://docs.linkup.so/pages/documentation/platform/pricing.md
+  keenable:
+    per_request_usd: 0.0        # 100k free requests/month with a key; keyless calls consume no credits
+    source: https://docs.keenable.ai/credits.md
+    notes: "Checked 2026-11-13. Keyed responses may include usage.credits (typically 1 per search) and usage.paid. Plan prices after the free allowance are at https://keenable.ai/pricing and are not used here. This harness does not call /v1/fetch."
   claude_native:
     per_request_usd: null       # computed from usage.server_tool_use.web_search_requests
     source: https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool

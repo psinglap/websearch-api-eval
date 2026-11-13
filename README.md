@@ -241,7 +241,7 @@ cp .env.example .env          # add your own API keys; .env is git-ignored
 ./run.sh analyze              # scorecards and charts into eval/out/
 ```
 
-You need your own keys for each search API (`YDC_API_KEY`, `TAVILY_API_KEY`, `EXA_API_KEY`, `PARALLEL_API_KEY`, plus `FIRECRAWL_API_KEY` and `LINKUP_API_KEY` for the six-provider configs) and an `SEC_USER_AGENT` with your contact email for SEC EDGAR. No keys are stored in this repo. Full steps are in [`eval/README.md`](eval/README.md).
+You need your own keys for each search API (`YDC_API_KEY`, `TAVILY_API_KEY`, `EXA_API_KEY`, `PARALLEL_API_KEY`, plus `FIRECRAWL_API_KEY` and `LINKUP_API_KEY` for the six-provider configs) and an `SEC_USER_AGENT` with your contact email for SEC EDGAR. A Keenable adapter is also in `eval/providers/keenable.py`; `KEENABLE_API_KEY` is optional because the public endpoint works without a key. No keys are stored in this repo. Full steps are in [`eval/README.md`](eval/README.md).
 
 **Included for audit:** answer keys with source and Wayback links (`eval/answer_keys.csv`), per-query grades (`eval/grading/`), raw ground-truth snapshots pulled at run time (`eval/ground_truth/raw/`), the evidence log (`eval/evidence/evidence_log.csv`) and the friction log (`eval/friction_log.csv`). Raw provider responses are not included because of their size.
 
