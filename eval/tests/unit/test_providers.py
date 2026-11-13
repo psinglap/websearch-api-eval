@@ -8,7 +8,7 @@ from lib import search
 from lib.settings import settings
 
 RESP = json.loads((FIX / "unit" / "provider_responses.json").read_text())
-NAMES = ["youcom", "tavily", "exa", "parallel", "firecrawl", "linkup"]
+NAMES = ["youcom", "tavily", "exa", "parallel", "firecrawl", "linkup", "keenable"]
 VARS = {"qid": "G1", "usecase": "gtm", "query": "kafka lag", "window_hours": 48, "domains": "github.com",
         "upstream_task": "FIXTURE task", "needs_back": "list"}
 
@@ -115,6 +115,22 @@ def test_missing_key_is_reported(monkeypatch):
     monkeypatch.setattr(search, "_WARMED", {"firecrawl"})
     out = m.call_api("q", {"config": {}}, {"vars": VARS})
     assert out["metadata"]["error_type"] == "missing_key" and out["metadata"]["anomalies"][0]["severity"] == "red"
+
+
+def test_keenable_public_and_keyed(monkeypatch):
+    m = load_module("providers/keenable.py", "prov_k")
+    monkeypatch.setenv("KEENABLE_API_KEY", "keen_fixture")
+    keyed = m.build_request("q", dict(VARS, window_hours=48, _config={}), settings())
+    assert keyed["url"] == "https://api.keenable.ai/v1/search"
+    assert keyed["headers"]["X-API-Key"] == "keen_fixture"
+    assert keyed["json"]["published_after"].endswith("Z") and keyed["json"]["site"] == "github.com"
+    monkeypatch.setenv("KEENABLE_API_KEY", "")
+    pub = m.build_request("q", dict(VARS, _config={}), settings())
+    assert pub["url"] == "https://api.keenable.ai/v1/search/public"
+    assert "X-API-Key" not in pub["headers"] and pub["headers"]["X-Keenable-Title"] == "websearch-api-eval"
+    p = m.parse(RESP["keenable"])
+    n = m.normalize(p["results"][0])
+    assert n["url"].endswith("/k/1") and n["date_source"] == "provider:published_at"
 
 
 def test_claude_native_parsing():

@@ -24,7 +24,7 @@ ENABLED = os.environ.get("EVAL_MOCK") == "1"
 # fake per-provider characteristics (NOT measurements): median latency ms, accuracy skill, date coverage
 PROFILE = {
     "youcom": (380, 0.70, 0.9), "tavily": (900, 0.62, 0.7), "exa": (450, 0.60, 0.95), "parallel": (1100, 0.66, 0.8),
-    "firecrawl": (1500, 0.50, 0.3), "linkup": (1200, 0.55, 0.0), "claude_native": (9000, 0.68, 0.6),
+    "firecrawl": (1500, 0.50, 0.3), "linkup": (1200, 0.55, 0.0), "keenable": (400, 0.60, 0.8), "claude_native": (9000, 0.68, 0.6),
     "youcom_knowledge": (420, 0.80, 0.9),
 }
 
@@ -89,6 +89,10 @@ def search_response(provider: str, req: dict) -> httpx.Response:
         j = {"data": {"web": [{"url": r["url"], "title": r["title"], "description": r["text"][:120], "markdown": r["text"],
                                "metadata": {"publishedTime": r["date"]} if r["date"] else {}} for r in rs]},
              "creditsUsed": 12}
+    elif provider == "keenable":
+        j = {"query": query, "mode": "pro",
+             "results": [{"title": r["title"], "url": r["url"], "snippet": r["text"][:300],
+                          "published_at": r["date"]} for r in rs]}
     else:  # linkup
         j = {"results": [{"type": "text", "name": r["title"], "url": r["url"], "content": r["text"]} for r in rs]}
     return httpx.Response(200, json=j, request=httpx.Request("POST", req["url"]))
